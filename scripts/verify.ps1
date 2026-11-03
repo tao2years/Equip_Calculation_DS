@@ -103,6 +103,8 @@ try {
     node scripts/test_adb_adapter.mjs
     node scripts/test_capture_plan.mjs
     node scripts/test_account_collector.mjs
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/test_account_collector_wizard.ps1
+    if ($LASTEXITCODE -ne 0) { throw "Account collector wizard test failed with exit code $LASTEXITCODE" }
     node scripts/test_staging_review_core.mjs
     node scripts/test_account_completeness.mjs
     node scripts/test_formula_cases.mjs

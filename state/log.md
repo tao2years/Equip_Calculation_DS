@@ -300,3 +300,10 @@ Append-only. Newest entries go at the bottom.
 - Added multi-file source-image matching by browser-side SHA-256. Images remain in memory-only object URLs and are revoked when the account changes; unmatched files are ignored. Three 1000×1000 SVG fixtures make the synthetic evidence workflow visually reproducible without claiming game-client evidence.
 - Hidden IAB QA exercised load example → automatic 3/3 source match → gear audit → `stats[1].value`. The dialog showed raw `12%`, 90% confidence, one rectangle and a 1000×1000 visible canvas with the highlight over `12%`; console warning/error logs were empty. Browser plugin and repository Playwright were absent, so the user-requested hidden IAB path was used.
 - Full repository verification passed with 37 schema-validated artifacts, 27 schemas and 29 Markdown files.
+
+## 2026-11-03 · OP-041
+
+- Added `collectors/account-collector.ps1`, a Windows operator wizard covering Doctor, Plan, Capture, Process/resume, Status and Audit while routing to the existing tested Node collector contracts. It supports both an interactive menu and non-interactive parameters.
+- Added `collect-account.cmd` as the double-clickable repository-root entry. The wizard remains user-driven: it does not log in, click, navigate, read memory or intercept traffic.
+- Doctor now distinguishes channel capture readiness from local processing readiness and keeps `gameClientVerified=false`. On this machine the official-PC capture adapter and Windows OCR are available; emulator capture correctly reports `adb executable not found`; neither path claims a live client.
+- Added PowerShell regression coverage for readiness structure, safety invariants and official-PC full-plan routing.

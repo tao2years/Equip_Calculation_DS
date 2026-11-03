@@ -87,6 +87,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - 新增可复算端到端交付验收：同一合成账号依次通过 HTML 库存校验契约、公共神器等级曲线、版本化请求、满暴隐式约束、神器+六装备槽位和共享求解；输入哈希、Top 结果及限制写入 JSON/Markdown。它证明模块互操作，不冒充真实账号证据。
 - 账号证据链已细化到字段：layout extraction 除截图 SHA/文件/序号/页面类型外，还为普通字段及属性标签/值保存 OCR 原文、置信度与像素矩形；finalizer 保留到 AccountSnapshot，HTML/CLI 阻止 screenshot_ocr 缺失或悬空引用，OptimizationResult 0.3 带回所选七槽位记录与字段证据。真实 profile 坐标准确率仍待客户端。
 - 库存 HTML 已能在本地选择采集原图、按 SHA-256 匹配 `sourceFiles`，并逐字段展示 OCR 原文/置信度及 Canvas 高亮矩形。合成三页视觉 fixture 的 3/3 匹配和 `12%` 字段高亮已在隐藏浏览器验证；真实客户端截图仍缺。
+- Windows 操作者现在可从根目录 `collect-account.cmd` 进入单一向导，完成 Doctor/Plan/Capture/Process/Status/Audit。Doctor 将渠道采集就绪与本地处理就绪分开；当前模拟器采集因无 ADB 明确未就绪，官方 PC 适配器可调用但仍无真实客户端验证。
 
 ## Next durable steps
 

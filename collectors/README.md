@@ -2,6 +2,14 @@
 
 ## 当前可执行入口
 
+面向 Windows 操作者的首选入口是仓库根目录 `collect-account.cmd`，或直接运行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\collectors\account-collector.ps1
+```
+
+该向导提供交互菜单，也支持 `-Action Doctor|Plan|Capture|Process|Status|Audit` 自动化调用。`Doctor` 分别报告渠道截图能力、本地 OCR/公共数据处理能力和真实客户端未验证边界，不会把“脚本存在”误报为“账号可完整采集”。
+
 ```powershell
 node collectors/account-collector.mjs plan --channel emulator
 node collectors/account-collector.mjs capture --channel emulator --output account-runs

@@ -17,8 +17,8 @@
 | 国服中文名称与稳定 ID | 候选语料已固化，映射未完成 | 70 条社区英雄名称、6 条官方页面名称；当前仅 2/351 英雄有非 ASCII 别名 | 当前客户端/官方双语证据；逐项人工 Review 后才能进入导入字典 |
 | 收集登录账号拥有的角色 | 未完成；全量操作计划已补齐 | 统一采集器默认 full 模式，要求角色列表到末尾和所有拥有角色详情覆盖确认；通用解析器与合成 golden case 已有，但没有真实登录客户端输出 | 选择 PC/模拟器渠道；用真实截图校准 profile；运行全量计划并做 reference 对账 |
 | 收集账号拥有的装备/神器 | 未完成；全量计划与字段级证据链已补齐 | full 模式要求六槽位列表到末尾、每件装备及神器详情覆盖确认；截图 SHA、OCR 原文/置信度/像素矩形 → staging → AccountSnapshot → OptimizationResult 0.3 已接通并校验，当前证据仍为合成 | 真实 profile、背包翻页覆盖、坐标准确率和真实人工 reference 对账 |
-| 模拟器采集脚本 | 统一 CLI、全量/校准计划与续跑管线已实现，未实机验证 | `account-collector.mjs` 提供 plan/capture/process/status/audit；默认 ADB full 计划要求列表及所有详情覆盖确认，golden 才是最低 50 张；manifest → 两级 Review → snapshot → reference audit 已接通；本机无 ADB | 在已授权模拟器上实测连接、分辨率、PNG、人工翻页覆盖、真实 profile 和完整性；当前不自动点击 |
-| 官方 PC 客户端采集脚本 | 统一 CLI、全量/校准计划与只读窗口会话已实现，未实机验证 | 选择 `official_pc` 后要求显式 PID；默认 full 计划输出可进同一 pipeline 的 manifest，golden 需显式选择；统一入口路由与 audit 回归通过 | 有客户端后验证遮挡、全屏、缩放/DPI、真实页面覆盖与条款；当前不自动导航，不使用内存/抓包/注入 |
+| 模拟器采集脚本 | Windows 向导、统一 CLI、全量/校准计划与续跑管线已实现，未实机验证 | `collect-account.cmd` 提供单一菜单；Doctor 明确报告当前 `adb executable not found`；底层默认 ADB full 计划要求列表及所有详情覆盖确认，manifest → 两级 Review → snapshot → reference audit 已接通 | 在已授权模拟器上实测连接、分辨率、PNG、人工翻页覆盖、真实 profile 和完整性；当前不自动点击 |
+| 官方 PC 客户端采集脚本 | Windows 向导、全量/校准计划与只读窗口会话已实现，未实机验证 | 向导 Doctor 能区分窗口截图适配器就绪与 `gameClientVerified=false`；Capture 要求显式 PID，默认 full 计划输出可进同一 pipeline 的 manifest | 有客户端后验证遮挡、全屏、缩放/DPI、真实页面覆盖与条款；当前不自动导航，不使用内存/抓包/注入 |
 | HTML 导入账号文件 | 原型完成，合成端到端验收通过 | `prototype/inventory.html` 可创建/导入/编辑/导出账号快照并一键交给配装页；`end-to-end-acceptance` 用同一库存校验和请求核心验证公共定义、神器曲线、七槽位及约束结果 | 用真实账号快照回归；增加 CSV 与批量编辑 |
 | 选择角色、固定神器/装备 | 原型完成 | 六装备槽位和神器均可固定；支持允许拆全部角色、仅当前角色或仅背包，以及可选排除锁定装备；固定项覆盖过滤 | 真实背包与当前穿戴关系验证 |
 | 属性门槛与优化目标 | 原型完成 | HTML 支持十种面板属性、五种比较符、同属性区间、最大化/最小化、满暴代理、自定义加权面板、Top 20，并显式选择自动/全局精确/快速启发式；合成基准覆盖 100/300/1,000 件 | 真实公式校准、真实背包基准、启发式质量矩阵和 Web Worker |

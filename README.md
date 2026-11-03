@@ -20,7 +20,13 @@ powershell -ExecutionPolicy Bypass -File .\scripts\serve_prototype.ps1
 
 当前可运行能力：账号 JSON 导入、角色/神器选择、六槽位固定、允许拆所有角色/仅当前角色/仅背包的候选策略、可选排除锁定装备、十种面板属性的动态 `>= / > / <= / < / =` 约束、同属性区间、最大化/最小化目标、满暴输出代理、自定义加权面板、套装加成、Top 20、换装清单和通用上下限诊断。求解器按规模在完整枚举、全局精确 Top N 分支定界与明确标记的快速启发式之间切换，用户也可手动选择；HTML 当前加载自动生成的公共数据包，其中包含 351 个英雄、682 个装备和 147 个神器定义。装备实例可引用公共定义；144 个官方 Wiki 套装家族的无条件静态效果已通过白名单语法编译，加上 4 个种子定义，共 148 个套装可执行面板加成。条件效果仍只保留原文。
 
-账号采集 CLI：
+账号采集向导与 CLI：
+
+Windows 普通操作者可直接运行 `collect-account.cmd`，通过菜单完成环境检查、计划预览、引导截图、OCR 续跑、状态查看和完整性审计。可脚本化调用：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\collectors\account-collector.ps1 -Action Doctor -Channel official_pc
+```
 
 ```powershell
 node collectors/account-collector.mjs plan --channel emulator
