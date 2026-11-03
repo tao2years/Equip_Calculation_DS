@@ -72,6 +72,11 @@ const impossibleFullCrit = enumerateBuilds({
   objective: { kind: "full_crit_damage_proxy", direction: "maximize" }
 });
 assert.equal(impossibleFullCrit.validCount, 0);
+const leveledWithoutObservation = structuredClone(account);
+leveledWithoutObservation.ownedHeroes[0].level = 2;
+assert.throws(() => enumerateBuilds({ ...request, account: leveledWithoutObservation }), /缺少账号观测基础属性/);
+const explicitlyUnverifiedGrowth = enumerateBuilds({ ...request, account: leveledWithoutObservation, allowUnverifiedHeroGrowth: true });
+assert.match(explicitlyUnverifiedGrowth.results[0].heroBaseSource, /未验证星级\/灵感修正/);
 
 const fixed = enumerateBuilds({ ...request, fixed: { helmet: "helm-002" } });
 assert.equal(fixed.searched, 32);

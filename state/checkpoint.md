@@ -81,6 +81,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - 新增由 SRC-002 哈希约束生成的 `equipment-rules.public.json`：5 组副词条 roll/单次强化规则、4 组主属性里程碑与 3 条机制公式候选。强化事件总次数仍为显式未知，规则尚未进入求解器自动计算。
 - `collectors/account-collector.mjs` 现将模拟器/官方 PC 计划、引导采集、pipeline 处理和状态查询统一为 plan/capture/process/status 四个命令；底层仍保留两级人工 Review 和渠道边界。两个渠道 plan 与状态摘要已回归，真实客户端 capture 未执行。
 - 新增 `full_crit_damage_proxy`：共享求解器自动强制重击率≥100%，结果 JSON 保存 applied/implied constraints。隐藏 HTML QA 在没有手工重击条件时得到唯一 100% 方案（627 攻击、93% 重击伤害、分数 1210.01）；固定低暴头盔后正确证明理论最高仅 85%。
+- 高等级角色不再静默使用未验证的公共成长外推：等级＞1 必须有账号观测 `baseStatsOverride`，库存编辑器新增无装备基础属性输入；研究 CLI 可显式允许外推。单元测试与隐藏库存 UI 已验证缺失阻断、补齐后添加成功。
 
 ## Next durable steps
 

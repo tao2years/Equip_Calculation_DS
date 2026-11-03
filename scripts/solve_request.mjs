@@ -40,6 +40,7 @@ const outcome = enumerateBuilds({
   candidatePolicy: request.candidatePolicy,
   constraints: request.constraints,
   objective: request.objective,
+  allowUnverifiedHeroGrowth: request.calculationPolicy?.allowUnverifiedHeroGrowth === true,
   limit: request.resultLimit
 });
 const output = {

@@ -36,6 +36,14 @@
       "default": {}
     },
     "excludedItemIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "default": []},
+    "calculationPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "allowUnverifiedHeroGrowth": {"type": "boolean", "default": false}
+      },
+      "default": {}
+    },
     "constraints": {"type": "array", "items": {"$ref": "#/$defs/constraint"}},
     "objective": {"$ref": "#/$defs/objective"},
     "resultLimit": {"type": "integer", "minimum": 1, "maximum": 1000}

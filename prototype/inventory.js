@@ -70,7 +70,7 @@ function render() {
 
   byId("hero-list").innerHTML = state.account.ownedHeroes.length ? state.account.ownedHeroes.map((owned) => {
     const definition = state.gameData.heroes.find((entry) => entry.id === owned.heroDefinitionId);
-    return card({ title: heroName(definition), id: owned.ownedHeroId, detail: `等级 ${owned.level} · 星级 ${owned.stars ?? "?"} · 灵感 ${owned.inspiration ?? "?"}`, kind: "hero", itemId: owned.ownedHeroId });
+    return card({ title: heroName(definition), id: owned.ownedHeroId, detail: `等级 ${owned.level} · 星级 ${owned.stars ?? "?"} · 灵感 ${owned.inspiration ?? "?"} · ${owned.baseStatsOverride ? "账号基础面板" : "无账号基础面板"}`, kind: "hero", itemId: owned.ownedHeroId });
   }).join("") : `<div class="empty-inventory">尚未添加角色</div>`;
 
   byId("gear-list").innerHTML = state.account.ownedGear.length ? state.account.ownedGear.map((item) => {
@@ -128,12 +128,16 @@ byId("hero-form").addEventListener("submit", (event) => {
   try {
     const definitionId = byId("hero-definition").value;
     if (state.account.ownedHeroes.some((entry) => entry.heroDefinitionId === definitionId)) throw new Error("该角色已经在账号中");
+    const level = Number(byId("hero-level").value);
+    const baseStatsOverride = parseStats(byId("hero-base-stats").value, state.gameData.statDefinitions.map((entry) => entry.id));
+    if (level > 1 && !Object.keys(baseStatsOverride).length) throw new Error("等级大于 1 的角色必须填写账号观测的无装备基础属性");
     state.account.ownedHeroes.push({
       ownedHeroId: nextOwnedId("hero-manual", state.account.ownedHeroes, "ownedHeroId"),
       heroDefinitionId: definitionId,
-      level: Number(byId("hero-level").value),
+      level,
       stars: Number(byId("hero-stars").value) || null,
-      inspiration: Number(byId("hero-inspiration").value) || 0
+      inspiration: Number(byId("hero-inspiration").value) || 0,
+      ...(Object.keys(baseStatsOverride).length ? { baseStatsOverride } : {})
     });
     render(); showMessage("角色已添加");
   } catch (error) { showMessage(error.message, "error"); }

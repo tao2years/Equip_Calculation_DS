@@ -376,12 +376,15 @@ function sheetBounds(gameData, boundContext, depth, partialRaw, selectedSetCount
 export function enumerateBuilds({
   gameData, account, ownedHeroId, artifactId, fixed = {}, excludedItemIds = [], candidatePolicy = null,
   constraints = {}, objective = "crit_proxy", limit = 20, solverMode = "auto", exhaustiveThreshold = 100_000,
-  exactBranchThreshold = 5_000_000, heuristicCandidateCap = 10
+  exactBranchThreshold = 5_000_000, heuristicCandidateCap = 10, allowUnverifiedHeroGrowth = false
 }) {
   const ownedHero = account.ownedHeroes.find((item) => item.ownedHeroId === ownedHeroId);
   if (!ownedHero) throw new Error(`Unknown owned hero ${ownedHeroId}`);
   const hero = gameDataIndexes(gameData).heroes.get(ownedHero.heroDefinitionId);
   if (!hero) throw new Error(`Missing hero definition ${ownedHero.heroDefinitionId}`);
+  if (Number(ownedHero.level || 1) > 1 && !ownedHero.baseStatsOverride && !allowUnverifiedHeroGrowth) {
+    throw new Error(`角色 ${ownedHero.ownedHeroId} 为 ${ownedHero.level} 级但缺少账号观测基础属性；公共每级成长尚未验证，已阻止计算`);
+  }
   const artifact = account.ownedArtifacts.find((item) => item.ownedArtifactId === artifactId);
   if (!artifact) throw new Error(`Unknown owned artifact ${artifactId}`);
   const resolvedArtifact = resolveArtifactStats(gameData, artifact);

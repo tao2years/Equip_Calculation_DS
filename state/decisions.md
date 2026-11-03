@@ -118,3 +118,10 @@
 - 状态：accepted
 - 决策：`full_crit_damage_proxy` 自动加入 `crit_rate >= 1.0`，目标为 `atk_sheet × (1 + crit_damage)`；该隐式约束必须进入结果文件和无解诊断。原 `crit_proxy` 保留为不强制满暴的期望重击代理。
 - 原因：依赖 UI 预填条件会在用户删除条件、CLI 请求或其他调用端中失效，从而把非满暴方案误称为“满暴最优”。约束属于目标语义，应由共享求解核心保证。
+
+## D-018 · 高等级角色默认要求账号观测基础面板
+
+- 日期：2026-11-03
+- 状态：accepted
+- 决策：等级大于 1 且缺少 `baseStatsOverride` 时，库存校验和共享求解器默认失败。研究 CLI 可用 `calculationPolicy.allowUnverifiedHeroGrowth=true` 显式接受公共成长外推，但结果保留未验证来源。
+- 原因：公共 `perLevelGrowth` 的精确含义、升星/灵感顺序和渠道适用性未验证；个别比例属性线性外推会产生明显不合理结果。继续静默计算比明确要求账号面板风险更高。

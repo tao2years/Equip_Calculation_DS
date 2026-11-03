@@ -251,3 +251,10 @@ Append-only. Newest entries go at the bottom.
 - Added applied/implied constraints and the objective to CLI result JSON, so downstream review can see that full crit was enforced even when the request contained no explicit crit constraint.
 - Exact/branch-bound regression covers the new objective. Hidden-browser QA loaded the example account with no visible crit constraint, returned one 100% crit build scoring 1210.01, then fixed `helm-002` and reported the exact 85% theoretical maximum. Browser warning/error logs were empty.
 - Browser plugin and repository Playwright runtime were absent; QA used the hidden IAB. Desktop rendering was checked; no fresh mobile viewport was available in this pass.
+
+## 2026-11-03 · OP-034
+
+- Audited hero base-stat resolution and found that treating every public `perLevelGrowth` field as a verified per-level increment can produce implausible ratio stats. The public field remains research evidence, not an automatic current-account truth.
+- The shared solver now rejects level>1 heroes without account-observed `baseStatsOverride` by default. CLI research requests may explicitly set `calculationPolicy.allowUnverifiedHeroGrowth=true`; the resulting source label remains unverified.
+- Added manual hero base-stat entry to the inventory editor and validation that blocks export/imported snapshots with a leveled hero missing the observation. Unit tests cover default rejection, explicit research override and editable-snapshot validation.
+- Hidden inventory QA confirmed level 2 without stats is blocked and succeeds after entering observed stats; DOM showed the persisted `hero-manual-001` card and “账号基础面板”, with no console warning/error. Full repository verification passed.

@@ -19,6 +19,12 @@ snapshot.ownedHeroes.push({ ownedHeroId: "hero-manual-001", heroDefinitionId: ga
 snapshot.ownedGear.push({ ownedItemId: "gear-manual-001", slot: "helmet", setId: null, enhanceLevel: 0, stats: { hp_flat: 100 }, locked: false });
 snapshot.ownedArtifacts.push({ ownedArtifactId: "artifact-manual-001", artifactDefinitionId: gameData.artifacts[0].id, level: 20, refinement: 0, observedStats: [{ stat: "hp_pct", value: 0.1, raw_text: null, confidence: 1 }], locked: false });
 assert.deepEqual(validateEditableSnapshot(snapshot, gameData), { errors: [], warnings: [] });
+snapshot.ownedHeroes[0].level = 2;
+assert.match(validateEditableSnapshot(snapshot, gameData).errors.join(";"), /缺少账号观测基础属性/);
+snapshot.ownedHeroes[0].baseStatsOverride = { hp_flat: 1000, atk_flat: 100, def_flat: 50 };
+assert.deepEqual(validateEditableSnapshot(snapshot, gameData), { errors: [], warnings: [] });
+snapshot.ownedHeroes[0].level = 1;
+delete snapshot.ownedHeroes[0].baseStatsOverride;
 const linkedDefinition = gameData.equipment.find((entry) => entry.slot === "helmet");
 snapshot.ownedGear[0].definitionId = linkedDefinition.id;
 snapshot.ownedGear[0].setId = linkedDefinition.setId;

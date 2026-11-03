@@ -82,6 +82,7 @@ export function validateEditableSnapshot(account, gameData) {
   for (const hero of account.ownedHeroes) {
     if (!heroIds.has(hero.heroDefinitionId)) errors.push(`未知角色定义：${hero.heroDefinitionId}`);
     if (!Number.isInteger(hero.level) || hero.level < 1) errors.push(`角色 ${hero.ownedHeroId} 等级无效`);
+    if (hero.level > 1 && (!hero.baseStatsOverride || !Object.keys(hero.baseStatsOverride).length)) errors.push(`角色 ${hero.ownedHeroId} 等级大于 1 但缺少账号观测基础属性`);
   }
   for (const item of account.ownedGear) {
     if (!slotIds.has(item.slot)) errors.push(`装备 ${item.ownedItemId} 槽位无效：${item.slot}`);
