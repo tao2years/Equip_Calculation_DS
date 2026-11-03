@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "0.1.0",
+  "auditedAt": "2026-11-03T10:14:26.753Z",
+  "evidenceLevel": "synthetic_fixture_with_public_catalog",
+  "status": "passed",
+  "inputs": {
+    "account": {
+      "path": "examples\\account-snapshot.example.json",
+      "sha256": "13d5dd49fb7f81e782914441b8f76c0c1f379f0e9bd31a946d7e8ce567ae3ff8"
+    },
+    "request": {
+      "path": "examples\\optimization-request.example.json",
+      "sha256": "54da2e108a7a48fabea6b16f2d42af8acbb0cd8a8998b86da57d4b9dec892443"
+    },
+    "gameData": {
+      "path": "data\\game-data.public.json",
+      "sha256": "48e0d4738516887c4bf1592d428c2474705755c999877d085c0f7ba1428cba2e",
+      "versionId": "public-catalog-2026-11-03"
+    }
+  },
+  "coverage": {
+    "heroes": 351,
+    "equipment": 682,
+    "artifacts": 147,
+    "setDefinitions": 252,
+    "setsWithExecutableSheetBonuses": 148
+  },
+  "account": {
+    "snapshotId": "example-account-001",
+    "counts": {
+      "heroes": 2,
+      "gear": 12,
+      "artifacts": 3
+    },
+    "warnings": []
+  },
+  "optimization": {
+    "requestId": "example-request-001",
+    "objective": {
+      "kind": "full_crit_damage_proxy",
+      "direction": "maximize"
+    },
+    "searched": 64,
+    "validCount": 1,
+    "solver": {
+      "mode": "exhaustive",
+      "searchSpace": 64,
+      "evaluatedBuilds": 64,
+      "visitedNodes": 127,
+      "prunedByFeasibility": 0,
+      "prunedByScore": 0,
+      "topNExact": true,
+      "validCountExact": true,
+      "extremaExact": true
+    },
+    "topResult": {
+      "rank": 1,
+      "score": 1210.00964,
+      "ownedArtifactId": "art-001",
+      "ownedGearIds": [
+        "helm-001",
+        "weapon-001",
+        "chest-001",
+        "gloves-001",
+        "prune-001",
+        "nrune-001"
+      ],
+      "stats": {
+        "hp_flat": 2383,
+        "def_flat": 84,
+        "atk_flat": 106.8,
+        "crit_rate": 1,
+        "crit_damage": 0.93,
+        "accuracy": 76,
+        "resistance": 0,
+        "enlightenment": 0,
+        "skill_haste": 10,
+        "attack_speed_pct": 0.27,
+        "atk_sheet": 626.948,
+        "hp_sheet": 7453,
+        "def_sheet": 84
+      },
+      "setLabels": [
+        "野蛮人 2件",
+        "捕食者 2件"
+      ],
+      "heroBaseSource": "公共目录一级基础值",
+      "artifactStatSource": "account_observed",
+      "artifactStatWarnings": [
+        "账号观测属性与公共 +6 曲线不同：atk_flat；计算采用账号观测值"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "id": "html_inventory_import_contract",
+      "status": "passed",
+      "detail": "AccountSnapshot passes the same editable-inventory validator used by the HTML workflow."
+    },
+    {
+      "id": "public_artifact_level_curve",
+      "status": "passed",
+      "detail": "Public artifact-eyeball-of-the-giant +6 resolves 2 static stat fields."
+    },
+    {
+      "id": "shared_optimizer_execution",
+      "status": "passed",
+      "detail": "64 builds searched; 1 valid; 1 returned."
+    },
+    {
+      "id": "top_result_constraints",
+      "status": "passed",
+      "detail": "Top result satisfies every explicit and objective-implied sheet constraint."
+    },
+    {
+      "id": "seven_slot_build",
+      "status": "passed",
+      "detail": "Result must contain one artifact plus exactly one item in each of the six gear slots."
+    },
+    {
+      "id": "artifact_static_stats",
+      "status": "passed",
+      "detail": "Artifact stat source: account_observed."
+    },
+    {
+      "id": "public_definition_coverage",
+      "status": "passed",
+      "detail": "351 heroes, 682 equipment, 147 artifacts, 148 executable set definitions."
+    }
+  ],
+  "limitations": [
+    "The account is a synthetic fixture, not a captured live Dragonheir account.",
+    "Passing proves the repository data/import/request/solver contracts interoperate; it does not validate current-client OCR or formulas.",
+    "The HTML UI and CLI share these inventory and optimization cores, but rendered browser behavior has separate QA evidence."
+  ]
+}

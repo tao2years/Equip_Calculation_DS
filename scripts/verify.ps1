@@ -52,10 +52,12 @@ try {
     node --check scripts/test_collector_pipeline.mjs
     node --check scripts/test_apply_ocr_review.mjs
     node --check prototype/optimizer-core.mjs
+    node --check prototype/optimization-request-core.mjs
     node --check scripts/test_optimizer.mjs
     node --check scripts/benchmark_optimizer.mjs
     node --check scripts/test_inventory_core.mjs
     node --check scripts/solve_request.mjs
+    node --check scripts/audit_end_to_end.mjs
     node --check scripts/inspect_ocr_labels.mjs
     node --check scripts/test_windows_ocr_output.mjs
     node --check scripts/build_ocr_recognition_fixture.mjs
@@ -113,6 +115,7 @@ try {
     node collectors/account-collector.mjs plan --channel emulator --mode golden | Out-Null
     node collectors/account-collector.mjs status --state examples/collector-pipeline-state.example.json | Out-Null
     node scripts/solve_request.mjs --output examples/optimization-result.example.json
+    node scripts/audit_end_to_end.mjs
     if ($env:OS -eq 'Windows_NT') {
         node collectors/cli.mjs window-probe | Out-Null
         node collectors/cli.mjs ocr-image --input outputs/design/prototype-browser-verified.png --output outputs/qa/windows-ocr-prototype.json
@@ -161,6 +164,7 @@ pairs = [
     ('schemas/capture-session.schema.json', 'examples/capture-session.example.json'),
     ('schemas/optimization-request.schema.json', 'examples/optimization-request.example.json'),
     ('schemas/optimization-result.schema.json', 'examples/optimization-result.example.json'),
+    ('schemas/end-to-end-acceptance.schema.json', 'outputs/end-to-end-acceptance.json'),
     ('schemas/optimizer-benchmark.schema.json', 'corpus/compiled/optimizer-scalability-benchmark.json'),
     ('schemas/equipment-model-audit.schema.json', 'corpus/compiled/equipment-model-audit.json'),
 ]

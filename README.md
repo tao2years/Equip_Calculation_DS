@@ -82,6 +82,8 @@ node scripts/validate_formula_cases.mjs `
 powershell -ExecutionPolicy Bypass -File .\scripts\verify.ps1
 ```
 
+`scripts/audit_end_to_end.mjs` 还会生成 [端到端交付验收](outputs/end-to-end-acceptance.md)：用与 HTML 相同的库存校验器和共享求解请求核心，验证公共定义、账号 JSON、神器公共等级曲线、七槽位方案、显式/隐式约束和结果可复算。当前报告使用合成账号，因此只证明模块互操作，不替代真实客户端验收。
+
 ## 从哪里开始读
 
 1. [阶段 0 产品与可行性方案](outputs/phase-0-product-and-feasibility-plan.md)
@@ -94,6 +96,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\verify.ps1
 8. [用户目标完成度审计](outputs/goal-coverage-audit.md)
 9. [公共领域数据覆盖审计](outputs/public-domain-audit.md)
 10. [国服名称候选与字典覆盖审计](outputs/cn-alias-coverage.md)
+11. [端到端交付验收](outputs/end-to-end-acceptance.md)
 11. [三项成品实施与验收合同](outputs/implementation-contract.md)
 12. [当前阶段交接说明](outputs/HANDOFF-2026-11-03.md)
 13. [公共装备定义与账号关联审计](outputs/equipment-data-model-audit.md)

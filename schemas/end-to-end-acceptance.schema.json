@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/end-to-end-acceptance.schema.json",
+  "title": "Dragonheir End-to-End Acceptance Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "auditedAt", "evidenceLevel", "status", "inputs", "coverage", "account", "optimization", "checks", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "auditedAt": {"type": "string", "format": "date-time"},
+    "evidenceLevel": {"const": "synthetic_fixture_with_public_catalog"},
+    "status": {"enum": ["passed", "failed"]},
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["account", "request", "gameData"],
+      "properties": {
+        "account": {"$ref": "#/$defs/inputFile"},
+        "request": {"$ref": "#/$defs/inputFile"},
+        "gameData": {
+          "allOf": [
+            {"$ref": "#/$defs/inputFile"},
+            {"type": "object", "required": ["versionId"], "properties": {"versionId": {"type": "string"}}}
+          ]
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["heroes", "equipment", "artifacts", "setDefinitions", "setsWithExecutableSheetBonuses"],
+      "additionalProperties": false,
+      "properties": {
+        "heroes": {"type": "integer", "minimum": 0},
+        "equipment": {"type": "integer", "minimum": 0},
+        "artifacts": {"type": "integer", "minimum": 0},
+        "setDefinitions": {"type": "integer", "minimum": 0},
+        "setsWithExecutableSheetBonuses": {"type": "integer", "minimum": 0}
+      }
+    },
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["snapshotId", "counts", "warnings"],
+      "properties": {
+        "snapshotId": {"type": "string"},
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["heroes", "gear", "artifacts"],
+          "properties": {
+            "heroes": {"type": "integer", "minimum": 0},
+            "gear": {"type": "integer", "minimum": 0},
+            "artifacts": {"type": "integer", "minimum": 0}
+          }
+        },
+        "warnings": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "optimization": {"type": ["object", "null"]},
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "detail"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "status": {"enum": ["passed", "failed"]},
+          "detail": {"type": "string"}
+        }
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "inputFile": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

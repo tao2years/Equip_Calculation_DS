@@ -271,3 +271,10 @@ Append-only. Newest entries go at the bottom.
 - Added channel-specific full-account plans alongside the existing golden plans. Full plans require complete hero/gear/artifact lists plus detail evidence for every owned object; list/detail stages require an explicit `complete` confirmation before the session can be marked complete.
 - Changed the unified account collector to default to full mode, retained explicit `--mode golden`, and added an `audit` command that routes the final account file through independent manual-reference completeness checks.
 - Added plan/schema/routing/audit regression coverage and updated operator, research, completion-audit and handoff documentation. No live-client completeness claim was made.
+
+## 2026-11-03 · OP-037
+
+- Extracted versioned optimization-request execution into a shared pure core instead of keeping request mapping inside the CLI script.
+- Added a deterministic end-to-end acceptance report that hashes public GameData, AccountSnapshot and OptimizationRequest inputs, invokes the same inventory validator used by the HTML workflow, probes a public artifact level curve and executes the shared seven-slot solver.
+- The current synthetic fixture passes seven gates: HTML import contract, public artifact curve, optimizer execution, explicit/implied constraints, artifact plus six unique gear slots, artifact stat resolution and public-definition coverage. The report explicitly does not claim live-client OCR, completeness or formula validation.
+- Full verification passed with 36 schema-validated artifacts, 27 schemas and 28 Markdown files.
