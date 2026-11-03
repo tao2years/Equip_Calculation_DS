@@ -17,6 +17,8 @@
       <a class="button button-secondary" href="staging-review.html">字段校对</a>
       <label class="button button-secondary" for="account-file">导入 JSON</label>
       <input id="account-file" type="file" accept="application/json,.json" hidden>
+      <label class="button button-secondary" for="evidence-files">匹配原图</label>
+      <input id="evidence-files" type="file" accept="image/*" multiple hidden>
       <button class="button button-secondary" id="load-example" type="button">载入示例</button>
       <button class="button button-secondary" id="load-evidence-example" type="button">载入证据示例</button>
     </div>
@@ -90,6 +92,21 @@
       </section>
     </section>
   </main>
+
+  <dialog class="evidence-dialog" id="evidence-dialog" aria-labelledby="evidence-dialog-title">
+    <div class="evidence-dialog-header">
+      <div><p class="eyebrow">LOCAL EVIDENCE REVIEW</p><h2 id="evidence-dialog-title">字段证据</h2></div>
+      <button class="evidence-close" id="evidence-close" type="button" aria-label="关闭字段证据">×</button>
+    </div>
+    <p class="evidence-help">原图仅保存在浏览器内存中。选择左侧字段可查看 OCR 原文、置信度和对应坐标框。</p>
+    <div class="evidence-review-layout">
+      <div class="evidence-field-list" id="evidence-field-list"></div>
+      <div class="evidence-preview">
+        <div class="evidence-meta" id="evidence-meta"></div>
+        <div class="evidence-canvas-stage"><canvas id="evidence-canvas" hidden></canvas><p id="evidence-placeholder">尚未匹配原图，请先点击页面顶部“匹配原图”。</p></div>
+      </div>
+    </div>
+  </dialog>
 
   <script src="inventory.js" type="module"></script>
 </body>

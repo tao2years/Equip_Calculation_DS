@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#101824"/><text x="40" y="44" fill="#e6c38b" font-size="28">装备详情</text>
+  <text x="60" y="118" fill="#fff" font-size="24">武器</text><text x="60" y="178" fill="#fff" font-size="24">野蛮人</text>
+  <text x="60" y="233" fill="#fff" font-size="24">强化 +16</text>
+  <text x="100" y="323" fill="#fff" font-size="24">攻击</text><text x="400" y="323" fill="#fff" font-size="24">235</text>
+  <text x="100" y="373" fill="#fff" font-size="24">重击率</text><text x="400" y="373" fill="#fff" font-size="24">12%</text>
+  <text x="100" y="423" fill="#fff" font-size="24">重击伤害</text><text x="400" y="423" fill="#fff" font-size="24">27%</text>
+</svg>

@@ -12,7 +12,7 @@
   "inputs": {
     "source": {
       "path": "examples/ocr-recognition-layout.example.json",
-      "sha256": "2c752ce20aef1a16b6ee4156c27dfdbb8ebce10aa41d80a517e1a79577b3cf1a",
+      "sha256": "5cd8bacd3ed10bcb69a29315e45aa2b0bc2e3f57d1d89270cf0dd114cae2a076",
       "kind": "recognition_bundle"
     },
     "profile": {
@@ -30,7 +30,7 @@
       "artifacts": [
         {
           "path": "examples/ocr-recognition-layout.example.json",
-          "sha256": "2c752ce20aef1a16b6ee4156c27dfdbb8ebce10aa41d80a517e1a79577b3cf1a"
+          "sha256": "5cd8bacd3ed10bcb69a29315e45aa2b0bc2e3f57d1d89270cf0dd114cae2a076"
         }
       ]
     },
@@ -41,11 +41,11 @@
       "artifacts": [
         {
           "path": "examples/ocr-review-layout.example.json",
-          "sha256": "f33983b19acbbd35c08afd2e6800dcb478d1dd12fc4a07451732d6754c0dbb20"
+          "sha256": "8e01954d1ffec8421105df4a7a5fc6fd9696c91d6be138b88e83d102d0a323a2"
         },
         {
           "path": "examples/ocr-recognition-reviewed-layout.example.json",
-          "sha256": "2f811ba58b88c0f684266520c1e83c9cc27b8dd95c6a439bbc2dec98b5cfa2be"
+          "sha256": "5018deb7c4837ceb1df462db9bf88f8b25c128e6bd382c752e2c2dcaf437d50d"
         },
         {
           "path": "examples/ocr-review-application-report.example.json",
@@ -60,7 +60,7 @@
       "artifacts": [
         {
           "path": "examples/ocr-staging-layout.example.json",
-          "sha256": "bcafb0fbbf960e90eaa04756f8336a85e7b3dc55317ef3e2d77d7e8e3b618458"
+          "sha256": "fabfdfd550f5e870d1612b4b81ade9295de293e1d23a02f8dd0992fe0eae9792"
         },
         {
           "path": "examples/layout-extraction-report.example.json",

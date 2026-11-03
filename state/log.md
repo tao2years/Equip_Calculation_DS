@@ -293,3 +293,10 @@ Append-only. Newest entries go at the bottom.
 - Preserved field evidence through reviewed staging, AccountSnapshot and OptimizationResult 0.3. HTML and collector validation reject screenshot-derived assets with missing or dangling field evidence.
 - Added positive and negative regressions for coordinate preservation, missing evidence and source-hash mismatch. Full verification passed with 37 schema-validated artifacts, 27 schemas and 29 Markdown files.
 - Hidden IAB QA loaded the evidence example and rendered one hero, one gear item and one artifact with `截图 1 · 字段框 10/10/8`; page identity and status were correct and console warning/error logs were empty. The Browser plugin and repository Playwright runtime were absent, so the hidden IAB was used without showing a desktop window.
+
+## 2026-11-03 · OP-040
+
+- Added a local evidence-audit dialog to the account inventory. Asset cards with field provenance expose an audit action; the dialog lists stable field paths, OCR raw text and confidence, and draws the matched source image with the selected pixel rectangle highlighted.
+- Added multi-file source-image matching by browser-side SHA-256. Images remain in memory-only object URLs and are revoked when the account changes; unmatched files are ignored. Three 1000×1000 SVG fixtures make the synthetic evidence workflow visually reproducible without claiming game-client evidence.
+- Hidden IAB QA exercised load example → automatic 3/3 source match → gear audit → `stats[1].value`. The dialog showed raw `12%`, 90% confidence, one rectangle and a 1000×1000 visible canvas with the highlight over `12%`; console warning/error logs were empty. Browser plugin and repository Playwright were absent, so the user-requested hidden IAB path was used.
+- Full repository verification passed with 37 schema-validated artifacts, 27 schemas and 29 Markdown files.

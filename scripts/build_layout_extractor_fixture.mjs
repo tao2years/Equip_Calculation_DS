@@ -8,6 +8,7 @@ import { finalizeStaging } from "../collectors/lib/finalize-staging.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const output = path.join(root, "examples", "ocr-recognition-layout.example.json");
+const evidenceDirectory = path.join(root, "examples", "evidence");
 
 const matches = {
   "埃里奇": { kind: "hero", id: "hero-errich", externalId: null, alias: "埃里奇", normalized: "埃里奇" },
@@ -26,13 +27,13 @@ function line(lineIndex, text, x, y, width = 120, height = 24) {
   return { lineIndex, text, boundingRect: { x, y, width, height } };
 }
 
-function image(sequence, captureType, rows, labels) {
+function image(sequence, captureType, rows, labels, imageSha256) {
   return {
     sequence,
-    originalName: `${captureType}-${sequence}.png`,
-    imageLocalPath: `evidence/${captureType}-${sequence}.png`,
-    imageSha256: String(sequence).repeat(64),
-    mediaType: "image/png",
+    originalName: `${captureType}-${sequence}.svg`,
+    imageLocalPath: `examples/evidence/${captureType}-${sequence}.svg`,
+    imageSha256,
+    mediaType: "image/svg+xml",
     captureType,
     reviewStatus: "accepted",
     ocrLocalPath: `derived/${captureType}-${sequence}.json`,
@@ -69,6 +70,10 @@ const artifactRows = [
   line(6, "攻击%", 100, 350), line(7, "8%", 400, 350)
 ];
 
+const evidenceHashes = await Promise.all([
+  "hero_detail-1.svg", "gear_detail-2.svg", "artifact_detail-3.svg"
+].map(async (name) => createHash("sha256").update(await readFile(path.join(evidenceDirectory, name))).digest("hex")));
+
 const recognition = {
   schemaVersion: "0.1.0",
   jobId: "synthetic-layout-job-001",
@@ -78,9 +83,9 @@ const recognition = {
   engine: "synthetic-coordinate-fixture",
   language: "zh-Hans-CN",
   images: [
-    image(1, "hero_detail", heroRows, ["埃里奇", "攻击", "生命", "防御"]),
-    image(2, "gear_detail", gearRows, ["武器", "野蛮人", "攻击", "重击率", "重击伤害"]),
-    image(3, "artifact_detail", artifactRows, ["巨人眼球", "攻击", "攻击%"])
+    image(1, "hero_detail", heroRows, ["埃里奇", "攻击", "生命", "防御"], evidenceHashes[0]),
+    image(2, "gear_detail", gearRows, ["武器", "野蛮人", "攻击", "重击率", "重击伤害"], evidenceHashes[1]),
+    image(3, "artifact_detail", artifactRows, ["巨人眼球", "攻击", "攻击%"], evidenceHashes[2])
   ]
 };
 

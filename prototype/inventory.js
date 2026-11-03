@@ -15,7 +15,7 @@ const SLOT_LABELS = {
   helmet: "头盔", weapon: "武器", chest: "胸甲", gloves: "手套",
   positive_rune: "正位符文", negative_rune: "负位符文"
 };
-const state = { gameData: null, account: null };
+const state = { gameData: null, account: null, evidenceImages: new Map(), activeEvidence: null };
 const byId = (id) => document.getElementById(id);
 const escapeHtml = (value) => String(value ?? "").replace(/[&<>'"]/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
@@ -55,8 +55,8 @@ function fillOptions() {
   byId("artifact-definition").innerHTML = artifacts.map((entry) => `<option value="${escapeHtml(entry.id)}">${escapeHtml(artifactName(entry))} · ${escapeHtml(entry.rarity || "?")} · ${escapeHtml(entry.season || "?")}</option>`).join("");
 }
 
-function card({ title, id, detail, kind, itemId }) {
-  return `<article class="inventory-card"><div><strong>${escapeHtml(title)}</strong><p class="item-id">${escapeHtml(id)}</p></div><div><p>${escapeHtml(detail)}</p></div><button class="delete-item" type="button" data-kind="${kind}" data-item-id="${escapeHtml(itemId)}">删除</button></article>`;
+function card({ title, id, detail, kind, itemId, auditable = false }) {
+  return `<article class="inventory-card"><div><strong>${escapeHtml(title)}</strong><p class="item-id">${escapeHtml(id)}</p></div><div><p>${escapeHtml(detail)}</p></div><div class="card-actions">${auditable ? `<button class="audit-evidence" type="button" data-kind="${kind}" data-item-id="${escapeHtml(itemId)}">审计</button>` : ""}<button class="delete-item" type="button" data-kind="${kind}" data-item-id="${escapeHtml(itemId)}">删除</button></div></article>`;
 }
 
 function render() {
@@ -71,7 +71,7 @@ function render() {
 
   byId("hero-list").innerHTML = state.account.ownedHeroes.length ? state.account.ownedHeroes.map((owned) => {
     const definition = state.gameData.heroes.find((entry) => entry.id === owned.heroDefinitionId);
-    return card({ title: heroName(definition), id: owned.ownedHeroId, detail: `等级 ${owned.level} · 星级 ${owned.stars ?? "?"} · 灵感 ${owned.inspiration ?? "?"} · ${owned.baseStatsOverride ? "账号基础面板" : "无账号基础面板"} · ${evidenceLabel(owned)}`, kind: "hero", itemId: owned.ownedHeroId });
+    return card({ title: heroName(definition), id: owned.ownedHeroId, detail: `等级 ${owned.level} · 星级 ${owned.stars ?? "?"} · 灵感 ${owned.inspiration ?? "?"} · ${owned.baseStatsOverride ? "账号基础面板" : "无账号基础面板"} · ${evidenceLabel(owned)}`, kind: "hero", itemId: owned.ownedHeroId, auditable: Boolean(owned.fieldEvidence?.length) });
   }).join("") : `<div class="empty-inventory">尚未添加角色</div>`;
 
   byId("gear-list").innerHTML = state.account.ownedGear.length ? state.account.ownedGear.map((item) => {
@@ -80,7 +80,7 @@ function render() {
       title: definition ? equipmentName(definition) : `${SLOT_LABELS[item.slot] || item.slot} · ${setName(item.setId)}`,
       id: item.ownedItemId,
       detail: `${SLOT_LABELS[item.slot] || item.slot} · ${setName(item.setId)} · 强化 +${item.enhanceLevel} · ${formatStats(item.stats, state.gameData.statDefinitions) || "无属性"}${definition ? " · 已关联公共定义" : ""}${item.locked ? " · 已锁定" : ""} · ${evidenceLabel(item)}`,
-      kind: "gear", itemId: item.ownedItemId
+      kind: "gear", itemId: item.ownedItemId, auditable: Boolean(item.fieldEvidence?.length)
     });
   }).join("") : `<div class="empty-inventory">尚未添加装备</div>`;
 
@@ -88,17 +88,87 @@ function render() {
     const definition = state.gameData.artifacts.find((entry) => entry.id === owned.artifactDefinitionId);
     const resolved = resolveArtifactStats(state.gameData, owned);
     const source = resolved.source === "public_level_curve" ? "公共曲线" : resolved.source === "account_observed" ? "账号观测" : resolved.source === "legacy_account_stats" ? "旧版观测" : "不可用";
-    return card({ title: artifactName(definition), id: owned.ownedArtifactId, detail: `强化 +${owned.level ?? "?"} · 精炼 ${owned.refinement} · ${formatStats(resolved.stats, state.gameData.statDefinitions) || "无属性"} · ${source}${owned.locked ? " · 已锁定" : ""} · ${evidenceLabel(owned)}`, kind: "artifact", itemId: owned.ownedArtifactId });
+    return card({ title: artifactName(definition), id: owned.ownedArtifactId, detail: `强化 +${owned.level ?? "?"} · 精炼 ${owned.refinement} · ${formatStats(resolved.stats, state.gameData.statDefinitions) || "无属性"} · ${source}${owned.locked ? " · 已锁定" : ""} · ${evidenceLabel(owned)}`, kind: "artifact", itemId: owned.ownedArtifactId, auditable: Boolean(owned.fieldEvidence?.length) });
   }).join("") : `<div class="empty-inventory">尚未添加神器</div>`;
 }
 
 function loadAccount(account, message = "账号文件已载入") {
   const validation = validateEditableSnapshot(account, state.gameData);
   if (validation.errors.length) throw new Error(validation.errors.join("；"));
+  for (const image of state.evidenceImages.values()) URL.revokeObjectURL(image.url);
+  state.evidenceImages.clear();
   state.account = structuredClone(account);
   if (!state.account.schemaVersion) state.account.schemaVersion = "0.2.0";
   render();
   showMessage([message, ...validation.warnings].join("；"), validation.warnings.length ? "warning" : "success");
+}
+
+function findOwnedEntry(kind, itemId) {
+  const collections = { hero: ["ownedHeroes", "ownedHeroId"], gear: ["ownedGear", "ownedItemId"], artifact: ["ownedArtifacts", "ownedArtifactId"] };
+  const [collection, key] = collections[kind] || [];
+  return state.account?.[collection]?.find((entry) => entry[key] === itemId) || null;
+}
+
+async function sha256(file) {
+  const digest = await crypto.subtle.digest("SHA-256", await file.arrayBuffer());
+  return [...new Uint8Array(digest)].map((value) => value.toString(16).padStart(2, "0")).join("");
+}
+
+async function loadEvidenceFiles(files) {
+  const expected = new Set((state.account.sourceFiles || []).map((entry) => entry.sha256.toLowerCase()));
+  let matched = 0;
+  for (const file of files) {
+    const digest = await sha256(file);
+    if (!expected.has(digest)) continue;
+    const previous = state.evidenceImages.get(digest);
+    if (previous) URL.revokeObjectURL(previous.url);
+    state.evidenceImages.set(digest, { url: URL.createObjectURL(file), name: file.name, type: file.type });
+    matched += 1;
+  }
+  showMessage(`已匹配 ${matched}/${files.length} 个原图；账号共引用 ${expected.size} 个文件`, matched ? "success" : "warning");
+}
+
+async function drawFieldEvidence(index) {
+  const evidence = state.activeEvidence?.entry?.fieldEvidence?.[index];
+  if (!evidence) return;
+  for (const button of byId("evidence-field-list").querySelectorAll("button")) button.setAttribute("aria-current", String(Number(button.dataset.index) === index));
+  const imageFile = state.evidenceImages.get(evidence.sourceFileSha256.toLowerCase());
+  const source = state.account.sourceFiles?.find((entry) => entry.sha256.toLowerCase() === evidence.sourceFileSha256.toLowerCase());
+  byId("evidence-meta").innerHTML = `<strong>${escapeHtml(evidence.fieldPath)}</strong><br>原文：${escapeHtml(evidence.rawText || "（空）")} · 置信度 ${(Number(evidence.confidence) * 100).toFixed(1)}%<br>文件：${escapeHtml(imageFile?.name || source?.localName || "未知")} · 坐标框 ${evidence.boundingRects?.length || 0}`;
+  const canvas = byId("evidence-canvas");
+  const placeholder = byId("evidence-placeholder");
+  if (!imageFile) {
+    canvas.hidden = true;
+    placeholder.hidden = false;
+    placeholder.textContent = "该字段的原图尚未匹配。点击页面顶部“匹配原图”，选择采集器保存的原始截图；浏览器会按 SHA-256 自动关联。";
+    return;
+  }
+  const image = new Image();
+  image.src = imageFile.url;
+  await image.decode();
+  canvas.width = image.naturalWidth;
+  canvas.height = image.naturalHeight;
+  const context = canvas.getContext("2d");
+  context.drawImage(image, 0, 0);
+  context.lineWidth = Math.max(3, image.naturalWidth / 300);
+  context.strokeStyle = "#ffb45d";
+  context.fillStyle = "rgba(255, 180, 93, .16)";
+  for (const rect of evidence.boundingRects || []) {
+    context.fillRect(rect.x, rect.y, rect.width, rect.height);
+    context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+  }
+  canvas.hidden = false;
+  placeholder.hidden = true;
+}
+
+function openEvidenceAudit(kind, itemId) {
+  const entry = findOwnedEntry(kind, itemId);
+  if (!entry?.fieldEvidence?.length) return;
+  state.activeEvidence = { kind, itemId, entry };
+  byId("evidence-dialog-title").textContent = `字段证据 · ${itemId}`;
+  byId("evidence-field-list").innerHTML = entry.fieldEvidence.map((evidence, index) => `<button class="evidence-field-button" type="button" data-index="${index}" aria-current="${index === 0}"><strong>${escapeHtml(evidence.fieldPath)}</strong><span>${escapeHtml(evidence.rawText || "（空）")} · ${(Number(evidence.confidence) * 100).toFixed(1)}%</span></button>`).join("");
+  byId("evidence-dialog").showModal();
+  drawFieldEvidence(0).catch((error) => showMessage(`证据预览失败：${error.message}`, "error"));
 }
 
 function renderDiff(diff, mode) {
@@ -202,6 +272,8 @@ byId("artifact-form").addEventListener("submit", (event) => {
 });
 
 document.addEventListener("click", (event) => {
+  const auditButton = event.target.closest(".audit-evidence");
+  if (auditButton) { openEvidenceAudit(auditButton.dataset.kind, auditButton.dataset.itemId); return; }
   const button = event.target.closest(".delete-item");
   if (!button) return;
   const collections = { hero: ["ownedHeroes", "ownedHeroId"], gear: ["ownedGear", "ownedItemId"], artifact: ["ownedArtifacts", "ownedArtifactId"] };
@@ -210,13 +282,33 @@ document.addEventListener("click", (event) => {
   render(); showMessage("记录已删除");
 });
 
+byId("evidence-field-list").addEventListener("click", (event) => {
+  const button = event.target.closest(".evidence-field-button");
+  if (button) drawFieldEvidence(Number(button.dataset.index)).catch((error) => showMessage(`证据预览失败：${error.message}`, "error"));
+});
+byId("evidence-close").addEventListener("click", () => byId("evidence-dialog").close());
+byId("evidence-files").addEventListener("change", async (event) => {
+  try { await loadEvidenceFiles([...event.target.files]); }
+  catch (error) { showMessage(`原图匹配失败：${error.message}`, "error"); }
+  event.target.value = "";
+});
+
 byId("new-account").addEventListener("click", () => loadAccount(createEmptySnapshot(state.gameData.dataVersion.id), "已新建空账号"));
 byId("load-example").addEventListener("click", async () => {
   try { loadAccount(await fetchJson("../examples/account-snapshot.example.json"), "示例账号已载入"); }
   catch (error) { showMessage(error.message, "error"); }
 });
 byId("load-evidence-example").addEventListener("click", async () => {
-  try { loadAccount(await fetchJson("../examples/account-snapshot-ocr-layout.example.json"), "截图证据示例已载入"); }
+  try {
+    const account = await fetchJson("../examples/account-snapshot-ocr-layout.example.json");
+    loadAccount(account, "截图证据示例已载入");
+    const files = await Promise.all(account.sourceFiles.map(async (source) => {
+      const response = await fetch(`../${source.localName}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`${source.localName}: HTTP ${response.status}`);
+      return new File([await response.blob()], source.localName.split(/[\\/]/).pop(), { type: source.mediaType });
+    }));
+    await loadEvidenceFiles(files);
+  }
   catch (error) { showMessage(error.message, "error"); }
 });
 byId("account-file").addEventListener("change", async (event) => {

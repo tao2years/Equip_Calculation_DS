@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#101824"/><text x="40" y="44" fill="#e6c38b" font-size="28">角色详情</text>
+  <text x="60" y="118" fill="#fff" font-size="24">埃里奇</text><text x="60" y="188" fill="#fff" font-size="24">等级 1</text>
+  <text x="60" y="238" fill="#fff" font-size="24">星级 1</text><text x="60" y="288" fill="#fff" font-size="24">灵感 0</text>
+  <text x="100" y="373" fill="#fff" font-size="24">攻击</text><text x="400" y="373" fill="#fff" font-size="24">1200</text>
+  <text x="100" y="423" fill="#fff" font-size="24">生命</text><text x="400" y="423" fill="#fff" font-size="24">18000</text>
+  <text x="100" y="473" fill="#fff" font-size="24">防御</text><text x="400" y="473" fill="#fff" font-size="24">750</text>
+</svg>

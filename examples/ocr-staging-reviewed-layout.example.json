@@ -5,19 +5,19 @@
   "gameDataVersionId": "public-catalog-2026-11-03",
   "sourceFiles": [
     {
-      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
-      "mediaType": "image/png",
-      "localName": "evidence/hero_detail-1.png"
+      "sha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
+      "mediaType": "image/svg+xml",
+      "localName": "examples/evidence/hero_detail-1.svg"
     },
     {
-      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
-      "mediaType": "image/png",
-      "localName": "evidence/gear_detail-2.png"
+      "sha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
+      "mediaType": "image/svg+xml",
+      "localName": "examples/evidence/gear_detail-2.svg"
     },
     {
-      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
-      "mediaType": "image/png",
-      "localName": "evidence/artifact_detail-3.png"
+      "sha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
+      "mediaType": "image/svg+xml",
+      "localName": "examples/evidence/artifact_detail-3.svg"
     }
   ],
   "records": [
@@ -27,8 +27,8 @@
       "confidence": 0.9071,
       "evidenceRefs": [
         {
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
-          "localName": "evidence/hero_detail-1.png",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
+          "localName": "examples/evidence/hero_detail-1.svg",
           "sequence": 1,
           "captureType": "hero_detail",
           "reviewStatus": "accepted"
@@ -37,7 +37,7 @@
       "fieldEvidence": [
         {
           "fieldPath": "name",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "埃里奇",
           "confidence": 0.95,
           "boundingRects": [
@@ -51,7 +51,7 @@
         },
         {
           "fieldPath": "level",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "等级 1",
           "confidence": 0.9,
           "boundingRects": [
@@ -65,7 +65,7 @@
         },
         {
           "fieldPath": "stars",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "星级 1",
           "confidence": 0.9,
           "boundingRects": [
@@ -79,7 +79,7 @@
         },
         {
           "fieldPath": "inspiration",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "灵感 0",
           "confidence": 0.9,
           "boundingRects": [
@@ -93,7 +93,7 @@
         },
         {
           "fieldPath": "baseStats[0].label",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "攻击",
           "confidence": 0.95,
           "boundingRects": [
@@ -107,7 +107,7 @@
         },
         {
           "fieldPath": "baseStats[0].value",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "1200",
           "confidence": 0.9,
           "boundingRects": [
@@ -121,7 +121,7 @@
         },
         {
           "fieldPath": "baseStats[1].label",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "生命",
           "confidence": 0.95,
           "boundingRects": [
@@ -135,7 +135,7 @@
         },
         {
           "fieldPath": "baseStats[1].value",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "18000",
           "confidence": 0.9,
           "boundingRects": [
@@ -149,7 +149,7 @@
         },
         {
           "fieldPath": "baseStats[2].label",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "防御",
           "confidence": 0.95,
           "boundingRects": [
@@ -163,7 +163,7 @@
         },
         {
           "fieldPath": "baseStats[2].value",
-          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "sourceFileSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
           "rawText": "750",
           "confidence": 0.9,
           "boundingRects": [
@@ -206,8 +206,8 @@
       "confidence": 0.9286,
       "evidenceRefs": [
         {
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
-          "localName": "evidence/gear_detail-2.png",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
+          "localName": "examples/evidence/gear_detail-2.svg",
           "sequence": 2,
           "captureType": "gear_detail",
           "reviewStatus": "accepted"
@@ -216,7 +216,7 @@
       "fieldEvidence": [
         {
           "fieldPath": "slot",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "武器",
           "confidence": 0.95,
           "boundingRects": [
@@ -230,7 +230,7 @@
         },
         {
           "fieldPath": "setName",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "野蛮人",
           "confidence": 0.95,
           "boundingRects": [
@@ -244,7 +244,7 @@
         },
         {
           "fieldPath": "enhanceLevel",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "强化 +16",
           "confidence": 0.9,
           "boundingRects": [
@@ -258,14 +258,14 @@
         },
         {
           "fieldPath": "locked",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "profile constant",
           "confidence": 1,
           "boundingRects": []
         },
         {
           "fieldPath": "stats[0].label",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "攻击",
           "confidence": 0.95,
           "boundingRects": [
@@ -279,7 +279,7 @@
         },
         {
           "fieldPath": "stats[0].value",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "235",
           "confidence": 0.9,
           "boundingRects": [
@@ -293,7 +293,7 @@
         },
         {
           "fieldPath": "stats[1].label",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "重击率",
           "confidence": 0.95,
           "boundingRects": [
@@ -307,7 +307,7 @@
         },
         {
           "fieldPath": "stats[1].value",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "12%",
           "confidence": 0.9,
           "boundingRects": [
@@ -321,7 +321,7 @@
         },
         {
           "fieldPath": "stats[2].label",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "重击伤害",
           "confidence": 0.95,
           "boundingRects": [
@@ -335,7 +335,7 @@
         },
         {
           "fieldPath": "stats[2].value",
-          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sourceFileSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
           "rawText": "27%",
           "confidence": 0.9,
           "boundingRects": [
@@ -378,8 +378,8 @@
       "confidence": 0.925,
       "evidenceRefs": [
         {
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
-          "localName": "evidence/artifact_detail-3.png",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
+          "localName": "examples/evidence/artifact_detail-3.svg",
           "sequence": 3,
           "captureType": "artifact_detail",
           "reviewStatus": "accepted"
@@ -388,7 +388,7 @@
       "fieldEvidence": [
         {
           "fieldPath": "name",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "巨人眼球",
           "confidence": 0.95,
           "boundingRects": [
@@ -402,7 +402,7 @@
         },
         {
           "fieldPath": "level",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "强化 +6",
           "confidence": 0.9,
           "boundingRects": [
@@ -416,7 +416,7 @@
         },
         {
           "fieldPath": "refinement",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "精炼 1",
           "confidence": 0.9,
           "boundingRects": [
@@ -430,14 +430,14 @@
         },
         {
           "fieldPath": "locked",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "profile constant",
           "confidence": 1,
           "boundingRects": []
         },
         {
           "fieldPath": "stats[0].label",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "攻击",
           "confidence": 0.95,
           "boundingRects": [
@@ -451,7 +451,7 @@
         },
         {
           "fieldPath": "stats[0].value",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "120",
           "confidence": 0.9,
           "boundingRects": [
@@ -465,7 +465,7 @@
         },
         {
           "fieldPath": "stats[1].label",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "攻击%",
           "confidence": 0.95,
           "boundingRects": [
@@ -479,7 +479,7 @@
         },
         {
           "fieldPath": "stats[1].value",
-          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "sourceFileSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
           "rawText": "8%",
           "confidence": 0.9,
           "boundingRects": [
@@ -515,7 +515,7 @@
   "review": {
     "status": "human_reviewed",
     "reviewedAt": "2026-11-03T12:12:00+08:00",
-    "sourceStagingSha256": "bcafb0fbbf960e90eaa04756f8336a85e7b3dc55317ef3e2d77d7e8e3b618458",
+    "sourceStagingSha256": "fabfdfd550f5e870d1612b4b81ade9295de293e1d23a02f8dd0992fe0eae9792",
     "tool": "prototype/staging-review.html"
   }
 }

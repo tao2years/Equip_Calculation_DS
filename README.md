@@ -53,6 +53,8 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 
 截图采集生成的账号资产同时保存记录级原图引用和字段级 OCR 证据（字段路径、原文、置信度、像素矩形）。这些证据会进入最终配装结果；缺失或引用悬空时，HTML 与 CLI 都会拒绝继续计算。
 
+在库存页点击“匹配原图”可批量选择采集截图；浏览器按 SHA-256 自动关联。随后点击资产卡片的“审计”，即可逐字段查看 OCR 原文、置信度和高亮坐标框。图片只保存在当前页面内存，不会写入 JSON 或上传。
+
 `window-session.mjs` 将同一份 7 阶段采集计划应用到 PC 窗口：用户自行在游戏内导航，每次按回车才截屏；各阶段最低截图数或全量覆盖确认未满足时不能得到 complete，提前退出只会生成 `partial` manifest。该 manifest 可直接交给后续 OCR/pipeline，dry-run 已通过但真实窗口会话尚未执行。
 
 `adb-session.mjs` 是底层引导式采集程序。它按 7 个阶段提示用户手动打开渠道/版本、角色列表、角色详情、装备列表/详情、神器列表/详情；回车截屏，`n` 进入下一阶段，`q` 以 partial 状态结束。仓库分别提供全账号计划和最低 50 张的 golden 校准计划，并为每张图保存独立元数据和最终 manifest。

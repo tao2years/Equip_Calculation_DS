@@ -6,8 +6,8 @@
   "images": [
     {
       "sequence": 1,
-      "originalName": "hero_detail-1.png",
-      "imageSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "originalName": "hero_detail-1.svg",
+      "imageSha256": "be397ce017dcecf68379b5b4005e1fdaad9e6505a5e692fad3a2dc7d87009e47",
       "captureType": "hero_detail",
       "reviewStatus": "accepted",
       "decisions": [
@@ -43,8 +43,8 @@
     },
     {
       "sequence": 2,
-      "originalName": "gear_detail-2.png",
-      "imageSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "originalName": "gear_detail-2.svg",
+      "imageSha256": "9694792ceb77d5633d073f18e0054d38f713c197581d7b51578afd4d2b4f5a49",
       "captureType": "gear_detail",
       "reviewStatus": "accepted",
       "decisions": [
@@ -87,8 +87,8 @@
     },
     {
       "sequence": 3,
-      "originalName": "artifact_detail-3.png",
-      "imageSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "originalName": "artifact_detail-3.svg",
+      "imageSha256": "dabe629bf5c7879a37e9df3e7abb699d62768b2c53743b960d1585190ab907ce",
       "captureType": "artifact_detail",
       "reviewStatus": "accepted",
       "decisions": [
