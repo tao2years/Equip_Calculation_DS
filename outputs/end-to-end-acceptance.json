@@ -91,30 +91,37 @@
       ],
       "evidence": {
         "artifact": [],
+        "artifactFieldEvidence": [],
         "gear": [
           {
             "ownedItemId": "helm-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "weapon-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "chest-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "gloves-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "prune-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "nrune-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           }
         ]
       }

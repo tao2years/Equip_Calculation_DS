@@ -31,6 +31,18 @@ function joinedText(lines) {
   return lines.map((line) => String(line.text || "").trim()).filter(Boolean).join(" ").trim();
 }
 
+function evidenceFromEntries(fieldPath, image, entries, rawText, confidence) {
+  return {
+    fieldPath,
+    sourceFileSha256: image.imageSha256,
+    rawText: String(rawText ?? ""),
+    confidence,
+    boundingRects: (entries || [])
+      .filter((entry) => entry.boundingRect)
+      .map((entry) => ({ ...entry.boundingRect }))
+  };
+}
+
 function parseInteger(value) {
   const match = String(value ?? "").normalize("NFKC").match(/[+-]?\d[\d,]*/);
   return match ? Number.parseInt(match[0].replaceAll(",", ""), 10) : null;
@@ -40,22 +52,22 @@ function dictionaryValue(image, field) {
   const detections = entriesInRegion(image.detections, field.region, image);
   for (const detection of detections) {
     const match = (detection.matches || []).find((candidate) => candidate.kind === field.dictionaryKind);
-    if (match) return { value: match.alias || detection.text, confidence: 0.95, evidence: detection.text };
+    if (match) return { value: match.alias || detection.text, confidence: 0.95, evidence: detection.text, entries: [detection] };
   }
   return null;
 }
 
 function extractField(image, field) {
-  if (field.mode === "constant") return { value: field.value, confidence: 1, evidence: "profile constant" };
+  if (field.mode === "constant") return { value: field.value, confidence: 1, evidence: "profile constant", entries: [] };
   if (field.mode === "dictionary") return dictionaryValue(image, field);
   const lines = entriesInRegion(image.lines, field.region, image);
   const text = joinedText(lines);
   if (!text) return null;
   if (field.mode === "integer") {
     const value = parseInteger(text);
-    return value == null ? null : { value, confidence: 0.9, evidence: text };
+    return value == null ? null : { value, confidence: 0.9, evidence: text, entries: lines };
   }
-  return { value: text, confidence: 0.9, evidence: text };
+  return { value: text, confidence: 0.9, evidence: text, entries: lines };
 }
 
 function classifierMatches(image, page) {
@@ -66,15 +78,18 @@ function classifierMatches(image, page) {
 
 function extractStats(image, rowGroup, issues, pageId) {
   const observations = [];
+  const fieldEvidence = [];
   let requiredMissing = false;
   for (const [rowIndex, row] of rowGroup.rows.entries()) {
     const label = row.dictionaryKind
       ? dictionaryValue(image, { ...row, region: row.labelRegion, dictionaryKind: row.dictionaryKind })
       : (() => {
-          const value = joinedText(entriesInRegion(image.lines, row.labelRegion, image));
-          return value ? { value, confidence: 0.9, evidence: value } : null;
+          const entries = entriesInRegion(image.lines, row.labelRegion, image);
+          const value = joinedText(entries);
+          return value ? { value, confidence: 0.9, evidence: value, entries } : null;
         })();
-    const rawValue = joinedText(entriesInRegion(image.lines, row.valueRegion, image));
+    const valueEntries = entriesInRegion(image.lines, row.valueRegion, image);
+    const rawValue = joinedText(valueEntries);
     if (!label && !rawValue) continue;
     if (!label || !rawValue) {
       if (row.required) requiredMissing = true;
@@ -87,9 +102,13 @@ function extractStats(image, rowGroup, issues, pageId) {
       });
       continue;
     }
-    observations.push({ label: label.value, value: rawValue, confidence: Math.min(label.confidence, 0.9) });
+    const confidence = Math.min(label.confidence, 0.9);
+    const observationIndex = observations.length;
+    observations.push({ label: label.value, value: rawValue, confidence });
+    fieldEvidence.push(evidenceFromEntries(`${rowGroup.target}[${observationIndex}].label`, image, label.entries || [], label.evidence, label.confidence));
+    fieldEvidence.push(evidenceFromEntries(`${rowGroup.target}[${observationIndex}].value`, image, valueEntries, rawValue, 0.9));
   }
-  return { observations, requiredMissing };
+  return { observations, requiredMissing, fieldEvidence };
 }
 
 function makeRecordId(profile, image, page, fields) {
@@ -126,6 +145,7 @@ export function extractLayout(recognition, profile, options = {}) {
     }
     const page = matches[0];
     const fields = {};
+    const fieldEvidence = [];
     const confidences = [];
     let requiredMissing = false;
     for (const field of page.fields || []) {
@@ -139,6 +159,7 @@ export function extractLayout(recognition, profile, options = {}) {
       }
       fields[field.target] = result.value;
       confidences.push(result.confidence);
+      fieldEvidence.push(evidenceFromEntries(field.target, image, result.entries || [], result.evidence, result.confidence));
     }
     for (const rowGroup of page.statGroups || []) {
       const extractedStats = extractStats(image, rowGroup, issues, page.id);
@@ -147,6 +168,7 @@ export function extractLayout(recognition, profile, options = {}) {
       if (stats.length) {
         fields[rowGroup.target] = stats;
         confidences.push(...stats.map((entry) => entry.confidence));
+        fieldEvidence.push(...extractedStats.fieldEvidence);
       }
       if (rowGroup.required && !stats.length) {
         requiredMissing = true;
@@ -191,6 +213,7 @@ export function extractLayout(recognition, profile, options = {}) {
         captureType: image.captureType || null,
         reviewStatus: image.reviewStatus || "unreviewed"
       }],
+      fieldEvidence,
       fields
     });
     pages.push({ sequence: image.sequence, status: "extracted", profilePageId: page.id, recordId: sourceRecordId });

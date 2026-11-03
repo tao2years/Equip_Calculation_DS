@@ -74,6 +74,7 @@ export function finalizeStaging(staging, dictionary, gameData) {
           stars: parseInteger(record.fields.stars, null),
           inspiration: parseInteger(record.fields.inspiration, null),
           evidenceRefs: record.evidenceRefs || [],
+          fieldEvidence: record.fieldEvidence || [],
           ...(Object.keys(baseStatsOverride).length ? { baseStatsOverride } : {})
         });
       } else if (record.kind === "artifact") {
@@ -87,7 +88,8 @@ export function finalizeStaging(staging, dictionary, gameData) {
           observedStats: normalizeObservedStats(resolver, record.fields.stats, context, warnings),
           locked: Boolean(record.fields.locked),
           equippedBy: record.fields.equippedBy || null,
-          evidenceRefs: record.evidenceRefs || []
+          evidenceRefs: record.evidenceRefs || [],
+          fieldEvidence: record.fieldEvidence || []
         });
       } else if (record.kind === "gear") {
         const slot = resolveOne(resolver, "slot", record.fields.slot, context);
@@ -113,7 +115,8 @@ export function finalizeStaging(staging, dictionary, gameData) {
           locked: Boolean(record.fields.locked),
           equippedBy: record.fields.equippedBy || null,
           sourceConfidence: record.confidence,
-          evidenceRefs: record.evidenceRefs || []
+          evidenceRefs: record.evidenceRefs || [],
+          fieldEvidence: record.fieldEvidence || []
         });
       }
     } catch (error) {

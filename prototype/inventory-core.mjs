@@ -88,6 +88,15 @@ export function validateEditableSnapshot(account, gameData) {
         if (!/^[0-9a-f]{64}$/.test(digest)) errors.push(`${label} ${entry[idKey]} 的证据 SHA-256 无效`);
         else if (!sourceHashes.has(digest)) errors.push(`${label} ${entry[idKey]} 的证据不在 sourceFiles 中：${digest}`);
       }
+      const fieldEvidence = entry.fieldEvidence || [];
+      if (account.sourceMethod === "screenshot_ocr" && !fieldEvidence.length) errors.push(`${label} ${entry[idKey]} 缺少字段级坐标证据`);
+      for (const evidence of fieldEvidence) {
+        const digest = String(evidence.sourceFileSha256 || "").toLowerCase();
+        if (!evidence.fieldPath) errors.push(`${label} ${entry[idKey]} 的字段证据缺少 fieldPath`);
+        if (!/^[0-9a-f]{64}$/.test(digest)) errors.push(`${label} ${entry[idKey]} 的字段证据 SHA-256 无效`);
+        else if (!sourceHashes.has(digest)) errors.push(`${label} ${entry[idKey]} 的字段证据不在 sourceFiles 中：${digest}`);
+        if (!Array.isArray(evidence.boundingRects)) errors.push(`${label} ${entry[idKey]} 的字段证据缺少 boundingRects`);
+      }
     }
   }
 

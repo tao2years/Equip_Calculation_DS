@@ -286,3 +286,10 @@ Append-only. Newest entries go at the bottom.
 - Added regressions for layout-to-account preservation and screenshot-account validation. The current limit is documented: observations retain raw text/confidence, but per-field OCR line/bounding-box links await a real channel/build profile.
 - Added a deterministic screenshot-derived AccountSnapshot fixture and an HTML “载入证据示例” action. Hidden-browser QA loaded 1 hero/1 gear/1 artifact with 3 source files, rendered `证据 1` on all three cards, and produced no console warnings/errors. Browser plugin and repository Playwright were absent, so the already-available hidden IAB was used without showing a desktop window.
 - Full verification passed with 37 schema-validated artifacts, 27 schemas and 29 Markdown files.
+
+## 2026-11-03 · OP-039
+
+- Extended screenshot provenance from record-level references to field-level evidence. The layout extractor now records stable field paths, OCR raw text, confidence and pixel bounding rectangles; stat labels and values receive separate evidence entries.
+- Preserved field evidence through reviewed staging, AccountSnapshot and OptimizationResult 0.3. HTML and collector validation reject screenshot-derived assets with missing or dangling field evidence.
+- Added positive and negative regressions for coordinate preservation, missing evidence and source-hash mismatch. Full verification passed with 37 schema-validated artifacts, 27 schemas and 29 Markdown files.
+- Hidden IAB QA loaded the evidence example and rendered one hero, one gear item and one artifact with `截图 1 · 字段框 10/10/8`; page identity and status were correct and console warning/error logs were empty. The Browser plugin and repository Playwright runtime were absent, so the hidden IAB was used without showing a desktop window.

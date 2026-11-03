@@ -34,6 +34,148 @@
           "reviewStatus": "accepted"
         }
       ],
+      "fieldEvidence": [
+        {
+          "fieldPath": "name",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "埃里奇",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 95,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "level",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "等级 1",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 165,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stars",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "星级 1",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 215,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "inspiration",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "灵感 0",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 265,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "baseStats[0].label",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "攻击",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 350,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "baseStats[0].value",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "1200",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 350,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "baseStats[1].label",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "生命",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 400,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "baseStats[1].value",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "18000",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 400,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "baseStats[2].label",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "防御",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 450,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "baseStats[2].value",
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "rawText": "750",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 450,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        }
+      ],
       "fields": {
         "name": "埃里奇",
         "level": 1,
@@ -69,6 +211,141 @@
           "sequence": 2,
           "captureType": "gear_detail",
           "reviewStatus": "accepted"
+        }
+      ],
+      "fieldEvidence": [
+        {
+          "fieldPath": "slot",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "武器",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 95,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "setName",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "野蛮人",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 155,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "enhanceLevel",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "强化 +16",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 210,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "locked",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "profile constant",
+          "confidence": 1,
+          "boundingRects": []
+        },
+        {
+          "fieldPath": "stats[0].label",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "攻击",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 300,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[0].value",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "235",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 300,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[1].label",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "重击率",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 350,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[1].value",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "12%",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 350,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[2].label",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "重击伤害",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 400,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[2].value",
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "rawText": "27%",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 400,
+              "width": 120,
+              "height": 24
+            }
+          ]
         }
       ],
       "fields": {
@@ -108,6 +385,113 @@
           "reviewStatus": "accepted"
         }
       ],
+      "fieldEvidence": [
+        {
+          "fieldPath": "name",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "巨人眼球",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 95,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "level",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "强化 +6",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 155,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "refinement",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "精炼 1",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 60,
+              "y": 215,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "locked",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "profile constant",
+          "confidence": 1,
+          "boundingRects": []
+        },
+        {
+          "fieldPath": "stats[0].label",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "攻击",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 300,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[0].value",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "120",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 300,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[1].label",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "攻击%",
+          "confidence": 0.95,
+          "boundingRects": [
+            {
+              "x": 100,
+              "y": 350,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "fieldPath": "stats[1].value",
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "rawText": "8%",
+          "confidence": 0.9,
+          "boundingRects": [
+            {
+              "x": 400,
+              "y": 350,
+              "width": 120,
+              "height": 24
+            }
+          ]
+        }
+      ],
       "fields": {
         "name": "巨人眼球",
         "level": 6,
@@ -131,7 +515,7 @@
   "review": {
     "status": "human_reviewed",
     "reviewedAt": "2026-11-03T12:12:00+08:00",
-    "sourceStagingSha256": "c00390605540bdd309a2130e365022cea5986362b1897de9ac1a5474348020ee",
+    "sourceStagingSha256": "bcafb0fbbf960e90eaa04756f8336a85e7b3dc55317ef3e2d77d7e8e3b618458",
     "tool": "prototype/staging-review.html"
   }
 }

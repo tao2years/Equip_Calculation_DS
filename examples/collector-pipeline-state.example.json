@@ -60,7 +60,7 @@
       "artifacts": [
         {
           "path": "examples/ocr-staging-layout.example.json",
-          "sha256": "c00390605540bdd309a2130e365022cea5986362b1897de9ac1a5474348020ee"
+          "sha256": "bcafb0fbbf960e90eaa04756f8336a85e7b3dc55317ef3e2d77d7e8e3b618458"
         },
         {
           "path": "examples/layout-extraction-report.example.json",

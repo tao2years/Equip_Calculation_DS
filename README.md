@@ -51,6 +51,8 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 
 统一入口 `account-collector.mjs` 默认使用 `full` 模式：角色、装备、神器列表必须走到末尾，三个详情阶段要求逐个覆盖所有拥有对象；输入 `n` 后还必须键入 `complete` 才记录覆盖确认。`--mode golden` 只采集 50 张校准样本，不能证明账号完整。最终账号仍须运行统一入口的 `audit`，与独立人工 reference 对账。
 
+截图采集生成的账号资产同时保存记录级原图引用和字段级 OCR 证据（字段路径、原文、置信度、像素矩形）。这些证据会进入最终配装结果；缺失或引用悬空时，HTML 与 CLI 都会拒绝继续计算。
+
 `window-session.mjs` 将同一份 7 阶段采集计划应用到 PC 窗口：用户自行在游戏内导航，每次按回车才截屏；各阶段最低截图数或全量覆盖确认未满足时不能得到 complete，提前退出只会生成 `partial` manifest。该 manifest 可直接交给后续 OCR/pipeline，dry-run 已通过但真实窗口会话尚未执行。
 
 `adb-session.mjs` 是底层引导式采集程序。它按 7 个阶段提示用户手动打开渠道/版本、角色列表、角色详情、装备列表/详情、神器列表/详情；回车截屏，`n` 进入下一阶段，`q` 以 partial 状态结束。仓库分别提供全账号计划和最低 50 张的 golden 校准计划，并为每张图保存独立元数据和最终 manifest。

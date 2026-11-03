@@ -1,7 +1,7 @@
 import { finalizeStaging } from "../collectors/lib/finalize-staging.mjs";
 
 export function createStagingRecord(kind, id) {
-  const common = { kind, sourceRecordId: id, confidence: 1, evidenceRefs: [], fields: {} };
+  const common = { kind, sourceRecordId: id, confidence: 1, evidenceRefs: [], fieldEvidence: [], fields: {} };
   if (kind === "hero") common.fields = { name: "", level: 1, stars: null, inspiration: null, baseStats: [] };
   else if (kind === "artifact") common.fields = { name: "", level: 0, refinement: 0, stats: [], locked: false, equippedBy: null };
   else if (kind === "gear") common.fields = { slot: "helmet", setId: null, setName: null, enhanceLevel: 0, stats: [], locked: false, equippedBy: null };
@@ -29,6 +29,12 @@ export function validateReviewedStaging(staging, dictionary, gameData) {
     for (const [refIndex, ref] of (record?.evidenceRefs || []).entries()) {
       if (!/^[0-9a-f]{64}$/.test(ref?.sourceFileSha256 || "")) structuralErrors.push(`${context}: evidenceRefs[${refIndex}] has invalid sha256`);
       else if (!sourceHashes.has(ref.sourceFileSha256)) structuralErrors.push(`${context}: evidenceRefs[${refIndex}] is absent from sourceFiles`);
+    }
+    for (const [evidenceIndex, evidence] of (record?.fieldEvidence || []).entries()) {
+      if (!evidence?.fieldPath) structuralErrors.push(`${context}: fieldEvidence[${evidenceIndex}] missing fieldPath`);
+      if (!/^[0-9a-f]{64}$/.test(evidence?.sourceFileSha256 || "")) structuralErrors.push(`${context}: fieldEvidence[${evidenceIndex}] has invalid sha256`);
+      else if (!sourceHashes.has(evidence.sourceFileSha256)) structuralErrors.push(`${context}: fieldEvidence[${evidenceIndex}] is absent from sourceFiles`);
+      if (!Array.isArray(evidence?.boundingRects)) structuralErrors.push(`${context}: fieldEvidence[${evidenceIndex}] missing boundingRects`);
     }
     for (const target of ["stats", "baseStats"]) {
       for (const [statIndex, observation] of (record?.fields?.[target] || []).entries()) {

@@ -42,9 +42,14 @@ assert.match(validateEditableSnapshot(screenshotSnapshot, gameData).errors.join(
 const evidenceSha = "a".repeat(64);
 screenshotSnapshot.sourceFiles = [{ sha256: evidenceSha, mediaType: "image/png", localName: "capture.png" }];
 for (const entries of [screenshotSnapshot.ownedHeroes, screenshotSnapshot.ownedGear, screenshotSnapshot.ownedArtifacts]) {
-  for (const entry of entries) entry.evidenceRefs = [{ sourceFileSha256: evidenceSha, localName: "capture.png", sequence: 1, captureType: "synthetic", reviewStatus: "accepted" }];
+  for (const entry of entries) {
+    entry.evidenceRefs = [{ sourceFileSha256: evidenceSha, localName: "capture.png", sequence: 1, captureType: "synthetic", reviewStatus: "accepted" }];
+    entry.fieldEvidence = [{ fieldPath: "name", sourceFileSha256: evidenceSha, rawText: "synthetic", confidence: 1, boundingRects: [{ x: 1, y: 2, width: 3, height: 4 }] }];
+  }
 }
 assert.deepEqual(validateEditableSnapshot(screenshotSnapshot, gameData), { errors: [], warnings: [] });
+screenshotSnapshot.ownedGear[0].fieldEvidence[0].sourceFileSha256 = "b".repeat(64);
+assert.match(validateEditableSnapshot(screenshotSnapshot, gameData).errors.join(";"), /字段证据不在 sourceFiles/);
 
 const incoming = structuredClone(snapshot);
 incoming.snapshotId = "incoming-snapshot";

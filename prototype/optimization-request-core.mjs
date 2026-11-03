@@ -23,7 +23,7 @@ export function executeOptimizationRequest({ account, request, gameData }) {
     limit: request.resultLimit
   });
   return {
-    schemaVersion: "0.2.0",
+    schemaVersion: "0.3.0",
     requestId: request.requestId,
     snapshotId: account.snapshotId,
     gameDataVersionId: gameData.dataVersion.id,
@@ -47,7 +47,12 @@ export function executeOptimizationRequest({ account, request, gameData }) {
       artifactStatWarnings: result.artifactStatWarnings,
       evidence: {
         artifact: result.artifact.evidenceRefs || [],
-        gear: result.gear.map((item) => ({ ownedItemId: item.ownedItemId, evidenceRefs: item.evidenceRefs || [] }))
+        artifactFieldEvidence: result.artifact.fieldEvidence || [],
+        gear: result.gear.map((item) => ({
+          ownedItemId: item.ownedItemId,
+          evidenceRefs: item.evidenceRefs || [],
+          fieldEvidence: item.fieldEvidence || []
+        }))
       }
     }))
   };

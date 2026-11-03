@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schemaVersion", "requestId", "snapshotId", "gameDataVersionId", "objective", "appliedConstraints", "impliedConstraints", "searched", "solver", "validCount", "maxima", "minima", "results"],
   "properties": {
-    "schemaVersion": {"const": "0.2.0"},
+    "schemaVersion": {"const": "0.3.0"},
     "requestId": {"type": "string"},
     "snapshotId": {"type": "string"},
     "gameDataVersionId": {"type": "string"},
@@ -63,9 +63,10 @@
           "evidence": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["artifact", "gear"],
+            "required": ["artifact", "artifactFieldEvidence", "gear"],
             "properties": {
               "artifact": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
+              "artifactFieldEvidence": {"type": "array", "items": {"$ref": "#/$defs/fieldEvidence"}},
               "gear": {
                 "type": "array",
                 "minItems": 6,
@@ -73,10 +74,11 @@
                 "items": {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": ["ownedItemId", "evidenceRefs"],
+                  "required": ["ownedItemId", "evidenceRefs", "fieldEvidence"],
                   "properties": {
                     "ownedItemId": {"type": "string"},
-                    "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}}
+                    "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
+                    "fieldEvidence": {"type": "array", "items": {"$ref": "#/$defs/fieldEvidence"}}
                   }
                 }
               }
@@ -97,6 +99,29 @@
         "sequence": {"type": ["integer", "null"], "minimum": 1},
         "captureType": {"type": ["string", "null"]},
         "reviewStatus": {"type": "string"}
+      }
+    },
+    "boundingRect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": {"type": "number", "minimum": 0},
+        "y": {"type": "number", "minimum": 0},
+        "width": {"type": "number", "exclusiveMinimum": 0},
+        "height": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "fieldEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fieldPath", "sourceFileSha256", "rawText", "confidence", "boundingRects"],
+      "properties": {
+        "fieldPath": {"type": "string", "minLength": 1},
+        "sourceFileSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "rawText": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "boundingRects": {"type": "array", "items": {"$ref": "#/$defs/boundingRect"}}
       }
     },
     "appliedConstraint": {

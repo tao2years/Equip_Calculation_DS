@@ -82,6 +82,15 @@ function validateSnapshot(snapshot) {
         if (!/^[0-9a-f]{64}$/.test(digest)) errors.push(`${kind} ${entry[key]} has invalid evidence SHA-256`);
         else if (!sourceHashes.has(digest)) errors.push(`${kind} ${entry[key]} evidence is absent from sourceFiles: ${digest}`);
       }
+      const fieldEvidence = entry.fieldEvidence || [];
+      if (snapshot.sourceMethod === "screenshot_ocr" && !fieldEvidence.length) errors.push(`${kind} ${entry[key]} missing field-level coordinate evidence`);
+      for (const evidence of fieldEvidence) {
+        const digest = String(evidence.sourceFileSha256 || "").toLowerCase();
+        if (!evidence.fieldPath) errors.push(`${kind} ${entry[key]} field evidence missing fieldPath`);
+        if (!/^[0-9a-f]{64}$/.test(digest)) errors.push(`${kind} ${entry[key]} field evidence has invalid SHA-256`);
+        else if (!sourceHashes.has(digest)) errors.push(`${kind} ${entry[key]} field evidence is absent from sourceFiles: ${digest}`);
+        if (!Array.isArray(evidence.boundingRects)) errors.push(`${kind} ${entry[key]} field evidence missing boundingRects`);
+      }
     }
   }
   return errors;

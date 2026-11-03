@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.2.0",
+  "schemaVersion": "0.3.0",
   "requestId": "example-request-001",
   "snapshotId": "example-account-001",
   "gameDataVersionId": "public-catalog-2026-11-03",
@@ -119,30 +119,37 @@
       ],
       "evidence": {
         "artifact": [],
+        "artifactFieldEvidence": [],
         "gear": [
           {
             "ownedItemId": "helm-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "weapon-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "chest-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "gloves-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "prune-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           },
           {
             "ownedItemId": "nrune-001",
-            "evidenceRefs": []
+            "evidenceRefs": [],
+            "fieldEvidence": []
           }
         ]
       }

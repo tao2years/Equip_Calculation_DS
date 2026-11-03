@@ -45,6 +45,17 @@ try {
   const validationResult = JSON.parse(validation.stdout);
   assert.equal(validationResult.valid, false);
   assert(validationResult.structuralErrors.some((entry) => entry.includes("missing source screenshot evidenceRefs")));
+
+  const missingFieldEvidencePath = path.join(tempRoot, "missing-field-evidence.json");
+  const missingFieldEvidence = JSON.parse(await readFile(path.join(ROOT, "examples", "account-snapshot-ocr-layout.example.json"), "utf8"));
+  for (const entries of [missingFieldEvidence.ownedHeroes, missingFieldEvidence.ownedGear, missingFieldEvidence.ownedArtifacts]) {
+    for (const entry of entries) delete entry.fieldEvidence;
+  }
+  await writeFile(missingFieldEvidencePath, JSON.stringify(missingFieldEvidence));
+  const fieldValidation = spawnSync(process.execPath, [collectorCli, "validate-account", "--input", missingFieldEvidencePath], { cwd: ROOT, encoding: "utf8", windowsHide: true });
+  const fieldValidationResult = JSON.parse(fieldValidation.stdout);
+  assert.equal(fieldValidationResult.valid, false);
+  assert(fieldValidationResult.structuralErrors.some((entry) => entry.includes("missing field-level coordinate evidence")));
 } finally {
   await rm(tempRoot, { recursive: true, force: true });
 }

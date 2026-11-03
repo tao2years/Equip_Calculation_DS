@@ -22,6 +22,8 @@ assert.equal(result.staging.records[1].fields.enhanceLevel, 16);
 assert.equal(result.staging.records[1].fields.stats[1].value, "12%");
 assert.equal(result.staging.records[1].evidenceRefs[0].sourceFileSha256, recognition.images[1].imageSha256);
 assert.equal(result.staging.records[1].evidenceRefs[0].sequence, recognition.images[1].sequence);
+assert.equal(result.staging.records[1].fieldEvidence.length, 10);
+assert.deepEqual(result.staging.records[1].fieldEvidence.find((entry) => entry.fieldPath === "stats[1].value").boundingRects[0], { x: 400, y: 350, width: 120, height: 24 });
 
 const finalized = finalizeStaging(result.staging, dictionary, gameData);
 assert.equal(finalized.ok, true, finalized.errors?.join("; "));
@@ -32,6 +34,7 @@ assert.equal(finalized.snapshot.ownedGear[0].stats.crit_rate, 0.12);
 assert.equal(finalized.snapshot.ownedArtifacts[0].level, 6);
 assert.equal(finalized.snapshot.ownedArtifacts[0].observedStats.find((entry) => entry.stat === "atk_pct").value, 0.08);
 assert.deepEqual(finalized.snapshot.ownedGear[0].evidenceRefs, result.staging.records[1].evidenceRefs);
+assert.deepEqual(finalized.snapshot.ownedGear[0].fieldEvidence, result.staging.records[1].fieldEvidence);
 
 const missingHeroName = structuredClone(recognition);
 missingHeroName.images[0].detections = missingHeroName.images[0].detections.filter((entry) => !entry.matches.some((match) => match.kind === "hero"));
@@ -51,4 +54,4 @@ const duplicateResult = extractLayout(duplicate, profile, { createdAt: "2026-11-
 assert.equal(duplicateResult.staging.records.length, 3);
 assert(duplicateResult.report.issues.some((issue) => issue.code === "duplicate_record_fingerprint"));
 
-console.log("Layout extractor tests passed: 3 kinds, evidence provenance, required field/stat rejection, duplicate-fingerprint rejection, and canonical finalization");
+console.log("Layout extractor tests passed: 3 kinds, record/field coordinate evidence provenance, required field/stat rejection, duplicate-fingerprint rejection, and canonical finalization");

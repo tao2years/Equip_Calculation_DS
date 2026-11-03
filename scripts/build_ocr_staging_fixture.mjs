@@ -27,17 +27,34 @@ function observations(stats) {
 const records = [];
 const fixtureSha256 = createHash("sha256").update("synthetic-ocr-staging-fixture").digest("hex");
 const syntheticEvidenceRefs = [{ sourceFileSha256: fixtureSha256, localName: "synthetic-fixture", sequence: null, captureType: null, reviewStatus: "synthetic_fixture" }];
+function syntheticFieldEvidence(fields) {
+  const evidence = [];
+  for (const [key, value] of Object.entries(fields)) {
+    if (Array.isArray(value)) {
+      value.forEach((entry, index) => {
+        evidence.push({ fieldPath: `${key}[${index}].label`, sourceFileSha256: fixtureSha256, rawText: String(entry.label), confidence: entry.confidence, boundingRects: [] });
+        evidence.push({ fieldPath: `${key}[${index}].value`, sourceFileSha256: fixtureSha256, rawText: String(entry.value), confidence: entry.confidence, boundingRects: [] });
+      });
+    } else if (value != null) {
+      evidence.push({ fieldPath: key, sourceFileSha256: fixtureSha256, rawText: String(value), confidence: 0.99, boundingRects: [] });
+    }
+  }
+  return evidence;
+}
 for (const hero of account.ownedHeroes) {
   const definition = gameData.heroes.find((entry) => entry.id === hero.heroDefinitionId);
-  records.push({ kind: "hero", sourceRecordId: hero.ownedHeroId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fields: { name: definition.names.en, level: String(hero.level), stars: String(hero.stars), inspiration: String(hero.inspiration), baseStats: [] } });
+  const fields = { name: definition.names.en, level: String(hero.level), stars: String(hero.stars), inspiration: String(hero.inspiration), baseStats: [] };
+  records.push({ kind: "hero", sourceRecordId: hero.ownedHeroId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fieldEvidence: syntheticFieldEvidence(fields), fields });
 }
 for (const artifact of account.ownedArtifacts) {
   const definition = gameData.artifacts.find((entry) => entry.id === artifact.artifactDefinitionId);
   const artifactStats = artifact.stats || Object.fromEntries((artifact.observedStats || []).map((entry) => [entry.stat, entry.value]));
-  records.push({ kind: "artifact", sourceRecordId: artifact.ownedArtifactId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fields: { name: ARTIFACT_LABELS[artifact.artifactDefinitionId] || definition.names.en, level: `+${artifact.level}`, refinement: `+${artifact.refinement}`, locked: artifact.locked, equippedBy: artifact.equippedBy, stats: observations(artifactStats) } });
+  const fields = { name: ARTIFACT_LABELS[artifact.artifactDefinitionId] || definition.names.en, level: `+${artifact.level}`, refinement: `+${artifact.refinement}`, locked: artifact.locked, equippedBy: artifact.equippedBy, stats: observations(artifactStats) };
+  records.push({ kind: "artifact", sourceRecordId: artifact.ownedArtifactId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fieldEvidence: syntheticFieldEvidence(fields), fields });
 }
 for (const item of account.ownedGear) {
-  records.push({ kind: "gear", sourceRecordId: item.ownedItemId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fields: { slot: SLOT_LABELS[item.slot], setId: item.setId, enhanceLevel: `+${item.enhanceLevel}`, locked: item.locked, equippedBy: item.equippedBy, stats: observations(item.stats) } });
+  const fields = { slot: SLOT_LABELS[item.slot], setId: item.setId, enhanceLevel: `+${item.enhanceLevel}`, locked: item.locked, equippedBy: item.equippedBy, stats: observations(item.stats) };
+  records.push({ kind: "gear", sourceRecordId: item.ownedItemId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fieldEvidence: syntheticFieldEvidence(fields), fields });
 }
 
 const staging = {

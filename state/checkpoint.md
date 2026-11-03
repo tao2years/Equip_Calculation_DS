@@ -85,7 +85,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - 官方 Wiki 套装静态效果已进入可执行数据：248 个公共家族中 144 个完整无条件句通过白名单解析，加上 4 个种子定义，共 148 个套装可计算面板加成；条件/未知/单位异常文本整句拒绝并保留原文。真实求解链路测试已验证两件套生命百分比与抗性生效。
 - 账号采集计划已纠正“校准抽样≠全账号”的边界：统一 CLI 默认 full，要求全部角色/装备/神器列表与详情覆盖确认，并内置 audit 路由；golden 必须显式选择。当前仍缺真实客户端 profile 与全量实测。
 - 新增可复算端到端交付验收：同一合成账号依次通过 HTML 库存校验契约、公共神器等级曲线、版本化请求、满暴隐式约束、神器+六装备槽位和共享求解；输入哈希、Top 结果及限制写入 JSON/Markdown。它证明模块互操作，不冒充真实账号证据。
-- 账号资产记录级证据链已贯通：layout extraction 写入截图 SHA/文件/序号/页面类型/Review 状态，finalizer 保留到 AccountSnapshot，HTML/CLI 阻止 screenshot_ocr 缺失或悬空引用，OptimizationResult 0.2 带回所选七槽位证据。字段 bounding box 回看仍待真实 profile。
+- 账号证据链已细化到字段：layout extraction 除截图 SHA/文件/序号/页面类型外，还为普通字段及属性标签/值保存 OCR 原文、置信度与像素矩形；finalizer 保留到 AccountSnapshot，HTML/CLI 阻止 screenshot_ocr 缺失或悬空引用，OptimizationResult 0.3 带回所选七槽位记录与字段证据。真实 profile 坐标准确率和点击高亮仍待客户端。
 
 ## Next durable steps
 

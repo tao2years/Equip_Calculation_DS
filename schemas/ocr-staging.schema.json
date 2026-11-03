@@ -57,6 +57,29 @@
         "reviewStatus": {"type": "string", "minLength": 1}
       }
     },
+    "boundingRect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": {"type": "number", "minimum": 0},
+        "y": {"type": "number", "minimum": 0},
+        "width": {"type": "number", "exclusiveMinimum": 0},
+        "height": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "fieldEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fieldPath", "sourceFileSha256", "rawText", "confidence", "boundingRects"],
+      "properties": {
+        "fieldPath": {"type": "string", "minLength": 1},
+        "sourceFileSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "rawText": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "boundingRects": {"type": "array", "items": {"$ref": "#/$defs/boundingRect"}}
+      }
+    },
     "record": {
       "type": "object",
       "additionalProperties": false,
@@ -66,6 +89,7 @@
         "sourceRecordId": {"type": "string", "minLength": 1},
         "confidence": {"type": "number", "minimum": 0, "maximum": 1},
         "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
+        "fieldEvidence": {"type": "array", "items": {"$ref": "#/$defs/fieldEvidence"}},
         "fields": {
           "type": "object",
           "properties": {

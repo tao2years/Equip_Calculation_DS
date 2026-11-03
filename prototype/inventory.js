@@ -34,7 +34,7 @@ function setName(setId) {
   const definition = state.gameData.sets.find((entry) => entry.id === setId);
   return definition?.names?.zh || definition?.names?.en || setId || "散件";
 }
-function evidenceLabel(entry) { return `证据 ${entry.evidenceRefs?.length || 0}`; }
+function evidenceLabel(entry) { return `截图 ${entry.evidenceRefs?.length || 0} · 字段框 ${entry.fieldEvidence?.length || 0}`; }
 
 function showMessage(message, kind = "success") {
   const element = byId("editor-message");

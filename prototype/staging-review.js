@@ -114,7 +114,7 @@ function renderEditor() {
     const key = event.target.dataset.field; if (!key) return;
     if (key === "__confidence") record.confidence = Number(event.target.value);
     else if (key === "__kind") {
-      const replacement = createStagingRecord(event.target.value, record.sourceRecordId); replacement.confidence = record.confidence; replacement.evidenceRefs = structuredClone(record.evidenceRefs || []); state.staging.records[state.selected] = replacement; renderEditor();
+      const replacement = createStagingRecord(event.target.value, record.sourceRecordId); replacement.confidence = record.confidence; replacement.evidenceRefs = structuredClone(record.evidenceRefs || []); replacement.fieldEvidence = structuredClone(record.fieldEvidence || []); state.staging.records[state.selected] = replacement; renderEditor();
     } else if (event.target.type === "checkbox") record.fields[key] = event.target.checked;
     else if (event.target.type === "number") record.fields[key] = event.target.value === "" ? null : Number(event.target.value);
     else record.fields[key] = event.target.value || null;
