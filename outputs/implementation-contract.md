@@ -26,6 +26,7 @@ OptimizationRequest + HTML UI ────────┴─> Top N BuildResult
 5. 页面布局解析器把 OCR 行组合成角色、装备和神器 staging records。
 6. 未识别、歧义或低置信字段进入 Review，不得静默猜值。
 7. Review 完成后生成 `AccountSnapshot`；二次采集输出 merge/diff，而不是覆盖旧快照。
+8. 截图来源的每条账号资产必须保留指向顶层 `sourceFiles` 的 SHA-256 证据引用；最终优化结果继续保存所选七槽位的引用。
 
 等级大于 1 的角色必须采集账号观测的无装备基础面板。公共目录的成长字段尚未证明能覆盖升星/灵感/渠道差异，默认求解器会阻止缺少 `baseStatsOverride` 的高等级角色；研究 CLI 只有显式开启未验证外推才可绕过。
 

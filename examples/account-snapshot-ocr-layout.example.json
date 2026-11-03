@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "0.2.0",
+  "snapshotId": "snapshot-synthetic-layout-job-001",
+  "createdAt": "2026-11-03T12:12:00+08:00",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "sourceMethod": "screenshot_ocr",
+  "sourceFiles": [
+    {
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "mediaType": "image/png",
+      "localName": "evidence/hero_detail-1.png"
+    },
+    {
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "mediaType": "image/png",
+      "localName": "evidence/gear_detail-2.png"
+    },
+    {
+      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "mediaType": "image/png",
+      "localName": "evidence/artifact_detail-3.png"
+    }
+  ],
+  "warning": "Synthetic screenshot-derived account used to verify evidence provenance; not a live account.",
+  "ownedHeroes": [
+    {
+      "ownedHeroId": "ocr-hero-bb38bfaaa01c72e417c1",
+      "heroDefinitionId": "hero-20400",
+      "level": 1,
+      "stars": 1,
+      "inspiration": 0,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "localName": "evidence/hero_detail-1.png",
+          "sequence": 1,
+          "captureType": "hero_detail",
+          "reviewStatus": "accepted"
+        }
+      ],
+      "baseStatsOverride": {
+        "atk_flat": 1200,
+        "hp_flat": 18000,
+        "def_flat": 750
+      }
+    }
+  ],
+  "ownedGear": [
+    {
+      "ownedItemId": "ocr-gear-ac3001984e6fa8f520f0",
+      "slot": "weapon",
+      "setId": "set-barbarian",
+      "enhanceLevel": 16,
+      "stats": {
+        "atk_flat": 235,
+        "crit_rate": 0.12,
+        "crit_damage": 0.27
+      },
+      "locked": false,
+      "equippedBy": null,
+      "sourceConfidence": 0.9286,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "localName": "evidence/gear_detail-2.png",
+          "sequence": 2,
+          "captureType": "gear_detail",
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ],
+  "ownedArtifacts": [
+    {
+      "ownedArtifactId": "ocr-artifact-8979dc62f8641a4c6793",
+      "artifactDefinitionId": "artifact-eyeball-of-the-giant",
+      "level": 6,
+      "refinement": 1,
+      "observedStats": [
+        {
+          "stat": "atk_flat",
+          "value": 120,
+          "raw_text": "攻击 120",
+          "confidence": 0.9
+        },
+        {
+          "stat": "atk_pct",
+          "value": 0.08,
+          "raw_text": "攻击% 8%",
+          "confidence": 0.9
+        }
+      ],
+      "locked": false,
+      "equippedBy": null,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "localName": "evidence/artifact_detail-3.png",
+          "sequence": 3,
+          "captureType": "artifact_detail",
+          "reviewStatus": "accepted"
+        }
+      ]
+    }
+  ]
+}

@@ -88,7 +88,36 @@
       "artifactStatSource": "account_observed",
       "artifactStatWarnings": [
         "账号观测属性与公共 +6 曲线不同：atk_flat；计算采用账号观测值"
-      ]
+      ],
+      "evidence": {
+        "artifact": [],
+        "gear": [
+          {
+            "ownedItemId": "helm-001",
+            "evidenceRefs": []
+          },
+          {
+            "ownedItemId": "weapon-001",
+            "evidenceRefs": []
+          },
+          {
+            "ownedItemId": "chest-001",
+            "evidenceRefs": []
+          },
+          {
+            "ownedItemId": "gloves-001",
+            "evidenceRefs": []
+          },
+          {
+            "ownedItemId": "prune-001",
+            "evidenceRefs": []
+          },
+          {
+            "ownedItemId": "nrune-001",
+            "evidenceRefs": []
+          }
+        ]
+      }
     }
   },
   "checks": [

@@ -133,6 +133,7 @@ root = Path.cwd()
 pairs = [
     ('schemas/account-snapshot.schema.json', 'examples/account-snapshot.example.json'),
     ('schemas/account-snapshot.schema.json', 'examples/account-snapshot-update.example.json'),
+    ('schemas/account-snapshot.schema.json', 'examples/account-snapshot-ocr-layout.example.json'),
     ('schemas/account-completeness-reference.schema.json', 'examples/account-completeness-reference.example.json'),
     ('schemas/account-completeness-report.schema.json', 'examples/account-completeness-report.example.json'),
     ('schemas/formula-golden-cases.schema.json', 'examples/formula-golden-cases.synthetic.json'),

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import assert from "node:assert/strict";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const collector = path.join(ROOT, "collectors", "account-collector.mjs");
+const collectorCli = path.join(ROOT, "collectors", "cli.mjs");
 
 function run(args) {
   const result = spawnSync(process.execPath, [collector, ...args], { cwd: ROOT, encoding: "utf8", windowsHide: true });
@@ -34,8 +35,18 @@ try {
   const report = JSON.parse(await readFile(reportPath, "utf8"));
   assert.equal(report.status, "passed");
   assert.deepEqual(report.actualCounts, { heroes: 2, gear: 12, artifacts: 3 });
+
+  const missingEvidencePath = path.join(tempRoot, "missing-evidence.json");
+  const missingEvidence = JSON.parse(await readFile(path.join(ROOT, "examples", "account-snapshot.example.json"), "utf8"));
+  missingEvidence.sourceMethod = "screenshot_ocr";
+  await writeFile(missingEvidencePath, JSON.stringify(missingEvidence));
+  const validation = spawnSync(process.execPath, [collectorCli, "validate-account", "--input", missingEvidencePath], { cwd: ROOT, encoding: "utf8", windowsHide: true });
+  assert.equal(validation.status, 0, validation.stderr);
+  const validationResult = JSON.parse(validation.stdout);
+  assert.equal(validationResult.valid, false);
+  assert(validationResult.structuralErrors.some((entry) => entry.includes("missing source screenshot evidenceRefs")));
 } finally {
   await rm(tempRoot, { recursive: true, force: true });
 }
 
-console.log("Unified account collector tests passed: full/golden routing and completeness audit");
+console.log("Unified account collector tests passed: full/golden routing, completeness audit and screenshot evidence validation");

@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schemaVersion", "requestId", "snapshotId", "gameDataVersionId", "objective", "appliedConstraints", "impliedConstraints", "searched", "solver", "validCount", "maxima", "minima", "results"],
   "properties": {
-    "schemaVersion": {"const": "0.1.0"},
+    "schemaVersion": {"const": "0.2.0"},
     "requestId": {"type": "string"},
     "snapshotId": {"type": "string"},
     "gameDataVersionId": {"type": "string"},
@@ -49,7 +49,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["rank", "score", "ownedArtifactId", "ownedGearIds", "stats", "setLabels", "heroBaseSource"],
+        "required": ["rank", "score", "ownedArtifactId", "ownedGearIds", "stats", "setLabels", "heroBaseSource", "evidence"],
         "properties": {
           "rank": {"type": "integer", "minimum": 1},
           "score": {"type": "number"},
@@ -59,12 +59,46 @@
           "setLabels": {"type": "array", "items": {"type": "string"}},
           "heroBaseSource": {"type": "string"},
           "artifactStatSource": {"enum": ["account_observed", "legacy_account_stats", "public_level_curve", "unavailable"]},
-          "artifactStatWarnings": {"type": "array", "items": {"type": "string"}}
+          "artifactStatWarnings": {"type": "array", "items": {"type": "string"}},
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["artifact", "gear"],
+            "properties": {
+              "artifact": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
+              "gear": {
+                "type": "array",
+                "minItems": 6,
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["ownedItemId", "evidenceRefs"],
+                  "properties": {
+                    "ownedItemId": {"type": "string"},
+                    "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}}
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   },
   "$defs": {
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceFileSha256", "localName", "sequence", "captureType", "reviewStatus"],
+      "properties": {
+        "sourceFileSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "localName": {"type": ["string", "null"]},
+        "sequence": {"type": ["integer", "null"], "minimum": 1},
+        "captureType": {"type": ["string", "null"]},
+        "reviewStatus": {"type": "string"}
+      }
+    },
     "appliedConstraint": {
       "type": "object",
       "required": ["stat", "op", "value", "layer"],

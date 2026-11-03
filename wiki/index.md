@@ -6,6 +6,7 @@
 
 - [数据获取与合规边界](topics/data-acquisition.md)：静态资料、账号背包、候选导入路径和风险门。
 - [领域模型与属性口径](topics/domain-model.md)：角色、七槽位、词条、套装、神器与版本维度。
+- [账号资产证据追溯](topics/account-evidence-provenance.md)：从原始截图哈希到账号记录和最终方案的引用链。
 - [配装求解与结果解释](topics/optimizer.md)：目标、约束、锁定、算法阶段和准确性标记。
 - [同类工具模式](topics/competitive-patterns.md)：痒痒鼠魔方、Fribbels、Genshin Optimizer、OCR 扫描器带来的产品启示。
 - [端到端数据管线](topics/end-to-end-data-pipeline.md)：公共图鉴、账号快照、Schema 与离线求解器如何汇合。

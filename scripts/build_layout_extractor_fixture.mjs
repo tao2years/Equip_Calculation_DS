@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLayout } from "../collectors/lib/layout-extractor.mjs";
 import { applyOcrReview } from "../collectors/lib/apply-ocr-review.mjs";
+import { finalizeStaging } from "../collectors/lib/finalize-staging.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const output = path.join(root, "examples", "ocr-recognition-layout.example.json");
@@ -127,4 +128,13 @@ const reviewedStaging = {
   }
 };
 await writeFile(path.join(root, "examples", "ocr-staging-reviewed-layout.example.json"), `${JSON.stringify(reviewedStaging, null, 2)}\n`, "utf8");
+const [dictionary, gameData] = await Promise.all([
+  readFile(path.join(root, "data", "import-dictionary.json"), "utf8").then(JSON.parse),
+  readFile(path.join(root, "data", "game-data.public.json"), "utf8").then(JSON.parse)
+]);
+const finalized = finalizeStaging(reviewedStaging, dictionary, gameData);
+if (!finalized.ok) throw new Error(`Synthetic reviewed staging finalization failed: ${finalized.errors.join("; ")}`);
+finalized.snapshot.createdAt = "2026-11-03T12:12:00+08:00";
+finalized.snapshot.warning = "Synthetic screenshot-derived account used to verify evidence provenance; not a live account.";
+await writeFile(path.join(root, "examples", "account-snapshot-ocr-layout.example.json"), `${JSON.stringify(finalized.snapshot, null, 2)}\n`, "utf8");
 console.log(`Wrote synthetic recognition, Review decisions/application, ${extracted.staging.records.length} staging records, and extraction report`);

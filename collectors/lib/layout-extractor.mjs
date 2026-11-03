@@ -180,7 +180,19 @@ export function extractLayout(recognition, profile, options = {}) {
     }
     seenIds.set(sourceRecordId, image.sequence);
     const confidence = confidences.length ? confidences.reduce((sum, value) => sum + value, 0) / confidences.length : 0.8;
-    records.push({ kind: page.kind, sourceRecordId, confidence: Number(confidence.toFixed(4)), fields });
+    records.push({
+      kind: page.kind,
+      sourceRecordId,
+      confidence: Number(confidence.toFixed(4)),
+      evidenceRefs: [{
+        sourceFileSha256: image.imageSha256,
+        localName: image.imageLocalPath || image.originalName || null,
+        sequence: image.sequence ?? null,
+        captureType: image.captureType || null,
+        reviewStatus: image.reviewStatus || "unreviewed"
+      }],
+      fields
+    });
     pages.push({ sequence: image.sequence, status: "extracted", profilePageId: page.id, recordId: sourceRecordId });
   }
 

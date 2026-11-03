@@ -23,7 +23,7 @@ export function executeOptimizationRequest({ account, request, gameData }) {
     limit: request.resultLimit
   });
   return {
-    schemaVersion: "0.1.0",
+    schemaVersion: "0.2.0",
     requestId: request.requestId,
     snapshotId: account.snapshotId,
     gameDataVersionId: gameData.dataVersion.id,
@@ -44,7 +44,11 @@ export function executeOptimizationRequest({ account, request, gameData }) {
       setLabels: result.setLabels,
       heroBaseSource: result.heroBaseSource,
       artifactStatSource: result.artifactStatSource,
-      artifactStatWarnings: result.artifactStatWarnings
+      artifactStatWarnings: result.artifactStatWarnings,
+      evidence: {
+        artifact: result.artifact.evidenceRefs || [],
+        gear: result.gear.map((item) => ({ ownedItemId: item.ownedItemId, evidenceRefs: item.evidenceRefs || [] }))
+      }
     }))
   };
 }

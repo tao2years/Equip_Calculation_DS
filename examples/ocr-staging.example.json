@@ -15,6 +15,15 @@
       "kind": "hero",
       "sourceRecordId": "owned-aschetius",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "name": "Aschetius",
         "level": "1",
@@ -27,6 +36,15 @@
       "kind": "hero",
       "sourceRecordId": "owned-errich",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "name": "Errich",
         "level": "1",
@@ -39,6 +57,15 @@
       "kind": "artifact",
       "sourceRecordId": "art-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "name": "巨人眼球",
         "level": "+6",
@@ -63,6 +90,15 @@
       "kind": "artifact",
       "sourceRecordId": "art-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "name": "Volcanic Disc",
         "level": "+7",
@@ -87,6 +123,15 @@
       "kind": "artifact",
       "sourceRecordId": "art-003",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "name": "Malicious Manacle",
         "level": "+10",
@@ -116,6 +161,15 @@
       "kind": "gear",
       "sourceRecordId": "helm-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "头盔",
         "setId": "set-barbarian",
@@ -145,6 +199,15 @@
       "kind": "gear",
       "sourceRecordId": "helm-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "头盔",
         "setId": "set-guardian",
@@ -174,6 +237,15 @@
       "kind": "gear",
       "sourceRecordId": "weapon-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "武器",
         "setId": "set-barbarian",
@@ -203,6 +275,15 @@
       "kind": "gear",
       "sourceRecordId": "weapon-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "武器",
         "setId": "set-goblin",
@@ -232,6 +313,15 @@
       "kind": "gear",
       "sourceRecordId": "chest-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "胸甲",
         "setId": "set-predator",
@@ -261,6 +351,15 @@
       "kind": "gear",
       "sourceRecordId": "chest-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "胸甲",
         "setId": "set-guardian",
@@ -290,6 +389,15 @@
       "kind": "gear",
       "sourceRecordId": "gloves-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "手套",
         "setId": "set-predator",
@@ -319,6 +427,15 @@
       "kind": "gear",
       "sourceRecordId": "gloves-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "手套",
         "setId": "set-barbarian",
@@ -348,6 +465,15 @@
       "kind": "gear",
       "sourceRecordId": "prune-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "正位符文",
         "setId": null,
@@ -377,6 +503,15 @@
       "kind": "gear",
       "sourceRecordId": "prune-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "正位符文",
         "setId": null,
@@ -406,6 +541,15 @@
       "kind": "gear",
       "sourceRecordId": "nrune-001",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "负位符文",
         "setId": null,
@@ -435,6 +579,15 @@
       "kind": "gear",
       "sourceRecordId": "nrune-002",
       "confidence": 0.99,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+          "localName": "synthetic-fixture",
+          "sequence": null,
+          "captureType": null,
+          "reviewStatus": "synthetic_fixture"
+        }
+      ],
       "fields": {
         "slot": "负位符文",
         "setId": null,

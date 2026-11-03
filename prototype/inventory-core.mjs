@@ -74,6 +74,23 @@ export function validateEditableSnapshot(account, gameData) {
   checkUnique(account.ownedGear, "ownedItemId", "装备");
   checkUnique(account.ownedArtifacts, "ownedArtifactId", "神器");
 
+  const sourceHashes = new Set((account.sourceFiles || []).map((entry) => String(entry.sha256 || "").toLowerCase()));
+  for (const [label, entries, idKey] of [
+    ["角色", account.ownedHeroes, "ownedHeroId"],
+    ["装备", account.ownedGear, "ownedItemId"],
+    ["神器", account.ownedArtifacts, "ownedArtifactId"]
+  ]) {
+    for (const entry of entries) {
+      const refs = entry.evidenceRefs || [];
+      if (account.sourceMethod === "screenshot_ocr" && !refs.length) errors.push(`${label} ${entry[idKey]} 缺少原始截图证据引用`);
+      for (const ref of refs) {
+        const digest = String(ref.sourceFileSha256 || "").toLowerCase();
+        if (!/^[0-9a-f]{64}$/.test(digest)) errors.push(`${label} ${entry[idKey]} 的证据 SHA-256 无效`);
+        else if (!sourceHashes.has(digest)) errors.push(`${label} ${entry[idKey]} 的证据不在 sourceFiles 中：${digest}`);
+      }
+    }
+  }
+
   const heroIds = new Set(gameData.heroes.map((entry) => entry.id));
   const artifactIds = new Set(gameData.artifacts.map((entry) => entry.id));
   const equipmentById = new Map((gameData.equipment || []).map((entry) => [entry.id, entry]));

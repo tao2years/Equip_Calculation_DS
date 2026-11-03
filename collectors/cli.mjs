@@ -68,6 +68,22 @@ function validateSnapshot(snapshot) {
       else ids.add(`${kind}:${entry[key]}`);
     }
   }
+  const sourceHashes = new Set((snapshot.sourceFiles || []).map((entry) => String(entry.sha256 || "").toLowerCase()));
+  for (const [kind, entries, key] of [
+    ["hero", snapshot.ownedHeroes || [], "ownedHeroId"],
+    ["gear", snapshot.ownedGear || [], "ownedItemId"],
+    ["artifact", snapshot.ownedArtifacts || [], "ownedArtifactId"]
+  ]) {
+    for (const entry of entries) {
+      const refs = entry.evidenceRefs || [];
+      if (snapshot.sourceMethod === "screenshot_ocr" && !refs.length) errors.push(`${kind} ${entry[key]} missing source screenshot evidenceRefs`);
+      for (const ref of refs) {
+        const digest = String(ref.sourceFileSha256 || "").toLowerCase();
+        if (!/^[0-9a-f]{64}$/.test(digest)) errors.push(`${kind} ${entry[key]} has invalid evidence SHA-256`);
+        else if (!sourceHashes.has(digest)) errors.push(`${kind} ${entry[key]} evidence is absent from sourceFiles: ${digest}`);
+      }
+    }
+  }
   return errors;
 }
 

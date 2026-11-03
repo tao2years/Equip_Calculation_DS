@@ -36,6 +36,16 @@ snapshot.ownedGear.push({ ...snapshot.ownedGear[0] });
 assert.match(validateEditableSnapshot(snapshot, gameData).errors.join(";"), /重复/);
 snapshot.ownedGear.pop();
 
+const screenshotSnapshot = structuredClone(snapshot);
+screenshotSnapshot.sourceMethod = "screenshot_ocr";
+assert.match(validateEditableSnapshot(screenshotSnapshot, gameData).errors.join(";"), /缺少原始截图证据引用/);
+const evidenceSha = "a".repeat(64);
+screenshotSnapshot.sourceFiles = [{ sha256: evidenceSha, mediaType: "image/png", localName: "capture.png" }];
+for (const entries of [screenshotSnapshot.ownedHeroes, screenshotSnapshot.ownedGear, screenshotSnapshot.ownedArtifacts]) {
+  for (const entry of entries) entry.evidenceRefs = [{ sourceFileSha256: evidenceSha, localName: "capture.png", sequence: 1, captureType: "synthetic", reviewStatus: "accepted" }];
+}
+assert.deepEqual(validateEditableSnapshot(screenshotSnapshot, gameData), { errors: [], warnings: [] });
+
 const incoming = structuredClone(snapshot);
 incoming.snapshotId = "incoming-snapshot";
 incoming.ownedHeroes[0].level = 2;

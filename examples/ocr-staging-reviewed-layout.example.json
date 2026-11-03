@@ -25,6 +25,15 @@
       "kind": "hero",
       "sourceRecordId": "ocr-hero-bb38bfaaa01c72e417c1",
       "confidence": 0.9071,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "localName": "evidence/hero_detail-1.png",
+          "sequence": 1,
+          "captureType": "hero_detail",
+          "reviewStatus": "accepted"
+        }
+      ],
       "fields": {
         "name": "埃里奇",
         "level": 1,
@@ -53,6 +62,15 @@
       "kind": "gear",
       "sourceRecordId": "ocr-gear-ac3001984e6fa8f520f0",
       "confidence": 0.9286,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "localName": "evidence/gear_detail-2.png",
+          "sequence": 2,
+          "captureType": "gear_detail",
+          "reviewStatus": "accepted"
+        }
+      ],
       "fields": {
         "slot": "武器",
         "setName": "野蛮人",
@@ -81,6 +99,15 @@
       "kind": "artifact",
       "sourceRecordId": "ocr-artifact-8979dc62f8641a4c6793",
       "confidence": 0.925,
+      "evidenceRefs": [
+        {
+          "sourceFileSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+          "localName": "evidence/artifact_detail-3.png",
+          "sequence": 3,
+          "captureType": "artifact_detail",
+          "reviewStatus": "accepted"
+        }
+      ],
       "fields": {
         "name": "巨人眼球",
         "level": 6,
@@ -104,7 +131,7 @@
   "review": {
     "status": "human_reviewed",
     "reviewedAt": "2026-11-03T12:12:00+08:00",
-    "sourceStagingSha256": "b33c91973c535e43f2a01eca0e4957ee31d58732816857d5a0c5b6ae66680d12",
+    "sourceStagingSha256": "c00390605540bdd309a2130e365022cea5986362b1897de9ac1a5474348020ee",
     "tool": "prototype/staging-review.html"
   }
 }

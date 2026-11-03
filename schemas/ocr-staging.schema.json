@@ -45,6 +45,18 @@
         "confidence": {"type": "number", "minimum": 0, "maximum": 1}
       }
     },
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceFileSha256", "localName", "sequence", "captureType", "reviewStatus"],
+      "properties": {
+        "sourceFileSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "localName": {"type": ["string", "null"]},
+        "sequence": {"type": ["integer", "null"], "minimum": 1},
+        "captureType": {"type": ["string", "null"]},
+        "reviewStatus": {"type": "string", "minLength": 1}
+      }
+    },
     "record": {
       "type": "object",
       "additionalProperties": false,
@@ -53,6 +65,7 @@
         "kind": {"enum": ["hero", "gear", "artifact"]},
         "sourceRecordId": {"type": "string", "minLength": 1},
         "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
         "fields": {
           "type": "object",
           "properties": {

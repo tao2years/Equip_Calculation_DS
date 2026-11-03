@@ -278,3 +278,11 @@ Append-only. Newest entries go at the bottom.
 - Added a deterministic end-to-end acceptance report that hashes public GameData, AccountSnapshot and OptimizationRequest inputs, invokes the same inventory validator used by the HTML workflow, probes a public artifact level curve and executes the shared seven-slot solver.
 - The current synthetic fixture passes seven gates: HTML import contract, public artifact curve, optimizer execution, explicit/implied constraints, artifact plus six unique gear slots, artifact stat resolution and public-definition coverage. The report explicitly does not claim live-client OCR, completeness or formula validation.
 - Full verification passed with 36 schema-validated artifacts, 27 schemas and 28 Markdown files.
+
+## 2026-11-03 · OP-038
+
+- Added record-level evidence references to OCR staging, AccountSnapshot and OptimizationResult 0.2. Each reference carries source screenshot SHA-256, local name, capture sequence/type and Review status.
+- Layout extraction creates the reference, staging kind edits preserve it, finalization copies it, and both HTML inventory validation and the collector CLI reject screenshot-derived assets with missing, malformed or dangling references.
+- Added regressions for layout-to-account preservation and screenshot-account validation. The current limit is documented: observations retain raw text/confidence, but per-field OCR line/bounding-box links await a real channel/build profile.
+- Added a deterministic screenshot-derived AccountSnapshot fixture and an HTML “载入证据示例” action. Hidden-browser QA loaded 1 hero/1 gear/1 artifact with 3 source files, rendered `证据 1` on all three cards, and produced no console warnings/errors. Browser plugin and repository Playwright were absent, so the already-available hidden IAB was used without showing a desktop window.
+- Full verification passed with 37 schema-validated artifacts, 27 schemas and 29 Markdown files.

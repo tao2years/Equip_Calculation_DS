@@ -34,6 +34,7 @@ function setName(setId) {
   const definition = state.gameData.sets.find((entry) => entry.id === setId);
   return definition?.names?.zh || definition?.names?.en || setId || "散件";
 }
+function evidenceLabel(entry) { return `证据 ${entry.evidenceRefs?.length || 0}`; }
 
 function showMessage(message, kind = "success") {
   const element = byId("editor-message");
@@ -66,11 +67,11 @@ function render() {
   byId("hero-count").textContent = counts.heroes;
   byId("gear-count").textContent = counts.gear;
   byId("artifact-count").textContent = counts.artifacts;
-  byId("snapshot-meta").innerHTML = `<strong>${escapeHtml(state.account.snapshotId)}</strong><br>${escapeHtml(state.account.gameDataVersionId)}<br>来源：${escapeHtml(state.account.sourceMethod)}`;
+  byId("snapshot-meta").innerHTML = `<strong>${escapeHtml(state.account.snapshotId)}</strong><br>${escapeHtml(state.account.gameDataVersionId)}<br>来源：${escapeHtml(state.account.sourceMethod)} · 原始文件 ${state.account.sourceFiles?.length || 0}`;
 
   byId("hero-list").innerHTML = state.account.ownedHeroes.length ? state.account.ownedHeroes.map((owned) => {
     const definition = state.gameData.heroes.find((entry) => entry.id === owned.heroDefinitionId);
-    return card({ title: heroName(definition), id: owned.ownedHeroId, detail: `等级 ${owned.level} · 星级 ${owned.stars ?? "?"} · 灵感 ${owned.inspiration ?? "?"} · ${owned.baseStatsOverride ? "账号基础面板" : "无账号基础面板"}`, kind: "hero", itemId: owned.ownedHeroId });
+    return card({ title: heroName(definition), id: owned.ownedHeroId, detail: `等级 ${owned.level} · 星级 ${owned.stars ?? "?"} · 灵感 ${owned.inspiration ?? "?"} · ${owned.baseStatsOverride ? "账号基础面板" : "无账号基础面板"} · ${evidenceLabel(owned)}`, kind: "hero", itemId: owned.ownedHeroId });
   }).join("") : `<div class="empty-inventory">尚未添加角色</div>`;
 
   byId("gear-list").innerHTML = state.account.ownedGear.length ? state.account.ownedGear.map((item) => {
@@ -78,7 +79,7 @@ function render() {
     return card({
       title: definition ? equipmentName(definition) : `${SLOT_LABELS[item.slot] || item.slot} · ${setName(item.setId)}`,
       id: item.ownedItemId,
-      detail: `${SLOT_LABELS[item.slot] || item.slot} · ${setName(item.setId)} · 强化 +${item.enhanceLevel} · ${formatStats(item.stats, state.gameData.statDefinitions) || "无属性"}${definition ? " · 已关联公共定义" : ""}${item.locked ? " · 已锁定" : ""}`,
+      detail: `${SLOT_LABELS[item.slot] || item.slot} · ${setName(item.setId)} · 强化 +${item.enhanceLevel} · ${formatStats(item.stats, state.gameData.statDefinitions) || "无属性"}${definition ? " · 已关联公共定义" : ""}${item.locked ? " · 已锁定" : ""} · ${evidenceLabel(item)}`,
       kind: "gear", itemId: item.ownedItemId
     });
   }).join("") : `<div class="empty-inventory">尚未添加装备</div>`;
@@ -87,7 +88,7 @@ function render() {
     const definition = state.gameData.artifacts.find((entry) => entry.id === owned.artifactDefinitionId);
     const resolved = resolveArtifactStats(state.gameData, owned);
     const source = resolved.source === "public_level_curve" ? "公共曲线" : resolved.source === "account_observed" ? "账号观测" : resolved.source === "legacy_account_stats" ? "旧版观测" : "不可用";
-    return card({ title: artifactName(definition), id: owned.ownedArtifactId, detail: `强化 +${owned.level ?? "?"} · 精炼 ${owned.refinement} · ${formatStats(resolved.stats, state.gameData.statDefinitions) || "无属性"} · ${source}${owned.locked ? " · 已锁定" : ""}`, kind: "artifact", itemId: owned.ownedArtifactId });
+    return card({ title: artifactName(definition), id: owned.ownedArtifactId, detail: `强化 +${owned.level ?? "?"} · 精炼 ${owned.refinement} · ${formatStats(resolved.stats, state.gameData.statDefinitions) || "无属性"} · ${source}${owned.locked ? " · 已锁定" : ""} · ${evidenceLabel(owned)}`, kind: "artifact", itemId: owned.ownedArtifactId });
   }).join("") : `<div class="empty-inventory">尚未添加神器</div>`;
 }
 
@@ -212,6 +213,10 @@ document.addEventListener("click", (event) => {
 byId("new-account").addEventListener("click", () => loadAccount(createEmptySnapshot(state.gameData.dataVersion.id), "已新建空账号"));
 byId("load-example").addEventListener("click", async () => {
   try { loadAccount(await fetchJson("../examples/account-snapshot.example.json"), "示例账号已载入"); }
+  catch (error) { showMessage(error.message, "error"); }
+});
+byId("load-evidence-example").addEventListener("click", async () => {
+  try { loadAccount(await fetchJson("../examples/account-snapshot-ocr-layout.example.json"), "截图证据示例已载入"); }
   catch (error) { showMessage(error.message, "error"); }
 });
 byId("account-file").addEventListener("change", async (event) => {

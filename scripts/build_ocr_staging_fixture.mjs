@@ -25,26 +25,27 @@ function observations(stats) {
 }
 
 const records = [];
+const fixtureSha256 = createHash("sha256").update("synthetic-ocr-staging-fixture").digest("hex");
+const syntheticEvidenceRefs = [{ sourceFileSha256: fixtureSha256, localName: "synthetic-fixture", sequence: null, captureType: null, reviewStatus: "synthetic_fixture" }];
 for (const hero of account.ownedHeroes) {
   const definition = gameData.heroes.find((entry) => entry.id === hero.heroDefinitionId);
-  records.push({ kind: "hero", sourceRecordId: hero.ownedHeroId, confidence: 0.99, fields: { name: definition.names.en, level: String(hero.level), stars: String(hero.stars), inspiration: String(hero.inspiration), baseStats: [] } });
+  records.push({ kind: "hero", sourceRecordId: hero.ownedHeroId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fields: { name: definition.names.en, level: String(hero.level), stars: String(hero.stars), inspiration: String(hero.inspiration), baseStats: [] } });
 }
 for (const artifact of account.ownedArtifacts) {
   const definition = gameData.artifacts.find((entry) => entry.id === artifact.artifactDefinitionId);
   const artifactStats = artifact.stats || Object.fromEntries((artifact.observedStats || []).map((entry) => [entry.stat, entry.value]));
-  records.push({ kind: "artifact", sourceRecordId: artifact.ownedArtifactId, confidence: 0.99, fields: { name: ARTIFACT_LABELS[artifact.artifactDefinitionId] || definition.names.en, level: `+${artifact.level}`, refinement: `+${artifact.refinement}`, locked: artifact.locked, equippedBy: artifact.equippedBy, stats: observations(artifactStats) } });
+  records.push({ kind: "artifact", sourceRecordId: artifact.ownedArtifactId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fields: { name: ARTIFACT_LABELS[artifact.artifactDefinitionId] || definition.names.en, level: `+${artifact.level}`, refinement: `+${artifact.refinement}`, locked: artifact.locked, equippedBy: artifact.equippedBy, stats: observations(artifactStats) } });
 }
 for (const item of account.ownedGear) {
-  records.push({ kind: "gear", sourceRecordId: item.ownedItemId, confidence: 0.99, fields: { slot: SLOT_LABELS[item.slot], setId: item.setId, enhanceLevel: `+${item.enhanceLevel}`, locked: item.locked, equippedBy: item.equippedBy, stats: observations(item.stats) } });
+  records.push({ kind: "gear", sourceRecordId: item.ownedItemId, confidence: 0.99, evidenceRefs: syntheticEvidenceRefs, fields: { slot: SLOT_LABELS[item.slot], setId: item.setId, enhanceLevel: `+${item.enhanceLevel}`, locked: item.locked, equippedBy: item.equippedBy, stats: observations(item.stats) } });
 }
 
-const fixtureSeed = "synthetic-ocr-staging-fixture";
 const staging = {
   schemaVersion: "0.1.0",
   jobId: "example-ocr-job-001",
   createdAt: "2026-11-03T12:00:00+08:00",
   gameDataVersionId: gameData.dataVersion.id,
-  sourceFiles: [{ sha256: createHash("sha256").update(fixtureSeed).digest("hex"), mediaType: "application/x-synthetic-fixture", localName: "synthetic-fixture" }],
+  sourceFiles: [{ sha256: fixtureSha256, mediaType: "application/x-synthetic-fixture", localName: "synthetic-fixture" }],
   records
 };
 await writeFile(path.join(ROOT, "examples", "ocr-staging.example.json"), `${JSON.stringify(staging, null, 2)}\n`);

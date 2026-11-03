@@ -59,6 +59,8 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 
 `collectors/pipeline.mjs` 已把这些步骤组织为带 checkpoint 和产物哈希的一键/续跑采集程序。它先在 recognition 后等待逐行 OCR Review，再在 machine staging 后由 `prototype/staging-review.html` 完成字段级 Review；两级确认完成后才生成并校验 `AccountSnapshot`。
 
+截图采集生成的每个角色、装备和神器记录都会保存原图 SHA-256、文件名、序号、页面类型与 Review 状态。HTML/CLI 对 `screenshot_ocr` 快照强制检查这些引用确实存在于 `sourceFiles`；优化结果继续携带所选神器和六件装备的证据引用，避免推荐方案与原图脱节。
+
 生成账号文件后还必须运行 `audit-account`。它将快照与独立人工清点参考对比：角色/装备/神器总数、六个装备槽位数量、完整角色/神器定义 ID、重复 owned ID、重复定义和未知公共引用。只有全部一致才返回 `passed`；这证明与参考一致，但不会把参考本身未经验证的完整性夸大为事实。
 
 `validate_formula_cases.mjs` 是计算准确性门：把角色基础属性、装备/神器汇总加成与客户端观测面板逐属性比较。当前仓库只有 synthetic arithmetic fixture，只证明代码按既定公式执行；在目标渠道/build 的穿戴前后截图进入 `client_observation` golden cases 前，不能把原型公式称为客户端精确公式。
