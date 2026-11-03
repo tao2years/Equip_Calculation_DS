@@ -25,6 +25,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\serve_prototype.ps1
 ```powershell
 node collectors/cli.mjs probe
 node collectors/cli.mjs validate-account --input account.json
+node collectors/cli.mjs audit-account --input account.json --reference manual-reference.json --output completeness-report.json
 node collectors/cli.mjs resolve --kind artifact --text 巨人眼球
 node collectors/cli.mjs resolve --kind equipment --text equipment-532513
 node collectors/cli.mjs adb-probe
@@ -51,6 +52,8 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 `ocr-bundle` 会对任务内全部原图运行本机 Windows OCR，并另存 `recognition.json`、逐图文字与坐标；它拒绝覆盖已有识别证据。`extract-layout` 再按渠道/build 专属 profile 生成 staging 与问题报告。当前只有三类合成详情页通过这条链路，尚无真实国服 profile。校对页可关联本地原图、叠加 OCR 框、修正字典候选、接受/驳回截图并导出 Review 决策；在没有目标客户端与真实样本时不宣称真实 OCR 准确率或自动登录采集已完成。
 
 `collectors/pipeline.mjs` 已把这些步骤组织为带 checkpoint 和产物哈希的一键/续跑采集程序。它先在 recognition 后等待逐行 OCR Review，再在 machine staging 后由 `prototype/staging-review.html` 完成字段级 Review；两级确认完成后才生成并校验 `AccountSnapshot`。
+
+生成账号文件后还必须运行 `audit-account`。它将快照与独立人工清点参考对比：角色/装备/神器总数、六个装备槽位数量、完整角色/神器定义 ID、重复 owned ID、重复定义和未知公共引用。只有全部一致才返回 `passed`；这证明与参考一致，但不会把参考本身未经验证的完整性夸大为事实。
 
 无需打开网页也可以用同一个求解核心执行请求：
 

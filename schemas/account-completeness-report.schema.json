@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/account-completeness-report.schema.json",
+  "title": "Dragonheir Account Completeness Audit Report",
+  "type": "object",
+  "required": ["schemaVersion", "auditedAt", "snapshotId", "referenceId", "gameDataVersionId", "evidenceLevel", "status", "actualCounts", "countChecks", "gearSlotChecks", "identityChecks", "duplicateOwnedIds", "duplicateDefinitions", "unknownDefinitions", "errors", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "auditedAt": {"type": "string", "format": "date-time"},
+    "snapshotId": {"type": "string"},
+    "referenceId": {"type": "string"},
+    "gameDataVersionId": {"type": "string"},
+    "evidenceLevel": {"enum": ["manual_count", "synthetic_fixture"]},
+    "status": {"enum": ["passed", "failed"]},
+    "actualCounts": {"type": "object"},
+    "countChecks": {"type": "object"},
+    "gearSlotChecks": {"type": "object"},
+    "identityChecks": {"type": "object"},
+    "duplicateOwnedIds": {"type": "object"},
+    "duplicateDefinitions": {"type": "object"},
+    "unknownDefinitions": {"type": "object"},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "string"}
+  },
+  "additionalProperties": false
+}

@@ -69,6 +69,7 @@ OptimizationRequest + HTML UI ────────┴─> Top N BuildResult
 3. 重复截图不会产生重复物品；新增、强化、换装和删除能在 diff 中正确表现；
 4. 所有低置信字段进入 Review；未解决字段阻止 finalize；
 5. 生成的账号文件通过 Schema、语义校验并能被 HTML 直接导入。
+6. 账号快照必须通过独立人工参考的完整性审计：三类总数、六槽位数量、角色/神器 ID 集合、重复与未知引用全部一致；仅 pipeline complete 不算采集完成。
 
 ## 2. 成品 B：公共游戏数据爬取与版本库
 

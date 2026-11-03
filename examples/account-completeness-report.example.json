@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "0.1.0",
+  "auditedAt": "2026-11-03T12:00:00+08:00",
+  "snapshotId": "example-account-001",
+  "referenceId": "synthetic-account-manual-reference-001",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "evidenceLevel": "synthetic_fixture",
+  "status": "passed",
+  "actualCounts": {
+    "heroes": 2,
+    "gear": 12,
+    "artifacts": 3
+  },
+  "countChecks": {
+    "heroes": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "gear": {
+      "expected": 12,
+      "actual": 12,
+      "match": true
+    },
+    "artifacts": {
+      "expected": 3,
+      "actual": 3,
+      "match": true
+    }
+  },
+  "gearSlotChecks": {
+    "chest": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "gloves": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "helmet": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "negative_rune": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "positive_rune": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "weapon": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    }
+  },
+  "identityChecks": {
+    "heroes": {
+      "missing": [],
+      "unexpected": []
+    },
+    "artifacts": {
+      "missing": [],
+      "unexpected": []
+    }
+  },
+  "duplicateOwnedIds": {
+    "heroes": [],
+    "gear": [],
+    "artifacts": []
+  },
+  "duplicateDefinitions": {
+    "heroes": [],
+    "artifacts": []
+  },
+  "unknownDefinitions": {
+    "heroes": [],
+    "artifacts": [],
+    "equipment": []
+  },
+  "errors": [],
+  "limitations": "A passing report proves agreement with the supplied manual reference, not that the manual reference itself is complete or that game formulas are correct."
+}

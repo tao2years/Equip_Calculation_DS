@@ -73,6 +73,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Public compiler/audit timestamps now derive from immutable source retrieval times. Two consecutive full verification runs left `game-data.public.json` and `import-dictionary.json` byte-identical, improving reproducibility across machines.
 - Official-PC candidate adapter now supports an explicit-PID, visible-window-only screenshot with PNG/SHA-256/bounds metadata and no input automation. A guided 7-stage PC session reuses the ADB capture plan and produces a pipeline-compatible manifest. Windows capability probe, invalid-PID/no-output guard, dry-run and ADB/PC manifest normalization passed; no game window was captured, so client/DPI/occlusion behavior remains unvalidated.
 - Emulator and official-PC capture plans are now separate, both require 7 stages / at least 50 golden screenshots, and each session runner rejects the other channel's plan before capture.
+- Post-finalize account completeness audit now compares a snapshot to an independent manual reference across total counts, six gear-slot counts, hero/artifact ID sets, duplicate owned/definition IDs and unknown public references. Synthetic pass, missing gear/slot and duplicate-hero regressions pass; no live manual reference exists yet.
 
 ## Next durable steps
 

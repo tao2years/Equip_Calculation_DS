@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "0.1.0",
+  "referenceId": "synthetic-account-manual-reference-001",
+  "createdAt": "2026-11-03T12:00:00+08:00",
+  "channel": "synthetic_fixture",
+  "gameBuild": null,
+  "evidenceLevel": "synthetic_fixture",
+  "expectedCounts": {"heroes": 2, "gear": 12, "artifacts": 3},
+  "expectedHeroDefinitionIds": ["hero-21760", "hero-20400"],
+  "expectedArtifactDefinitionIds": ["artifact-eyeball-of-the-giant", "artifact-volcanic-disc", "artifact-malicious-manacle"],
+  "expectedGearBySlot": {"helmet": 2, "weapon": 2, "chest": 2, "gloves": 2, "positive_rune": 2, "negative_rune": 2},
+  "notes": "Synthetic fixture only; replace with an independently hand-counted live account reference."
+}

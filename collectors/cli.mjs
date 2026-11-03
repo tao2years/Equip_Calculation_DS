@@ -13,6 +13,7 @@ import { captureAdbPng, probeAdb, selectAdbDevice } from "./lib/adb.mjs";
 import { extractLayout } from "./lib/layout-extractor.mjs";
 import { normalizeCaptureManifest } from "./lib/capture-manifest.mjs";
 import { applyOcrReview } from "./lib/apply-ocr-review.mjs";
+import { auditAccountCompleteness } from "./lib/audit-account.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULT_GAME_DATA = path.join(ROOT, "data", "game-data.public.json");
@@ -167,6 +168,22 @@ async function commandValidateAccount(options) {
     semanticErrors: semantic.errors,
     warnings: semantic.warnings
   };
+}
+
+async function commandAuditAccount(options) {
+  const input = requireOption(options, "input");
+  const referencePath = requireOption(options, "reference");
+  const output = requireOption(options, "output");
+  if (await pathExists(output)) throw new Error(`Refusing to overwrite account audit: ${output}`);
+  const gameDataPath = options.gameData ? path.resolve(String(options.gameData)) : DEFAULT_GAME_DATA;
+  const [snapshot, reference, gameData] = await Promise.all([
+    readFile(input, "utf8").then(JSON.parse),
+    readFile(referencePath, "utf8").then(JSON.parse),
+    readFile(gameDataPath, "utf8").then(JSON.parse)
+  ]);
+  const report = auditAccountCompleteness(snapshot, reference, gameData);
+  await writeJsonExclusive(output, report);
+  return { command: "audit-account", input, reference: referencePath, output, status: report.status, counts: report.actualCounts, errors: report.errors };
 }
 
 async function commandResolve(options) {
@@ -505,6 +522,7 @@ function help() {
       "node collectors/cli.mjs init --output account.json --game-data-version public-catalog-2026-11-03",
       "node collectors/cli.mjs import-json --input account.json --output normalized.json",
       "node collectors/cli.mjs validate-account --input account.json",
+      "node collectors/cli.mjs audit-account --input account.json --reference manual-reference.json --output completeness-report.json",
       "node collectors/cli.mjs resolve --kind artifact --text 巨人眼球",
       "node collectors/cli.mjs extract-layout --recognition recognition.json --profile layout-profile.json --output ocr-staging.json --report extraction-report.json",
       "node collectors/cli.mjs apply-review --recognition recognition.json --review review.json --output reviewed-recognition.json --report review-application-report.json",
@@ -528,6 +546,7 @@ try {
   else if (command === "init") result = await commandInit(options);
   else if (command === "import-json") result = await commandImportJson(options);
   else if (command === "validate-account") result = await commandValidateAccount(options);
+  else if (command === "audit-account") result = await commandAuditAccount(options);
   else if (command === "resolve") result = await commandResolve(options);
   else if (command === "extract-layout") result = await commandExtractLayout(options);
   else if (command === "apply-review") result = await commandApplyReview(options);
@@ -541,6 +560,7 @@ try {
   else if (command === "stage-screenshots") result = await commandStageScreenshots(options);
   else result = help();
   console.log(JSON.stringify(result, null, 2));
+  if (result?.command === "audit-account" && result.status !== "passed") process.exitCode = 2;
 } catch (error) {
   console.error(JSON.stringify({ error: error.message, command }, null, 2));
   process.exitCode = 1;

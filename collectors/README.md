@@ -7,6 +7,7 @@ node collectors/cli.mjs probe
 node collectors/cli.mjs init --output account.json --game-data-version public-catalog-2026-11-03
 node collectors/cli.mjs import-json --input account.json --output normalized.json
 node collectors/cli.mjs validate-account --input account.json
+node collectors/cli.mjs audit-account --input account.json --reference manual-reference.json --output completeness-report.json
 node collectors/cli.mjs resolve --kind artifact --text 巨人眼球
 node collectors/cli.mjs adb-probe
 node collectors/cli.mjs adb-screenshot --output capture.png --capture-type gear_detail
@@ -80,6 +81,8 @@ Screenshot → OCR lines/coordinates → versioned layout extraction
 `ocr-image` 使用系统自带 `Windows.Media.Ocr`，不上传图片。本机探测到 `zh-Hans-CN` 与 `en-US`。在当前原型页面截图上的 smoke test 识别出 58 行文字，其中 12 行可关联到字典中的角色、神器、属性或槽位。它只证明 OCR 管线可运行，不代表对真实游戏截图的准确率。
 
 `finalize-staging` 已实现最后三步中的确定性部分：把 OCR/人工 Review 后的英雄、装备、神器记录解析为 canonical ID，转换百分比和整数，拒绝未知/歧义名称、重复词条和非法套装，最后生成 HTML 可直接导入的 `AccountSnapshot`。示例 `examples/ocr-staging.example.json` 包含 17 条合成识别记录，并已验证能还原成 2 个英雄、12 件装备和 3 件神器。
+
+`audit-account` 是 finalize 后的完整性门。输入一份独立人工清点参考，检查三类资产总数、六槽位装备数、角色/神器定义 ID 集合、重复 owned ID、重复角色/神器定义和未知公共引用。失败报告仍会落盘并以非零退出码结束，方便 CI 或采集向导阻止“脚本跑完＝已经收全”的误判。当前示例只使用 synthetic fixture；真实账号必须由人工独立清点生成 reference。
 
 ### Collector C — 可见 UI 辅助采集
 

@@ -202,3 +202,10 @@ Append-only. Newest entries go at the bottom.
 - No real game client was present and no existing desktop window was captured. Occlusion, DPI scaling, full-screen rendering and page completeness remain explicit live-client acceptance work.
 - Split the PC capture plan from the emulator plan so manifests cannot silently label official-PC evidence as `channel=emulator`; both channel-specific plans now pass schema validation and dry-run checks.
 - Added hard channel guards: ADB sessions reject non-emulator plans and PC sessions reject non-`official_pc` plans. Both mismatch paths were exercised and failed before capture.
+
+## 2026-11-03 · OP-027
+
+- Added a post-finalize account completeness gate driven by an independent manual reference. It checks hero/gear/artifact totals, all six gear-slot counts, exact hero/artifact definition sets, duplicate owned IDs, duplicate hero/artifact definitions and unknown public references.
+- `audit-account` writes a durable report and exits non-zero on mismatch, separating pipeline completion from collection completeness. The report explicitly limits its claim to agreement with the supplied reference.
+- Synthetic regression passes for the exact 2-hero/12-gear/3-artifact fixture and correctly fails after one negative rune is removed or a hero definition is duplicated. No live reference has been supplied, so this is acceptance tooling rather than live completeness evidence.
+- Full verification now covers 30 schema artifacts and 23 schema definitions, including both completeness input and report contracts.

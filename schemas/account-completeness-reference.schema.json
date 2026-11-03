@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/account-completeness-reference.schema.json",
+  "title": "Dragonheir Manual Account Completeness Reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "referenceId", "createdAt", "channel", "gameBuild", "evidenceLevel", "expectedCounts", "expectedHeroDefinitionIds", "expectedArtifactDefinitionIds", "expectedGearBySlot"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "referenceId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "channel": {"enum": ["emulator", "official_pc", "steam", "synthetic_fixture", "unknown"]},
+    "gameBuild": {"type": ["string", "null"]},
+    "evidenceLevel": {"enum": ["manual_count", "synthetic_fixture"]},
+    "expectedCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["heroes", "gear", "artifacts"],
+      "properties": {
+        "heroes": {"type": "integer", "minimum": 0},
+        "gear": {"type": "integer", "minimum": 0},
+        "artifacts": {"type": "integer", "minimum": 0}
+      }
+    },
+    "expectedHeroDefinitionIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "expectedArtifactDefinitionIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "expectedGearBySlot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["helmet", "weapon", "chest", "gloves", "positive_rune", "negative_rune"],
+      "properties": {
+        "helmet": {"type": "integer", "minimum": 0},
+        "weapon": {"type": "integer", "minimum": 0},
+        "chest": {"type": "integer", "minimum": 0},
+        "gloves": {"type": "integer", "minimum": 0},
+        "positive_rune": {"type": "integer", "minimum": 0},
+        "negative_rune": {"type": "integer", "minimum": 0}
+      }
+    },
+    "notes": {"type": "string"}
+  }
+}
