@@ -56,6 +56,7 @@ try {
     node --check scripts/test_optimizer.mjs
     node --check scripts/benchmark_optimizer.mjs
     node --check scripts/test_inventory_core.mjs
+    node --check scripts/test_data_browser_core.mjs
     node --check scripts/solve_request.mjs
     node --check scripts/audit_end_to_end.mjs
     node --check scripts/inspect_ocr_labels.mjs
@@ -102,6 +103,7 @@ try {
     node scripts/test_collector_pipeline.mjs
     node scripts/test_optimizer.mjs
     node scripts/test_inventory_core.mjs
+    node scripts/test_data_browser_core.mjs
     node scripts/test_adb_adapter.mjs
     node scripts/test_capture_plan.mjs
     node scripts/test_account_collector.mjs

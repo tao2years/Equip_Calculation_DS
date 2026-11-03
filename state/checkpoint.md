@@ -89,6 +89,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - 库存 HTML 已能在本地选择采集原图、按 SHA-256 匹配 `sourceFiles`，并逐字段展示 OCR 原文/置信度及 Canvas 高亮矩形。合成三页视觉 fixture 的 3/3 匹配和 `12%` 字段高亮已在隐藏浏览器验证；真实客户端截图仍缺。
 - Windows 操作者现在可从根目录 `collect-account.cmd` 进入单一向导，完成 Doctor/Plan/Capture/Process/Status/Audit。Doctor 将渠道采集就绪与本地处理就绪分开；当前模拟器采集因无 ADB 明确未就绪，官方 PC 适配器可调用但仍无真实客户端验证。
 - 公共角色字段覆盖与计算可信度现已分层：351/351 个角色具备完整十项一级字段和技能，2 个独立详情页交叉校验通过；1 个分布离群对象要求账号观测面板，137 个比例成长对象保留为语义未验证证据。质量记录进入 GameData，库存和求解器共享门禁。
+- 公共 GameData 不再只能通过 JSON/下拉框检查：新增资料浏览页，按角色/装备/神器/套装搜索、筛选和查看属性、效果、来源与复核状态。隐藏浏览器已验证异常角色、神器曲线和 58 条装备复核结果；它仍明确标注未经客户端验证。
 
 ## Next durable steps
 

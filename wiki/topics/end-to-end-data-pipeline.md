@@ -20,7 +20,8 @@
 4. `scripts/build_import_dictionary.mjs` 把公共名称和经过溯源的中文词汇合并为导入/OCR 别名字典，碰撞不会被静默吞掉。
 5. `data/game-data.seed.json` 是少量已建模效果的人工种子，不宣称完整或客户端已验证。
 6. `examples/account-snapshot.example.json` 是合成背包，只用于导入、约束、锁定和求解测试。
-7. `prototype/` 在浏览器本地读取两类数据，按规模选择完整枚举、精确分支定界或明确标记的启发式候选缩减，叠加固定神器和已建模套装效果。
+7. `prototype/data-browser.html` 读取与求解器相同的 GameData，为角色、装备、神器和套装提供搜索、筛选、来源与异常 Review；它不复制第二份公共数据。
+8. `prototype/` 在浏览器本地读取公共数据和账号数据，按规模选择完整枚举、精确分支定界或明确标记的启发式候选缩减，叠加固定神器和已建模套装效果。
 
 ## OCR 中间层
 

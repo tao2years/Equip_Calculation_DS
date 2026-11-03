@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>公共资料库 · 龙息配装器</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="data-browser.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">公共资料库</div>
+    <div class="data-status" id="data-status">正在载入公共数据…</div>
+    <div class="header-actions">
+      <a class="button button-secondary" href="inventory.html">账号库存</a>
+      <a class="button button-secondary" href="index.html">配装计算</a>
+    </div>
+  </header>
+
+  <main class="catalog-workspace">
+    <aside class="catalog-filter" aria-label="公共资料筛选">
+      <h1>筛选资料</h1>
+      <label class="field"><span>搜索名称或 ID</span><input id="catalog-query" type="search" placeholder="角色、装备、神器、套装"></label>
+      <div class="kind-switch" id="kind-switch" aria-label="资料类型"></div>
+      <label class="field"><span>赛季</span><select id="season-filter"><option value="all">全部赛季</option></select></label>
+      <label class="field"><span>品质</span><select id="rarity-filter"><option value="all">全部品质</option></select></label>
+      <label class="review-toggle"><input id="review-only" type="checkbox"><span>只看需要复核</span></label>
+      <div class="catalog-note">
+        <strong>证据边界</strong>
+        <p>这里展示公共网页快照的编译结果，不代表目标客户端已经验证。账号拥有什么仍以 AccountSnapshot 为准。</p>
+      </div>
+    </aside>
+
+    <section class="catalog-main">
+      <div class="catalog-intro">
+        <div><h2 id="catalog-title">角色</h2><p id="catalog-summary"></p></div>
+        <div class="catalog-counts" id="catalog-counts"></div>
+      </div>
+
+      <p class="catalog-message" id="catalog-message" role="status"></p>
+      <div class="catalog-layout">
+        <section class="catalog-list-panel" aria-labelledby="catalog-title">
+          <div class="catalog-table-wrap">
+            <table class="catalog-table">
+              <thead><tr id="catalog-head"></tr></thead>
+              <tbody id="catalog-body"></tbody>
+            </table>
+          </div>
+          <div class="catalog-pagination">
+            <button class="button button-secondary button-compact" id="previous-page" type="button">上一页</button>
+            <span id="page-status"></span>
+            <button class="button button-secondary button-compact" id="next-page" type="button">下一页</button>
+          </div>
+        </section>
+        <aside class="catalog-detail" id="catalog-detail" aria-live="polite"></aside>
+      </div>
+    </section>
+  </main>
+  <script src="data-browser.js" type="module"></script>
+</body>
+</html>

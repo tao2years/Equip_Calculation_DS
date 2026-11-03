@@ -315,3 +315,10 @@ Append-only. Newest entries go at the bottom.
 - Identified 137 records with nonzero ratio growth fields whose semantics are not client-validated. Public growth remains research evidence; level greater than 1 still requires account observation unless an explicit research override is set.
 - Added `GameData.heroDataQuality`, a generated JSON/Markdown audit, Schema validation, optimizer/inventory regressions and refresh/verify integration.
 - Hidden IAB QA selected the flagged hero, observed both warning flags, confirmed missing observed stats kept the hero count at zero, then supplied an observed panel and confirmed successful admission with the “账号基础面板” label. No visible browser window was opened.
+
+## 2026-11-03 · OP-043
+
+- Added `prototype/data-browser.html` as a human Review surface over the exact public GameData consumed by inventory and optimization. It exposes all 351 heroes, 682 equipment definitions, 147 artifacts and 252 sets without maintaining a second copy.
+- Added search, season/rarity filters, review-only filters, 50-row pagination, keyboard-selectable rows and source-aware detail views. Hero details show level-one stats, skills and quality gates; artifact details show +20 static stats and refinement text; equipment details show slot/set uncertainty.
+- Added pure core regression coverage for dataset counts, stable-ID search, the single flagged hero, 58 equipment records needing slot/set review, pagination and ratio formatting.
+- Hidden IAB QA confirmed the `hero-10002` outlier values/warning, Ancestor's Bone +20 stats/refinement effect and the 58-row equipment review filter. The page was tested in a hidden browser and saved as `outputs/design/public-data-browser.png`; no visible window was opened.
