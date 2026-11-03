@@ -60,7 +60,7 @@
       "additionalProperties": false,
       "required": ["kind", "direction"],
       "properties": {
-        "kind": {"enum": ["single_stat", "weighted_stats", "crit_proxy", "scenario_metric"]},
+        "kind": {"enum": ["single_stat", "weighted_stats", "crit_proxy", "full_crit_damage_proxy", "scenario_metric"]},
         "direction": {"enum": ["maximize", "minimize"]},
         "stat": {"$ref": "#/$defs/statKey"},
         "weights": {

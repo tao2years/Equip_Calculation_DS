@@ -128,6 +128,7 @@ export function objectiveValue(stats, objective) {
   if (typeof objective === "object" && objective) {
     let raw;
     if (objective.kind === "crit_proxy") raw = stats.atk_sheet * (1 + Math.min(Math.max(stats.crit_rate, 0), 1) * stats.crit_damage);
+    else if (objective.kind === "full_crit_damage_proxy") raw = stats.atk_sheet * (1 + stats.crit_damage);
     else if (objective.kind === "single_stat") raw = stats[objective.stat] || 0;
     else if (objective.kind === "weighted_stats") raw = Object.entries(objective.weights || {}).reduce((total, [key, weight]) => total + (stats[key] || 0) * weight, 0);
     else throw new Error(`Unsupported objective kind ${objective.kind}`);
@@ -216,6 +217,11 @@ function objectiveScoreUpperBound(bounds, objective) {
       rawLow += weight >= 0 ? low * weight : high * weight;
       rawHigh += weight >= 0 ? high * weight : low * weight;
     }
+  } else if (kind === "full_crit_damage_proxy") {
+    const range = rangeProduct(bounds.minima, bounds.maxima, ["atk_sheet", "crit_damage"],
+      (attack, critDamage) => attack * (1 + critDamage));
+    rawLow = range.min;
+    rawHigh = range.max;
   } else if (kind === "crit_proxy" || !["atk", "hp", "crit_damage", "accuracy"].includes(kind)) {
     const range = rangeProduct(bounds.minima, bounds.maxima, ["atk_sheet", "crit_rate", "crit_damage"],
       (attack, critRate, critDamage) => attack * (1 + Math.min(Math.max(critRate, 0), 1) * critDamage));
@@ -397,7 +403,11 @@ export function enumerateBuilds({
     if (!candidates.length) throw new Error(`No candidate gear for ${slot}`);
     return candidates;
   });
-  const constraintsList = normalizedConstraints(constraints);
+  const userConstraints = normalizedConstraints(constraints);
+  const impliedConstraints = typeof objective === "object" && objective?.kind === "full_crit_damage_proxy"
+    ? [{ stat: "crit_rate", op: ">=", value: 1, layer: "sheet", source: "objective_full_crit" }]
+    : [];
+  const constraintsList = [...userConstraints, ...impliedConstraints];
   const searchSpace = groups.reduce((product, group) => product * group.length, 1);
   const mode = solverMode === "auto"
     ? (searchSpace <= exhaustiveThreshold ? "exhaustive" : searchSpace <= exactBranchThreshold ? "branch_and_bound" : "heuristic_candidate_cap")
@@ -424,7 +434,7 @@ export function enumerateBuilds({
       observedMaxima[key] = Math.max(observedMaxima[key], value);
       observedMinima[key] = Math.min(observedMinima[key], value);
     }
-    if (!meetsConstraints(calculated.stats, constraints)) return;
+    if (!meetsConstraints(calculated.stats, constraintsList)) return;
     validCount += 1;
     const score = objectiveValue(calculated.stats, objective);
     const canEnterTop = top.length < limit || score >= top[top.length - 1].score - 1e-12;
@@ -460,6 +470,8 @@ export function enumerateBuilds({
       maxima: observedMaxima,
       minima: observedMinima,
       results: top,
+      appliedConstraints: constraintsList,
+      impliedConstraints,
       solver: { mode, searchSpace, evaluatedBuilds, visitedNodes, prunedByFeasibility, prunedByScore, topNExact: true, validCountExact: true, extremaExact: true }
     };
   }
@@ -518,6 +530,8 @@ export function enumerateBuilds({
     maxima: rootBounds.maxima,
     minima: rootBounds.minima,
     results: top,
+    appliedConstraints: constraintsList,
+    impliedConstraints,
     solver: {
       mode, searchSpace, reducedSearchSpace, evaluatedBuilds, visitedNodes, prunedByFeasibility, prunedByScore,
       candidateCounts: groups.map((group, index) => ({ slot: SLOT_IDS[index], before: group.length, after: searchGroups[index].length })),

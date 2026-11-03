@@ -8,7 +8,7 @@
 node scripts/solve_request.mjs --account account.json --request request.json --output result.json
 ```
 
-当前执行器支持六装备槽的完整枚举、全局精确 Top N 分支定界和快速启发式候选缩减，另支持固定神器/任意装备、排除物品、背包/指定角色/全部角色候选策略、锁定过滤、所有 sheet 层比较运算符、单属性、加权属性及重击输出代理目标。每次结果携带求解模式和精确性标志；`conditional` 和 `encounter` 层会明确拒绝，直到对应战斗模型存在。
+当前执行器支持六装备槽的完整枚举、全局精确 Top N 分支定界和快速启发式候选缩减，另支持固定神器/任意装备、排除物品、背包/指定角色/全部角色候选策略、锁定过滤、所有 sheet 层比较运算符、单属性、加权属性、满暴攻击×爆伤及期望重击输出代理。每次结果携带求解模式、精确性标志、用户约束和目标自动加入的隐式约束；`conditional` 和 `encounter` 层会明确拒绝，直到对应战斗模型存在。
 
 ## 问题定义
 
@@ -40,6 +40,8 @@ node scripts/solve_request.mjs --account account.json --request request.json --o
 score = atk_sheet * (1 + crit_damage)
 constraint: crit_rate >= 1.0
 ```
+
+实现中的 `full_crit_damage_proxy` 会由求解器自动加入该约束，而不是依赖 UI 预填。请求文件即使没有手工写重击率，结果也只能来自满暴方案；若固定项导致最高不足 100%，无解诊断会显示理论最高重击率。`crit_proxy` 则保留为不强制满暴的期望值目标。
 
 若不是满暴，较合理的期望重击代理为：
 

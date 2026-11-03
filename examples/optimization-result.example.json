@@ -3,6 +3,46 @@
   "requestId": "example-request-001",
   "snapshotId": "example-account-001",
   "gameDataVersionId": "public-catalog-2026-11-03",
+  "objective": {
+    "kind": "full_crit_damage_proxy",
+    "direction": "maximize"
+  },
+  "appliedConstraints": [
+    {
+      "stat": "atk_sheet",
+      "op": ">=",
+      "value": 500,
+      "layer": "sheet"
+    },
+    {
+      "stat": "hp_sheet",
+      "op": ">=",
+      "value": 7000,
+      "layer": "sheet"
+    },
+    {
+      "stat": "accuracy",
+      "op": ">=",
+      "value": 0,
+      "layer": "sheet"
+    },
+    {
+      "stat": "crit_rate",
+      "op": ">=",
+      "value": 1,
+      "layer": "sheet",
+      "source": "objective_full_crit"
+    }
+  ],
+  "impliedConstraints": [
+    {
+      "stat": "crit_rate",
+      "op": ">=",
+      "value": 1,
+      "layer": "sheet",
+      "source": "objective_full_crit"
+    }
+  ],
   "searched": 64,
   "solver": {
     "mode": "exhaustive",

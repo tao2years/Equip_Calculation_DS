@@ -4,12 +4,15 @@
   "title": "Dragonheir Optimization Result",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "requestId", "snapshotId", "gameDataVersionId", "searched", "solver", "validCount", "maxima", "minima", "results"],
+  "required": ["schemaVersion", "requestId", "snapshotId", "gameDataVersionId", "objective", "appliedConstraints", "impliedConstraints", "searched", "solver", "validCount", "maxima", "minima", "results"],
   "properties": {
     "schemaVersion": {"const": "0.1.0"},
     "requestId": {"type": "string"},
     "snapshotId": {"type": "string"},
     "gameDataVersionId": {"type": "string"},
+    "objective": {"type": "object"},
+    "appliedConstraints": {"type": "array", "items": {"$ref": "#/$defs/appliedConstraint"}},
+    "impliedConstraints": {"type": "array", "items": {"$ref": "#/$defs/appliedConstraint"}},
     "searched": {"type": "integer", "minimum": 0},
     "solver": {
       "type": "object",
@@ -58,6 +61,19 @@
           "artifactStatSource": {"enum": ["account_observed", "legacy_account_stats", "public_level_curve", "unavailable"]},
           "artifactStatWarnings": {"type": "array", "items": {"type": "string"}}
         }
+      }
+    }
+  },
+  "$defs": {
+    "appliedConstraint": {
+      "type": "object",
+      "required": ["stat", "op", "value", "layer"],
+      "properties": {
+        "stat": {"type": "string"},
+        "op": {"enum": [">=", "<=", "=", ">", "<"]},
+        "value": {"type": "number"},
+        "layer": {"enum": ["sheet", "conditional", "encounter"]},
+        "source": {"type": "string"}
       }
     }
   }

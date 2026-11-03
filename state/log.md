@@ -244,3 +244,10 @@ Append-only. Newest entries go at the bottom.
 - Added `account-collector.mjs` as the single operator-facing account collection program. It routes emulator/official-PC plans, interactive capture, resumable processing and state summaries without duplicating the evidence pipeline.
 - The capture command preserves explicit channel requirements: emulator accepts an optional ADB serial; official PC requires an explicit PID. The process command preserves both mandatory human Review gates and only forwards reviewed artifacts into finalization.
 - Help, both channel plans and a waiting-state summary were exercised. Full repository verification passed; no live capture was attempted because no target game client or ADB device exists on this machine.
+
+## 2026-11-03 · OP-033
+
+- Split the ambiguous crit objective into `full_crit_damage_proxy` and the existing expected-value `crit_proxy`. The full-crit objective injects `crit_rate >= 1` inside the shared solver and scores `atk_sheet × (1 + crit_damage)`.
+- Added applied/implied constraints and the objective to CLI result JSON, so downstream review can see that full crit was enforced even when the request contained no explicit crit constraint.
+- Exact/branch-bound regression covers the new objective. Hidden-browser QA loaded the example account with no visible crit constraint, returned one 100% crit build scoring 1210.01, then fixed `helm-002` and reported the exact 85% theoretical maximum. Browser warning/error logs were empty.
+- Browser plugin and repository Playwright runtime were absent; QA used the hidden IAB. Desktop rendering was checked; no fresh mobile viewport was available in this pass.

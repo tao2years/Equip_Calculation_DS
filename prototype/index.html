@@ -74,6 +74,7 @@
           <label class="field objective-field">
             <span>优化目标</span>
             <select id="objective-select">
+              <option value="full_crit_damage_proxy">满暴攻击×爆伤代理</option>
               <option value="crit_proxy">期望重击输出代理</option>
               <option value="weighted_stats">自定义加权面板</option>
               <option value="atk_sheet">攻击</option>
@@ -112,6 +113,7 @@
           </div>
           <div class="weight-grid" id="weight-grid"></div>
         </div>
+        <p class="objective-help" id="objective-help">自动要求重击率 ≥100%，并最大化 攻击×(1+重击伤害)。这是面板代理，不是技能最终伤害。</p>
         <p class="validation-message" id="validation-message" role="status"></p>
       </section>
 

@@ -20,7 +20,6 @@ const STAT_DEFINITIONS = [
 ];
 
 const DEFAULT_CONSTRAINTS = [
-  { stat: "crit_rate", op: ">=", value: 100 },
   { stat: "atk_sheet", op: ">=", value: 500 },
   { stat: "hp_sheet", op: ">=", value: 7000 },
   { stat: "accuracy", op: ">=", value: 0 }
@@ -281,7 +280,7 @@ function objectiveFromUi() {
     if (!Object.keys(weights).length) throw new Error("自定义加权目标至少需要一个非零权重");
     return { kind: "weighted_stats", direction, weights };
   }
-  return value === "crit_proxy" ? { kind: "crit_proxy", direction } : { kind: "single_stat", stat: value, direction };
+  return ["crit_proxy", "full_crit_damage_proxy"].includes(value) ? { kind: value, direction } : { kind: "single_stat", stat: value, direction };
 }
 
 function initializeWeightedObjective() {
@@ -297,7 +296,15 @@ function initializeWeightedObjective() {
 }
 
 function updateObjectiveEditor() {
-  byId("weighted-objective").hidden = byId("objective-select").value !== "weighted_stats";
+  const objective = byId("objective-select").value;
+  byId("weighted-objective").hidden = objective !== "weighted_stats";
+  byId("objective-help").textContent = objective === "full_crit_damage_proxy"
+    ? "自动要求重击率 ≥100%，并最大化 攻击×(1+重击伤害)。这是面板代理，不是技能最终伤害。"
+    : objective === "crit_proxy"
+      ? "最大化 攻击×(1+封顶重击率×重击伤害)，用于比较期望重击面板，不会自动要求满暴。"
+      : objective === "weighted_stats"
+        ? "按下方自定义权重比较面板；百分比权重按每 1% 计算。"
+        : "直接最大化或最小化所选面板属性。";
 }
 
 function runOptimization() {
@@ -318,7 +325,7 @@ function runOptimization() {
   state.results = outcome.results;
   state.selectedResult = 0;
   state.solver = outcome.solver;
-  renderResults(outcome, constraints);
+  renderResults(outcome, outcome.appliedConstraints || constraints);
 }
 
 function constraintFailure(constraint, maxima, minima) {
@@ -333,8 +340,8 @@ function constraintFailure(constraint, maxima, minima) {
 function formatObjectiveScore(result) {
   const objectiveId = byId("objective-select").value;
   const value = result.objectiveScore ?? result.score;
-  if (objectiveId === "weighted_stats") return Number(value || 0).toLocaleString("zh-CN", { maximumFractionDigits: 2 });
-  return objectiveId !== "crit_proxy" && statDefinition(objectiveId).unit === "ratio" ? formatPct(value) : formatInt(value);
+  if (["weighted_stats", "crit_proxy", "full_crit_damage_proxy"].includes(objectiveId)) return Number(value || 0).toLocaleString("zh-CN", { maximumFractionDigits: 2 });
+  return statDefinition(objectiveId).unit === "ratio" ? formatPct(value) : formatInt(value);
 }
 
 function renderResults(outcome, constraints) {

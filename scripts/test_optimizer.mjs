@@ -51,6 +51,28 @@ assert.equal(result.results.length, 1);
 assert.equal(result.results[0].stats.crit_rate, 1);
 assert.deepEqual(result.results[0].gear.map((item) => item.ownedItemId), ["helm-001", "weapon-001", "chest-001", "gloves-001", "prune-001", "nrune-001"]);
 
+const fullCritObjective = enumerateBuilds({
+  ...request,
+  constraints: [],
+  objective: { kind: "full_crit_damage_proxy", direction: "maximize" }
+});
+assert.deepEqual(fullCritObjective.impliedConstraints, [
+  { stat: "crit_rate", op: ">=", value: 1, layer: "sheet", source: "objective_full_crit" }
+]);
+assert(fullCritObjective.results.length > 0);
+assert(fullCritObjective.results.every((entry) => entry.stats.crit_rate >= 1));
+assert.equal(
+  fullCritObjective.results[0].objectiveScore,
+  fullCritObjective.results[0].stats.atk_sheet * (1 + fullCritObjective.results[0].stats.crit_damage)
+);
+const impossibleFullCrit = enumerateBuilds({
+  ...request,
+  constraints: [],
+  fixed: { helmet: "helm-002" },
+  objective: { kind: "full_crit_damage_proxy", direction: "maximize" }
+});
+assert.equal(impossibleFullCrit.validCount, 0);
+
 const fixed = enumerateBuilds({ ...request, fixed: { helmet: "helm-002" } });
 assert.equal(fixed.searched, 32);
 assert.equal(fixed.validCount, 0);
@@ -129,6 +151,7 @@ for (const scenario of [
   { constraints: [], objective: { kind: "single_stat", stat: "atk_sheet", direction: "maximize" } },
   { constraints: [], objective: { kind: "single_stat", stat: "hp_sheet", direction: "minimize" } },
   { constraints: [{ stat: "crit_rate", op: ">=", value: 0.55, layer: "sheet" }], objective: { kind: "crit_proxy", direction: "maximize" } },
+  { constraints: [], objective: { kind: "full_crit_damage_proxy", direction: "maximize" } },
   { constraints: [{ stat: "accuracy", op: ">=", value: 70, layer: "sheet" }, { stat: "crit_rate", op: "<=", value: 0.9, layer: "sheet" }], objective: { kind: "weighted_stats", direction: "maximize", weights: { atk_sheet: 1, crit_damage: 600, accuracy: 2 } } }
 ]) {
   const common = { ...request, account: scalableAccount, constraints: scenario.constraints, objective: scenario.objective, limit: 10 };
@@ -156,4 +179,4 @@ assert.equal(heuristic.solver.validCountExact, false);
 assert.equal(heuristic.solver.reducedSearchSpace, 3 ** 6);
 assert(heuristic.solver.candidateCounts.every((entry) => entry.before === 5 && entry.after === 3));
 
-console.log("Optimizer tests passed: artifact curve/override provenance, canonical/OCR parity, generic constraints, and exhaustive/branch-bound Top-N parity");
+console.log("Optimizer tests passed: full-crit implied constraint, artifact provenance, canonical/OCR parity, generic constraints, and exact Top-N parity");
