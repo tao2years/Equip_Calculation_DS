@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/pc-window-capture.schema.json",
+  "title": "Dragonheir Explicit PC Window Capture Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "capturedAt", "sourceMethod", "privacy", "target", "captureType", "bounds", "image", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "capturedAt": {"type": "string", "format": "date-time"},
+    "sourceMethod": {"const": "official_pc_visible_window_user_initiated_screenshot"},
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localOnly", "uploadPerformed"],
+      "properties": {"localOnly": {"const": true}, "uploadPerformed": {"const": false}}
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["processId", "processName", "windowTitle", "visible", "minimized"],
+      "properties": {
+        "processId": {"type": "integer", "minimum": 1},
+        "processName": {"type": "string", "minLength": 1},
+        "windowTitle": {"type": "string"},
+        "visible": {"const": true},
+        "minimized": {"const": false}
+      }
+    },
+    "captureType": {"enum": ["unclassified", "hero_list", "hero_detail", "gear_list", "gear_detail", "artifact_list", "artifact_detail"]},
+    "bounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["left", "top", "width", "height"],
+      "properties": {
+        "left": {"type": "integer"},
+        "top": {"type": "integer"},
+        "width": {"type": "integer", "minimum": 1},
+        "height": {"type": "integer", "minimum": 1}
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localName", "mediaType", "byteLength", "sha256"],
+      "properties": {
+        "localName": {"type": "string", "minLength": 1},
+        "mediaType": {"const": "image/png"},
+        "byteLength": {"type": "integer", "minimum": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "limitations": {"type": "string", "minLength": 1}
+  }
+}

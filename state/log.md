@@ -192,3 +192,10 @@ Append-only. Newest entries go at the bottom.
 - Hidden-browser QA loaded the synthetic account, selected the weighted objective with attack weight 1 and crit-damage weight 10 per 1%, exhaustively evaluated 64 builds, and rendered one feasible result scoring `1,556.95`; browser warnings/errors were empty.
 - Made public compilation and audit timestamps derive from immutable source snapshots instead of wall-clock build time. Two consecutive full verification runs produced identical SHA-256 values for `game-data.public.json` and `import-dictionary.json`, preventing no-op cross-device Git churn.
 - Reconfirmed that this improves configurable calculation only. It does not change the incomplete status of real logged-in account collection or current-client formula validation.
+
+## 2026-11-03 · OP-026
+
+- Added an official-PC candidate capture adapter. `window-screenshot` requires an explicit positive PID, rejects minimized/hidden/no-main-window targets and captures only visible pixels; it records process/window identity, bounds, PNG hash, privacy flags and known limitations.
+- Added a dedicated metadata schema/fixture and exposed `window-probe` plus the adapter capability through the collector CLI. The adapter never enumerates all window titles and performs no clicks, login, memory access or packet interception.
+- Windows capability probe passed and an invalid PID was confirmed to fail without creating an output file. Full repository verification now covers 26 schema artifacts and 20 schema definitions.
+- No real game client was present and no existing desktop window was captured. Occlusion, DPI scaling, full-screen rendering and page completeness remain explicit live-client acceptance work.

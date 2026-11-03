@@ -18,6 +18,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULT_GAME_DATA = path.join(ROOT, "data", "game-data.public.json");
 const DEFAULT_DICTIONARY = path.join(ROOT, "data", "import-dictionary.json");
 const WINDOWS_OCR_SCRIPT = path.join(ROOT, "collectors", "windows-ocr.ps1");
+const WINDOWS_WINDOW_CAPTURE_SCRIPT = path.join(ROOT, "collectors", "windows-window-capture.ps1");
 
 function parseArgs(argv) {
   const [command = "help", ...rest] = argv;
@@ -258,6 +259,15 @@ function runWindowsOcr(arguments_) {
   return result.stdout.trim();
 }
 
+function runWindowsWindowCapture(arguments_) {
+  const result = spawnSync("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", WINDOWS_WINDOW_CAPTURE_SCRIPT, ...arguments_], {
+    encoding: "utf8",
+    windowsHide: true
+  });
+  if (result.status !== 0) throw new Error((result.stderr || result.stdout || "Windows window capture failed").trim());
+  return result.stdout.trim();
+}
+
 async function commandOcrImage(options) {
   if (process.platform !== "win32") throw new Error("The bundled Windows.Media.Ocr adapter requires Windows");
   const input = requireOption(options, "input");
@@ -309,6 +319,23 @@ async function commandAdbScreenshot(options) {
   };
   await writeJsonExclusive(metadataOutput, metadata);
   return { command: "adb-screenshot", output, metadata: metadataOutput, serial: device.serial, captureType, bytes: bytes.length, sha256: metadata.image.sha256 };
+}
+
+async function commandWindowProbe() {
+  if (process.platform !== "win32") return { command: "window-probe", available: false, reason: "Windows only" };
+  return { command: "window-probe", ...JSON.parse(runWindowsWindowCapture(["-Probe"])) };
+}
+
+async function commandWindowScreenshot(options) {
+  if (process.platform !== "win32") throw new Error("Visible-window capture requires Windows");
+  const output = requireOption(options, "output");
+  if (path.extname(output).toLowerCase() !== ".png") throw new Error("--output must use a .png extension");
+  const processId = Number(requireText(options, "pid"));
+  if (!Number.isInteger(processId) || processId <= 0) throw new Error("--pid must be a positive integer");
+  const metadata = options.metadata ? path.resolve(String(options.metadata)) : `${output}.metadata.json`;
+  const captureType = String(options.captureType || "unclassified");
+  const result = JSON.parse(runWindowsWindowCapture(["-ProcessId", String(processId), "-OutputPath", output, "-MetadataPath", metadata, "-CaptureType", captureType]));
+  return { command: "window-screenshot", processId, captureType, ...result };
 }
 
 async function commandOcrBundle(options) {
@@ -440,6 +467,15 @@ async function commandProbe() {
     }
   }
   const adb = probeAdb();
+  let windowCapture = { id: "pc-window-screenshot", executable: false, capability: "explicit visible-window screenshot without input automation", reason: "non-Windows platform" };
+  if (process.platform === "win32") {
+    try {
+      const probe = JSON.parse(runWindowsWindowCapture(["-Probe"]));
+      windowCapture = { id: "pc-window-screenshot", executable: probe.available, capability: "explicit visible-window screenshot without input automation", adapter: probe.adapter };
+    } catch (error) {
+      windowCapture = { id: "pc-window-screenshot", executable: false, capability: "explicit visible-window screenshot without input automation", reason: error.message };
+    }
+  }
   return {
     command: "probe",
     platform: process.platform,
@@ -455,6 +491,7 @@ async function commandProbe() {
       { id: "staging-finalizer", executable: true, capability: "convert reviewed OCR staging records into a canonical AccountSnapshot" },
       windowsOcr,
       { id: "adb-screenshot", executable: adb.executable, capability: "user-initiated emulator screenshot capture without taps, memory access or packet interception", reason: adb.executable ? undefined : adb.reason, authorizedDevices: adb.authorizedDevices || 0 },
+      windowCapture,
       { id: "visible-ui", executable: false, capability: "requires target client, channel review, screen map, and golden screenshots" },
       { id: "official-api", executable: false, capability: "no verified official account export/API discovered" }
     ]
@@ -475,6 +512,8 @@ function help() {
       "node collectors/cli.mjs ocr-image --input screenshot.png --output raw-ocr.json",
       "node collectors/cli.mjs adb-probe",
       "node collectors/cli.mjs adb-screenshot --output capture.png --capture-type gear_detail [--serial emulator-5554]",
+      "node collectors/cli.mjs window-probe",
+      "node collectors/cli.mjs window-screenshot --pid 1234 --output capture.png --capture-type hero_detail",
       "node collectors/cli.mjs stage-screenshots --input screenshots --output staging",
       "node collectors/cli.mjs ocr-bundle --manifest staging/<job>/manifest.json"
     ],
@@ -496,6 +535,8 @@ try {
   else if (command === "ocr-image") result = await commandOcrImage(options);
   else if (command === "adb-probe") result = await commandAdbProbe(options);
   else if (command === "adb-screenshot") result = await commandAdbScreenshot(options);
+  else if (command === "window-probe") result = await commandWindowProbe(options);
+  else if (command === "window-screenshot") result = await commandWindowScreenshot(options);
   else if (command === "ocr-bundle") result = await commandOcrBundle(options);
   else if (command === "stage-screenshots") result = await commandStageScreenshots(options);
   else result = help();

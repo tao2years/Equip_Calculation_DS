@@ -46,6 +46,7 @@ OptimizationRequest + HTML UI ────────┴─> Top N BuildResult
 - `collectors/cli.mjs ocr-bundle`：本机批量 OCR、文字坐标和不可覆盖派生文件。
 - `collectors/cli.mjs extract-layout`：按版本化 layout profile 把坐标 OCR 转成 staging 和问题报告；目前仅有合成 profile 证据。
 - `collectors/pipeline.mjs`：从截图 manifest 或 ADB capture session 一键运行到 OCR Review 门，应用逐行决策后继续到 staging Review 门，再执行 finalize/validate；全程按输入/产物哈希安全续跑。
+- `window-screenshot`：官方 PC 候选入口，要求显式进程 PID，只截取可见未最小化窗口并保存边界/哈希元数据；能力探测已通过，真实客户端尚未验证。
 - `prototype/staging-review.html`：第二级结构化字段编辑器，逐条修正三类账号实体、实时运行 canonical finalizer，并导出绑定 machine-staging SHA-256 的 `human_reviewed` 文件。
 - `prototype/review.html`：原图关联、OCR 框、候选修正和接受/驳回。
 - `collectors/cli.mjs finalize-staging`：已复核 staging 到 `AccountSnapshot` 的确定性转换。

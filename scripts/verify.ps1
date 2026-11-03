@@ -89,6 +89,7 @@ try {
     node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run | Out-Null
     node scripts/solve_request.mjs --output examples/optimization-result.example.json
     if ($env:OS -eq 'Windows_NT') {
+        node collectors/cli.mjs window-probe | Out-Null
         node collectors/cli.mjs ocr-image --input outputs/design/prototype-browser-verified.png --output outputs/qa/windows-ocr-prototype.json
         node scripts/inspect_ocr_labels.mjs --input outputs/qa/windows-ocr-prototype.json --output outputs/qa/windows-ocr-labels.json
         node scripts/test_windows_ocr_output.mjs
@@ -121,6 +122,7 @@ pairs = [
     ('schemas/layout-extraction-report.schema.json', 'examples/layout-extraction-report.example.json'),
     ('schemas/collector-pipeline-state.schema.json', 'examples/collector-pipeline-state.example.json'),
     ('schemas/capture-evidence.schema.json', 'examples/capture-evidence.example.json'),
+    ('schemas/pc-window-capture.schema.json', 'examples/pc-window-capture.example.json'),
     ('schemas/capture-plan.schema.json', 'examples/emulator-capture-plan.example.json'),
     ('schemas/capture-session.schema.json', 'examples/capture-session.example.json'),
     ('schemas/optimization-request.schema.json', 'examples/optimization-request.example.json'),

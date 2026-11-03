@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "capturedAt": "2026-11-03T18:10:00+08:00",
+  "sourceMethod": "official_pc_visible_window_user_initiated_screenshot",
+  "privacy": {"localOnly": true, "uploadPerformed": false},
+  "target": {
+    "processId": 1234,
+    "processName": "synthetic-game-client",
+    "windowTitle": "Synthetic Dragonheir Fixture",
+    "visible": true,
+    "minimized": false
+  },
+  "captureType": "hero_detail",
+  "bounds": {"left": 100, "top": 80, "width": 1280, "height": 720},
+  "image": {
+    "localName": "hero-detail-0001.png",
+    "mediaType": "image/png",
+    "byteLength": 1024,
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "limitations": "Synthetic schema fixture. It does not prove capture from a real game client."
+}
