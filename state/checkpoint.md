@@ -79,6 +79,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Steam 官方社区公告快照现已明确将 `dragonheir.info` 称为 official Wiki；来源身份已确认，但所有编译数值仍保持未经过客户端验证的证据等级。对 829 条原始目录对象的字段审计还确认：公开对象包含强化上限与主属性曲线，不包含完整随机副词条池、roll 落点、次数或概率。
 - `scripts/refresh_public_data.mjs` 现提供跨平台的一键公共数据刷新：校验并复用同日不可变快照或抓取新日期的装备目录、英雄目录与官方 Wiki 身份公告，再重建 GameData、导入词典和审计输出。编译产物顶层 provenance 已包含 SRC-004/005/024 三条快照哈希。
 - 新增由 SRC-002 哈希约束生成的 `equipment-rules.public.json`：5 组副词条 roll/单次强化规则、4 组主属性里程碑与 3 条机制公式候选。强化事件总次数仍为显式未知，规则尚未进入求解器自动计算。
+- `collectors/account-collector.mjs` 现将模拟器/官方 PC 计划、引导采集、pipeline 处理和状态查询统一为 plan/capture/process/status 四个命令；底层仍保留两级人工 Review 和渠道边界。两个渠道 plan 与状态摘要已回归，真实客户端 capture 未执行。
 
 ## Next durable steps
 

@@ -42,6 +42,7 @@ OptimizationRequest + HTML UI ────────┴─> Top N BuildResult
 
 ### 当前已有证据
 
+- `collectors/account-collector.mjs`：操作者统一入口，提供渠道计划、引导采集、两级 Review pipeline 处理和状态摘要；不需要记忆内部脚本组合。
 - `collectors/adb-session.mjs`：7 阶段、最低 50 张截图的引导式会话；只截屏，不点击。
 - `collectors/cli.mjs ocr-bundle`：本机批量 OCR、文字坐标和不可覆盖派生文件。
 - `collectors/cli.mjs extract-layout`：按版本化 layout profile 把坐标 OCR 转成 staging 和问题报告；目前仅有合成 profile 证据。

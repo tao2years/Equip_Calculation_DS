@@ -21,6 +21,7 @@ try {
     node --check prototype/inventory.js
     node --check prototype/inventory-core.mjs
     node --check collectors/cli.mjs
+    node --check collectors/account-collector.mjs
     node --check scripts/crawl_public_data.mjs
     node --check scripts/refresh_public_data.mjs
     node --check scripts/compile_public_heroes.mjs
@@ -100,6 +101,9 @@ try {
     node scripts/test_formula_cases.mjs
     node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run | Out-Null
     node collectors/window-session.mjs --plan examples/pc-capture-plan.example.json --dry-run | Out-Null
+    node collectors/account-collector.mjs plan --channel emulator | Out-Null
+    node collectors/account-collector.mjs plan --channel official_pc | Out-Null
+    node collectors/account-collector.mjs status --state examples/collector-pipeline-state.example.json | Out-Null
     node scripts/solve_request.mjs --output examples/optimization-result.example.json
     if ($env:OS -eq 'Windows_NT') {
         node collectors/cli.mjs window-probe | Out-Null

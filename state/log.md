@@ -238,3 +238,9 @@ Append-only. Newest entries go at the bottom.
 - Added a schema-valid public mechanics package with five secondary-affix roll ranges, four primary-stat milestone groups and three calculation-rule candidates. It records the Wiki copy-edit inconsistency in the Accuracy/Resistance section.
 - Kept `enhancementEventCount=null` on every secondary rule because the source states the per-enhancement delta but not the number of enhancement events. The usage policy blocks automatic owned-item roll inference or calculator activation before target-client validation.
 - Full verification passed with 33 schema artifacts, 26 schemas and 27 Markdown files.
+
+## 2026-11-03 · OP-032
+
+- Added `account-collector.mjs` as the single operator-facing account collection program. It routes emulator/official-PC plans, interactive capture, resumable processing and state summaries without duplicating the evidence pipeline.
+- The capture command preserves explicit channel requirements: emulator accepts an optional ADB serial; official PC requires an explicit PID. The process command preserves both mandatory human Review gates and only forwards reviewed artifacts into finalization.
+- Help, both channel plans and a waiting-state summary were exercised. Full repository verification passed; no live capture was attempted because no target game client or ADB device exists on this machine.

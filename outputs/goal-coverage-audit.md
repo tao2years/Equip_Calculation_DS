@@ -17,13 +17,13 @@
 | 国服中文名称与稳定 ID | 候选语料已固化，映射未完成 | 70 条社区英雄名称、6 条官方页面名称；当前仅 2/351 英雄有非 ASCII 别名 | 当前客户端/官方双语证据；逐项人工 Review 后才能进入导入字典 |
 | 收集登录账号拥有的角色 | 未完成 | 已有通用坐标布局解析器和三类合成详情页 golden case，但没有真实登录客户端输出 | 选择 PC/模拟器渠道；获取真实角色列表/详情截图；校准真实 profile 并做完整性核对 |
 | 收集账号拥有的装备/神器 | 未完成 | `AccountSnapshot`、截图暂存、批量 OCR、配置驱动布局解析、两级 Review、续跑管线和独立人工参考完整性审计均已有；审计能检测总数/槽位缺失、重复和未知引用，当前证据仍为合成 | 真实 profile、背包翻页覆盖、字段解析准确率和真实人工 reference 对账 |
-| 模拟器采集脚本 | 引导式程序与续跑管线已实现，未实机验证 | `adb-probe`、单张截图、7 阶段/最低 50 张的会话，以及 manifest/session → OCR Review → layout → staging Review → snapshot 的哈希续跑管线均可执行；本机无 ADB | 在已授权模拟器上实测连接、分辨率、PNG、人工翻页覆盖、真实 profile 和完整性；当前不自动点击 |
-| 官方 PC 客户端采集脚本 | 只读窗口截图与引导会话已实现，未实机验证 | `window-probe`/`window-screenshot` 要求显式 PID；`window-session.mjs` 复用 7 阶段计划和最低截图数并输出可进 pipeline 的 manifest；能力探测/dry-run 通过 | 有客户端后验证遮挡、全屏、缩放/DPI、真实页面覆盖与条款；当前不自动导航，不使用内存/抓包/注入 |
+| 模拟器采集脚本 | 统一 CLI、引导式采集与续跑管线已实现，未实机验证 | `account-collector.mjs` 提供 plan/capture/process/status；其下接 ADB 7 阶段/最低 50 张会话与 manifest → 两级 Review → snapshot 的哈希管线；本机无 ADB | 在已授权模拟器上实测连接、分辨率、PNG、人工翻页覆盖、真实 profile 和完整性；当前不自动点击 |
+| 官方 PC 客户端采集脚本 | 统一 CLI、只读窗口截图与引导会话已实现，未实机验证 | `account-collector.mjs` 选择 `official_pc` 后要求显式 PID；7 阶段计划输出可进同一 pipeline 的 manifest；统一入口 plan/status 与完整回归通过 | 有客户端后验证遮挡、全屏、缩放/DPI、真实页面覆盖与条款；当前不自动导航，不使用内存/抓包/注入 |
 | HTML 导入账号文件 | 原型完成 | `prototype/inventory.html` 可创建/导入/编辑/导出账号快照并一键交给 `prototype/index.html`；公共定义引用和重复 ID 会校验 | 用真实账号快照回归；增加 CSV、正式 merge/diff 与批量编辑 |
 | 选择角色、固定神器/装备 | 原型完成 | 六装备槽位和神器均可固定；支持允许拆全部角色、仅当前角色或仅背包，以及可选排除锁定装备；固定项覆盖过滤 | 真实背包与当前穿戴关系验证 |
 | 属性门槛与优化目标 | 原型完成 | HTML 支持十种面板属性、五种比较符、同属性区间、最大化/最小化、满暴代理、自定义加权面板、Top 20，并显式选择自动/全局精确/快速启发式；合成基准覆盖 100/300/1,000 件 | 真实公式校准、真实背包基准、启发式质量矩阵和 Web Worker |
 | “满暴下爆伤×攻击”等公式 | 仅透明代理；校准工具已实现 | 求解器明确标记 proxy；formula golden-case 验证器能逐属性比较预测与观测并拒绝偏差，当前仅 synthetic arithmetic cases | 用目标渠道/build 客户端面板填充 `client_observation` cases，并用战斗日志验证条件效果与技能模型 |
-| 阶段性持久化和跨环境协同 | 已建立 | `AGENTS.md`、`raw/`、`corpus/`、`wiki/`、`state/`、Schema 与 `verify.ps1` | 正式提交/远程发布仍需用户授权 |
+| 阶段性持久化和跨环境协同 | 已建立并推送阶段分支 | `AGENTS.md`、`raw/`、`corpus/`、`wiki/`、`state/`、Schema、`verify.ps1` 与 GitHub `codex/phase-1-foundation` | 合并主分支、发布成品或扩大共享仍需用户授权 |
 
 ## 当前真实可用闭环
 

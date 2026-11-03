@@ -74,6 +74,17 @@ Screenshot → OCR lines/coordinates → versioned layout extraction
 
 `pipeline.mjs` 把 manifest/session → OCR → OCR Review → layout extraction → staging Review → finalize → validation 串成一个可续跑程序。`pipeline-state.json` 保存输入哈希、逐步状态、产物哈希和追加事件；已完成且哈希一致的步骤复用，产物被修改后拒绝继续。状态写入使用临时文件原子替换；Windows 杀毒/索引造成的短暂 `EPERM`/`EBUSY`/`EACCES` 会有界退避重试，但不会退化为可能留下半截 JSON 的原地覆盖。普通截图任务的 `files[]` 与 ADB 引导会话的 `captures[]` 使用同一适配层。OCR 支持 `--resume`：完整 recognition 可复用；中断留下的逐图 OCR 只有在原图 SHA-256 和语言一致时才复用。
 
+面向操作者统一使用 `account-collector.mjs`，不必记忆各内部脚本：
+
+```powershell
+node collectors/account-collector.mjs plan --channel official_pc
+node collectors/account-collector.mjs capture --channel official_pc --pid 1234 --output account-runs
+node collectors/account-collector.mjs process --manifest account-runs/<session>/manifest.json --profile <real-layout.json> --output account-runs/<session>/pipeline
+node collectors/account-collector.mjs status --state account-runs/<session>/pipeline/pipeline-state.json
+```
+
+`process` 第一次会停在 OCR 行级 Review，第二次会停在字段级 Review；分别传回导出的 `--ocr-review` 和 `--reviewed-staging` 后继续。统一入口不会自动登录、点击、读内存或抓包。
+
 第一次默认停为 `awaiting_ocr_review`。在 `prototype/review.html` 校对截图、字段候选和接受/驳回状态，导出 Review JSON 后用 `--ocr-review` 续跑；`apply-review` 会验证任务 ID、截图哈希、未解决字段和候选 ID，生成不可覆盖的 reviewed recognition。布局解析后第二次停为 `awaiting_staging_review`：在 `prototype/staging-review.html` 载入该运行的 `machine-staging.json`，逐条修正角色、装备、神器和属性词条；页面以正式 finalizer 实时校验，并导出带原 staging SHA-256 的 reviewed staging。只有以 `--reviewed-staging` 提供该文件，才生成 `account-snapshot.json`。`--accept-synthetic-staging` 只能用于 `evidenceLevel=synthetic_fixture` 的自动回归，不能绕过真实渠道的两级 Review。
 
 启动本地原型后访问 `prototype/review.html`，可载入 recognition bundle，并按文件名关联本地原图。页面支持坐标框、全部 OCR 行切换、截图类型、字典候选修正、接受/驳回和 Review JSON 导出。Review JSON 可由 `apply-review` 或一键管线正式应用到 recognition，但仍不等于最终 `OcrStaging` 或 `AccountSnapshot`；真实游戏 profile 尚需 golden screenshots 校准。
