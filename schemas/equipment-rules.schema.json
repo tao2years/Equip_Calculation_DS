@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/equipment-rules.schema.json",
+  "title": "Evidence-backed public equipment mechanics rules",
+  "type": "object",
+  "required": ["schemaVersion", "compiledAt", "evidenceLevel", "sources", "secondaryAffixRules", "primaryStatMilestones", "calculationRules", "unresolvedQuestions", "usagePolicy"],
+  "properties": {
+    "schemaVersion": {"type": "string"},
+    "compiledAt": {"type": "string", "format": "date-time"},
+    "evidenceLevel": {"const": "official_wiki_rule_not_client_validated"},
+    "sources": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["sourceId", "url", "snapshotPath", "snapshotSha256", "retrievedAt"]}},
+    "secondaryAffixRules": {"type": "array", "items": {"$ref": "#/$defs/secondaryRule"}},
+    "primaryStatMilestones": {"type": "array", "items": {"type": "object", "required": ["statKeys", "eligibleSlots", "levels", "unit"]}},
+    "calculationRules": {"type": "array", "items": {"type": "object", "required": ["ruleId", "expression", "scope", "evidence"]}},
+    "unresolvedQuestions": {"type": "array", "items": {"type": "string"}},
+    "usagePolicy": {"type": "string"}
+  },
+  "$defs": {
+    "secondaryRule": {
+      "type": "object",
+      "required": ["statKeys", "eligibleSlots", "initialRoll", "perEnhancement", "enhancementEventCount", "countStatus"],
+      "properties": {
+        "statKeys": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "eligibleSlots": {"type": "array", "minItems": 1, "items": {"enum": ["helmet", "gloves", "chest", "weapon", "positive_rune", "negative_rune"]}},
+        "initialRoll": {"type": "object", "required": ["min", "max", "unit"], "properties": {"min": {"type": "number"}, "max": {"type": "number"}, "unit": {"enum": ["flat", "ratio"]}}},
+        "perEnhancement": {"const": "same_as_initial_roll"},
+        "enhancementEventCount": {"type": ["integer", "null"], "minimum": 0},
+        "countStatus": {"enum": ["not_stated_in_source", "client_validated"]},
+        "sourceWarning": {"type": "string"}
+      }
+    }
+  }
+}

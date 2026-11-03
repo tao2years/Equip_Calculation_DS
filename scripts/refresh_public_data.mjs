@@ -14,6 +14,7 @@ const BUILD_STEPS = [
   "scripts/compile_public_catalogs.mjs",
   "scripts/build_game_data.mjs",
   "scripts/build_import_dictionary.mjs",
+  "scripts/build_equipment_rules.mjs",
   "scripts/audit_public_domain.mjs",
   "scripts/audit_equipment_model.mjs",
   "scripts/compile_cn_name_candidates.mjs"

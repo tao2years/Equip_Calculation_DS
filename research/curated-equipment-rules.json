@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "0.1.0",
+  "source": {
+    "sourceId": "SRC-002",
+    "snapshotPath": "raw/public-web/SRC-002/2026-11-03/snapshot.html",
+    "snapshotSha256": "335d4cd13be278f3a38cdca6176afbfddda060de598bfd7475eb25b9220013a7"
+  },
+  "secondaryAffixRules": [
+    {"statKeys": ["enlightenment"], "eligibleSlots": ["helmet", "gloves", "chest", "weapon", "positive_rune", "negative_rune"], "initialRoll": {"min": 9, "max": 15, "unit": "flat"}, "perEnhancement": "same_as_initial_roll"},
+    {"statKeys": ["accuracy", "resistance"], "eligibleSlots": ["helmet", "gloves", "chest", "weapon", "positive_rune", "negative_rune"], "initialRoll": {"min": 9, "max": 15, "unit": "flat"}, "perEnhancement": "same_as_initial_roll", "sourceWarning": "The article sentence mistakenly says Enlightenment while the surrounding heading and numeric sentence say Accuracy and Resistance."},
+    {"statKeys": ["attack_speed_pct"], "eligibleSlots": ["positive_rune", "negative_rune"], "initialRoll": {"min": 0.05, "max": 0.07, "unit": "ratio"}, "perEnhancement": "same_as_initial_roll"},
+    {"statKeys": ["skill_haste"], "eligibleSlots": ["positive_rune", "negative_rune"], "initialRoll": {"min": 5, "max": 7, "unit": "flat"}, "perEnhancement": "same_as_initial_roll"},
+    {"statKeys": ["crit_rate", "crit_damage"], "eligibleSlots": ["helmet", "gloves", "chest", "weapon", "positive_rune", "negative_rune"], "initialRoll": {"min": 0.03, "max": 0.05, "unit": "ratio"}, "perEnhancement": "same_as_initial_roll"}
+  ],
+  "primaryStatMilestones": [
+    {"statKeys": ["enlightenment"], "eligibleSlots": ["helmet", "positive_rune"], "levels": {"8": 30, "12": 50, "16": 80, "20": 120}, "unit": "flat"},
+    {"statKeys": ["accuracy", "resistance"], "eligibleSlots": ["chest", "negative_rune"], "levels": {"8": 24, "12": 40, "16": 64, "20": 96}, "unit": "flat", "sourceWarning": "The surrounding article contains a copy-edit error; validate against the target client."},
+    {"statKeys": ["crit_rate"], "eligibleSlots": ["gloves"], "levels": {"8": 0.09, "12": 0.17, "16": 0.27, "20": 0.4}, "unit": "ratio"},
+    {"statKeys": ["crit_damage"], "eligibleSlots": ["gloves", "positive_rune"], "levels": {"8": 0.09, "12": 0.17, "16": 0.27, "20": 0.4}, "unit": "ratio"}
+  ],
+  "calculationRules": [
+    {"ruleId": "derivative-damage-from-enlightenment", "expression": "bonus_ratio = enlightenment / 200", "scope": "derivative_damage_only", "evidence": "official_wiki_statement"},
+    {"ruleId": "recharge-speed-from-skill-haste", "expression": "recharge_speed_bonus_ratio = skill_haste / 500", "scope": "battle_and_ultimate_skill_recharge", "evidence": "official_wiki_statement_and_example"},
+    {"ruleId": "attack-interval-from-speed", "expression": "new_interval = base_interval / (1 + attack_speed_bonus_ratio)", "scope": "basic_attack_interval", "evidence": "derived_from_official_wiki_example"}
+  ],
+  "unresolvedQuestions": [
+    "How many secondary-affix enhancement events occur for each rarity and maximum level?",
+    "Can an enhancement land repeatedly on the same affix, and are all eligible affixes equally weighted?",
+    "Do current CN and global clients use these exact roll ranges and slot pools?",
+    "What are the authoritative roll ranges for HP, HP%, ATK, ATK%, DEF and DEF%?"
+  ]
+}

@@ -27,6 +27,7 @@ try {
     node --check scripts/compile_public_catalogs.mjs
     node --check scripts/build_game_data.mjs
     node --check scripts/build_import_dictionary.mjs
+    node --check scripts/build_equipment_rules.mjs
     node --check scripts/test_import_dictionary.mjs
     node --check collectors/lib/normalize.mjs
     node --check collectors/lib/detect-labels.mjs
@@ -76,6 +77,7 @@ try {
     node scripts/compile_public_catalogs.mjs
     node scripts/build_game_data.mjs
     node scripts/build_import_dictionary.mjs
+    node scripts/build_equipment_rules.mjs
     node scripts/audit_public_domain.mjs
     node scripts/audit_equipment_model.mjs
     node scripts/compile_cn_name_candidates.mjs
@@ -123,6 +125,7 @@ pairs = [
     ('schemas/game-data.schema.json', 'data/game-data.seed.json'),
     ('schemas/game-data.schema.json', 'data/game-data.public.json'),
     ('schemas/import-dictionary.schema.json', 'data/import-dictionary.json'),
+    ('schemas/equipment-rules.schema.json', 'data/equipment-rules.public.json'),
     ('schemas/cn-name-candidates.schema.json', 'corpus/compiled/cn-name-candidates.json'),
     ('schemas/ocr-staging.schema.json', 'examples/ocr-staging.example.json'),
     ('schemas/ocr-recognition.schema.json', 'examples/ocr-recognition.example.json'),

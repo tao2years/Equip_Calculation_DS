@@ -10,6 +10,7 @@
 - [同类工具模式](topics/competitive-patterns.md)：痒痒鼠魔方、Fribbels、Genshin Optimizer、OCR 扫描器带来的产品启示。
 - [端到端数据管线](topics/end-to-end-data-pipeline.md)：公共图鉴、账号快照、Schema 与离线求解器如何汇合。
 - [神器等级、精炼与属性来源](topics/artifact-model.md)：0–20 强化、0–5 精炼、账号观测覆盖与条件效果边界。
+- [装备词条与强化机制](topics/equipment-affix-mechanics.md)：官方 Wiki 可证实的 roll 区间、强化增量、计算候选和仍未知的强化次数。
 
 ## 主要输出
 

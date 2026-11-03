@@ -35,6 +35,7 @@ node scripts/refresh_public_data.mjs --date=2026-11-03
 - `corpus/compiled/public-catalogs.json`：研究用完整编译记录；
 - `data/game-data.public.json`：HTML 原型可直接消费的数据包；
 - `corpus/compiled/heroes.public.json`：两个英雄详情页的独立编译结果，用作目录页交叉核对。
+- `data/equipment-rules.public.json`：带 SRC-002 快照哈希的副词条区间、强化增量、主属性里程碑和机制公式候选；未知强化次数保持 `null`，尚不自动进入求解器。
 
 ## 数据使用分级
 

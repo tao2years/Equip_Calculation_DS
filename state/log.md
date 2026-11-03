@@ -231,3 +231,10 @@ Append-only. Newest entries go at the bottom.
 - Promoted SRC-024 into `public-catalogs.json` top-level provenance and deterministic `compiledAt`, so downstream consumers can trace both the data pages and the official-Wiki identity claim from the artifact itself.
 - The same-date refresh completed end to end using three verified immutable snapshots, and full repository verification passed afterward.
 - A second same-date refresh left `public-catalogs.json`, `game-data.public.json` and `import-dictionary.json` byte-identical (all three SHA-256 values unchanged), confirming deterministic rebuild behavior from the preserved evidence.
+
+## 2026-11-03 · OP-031
+
+- Extracted the official Wiki attribute article into an evidence-bound curated rule source and deterministic compiler. The compiler refuses to build if the immutable SRC-002 snapshot hash changes.
+- Added a schema-valid public mechanics package with five secondary-affix roll ranges, four primary-stat milestone groups and three calculation-rule candidates. It records the Wiki copy-edit inconsistency in the Accuracy/Resistance section.
+- Kept `enhancementEventCount=null` on every secondary rule because the source states the per-enhancement delta but not the number of enhancement events. The usage policy blocks automatic owned-item roll inference or calculator activation before target-client validation.
+- Full verification passed with 33 schema artifacts, 26 schemas and 27 Markdown files.
