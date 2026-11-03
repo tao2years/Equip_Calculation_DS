@@ -77,6 +77,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Sheet-formula golden-case harness now compares the shared optimizer formula against observed stats with per-case tolerances and evidence/channel/build metadata. Synthetic arithmetic pass and deliberate mismatch detection pass; there are no `client_observation` cases yet.
 
 - Steam 官方社区公告快照现已明确将 `dragonheir.info` 称为 official Wiki；来源身份已确认，但所有编译数值仍保持未经过客户端验证的证据等级。对 829 条原始目录对象的字段审计还确认：公开对象包含强化上限与主属性曲线，不包含完整随机副词条池、roll 落点、次数或概率。
+- `scripts/refresh_public_data.mjs` 现提供跨平台的一键公共数据刷新：校验并复用同日不可变快照或抓取新日期的装备目录、英雄目录与官方 Wiki 身份公告，再重建 GameData、导入词典和审计输出。编译产物顶层 provenance 已包含 SRC-004/005/024 三条快照哈希。
 
 ## Next durable steps
 

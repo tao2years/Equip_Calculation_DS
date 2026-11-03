@@ -22,6 +22,7 @@ try {
     node --check prototype/inventory-core.mjs
     node --check collectors/cli.mjs
     node --check scripts/crawl_public_data.mjs
+    node --check scripts/refresh_public_data.mjs
     node --check scripts/compile_public_heroes.mjs
     node --check scripts/compile_public_catalogs.mjs
     node --check scripts/build_game_data.mjs
@@ -68,6 +69,8 @@ try {
     node --check scripts/test_account_completeness.mjs
     node --check scripts/validate_formula_cases.mjs
     node --check scripts/test_formula_cases.mjs
+
+    node scripts/refresh_public_data.mjs --date=2026-11-03 --dry-run | Out-Null
 
     node scripts/compile_public_heroes.mjs
     node scripts/compile_public_catalogs.mjs

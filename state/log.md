@@ -223,3 +223,11 @@ Append-only. Newest entries go at the bottom.
 - Reclassified the seven existing `dragonheir.info` ledger entries as `official_wiki`, while preserving `public_catalog_compiled_not_client_validated` on compiled records. Official entrypoint provenance is not treated as proof of current-channel values or republication rights.
 - Inspected the raw 829-item Wiki catalog object shape. It contains enhancement limits and primary-stat/refinement curves, but no complete random-substat pool, roll landing history, roll count or probability. Documented the model boundary so these account-instance facts cannot be inferred from fixed curves.
 - A repeated full verification exposed one transient Windows `EPERM` during atomic pipeline-state replacement. The writer now retries only short-lived `EPERM`/`EBUSY`/`EACCES` failures with bounded backoff while preserving atomic temp-file replacement; three consecutive pipeline regressions and the following full verification passed.
+
+## 2026-11-03 · OP-030
+
+- Added `refresh_public_data.mjs` as the executable public-data ingestion entrypoint. It refreshes the load-bearing equipment catalog, hero catalog and official-Wiki provenance source, then rebuilds canonical GameData, import dictionaries and generated audits.
+- Added hash-verified `--reuse-existing` behavior to the low-level crawler. Same-day evidence is reused only when source ID, requested URL and snapshot SHA-256 match; immutable raw evidence is never overwritten.
+- Promoted SRC-024 into `public-catalogs.json` top-level provenance and deterministic `compiledAt`, so downstream consumers can trace both the data pages and the official-Wiki identity claim from the artifact itself.
+- The same-date refresh completed end to end using three verified immutable snapshots, and full repository verification passed afterward.
+- A second same-date refresh left `public-catalogs.json`, `game-data.public.json` and `import-dictionary.json` byte-identical (all three SHA-256 values unchanged), confirming deterministic rebuild behavior from the preserved evidence.

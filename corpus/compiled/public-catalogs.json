@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "compiledAt": "2026-11-03T08:58:38.831Z",
+  "compiledAt": "2026-11-03T10:14:26.753Z",
   "compiler": "scripts/compile_public_catalogs.mjs",
   "sources": [
     {
@@ -16,6 +16,13 @@
       "retrievedAt": "2026-11-03T08:58:38.241Z",
       "snapshotPath": "raw/public-web/SRC-004/2026-11-03/snapshot.html",
       "snapshotSha256": "e8537cfbb7e6166768ce3e726b0b72663d71a50c125edfb052c8a6d69cfcd3a4"
+    },
+    {
+      "sourceId": "SRC-024",
+      "requestedUrl": "https://store.steampowered.com/news/posts/?enddate=1789208028&feed=steam_community_announcements",
+      "retrievedAt": "2026-11-03T10:14:26.753Z",
+      "snapshotPath": "raw/public-web/SRC-024/2026-11-03/snapshot.html",
+      "snapshotSha256": "e56c1549ba9d9ac30edd315ee48e7c7bda757ec4ce1c7ab5f682a21350e127f4"
     }
   ],
   "limitations": [

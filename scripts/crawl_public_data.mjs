@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -13,6 +13,7 @@ const CONFIG_PATH = path.join(ROOT, "research", "public-data-sources.json");
 function parseArgs(argv) {
   return {
     dryRun: argv.includes("--dry-run"),
+    reuseExisting: argv.includes("--reuse-existing"),
     sourceId: argv.find((value) => value.startsWith("--source="))?.split("=", 2)[1] || null,
     date: argv.find((value) => value.startsWith("--date="))?.split("=", 2)[1] || new Date().toISOString().slice(0, 10)
   };
@@ -56,6 +57,20 @@ async function captureSource(source, date) {
   return metadata;
 }
 
+async function reuseSource(source, date) {
+  const metadataPath = path.join(ROOT, "raw", "public-web", source.sourceId, date, "metadata.json");
+  try { await access(metadataPath); } catch { return null; }
+  const metadata = JSON.parse(await readFile(metadataPath, "utf8"));
+  if (metadata.sourceId !== source.sourceId || metadata.requestedUrl !== source.url) {
+    throw new Error(`Existing metadata identity mismatch: ${metadataPath}`);
+  }
+  const snapshotPath = path.join(ROOT, metadata.snapshotPath);
+  const bytes = await readFile(snapshotPath);
+  const actualHash = sha256(bytes);
+  if (actualHash !== metadata.sha256) throw new Error(`Existing snapshot hash mismatch: ${snapshotPath}`);
+  return { ...metadata, reused: true };
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const config = JSON.parse(await readFile(CONFIG_PATH, "utf8"));
@@ -69,8 +84,9 @@ async function main() {
 
   for (const source of selected) {
     try {
-      const metadata = await captureSource(source, args.date);
-      console.log(`captured ${source.sourceId}: ${metadata.status} ${metadata.byteLength} bytes ${metadata.sha256}`);
+      const metadata = args.reuseExisting ? await reuseSource(source, args.date) : null;
+      const result = metadata || await captureSource(source, args.date);
+      console.log(`${metadata ? "reused" : "captured"} ${source.sourceId}: ${result.status} ${result.byteLength} bytes ${result.sha256}`);
     } catch (error) {
       console.error(`failed ${source.sourceId}: ${error.message}`);
       process.exitCode = 1;

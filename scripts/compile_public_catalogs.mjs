@@ -189,9 +189,10 @@ function compileCatalogItem(item) {
   };
 }
 
-const [heroSnapshot, equipmentSnapshot] = await Promise.all([
+const [heroSnapshot, equipmentSnapshot, provenanceSnapshot] = await Promise.all([
   latestSnapshot("SRC-005"),
-  latestSnapshot("SRC-004")
+  latestSnapshot("SRC-004"),
+  latestSnapshot("SRC-024")
 ]);
 const heroState = extractNuxt(heroSnapshot.html, "SRC-005");
 const equipmentState = extractNuxt(equipmentSnapshot.html, "SRC-004");
@@ -233,9 +234,9 @@ const setFamilies = [...setFamilyMap.values()].map((family) => ({
 
 const output = {
   schemaVersion: "0.1.0",
-  compiledAt: [heroSnapshot.metadata.retrievedAt, equipmentSnapshot.metadata.retrievedAt].sort().at(-1),
+  compiledAt: [heroSnapshot.metadata.retrievedAt, equipmentSnapshot.metadata.retrievedAt, provenanceSnapshot.metadata.retrievedAt].sort().at(-1),
   compiler: "scripts/compile_public_catalogs.mjs",
-  sources: [evidence("SRC-005", heroSnapshot), evidence("SRC-004", equipmentSnapshot)],
+  sources: [evidence("SRC-005", heroSnapshot), evidence("SRC-004", equipmentSnapshot), evidence("SRC-024", provenanceSnapshot)],
   limitations: [
     "This is a structured compilation of the official Wiki (identity evidenced by SRC-024), not an official client/account export.",
     "Region, season, and future-release records may coexist in the source catalog.",
