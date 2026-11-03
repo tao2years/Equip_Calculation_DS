@@ -84,6 +84,13 @@
       "url": "https://www.wegame.com.cn/act/wegame/lxsj20250501/index.html",
       "region": "cn",
       "expectedContent": ["official_cn_hero_names", "cn_channel", "official_product_terms"]
+    },
+    {
+      "sourceId": "SRC-024",
+      "kind": "official_distribution_announcement",
+      "url": "https://store.steampowered.com/news/posts/?enddate=1789208028&feed=steam_community_announcements",
+      "region": "global",
+      "expectedContent": ["official_product_site_link", "official_wiki_link"]
     }
   ]
 }

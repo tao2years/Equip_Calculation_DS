@@ -72,7 +72,7 @@ Screenshot → OCR lines/coordinates → versioned layout extraction
 
 `extract-layout` 已实现通用、配置驱动的坐标布局解析层。layout profile 绑定渠道、客户端 build、语言、页面锚点、归一化字段区域、必填规则和证据等级；输出 `OcrStaging` 与独立 extraction report。当前 `examples/layout-profile.synthetic.json` 只由三张合成详情页验证，证据等级是 `synthetic_fixture`，不是国服客户端 profile。真实截图到位后必须新建 channel/build profile，不能直接修改合成规则并冒充实测。
 
-`pipeline.mjs` 把 manifest/session → OCR → OCR Review → layout extraction → staging Review → finalize → validation 串成一个可续跑程序。`pipeline-state.json` 保存输入哈希、逐步状态、产物哈希和追加事件；已完成且哈希一致的步骤复用，产物被修改后拒绝继续。普通截图任务的 `files[]` 与 ADB 引导会话的 `captures[]` 使用同一适配层。OCR 支持 `--resume`：完整 recognition 可复用；中断留下的逐图 OCR 只有在原图 SHA-256 和语言一致时才复用。
+`pipeline.mjs` 把 manifest/session → OCR → OCR Review → layout extraction → staging Review → finalize → validation 串成一个可续跑程序。`pipeline-state.json` 保存输入哈希、逐步状态、产物哈希和追加事件；已完成且哈希一致的步骤复用，产物被修改后拒绝继续。状态写入使用临时文件原子替换；Windows 杀毒/索引造成的短暂 `EPERM`/`EBUSY`/`EACCES` 会有界退避重试，但不会退化为可能留下半截 JSON 的原地覆盖。普通截图任务的 `files[]` 与 ADB 引导会话的 `captures[]` 使用同一适配层。OCR 支持 `--resume`：完整 recognition 可复用；中断留下的逐图 OCR 只有在原图 SHA-256 和语言一致时才复用。
 
 第一次默认停为 `awaiting_ocr_review`。在 `prototype/review.html` 校对截图、字段候选和接受/驳回状态，导出 Review JSON 后用 `--ocr-review` 续跑；`apply-review` 会验证任务 ID、截图哈希、未解决字段和候选 ID，生成不可覆盖的 reviewed recognition。布局解析后第二次停为 `awaiting_staging_review`：在 `prototype/staging-review.html` 载入该运行的 `machine-staging.json`，逐条修正角色、装备、神器和属性词条；页面以正式 finalizer 实时校验，并导出带原 staging SHA-256 的 reviewed staging。只有以 `--reviewed-staging` 提供该文件，才生成 `account-snapshot.json`。`--accept-synthetic-staging` 只能用于 `evidenceLevel=synthetic_fixture` 的自动回归，不能绕过真实渠道的两级 Review。
 

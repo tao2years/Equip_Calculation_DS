@@ -97,3 +97,10 @@
 - 状态：accepted
 - 决策：公式验证输入必须记录 evidence level、地区、渠道、build 和来源证据；`synthetic_fixture` 只验证实现算术，只有 `client_observation` 的穿戴前后面板 case 才能支持对应渠道/build 的面板公式结论。
 - 原因：单元测试通过并不证明游戏使用同一结算顺序。把二者分级可防止原型公式和真实游戏规则混为一谈，并让未来客户端截图直接进入可复算误差报告。
+
+## D-015 · 官方入口身份与数值正确性分开评级
+
+- 日期：2026-11-03
+- 状态：accepted
+- 决策：Steam 官方公告可把 `dragonheir.info` 的来源类别确认为 `official_wiki`；但具体记录仍保留 `public_catalog_compiled_not_client_validated`，直到目标渠道/build 的客户端证据通过。
+- 原因：官方入口背书解决来源身份问题，不会自动解决跨赛季、跨地区、翻译、更新延迟、数据许可或单条数值正确性。装备等级成长也不得被误解为随机副词条 roll 次数。

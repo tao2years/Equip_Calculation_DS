@@ -21,7 +21,9 @@
 ## 已知技术事实与推断
 
 - SteamDB 的当前文件清单显示 `UnityPlayer.dll`、`GameAssembly.dll`、`global-metadata.dat`、`StreamingAssets` 等，支持“当前 PC 客户端为 Unity IL2CPP 构建”的判断。这只说明技术栈，不证明静态表未加密或账号数据可直接读取。
-- 当前公开 Wiki 提供角色列表、角色基础属性、装备/神器页面和赛季筛选，适合作为发现源和交叉检查源；其版权页与数据更新机制尚未核清，不能直接当成可再发布的数据许可。
+- Steam 官方社区公告明确把 `dragonheir.info` 链接称为 “official Wiki”，因此仓库把该域名提升为官方 Wiki 来源，而不再只作来源身份未明的攻略站。这个背书证明的是官方入口身份，不等于其中每条数值都已对目标渠道、当前构建逐项验证，也不构成可再发布许可。
+- 当前官方 Wiki 提供角色列表、角色基础属性、装备/神器页面和赛季筛选，适合作为静态定义的主要发现源；账号拥有状态、随机副词条和穿戴关系仍必须由账号采集链提供。
+- Wiki 装备对象提供强化上限、主属性和逐级成长曲线，但当前快照未暴露完整随机副词条池、每次强化落点或 roll 概率。“装备强化等级”和“随机副词条强化次数”必须保持两个字段，后者在取得规则页或客户端证据前不得推算。
 - Level Infinite 当前条款的搜索可见文本包含对 reverse engineer、datamine、decompile 等行为的限制；腾讯中文游戏协议还明确覆盖客户端—服务端交互数据和非授权第三方工具。最终适用条款取决于国服/国际服与渠道，需在实验前重新核对。
 
 ## 推荐接入架构
@@ -65,6 +67,7 @@ Optimizer / Inventory / Export
 ## 参考证据
 
 - Dragonheir Steam depot file list: https://steamdb.info/depot/2203071/
+- Dragonheir Steam official announcement (official product site and Wiki links): https://store.steampowered.com/news/posts/?enddate=1789208028&feed=steam_community_announcements
 - Level Infinite Terms: https://account.levelinfinite.com/tos.html
 - Tencent Service Agreement: https://en.security.tencent.com/tencent/service_agreement/en-us/
 - Inventory Kamera OCR workflow: https://github.com/Andrewthe13th/Inventory_Kamera

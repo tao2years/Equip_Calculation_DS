@@ -237,7 +237,7 @@ const output = {
   compiler: "scripts/compile_public_catalogs.mjs",
   sources: [evidence("SRC-005", heroSnapshot), evidence("SRC-004", equipmentSnapshot)],
   limitations: [
-    "This is a structured compilation of a public community/guide site, not an official client export.",
+    "This is a structured compilation of the official Wiki (identity evidenced by SRC-024), not an official client/account export.",
     "Region, season, and future-release records may coexist in the source catalog.",
     "Unknown slots and semantic combat effects require manual review before optimizer use.",
     "Image URLs are references only; this repository does not copy the image assets."

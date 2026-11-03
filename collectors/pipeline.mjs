@@ -39,7 +39,19 @@ async function fileHash(target) {
 async function atomicJson(target, value) {
   const temporary = `${target}.${process.pid}.tmp`;
   await writeFile(temporary, `${JSON.stringify(value, null, 2)}\n`, "utf8");
-  await rename(temporary, target);
+  const retryable = new Set(["EACCES", "EBUSY", "EPERM"]);
+  for (let attempt = 0; ; attempt += 1) {
+    try {
+      await rename(temporary, target);
+      return;
+    } catch (error) {
+      if (!retryable.has(error?.code) || attempt >= 7) throw error;
+      // Antivirus/indexers can briefly hold newly written files on Windows.
+      // Keep the temp file intact and retry the same atomic replace with a
+      // short bounded backoff; never fall back to a partial in-place write.
+      await new Promise((resolve) => setTimeout(resolve, 25 * (attempt + 1)));
+    }
+  }
 }
 
 function runCli(args) {

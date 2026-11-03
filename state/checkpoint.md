@@ -40,9 +40,9 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 
 ## Evidence depth
 
-- 23 sources indexed.
-- 21 screened, captured or compiled at page/project level; 1 discovered only; 1 official product-site fetch failed.
-- 11 full source snapshots captured locally.
+- 24 sources indexed.
+- 22 screened, captured or compiled at page/project level; 1 discovered only; 1 official product-site fetch failed.
+- 12 full source snapshots captured locally.
 - 351 hero, 682 equipment and 147 artifact public records automatically compiled; 2 hero detail records independently compiled for cross-checking.
 - 0 client builds inspected locally.
 - 0 runtime/client experiments; OCR plumbing smoke-tested only on the project prototype screenshot.
@@ -75,6 +75,8 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Emulator and official-PC capture plans are now separate, both require 7 stages / at least 50 golden screenshots, and each session runner rejects the other channel's plan before capture.
 - Post-finalize account completeness audit now compares a snapshot to an independent manual reference across total counts, six gear-slot counts, hero/artifact ID sets, duplicate owned/definition IDs and unknown public references. Synthetic pass, missing gear/slot and duplicate-hero regressions pass; no live manual reference exists yet.
 - Sheet-formula golden-case harness now compares the shared optimizer formula against observed stats with per-case tolerances and evidence/channel/build metadata. Synthetic arithmetic pass and deliberate mismatch detection pass; there are no `client_observation` cases yet.
+
+- Steam 官方社区公告快照现已明确将 `dragonheir.info` 称为 official Wiki；来源身份已确认，但所有编译数值仍保持未经过客户端验证的证据等级。对 829 条原始目录对象的字段审计还确认：公开对象包含强化上限与主属性曲线，不包含完整随机副词条池、roll 落点、次数或概率。
 
 ## Next durable steps
 

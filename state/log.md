@@ -216,3 +216,10 @@ Append-only. Newest entries go at the bottom.
 - Validation invokes the same `calculateSheet` implementation used by HTML/CLI and reports every predicted/observed/error value. Synthetic cases cover flat/percentage ordering plus ratio/utility addition; a deliberate one-point attack mismatch correctly fails.
 - Synthetic success is explicitly limited to implementation arithmetic. No live client panel case exists, so formula and DPS accuracy remain unverified.
 - Full verification now covers 32 schema artifacts and 25 schema definitions, including formula-suite and validation-report contracts.
+
+## 2026-11-03 · OP-029
+
+- Captured SRC-024 from a Steam official community announcement with URL, retrieval time, HTTP status, SHA-256 and immutable HTML. The announcement explicitly directs readers to `dragonheir.info` as the official Wiki.
+- Reclassified the seven existing `dragonheir.info` ledger entries as `official_wiki`, while preserving `public_catalog_compiled_not_client_validated` on compiled records. Official entrypoint provenance is not treated as proof of current-channel values or republication rights.
+- Inspected the raw 829-item Wiki catalog object shape. It contains enhancement limits and primary-stat/refinement curves, but no complete random-substat pool, roll landing history, roll count or probability. Documented the model boundary so these account-instance facts cannot be inferred from fixed curves.
+- A repeated full verification exposed one transient Windows `EPERM` during atomic pipeline-state replacement. The writer now retries only short-lived `EPERM`/`EBUSY`/`EACCES` failures with bounded backoff while preserving atomic temp-file replacement; three consecutive pipeline regressions and the following full verification passed.

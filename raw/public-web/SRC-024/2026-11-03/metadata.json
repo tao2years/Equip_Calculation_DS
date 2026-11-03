@@ -1,0 +1,17 @@
+{
+  "sourceId": "SRC-024",
+  "kind": "official_distribution_announcement",
+  "requestedUrl": "https://store.steampowered.com/news/posts/?enddate=1789208028&feed=steam_community_announcements",
+  "finalUrl": "https://store.steampowered.com/news/posts/?enddate=1789208028&feed=steam_community_announcements",
+  "retrievedAt": "2026-11-03T10:14:26.753Z",
+  "status": 200,
+  "mediaType": "text/html; charset=UTF-8",
+  "byteLength": 59849,
+  "sha256": "e56c1549ba9d9ac30edd315ee48e7c7bda757ec4ce1c7ab5f682a21350e127f4",
+  "region": "global",
+  "expectedContent": [
+    "official_product_site_link",
+    "official_wiki_link"
+  ],
+  "snapshotPath": "raw/public-web/SRC-024/2026-11-03/snapshot.html"
+}
