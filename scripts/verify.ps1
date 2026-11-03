@@ -32,6 +32,7 @@ try {
     node --check collectors/lib/adb.mjs
     node --check collectors/lib/capture-plan.mjs
     node --check collectors/adb-session.mjs
+    node --check collectors/window-session.mjs
     node --check collectors/lib/finalize-staging.mjs
     node --check collectors/lib/layout-extractor.mjs
     node --check collectors/lib/capture-manifest.mjs
@@ -87,6 +88,7 @@ try {
     node scripts/test_capture_plan.mjs
     node scripts/test_staging_review_core.mjs
     node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run | Out-Null
+    node collectors/window-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run | Out-Null
     node scripts/solve_request.mjs --output examples/optimization-result.example.json
     if ($env:OS -eq 'Windows_NT') {
         node collectors/cli.mjs window-probe | Out-Null
@@ -123,6 +125,7 @@ pairs = [
     ('schemas/collector-pipeline-state.schema.json', 'examples/collector-pipeline-state.example.json'),
     ('schemas/capture-evidence.schema.json', 'examples/capture-evidence.example.json'),
     ('schemas/pc-window-capture.schema.json', 'examples/pc-window-capture.example.json'),
+    ('schemas/pc-window-capture-session.schema.json', 'examples/pc-window-capture-session.example.json'),
     ('schemas/capture-plan.schema.json', 'examples/emulator-capture-plan.example.json'),
     ('schemas/capture-session.schema.json', 'examples/capture-session.example.json'),
     ('schemas/optimization-request.schema.json', 'examples/optimization-request.example.json'),

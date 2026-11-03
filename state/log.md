@@ -197,5 +197,6 @@ Append-only. Newest entries go at the bottom.
 
 - Added an official-PC candidate capture adapter. `window-screenshot` requires an explicit positive PID, rejects minimized/hidden/no-main-window targets and captures only visible pixels; it records process/window identity, bounds, PNG hash, privacy flags and known limitations.
 - Added a dedicated metadata schema/fixture and exposed `window-probe` plus the adapter capability through the collector CLI. The adapter never enumerates all window titles and performs no clicks, login, memory access or packet interception.
-- Windows capability probe passed and an invalid PID was confirmed to fail without creating an output file. Full repository verification now covers 26 schema artifacts and 20 schema definitions.
+- Added `window-session.mjs`, which reuses the 7-stage/minimum-50 capture plan for explicit-PID PC windows, requires a user keypress per screenshot, prevents advancing below step minimums and emits partial rather than falsely complete sessions. Its manifest feeds the existing OCR pipeline through the shared capture normalizer.
+- Windows capability probe passed and an invalid PID was confirmed to fail without creating an output file. PC session dry-run and ADB/PC manifest normalization passed. Full repository verification now covers 27 schema artifacts and 21 schema definitions.
 - No real game client was present and no existing desktop window was captured. Occlusion, DPI scaling, full-screen rendering and page completeness remain explicit live-client acceptance work.

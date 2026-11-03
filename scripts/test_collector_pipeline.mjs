@@ -87,7 +87,12 @@ try {
   assert.equal(normalized.jobId, session.sessionId);
   assert.equal(normalized.files[0].localPath, session.captures[0].localPath);
   assert.equal(normalized.files[0].reviewStatus, "pending");
-  console.log("Collector pipeline tests passed: one-command finalize, safe resume, tamper detection, review gate, and capture-session normalization");
+  const pcSession = JSON.parse(await readFile(path.join(root, "examples", "pc-window-capture-session.example.json"), "utf8"));
+  const normalizedPc = normalizeCaptureManifest(pcSession);
+  assert.equal(normalizedPc.jobId, pcSession.sessionId);
+  assert.equal(normalizedPc.files[0].localPath, pcSession.captures[0].localPath);
+  assert.equal(normalizedPc.files[0].captureType, "unclassified");
+  console.log("Collector pipeline tests passed: one-command finalize, safe resume, tamper detection, review gate, and ADB/PC capture-session normalization");
 } finally {
   await rm(temp, { recursive: true, force: true });
 }

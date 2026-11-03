@@ -31,6 +31,7 @@ node collectors/cli.mjs adb-probe
 node collectors/cli.mjs adb-screenshot --output capture.png --capture-type gear_detail
 node collectors/cli.mjs window-probe
 node collectors/cli.mjs window-screenshot --pid 1234 --output capture.png --capture-type hero_detail
+node collectors/window-session.mjs --plan examples/emulator-capture-plan.example.json --pid 1234 --output captures
 node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run
 node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --output captures
 node collectors/cli.mjs stage-screenshots --input screenshots --output staging
@@ -42,6 +43,8 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 `adb-screenshot` 是模拟器候选入口：只从用户已授权的 ADB 设备截取当前可见画面并保存本地 PNG/哈希元数据，不自动点击、不读内存、不抓包。本机目前没有 ADB，因此适配器逻辑已测试、真实模拟器采集未验证。
 
 `window-screenshot` 是官方 PC 客户端候选入口：只接受用户明确给出的进程 PID，只截取当前可见且未最小化的主窗口，保存本地 PNG、窗口边界与哈希元数据，不枚举窗口标题、不自动登录或点击。本机 Windows 能力探测已通过，但没有游戏客户端，因此尚未验证遮挡、DPI、全屏模式和真实页面覆盖。
+
+`window-session.mjs` 将同一份 7 阶段采集计划应用到 PC 窗口：用户自行在游戏内导航，每次按回车才截屏；各阶段最低截图数未满足时不能进入下一步，提前退出只会生成 `partial` manifest。该 manifest 可直接交给后续 OCR/pipeline，dry-run 已通过但真实窗口会话尚未执行。
 
 `adb-session.mjs` 是引导式完整采集程序。它按 7 个阶段提示用户手动打开渠道/版本、角色列表、角色详情、装备列表/详情、神器列表/详情；回车截屏，`n` 进入下一阶段，`q` 以 partial 状态结束。示例计划至少覆盖 50 张 golden screenshots，并为每张图保存独立元数据和最终 manifest。
 

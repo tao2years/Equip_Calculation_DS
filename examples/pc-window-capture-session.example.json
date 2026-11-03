@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0",
+  "sessionId": "dragonheir-account-capture-pc-example",
+  "planId": "dragonheir-account-capture-v1",
+  "startedAt": "2026-11-03T18:15:00+08:00",
+  "completedAt": "2026-11-03T18:15:01+08:00",
+  "status": "partial",
+  "sourceMethod": "official_pc_visible_window_user_initiated_screenshot",
+  "privacy": {"localOnly": true, "uploadPerformed": false},
+  "target": {"processId": 1234},
+  "captures": [
+    {
+      "sequence": 1,
+      "stepId": "confirm-channel",
+      "captureType": "unclassified",
+      "capturedAt": "2026-11-03T18:15:00+08:00",
+      "localPath": "evidence/0001-confirm-channel.png",
+      "metadataPath": "evidence/0001-confirm-channel.json",
+      "mediaType": "image/png",
+      "byteLength": 1024,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "stepResults": [
+    {"stepId": "confirm-channel", "captured": 1, "minimumCaptures": 1, "complete": true}
+  ]
+}

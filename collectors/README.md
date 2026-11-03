@@ -12,6 +12,7 @@ node collectors/cli.mjs adb-probe
 node collectors/cli.mjs adb-screenshot --output capture.png --capture-type gear_detail
 node collectors/cli.mjs window-probe
 node collectors/cli.mjs window-screenshot --pid 1234 --output capture.png --capture-type hero_detail
+node collectors/window-session.mjs --plan examples/emulator-capture-plan.example.json --pid 1234 --output captures
 node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run
 node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --output captures
 node collectors/cli.mjs stage-screenshots --input screenshots --output staging
@@ -30,6 +31,8 @@ node collectors/pipeline.mjs --manifest staging/<job>/manifest.json --profile pr
 模拟器路线新增了只读 `adb-probe` 与 `adb-screenshot`。后者只执行 Android `screencap`，保存 PNG 与独立元数据，不登录、不触摸屏幕、不自动翻页。本机没有安装 ADB，所以当前只通过设备列表解析、授权检查与设备选择测试；不能据此声称已采集真实账号。
 
 官方 PC 路线新增了只读 `window-probe` 与 `window-screenshot`。后者必须传入用户明确选择的 PID，只对该进程当前可见且未最小化的主窗口执行 `CopyFromScreen`，并输出 PNG、窗口边界、SHA-256 与限制说明。适配器不会枚举所有窗口、不会点击或导航；窗口被遮挡、全屏独占、DPI 缩放和客户端渲染方式都可能影响结果，必须在真实客户端 golden screenshots 上验证。
+
+`window-session.mjs` 将版本化 capture plan 复用到 PC 客户端。它与 ADB 会话使用相同的阶段、最低数量、回车截屏/`n` 前进/`q` 部分结束语义，生成独立证据和 `manifest.json`；该 manifest 的 `captures[]` 可被现有 pipeline 归一化。程序不会主动寻找或操作游戏窗口，PID 必须由用户明确提供。
 
 `adb-session.mjs` 在单张截图能力之上提供引导式会话。它读取版本化 capture plan，逐步显示人工导航说明；每次回车才截屏，阶段最低数量不满足时拒绝直接进入下一步，但允许用 `q` 生成 partial session。图片和逐图元数据不可覆盖，最终 manifest 记录每一步是否达到门槛。`--dry-run` 不需要 ADB，可用于 Review 计划。
 

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/pc-window-capture-session.schema.json",
+  "title": "Dragonheir Guided PC Window Capture Session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "sessionId", "planId", "startedAt", "completedAt", "status", "sourceMethod", "privacy", "target", "captures", "stepResults"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "sessionId": {"type": "string", "minLength": 1},
+    "planId": {"type": "string", "minLength": 1},
+    "startedAt": {"type": "string", "format": "date-time"},
+    "completedAt": {"type": ["string", "null"], "format": "date-time"},
+    "status": {"enum": ["running", "partial", "complete"]},
+    "sourceMethod": {"const": "official_pc_visible_window_user_initiated_screenshot"},
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localOnly", "uploadPerformed"],
+      "properties": {"localOnly": {"const": true}, "uploadPerformed": {"const": false}}
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["processId"],
+      "properties": {"processId": {"type": "integer", "minimum": 1}}
+    },
+    "captures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sequence", "stepId", "captureType", "capturedAt", "localPath", "metadataPath", "mediaType", "byteLength", "sha256"],
+        "properties": {
+          "sequence": {"type": "integer", "minimum": 1},
+          "stepId": {"type": "string"},
+          "captureType": {"type": "string"},
+          "capturedAt": {"type": "string", "format": "date-time"},
+          "localPath": {"type": "string"},
+          "metadataPath": {"type": "string"},
+          "mediaType": {"const": "image/png"},
+          "byteLength": {"type": "integer", "minimum": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "stepResults": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stepId", "captured", "minimumCaptures", "complete"],
+        "properties": {
+          "stepId": {"type": "string"},
+          "captured": {"type": "integer", "minimum": 0},
+          "minimumCaptures": {"type": "integer", "minimum": 0},
+          "complete": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}
