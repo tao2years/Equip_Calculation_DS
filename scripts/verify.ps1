@@ -27,6 +27,8 @@ try {
     node --check scripts/compile_public_heroes.mjs
     node --check scripts/compile_public_catalogs.mjs
     node --check scripts/build_game_data.mjs
+    node --check scripts/lib/parse-set-bonus.mjs
+    node --check scripts/test_parse_set_bonus.mjs
     node --check scripts/build_import_dictionary.mjs
     node --check scripts/build_equipment_rules.mjs
     node --check scripts/test_import_dictionary.mjs
@@ -77,6 +79,7 @@ try {
     node scripts/compile_public_heroes.mjs
     node scripts/compile_public_catalogs.mjs
     node scripts/build_game_data.mjs
+    node scripts/test_parse_set_bonus.mjs
     node scripts/build_import_dictionary.mjs
     node scripts/build_equipment_rules.mjs
     node scripts/audit_public_domain.mjs

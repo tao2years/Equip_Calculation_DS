@@ -258,3 +258,9 @@ Append-only. Newest entries go at the bottom.
 - The shared solver now rejects level>1 heroes without account-observed `baseStatsOverride` by default. CLI research requests may explicitly set `calculationPolicy.allowUnverifiedHeroGrowth=true`; the resulting source label remains unverified.
 - Added manual hero base-stat entry to the inventory editor and validation that blocks export/imported snapshots with a leveled hero missing the observation. Unit tests cover default rejection, explicit research override and editable-snapshot validation.
 - Hidden inventory QA confirmed level 2 without stats is blocked and succeeds after entering observed stats; DOM showed the persisted `hero-manual-001` card and “账号基础面板”, with no console warning/error. Full repository verification passed.
+
+## 2026-11-03 · OP-035
+
+- Added a conservative public set-effect compiler. It accepts only complete static-stat sentences with a piece threshold, known stat label, numeric value and matching flat/percentage unit; conditional prose, unknown labels and malformed units reject the entire sentence.
+- The immutable current official-Wiki snapshot yields 144 executable public set-family definitions. Together with four seed definitions, `game-data.public.json` now exposes 148 sets with sheet bonuses while retaining all raw effect text.
+- Added parser rejection cases and an end-to-end solver assertion proving a compiled public two-piece set contributes 20% HP and 60 Resistance. Generated coverage/audit outputs and handoff documentation now distinguish parsed official-Wiki evidence from client validation.

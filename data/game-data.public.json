@@ -173156,7 +173156,17 @@
       },
       "season": "s9",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] At the start of battle and every 20s thereafter, the wearer grants 1 stack of Reflect to all allies in the same row for 6.0s. Reflect: When a debuff is successfully inflicted, consumes 1 stack of Reflect to forcibly inflict 1 stack of the debuff back onto its source. If multiple debuffs are inflicted simultaneously, only one is reflected. Max 1 stack of Reflect. Reflected debuffs cannot be reflected again."
@@ -173170,7 +173180,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173180,7 +173190,17 @@
       },
       "season": "s9",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] At the start of battle and every 20s thereafter, the wearer grants 1 stack of Reflect to all allies in the same row for 6.0s. Reflect: When a debuff is successfully inflicted, consumes 1 stack of Reflect to forcibly inflict 1 stack of the debuff back onto its source. If multiple debuffs are inflicted simultaneously, only one is reflected. Max 1 stack of Reflect. Reflected debuffs cannot be reflected again."
@@ -173194,7 +173214,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173204,7 +173224,17 @@
       },
       "season": "s9",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] At the start of battle, the wearer gains a [+30%Max HP] shield. After this shield is broken, it will be reapplied to the wearer after 20s."
@@ -173218,7 +173248,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173228,7 +173258,17 @@
       },
       "season": "s9",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] At the start of battle, the wearer gains a [+30%Max HP] shield. After this shield is broken, it will be reapplied to the wearer after 20s."
@@ -173242,7 +173282,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173252,7 +173292,17 @@
       },
       "season": "s9",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] For every 20 instance(s) of damage the wearer deals, they rotate between the following special statuses: 10% Attack Up and 30% Attack Speed Up, 60% Crit Damage Up, and 20% Damage Bonus. At the start of battle, the wearer gains the 10% Attack Up and 30% Attack Speed Up effect. After that, their status can only switch once every 15.0 seconds."
@@ -173266,7 +173316,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173276,7 +173326,17 @@
       },
       "season": "s9",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] For every 20 instance(s) of damage the wearer deals, they rotate between the following special statuses: 10% Attack Up and 30% Attack Speed Up, 60% Crit Damage Up, and 20% Damage Bonus. At the start of battle, the wearer gains the 10% Attack Up and 30% Attack Speed Up effect. After that, their status can only switch once every 15.0 seconds."
@@ -173290,7 +173350,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173300,7 +173360,17 @@
       },
       "season": "s8",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] When attacking, has a 30% chance to fire an additional orb at the current target, dealing  and inflicting Stunned. This effect triggers at most once every 10s, and the cooldown decreases by 1s for every 5 instances of damage dealt, down to a minimum of 2s."
@@ -173314,7 +173384,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173324,7 +173394,17 @@
       },
       "season": "s8",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] When attacking, has a 30% chance to fire an additional orb at the current target, dealing  and inflicting Stunned. This effect triggers at most once every 10s, and the cooldown decreases by 1s for every 5 instances of damage dealt, down to a minimum of 2s."
@@ -173338,7 +173418,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173348,7 +173428,17 @@
       },
       "season": "s8",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] Each time the hero takes damage, parries an amount equal to 100% of the hero's Defense."
@@ -173362,7 +173452,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173372,7 +173462,17 @@
       },
       "season": "s8",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] Each time the hero takes damage, parries an amount equal to 100% of the hero's Defense."
@@ -173386,7 +173486,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173396,7 +173496,17 @@
       },
       "season": "s8",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] After landing 3 critical hits, the wearer gains 10% Damage Up for 10.0s, up to 3 stacks, with each stack tracked independently."
@@ -173410,7 +173520,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173420,7 +173530,17 @@
       },
       "season": "s8",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] After landing 3 critical hits, the wearer gains 10% Damage Up for 10.0s, up to 3 stacks, with each stack tracked independently."
@@ -173434,7 +173554,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173444,7 +173564,17 @@
       },
       "season": "s7",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] Whenever the wearer inflicts a debuff or control effect, it additionally reduces the duration of all current buff effects on the target by 1s."
@@ -173462,7 +173592,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173472,7 +173602,17 @@
       },
       "season": "s7",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] Whenever the wearer inflicts a debuff or control effect, it additionally reduces the duration of all current buff effects on the target by 1s."
@@ -173490,7 +173630,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173500,7 +173640,17 @@
       },
       "season": "s7",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] Whenever the wearer grants healing or a shield, increases the target's Damage Reduction by 1%, up to 10 times."
@@ -173518,7 +173668,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173528,7 +173678,17 @@
       },
       "season": "s7",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] Whenever the wearer grants healing or a shield, increases the target's Damage Reduction by 1%, up to 10 times."
@@ -173546,7 +173706,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173556,7 +173716,17 @@
       },
       "season": "s7",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] After battle begins, every 5s, the wearer gains 3% Derivative Damage Up, up to 10 times."
@@ -173574,7 +173744,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173584,7 +173754,17 @@
       },
       "season": "s7",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] After battle begins, every 5s, the wearer gains 3% Derivative Damage Up, up to 10 times."
@@ -173602,7 +173782,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173612,7 +173792,17 @@
       },
       "season": "s6",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] Allies under shields applied by the wearer have their Attack increased by 10%. If the ally is at full HP while the shield persists, they additionally gain 10% Damage Up."
@@ -173626,7 +173816,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173636,7 +173826,17 @@
       },
       "season": "s6",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] Allies under shields applied by the wearer have their Attack increased by 10%. If the ally is at full HP while the shield persists, they additionally gain 10% Damage Up."
@@ -173650,7 +173850,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173660,7 +173860,17 @@
       },
       "season": "s6",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] For every 20% HP the wearer loses, reduces damage taken by 20% for 10.0s, up to 4 stacks. This effect can trigger at most 6 times per battle."
@@ -173674,7 +173884,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173684,7 +173894,17 @@
       },
       "season": "s6",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] For every 20% HP the wearer loses, reduces damage taken by 20% for 10.0s, up to 4 stacks. This effect can trigger at most 6 times per battle."
@@ -173698,7 +173918,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173708,7 +173928,17 @@
       },
       "season": "s6",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+20%，Accuracy+40",
         "[3-piece] When an allied hero other than the wearer takes damage exceeding 15% of their Max HP, the wearer loses 20% of current HP and nullifies that instance of damage. This effect can trigger only once per target every 20.0s and is unique within the team."
@@ -173722,7 +173952,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173732,7 +173962,17 @@
       },
       "season": "s6",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+20%，Accuracy+40",
         "[3-piece] When an allied hero other than the wearer takes damage exceeding 15% of their Max HP, the wearer loses 20% of current HP and nullifies that instance of damage. This effect can trigger only once per target every 20.0s and is unique within the team."
@@ -173746,7 +173986,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173756,7 +173996,17 @@
       },
       "season": "s6",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] The wearer gains 30 stack(s) of Assault at the start of battle and loses 1 stack(s) every 1s thereafter.\nAssault: Each stack provides 1% Attack, 1% Attack Speed, and 1% Crit Damage."
@@ -173769,7 +174019,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173779,7 +174029,17 @@
       },
       "season": "s6",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] The wearer gains 30 stack(s) of Assault at the start of battle and loses 1 stack(s) every 1s thereafter.\nAssault: Each stack provides 1% Attack, 1% Attack Speed, and 1% Crit Damage."
@@ -173790,7 +174050,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173800,7 +174060,17 @@
       },
       "season": "s6",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] The wearer gains 30 stack(s) of Assault at the start of battle and loses 1 stack(s) every 1s thereafter.\nAssault: Each stack provides 1% Attack, 1% Attack Speed, and 1% Crit Damage."
@@ -173813,7 +174083,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173823,7 +174093,17 @@
       },
       "season": "s6",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] The wearer gains 30 stack(s) of Assault at the start of battle and loses 1 stack(s) every 1s thereafter.\nAssault: Each stack provides 1% Attack, 1% Attack Speed, and 1% Crit Damage."
@@ -173834,7 +174114,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173844,7 +174124,17 @@
       },
       "season": "s6",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer casts a battle skill or ultimate skill, gains 60% Attack Speed Up for 6.0s."
@@ -173858,7 +174148,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173868,7 +174158,17 @@
       },
       "season": "s6",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer casts a battle skill or ultimate skill, gains 60% Attack Speed Up for 6.0s."
@@ -173882,7 +174182,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173892,7 +174192,17 @@
       },
       "season": "s4",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] For the first 30s of battle, the wearer takes 20% reduced elemental damage. At 30s, dispels 2 debuff(s) from each of the allies and grants them 2 stacks of Aegis.\nAegis: When taking damage, consumes 1 stack to reduce that damage by 70%."
@@ -173905,7 +174215,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173915,7 +174225,17 @@
       },
       "season": "s4",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] For the first 30s of battle, the wearer takes 20% reduced elemental damage. At 30s, dispels 2 debuff(s) from each of the allies and grants them 2 stacks of Aegis.\nAegis: When taking damage, consumes 1 stack to reduce that damage by 70%."
@@ -173926,7 +174246,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173936,7 +174256,17 @@
       },
       "season": "s4",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] For the first 30s of battle, the wearer takes 20% reduced elemental damage. At 30s, dispels 2 debuff(s) from each of the allies and grants them 2 stacks of Aegis.\nAegis: When taking damage, consumes 1 stack to reduce that damage by 70%."
@@ -173949,7 +174279,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173959,7 +174289,17 @@
       },
       "season": "s4",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] For the first 30s of battle, the wearer takes 20% reduced elemental damage. At 30s, dispels 2 debuff(s) from each of the allies and grants them 2 stacks of Aegis.\nAegis: When taking damage, consumes 1 stack to reduce that damage by 70%."
@@ -173970,7 +174310,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -173980,7 +174320,17 @@
       },
       "season": "s4",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] Every 10s after the battle starts, the wearer randomly gains one of the following effects: 4% Attack Up, 8% Crit Damage Up, or 4% Elemental Damage Up. Each effect can be obtained up to 3 times."
@@ -173993,7 +174343,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174003,7 +174353,17 @@
       },
       "season": "s4",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] Every 10s after the battle starts, the wearer randomly gains one of the following effects: 4% Attack Up, 8% Crit Damage Up, or 4% Elemental Damage Up. Each effect can be obtained up to 3 times."
@@ -174014,7 +174374,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174024,7 +174384,17 @@
       },
       "season": "s4",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] Every 10s after the battle starts, the wearer randomly gains one of the following effects: 4% Attack Up, 8% Crit Damage Up, or 4% Elemental Damage Up. Each effect can be obtained up to 3 times."
@@ -174037,7 +174407,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174047,7 +174417,17 @@
       },
       "season": "s4",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] Every 10s after the battle starts, the wearer randomly gains one of the following effects: 4% Attack Up, 8% Crit Damage Up, or 4% Elemental Damage Up. Each effect can be obtained up to 3 times."
@@ -174058,7 +174438,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174068,7 +174448,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] For each type of buff the wearer has, increases the Attack of all allies by , up to  stacks."
@@ -174082,7 +174472,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174092,7 +174482,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] When the wearer casts an ultimate skill, the ally with the highest Attack/Defense/HP (decided at the start of battle) gains a  bonus to that attribute. For every  Enlightenment the wearer has, this bonus increases by an additional , up to  stacks."
@@ -174105,7 +174505,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174115,7 +174515,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] When the wearer casts an ultimate skill, the ally with the highest Attack/Defense/HP (decided at the start of battle) gains a  bonus to that attribute. For every  Enlightenment the wearer has, this bonus increases by an additional , up to  stacks."
@@ -174126,7 +174536,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174136,7 +174546,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] On the first damage dealt by the wearer's ultimate skill, if the wearer's Defense is higher than the target's, there is a 100% chance of inflicting  Attack Penalty for s."
@@ -174149,7 +174569,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174159,7 +174579,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] On the first damage dealt by the wearer's ultimate skill, if the wearer's Defense is higher than the target's, there is a 100% chance of inflicting  Attack Penalty for s."
@@ -174170,7 +174600,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174180,7 +174610,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] When the wearer casts a battle skill or ultimate skill, there is a  chance of inflicting  on the farthest enemy for s, during which the hero takes  less damage from this enemy."
@@ -174193,7 +174633,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174203,7 +174643,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] When the wearer casts a battle skill or ultimate skill, there is a  chance of inflicting  on the farthest enemy for s, during which the hero takes  less damage from this enemy."
@@ -174214,7 +174664,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174224,7 +174674,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece]  of the HP damage dealt by the wearer is converted into their Max HP for s, up to a maximum increase of  Max HP. At the cap, the wearer's damage taken is reduced by ."
@@ -174236,7 +174696,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174246,7 +174706,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece]  of the HP damage dealt by the wearer is converted into their Max HP for s, up to a maximum increase of  Max HP. At the cap, the wearer's damage taken is reduced by ."
@@ -174257,7 +174727,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174267,7 +174737,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece]  of the HP damage dealt by the wearer is converted into their Max HP for s, up to a maximum increase of  Max HP. At the cap, the wearer's damage taken is reduced by ."
@@ -174278,7 +174758,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174288,7 +174768,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer deals direct damage, their Attack Speed is increased by  permanently, up to  stacks. At max stacks, the wearer's damage dealt is increased by ."
@@ -174299,7 +174789,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174309,7 +174799,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer deals direct damage, their Attack Speed is increased by  permanently, up to  stacks. At max stacks, the wearer's damage dealt is increased by ."
@@ -174321,7 +174821,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174331,7 +174831,17 @@
       },
       "season": "s3",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer deals direct damage, their Attack Speed is increased by  permanently, up to  stacks. At max stacks, the wearer's damage dealt is increased by ."
@@ -174342,7 +174852,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174352,7 +174862,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] For each type of buff the wearer has, increases the Attack of all allies by , up to  stacks."
@@ -174366,7 +174886,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174376,7 +174896,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] When the wearer casts an ultimate skill, the ally with the highest Attack/Defense/HP (decided at the start of battle) gains a  bonus to that attribute. For every  Enlightenment the wearer has, this bonus increases by an additional , up to  stacks."
@@ -174389,7 +174919,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174399,7 +174929,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "skill_haste": 20,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Skill Haste+20，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Skill Haste+20，Enlightenment+30",
         "[3-piece] When the wearer casts an ultimate skill, the ally with the highest Attack/Defense/HP (decided at the start of battle) gains a  bonus to that attribute. For every  Enlightenment the wearer has, this bonus increases by an additional , up to  stacks."
@@ -174410,7 +174950,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174420,7 +174960,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] On the first damage dealt by the wearer's ultimate skill, if the wearer's Defense is higher than the target's, there is a 100% chance of inflicting  Attack Penalty for s."
@@ -174433,7 +174983,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174443,7 +174993,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] On the first damage dealt by the wearer's ultimate skill, if the wearer's Defense is higher than the target's, there is a 100% chance of inflicting  Attack Penalty for s."
@@ -174454,7 +175014,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174464,7 +175024,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] When the wearer casts a battle skill or ultimate skill, there is a  chance of inflicting  on the farthest enemy for s, during which the hero takes  less damage from this enemy."
@@ -174477,7 +175047,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174487,7 +175057,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+20%",
         "[3-piece] When the wearer casts a battle skill or ultimate skill, there is a  chance of inflicting  on the farthest enemy for s, during which the hero takes  less damage from this enemy."
@@ -174498,7 +175078,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174508,7 +175088,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece]  of the HP damage dealt by the wearer is converted into their Max HP for s, up to a maximum increase of  Max HP. At the cap, the wearer's damage taken is reduced by ."
@@ -174520,7 +175110,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174530,7 +175120,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece]  of the HP damage dealt by the wearer is converted into their Max HP for s, up to a maximum increase of  Max HP. At the cap, the wearer's damage taken is reduced by ."
@@ -174541,7 +175141,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174551,7 +175151,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece]  of the HP damage dealt by the wearer is converted into their Max HP for s, up to a maximum increase of  Max HP. At the cap, the wearer's damage taken is reduced by ."
@@ -174562,7 +175172,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174572,7 +175182,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer deals direct damage, their Attack Speed is increased by  permanently, up to  stacks. At max stacks, the wearer's damage dealt is increased by ."
@@ -174583,7 +175203,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174593,7 +175213,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer deals direct damage, their Attack Speed is increased by  permanently, up to  stacks. At max stacks, the wearer's damage dealt is increased by ."
@@ -174605,7 +175235,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174615,7 +175245,17 @@
       },
       "season": "s3",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer deals direct damage, their Attack Speed is increased by  permanently, up to  stacks. At max stacks, the wearer's damage dealt is increased by ."
@@ -174626,7 +175266,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174636,7 +175276,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Enlightenment+30",
         "[3-piece] When casting a battle skill or ultimate skill, the wearer heals the ally with the lowest Current HP for [+5% HP][+1,000% Enlightenment]. This effect can only occur once every 8.0s."
@@ -174650,7 +175300,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174660,7 +175310,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20",
         "[3-piece] When the wearer successfully inflicts a debuff, all allies deal 10% more damage for 10.0s."
@@ -174674,7 +175334,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174684,7 +175344,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] When taking damage, the wearer has a 50% chance of inflicting Frozen on the attacker for 3.0s."
@@ -174698,7 +175368,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174708,7 +175378,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Skill Haste+20",
         "[3-piece] When the wearer's HP is above 70%, reduces damage taken by 20%."
@@ -174721,7 +175401,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174731,7 +175411,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Skill Haste+20",
         "[3-piece] When the wearer's HP is above 70%, reduces damage taken by 20%."
@@ -174742,7 +175432,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174752,7 +175442,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_damage": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Damage+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Damage+20%",
         "[3-piece] For every 10% HP the target loses, the wearer deals 5% increased damage to them, up to 35%."
@@ -174765,7 +175465,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174775,7 +175475,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_damage": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Damage+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Damage+20%",
         "[3-piece] For every 10% HP the target loses, the wearer deals 5% increased damage to them, up to 35%."
@@ -174786,7 +175496,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174796,7 +175506,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] Increases Derivative Damage dealt by the wearer by 20%."
@@ -174807,7 +175527,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174817,7 +175537,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] Increases Derivative Damage dealt by the wearer by 20%."
@@ -174829,7 +175559,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174839,7 +175569,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] Increases Derivative Damage dealt by the wearer by 20%."
@@ -174850,7 +175590,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174860,7 +175600,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] When casting a battle skill or ultimate skill, the wearer deals 6% more damage for 10.0s, up to 4 stacks."
@@ -174874,7 +175624,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174884,7 +175634,16 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.25
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+25%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+25%",
         "[3-piece] When the wearer casts an ultimate skill, all allies' elemental damage dealt increases by 15% for 10.0s."
@@ -174897,7 +175656,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174907,7 +175666,16 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.25
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+25%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+25%",
         "[3-piece] When the wearer casts an ultimate skill, all allies' elemental damage dealt increases by 15% for 10.0s."
@@ -174918,7 +175686,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174928,7 +175696,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20",
         "[3-piece] When the wearer deals damage, has a 20% chance of inflicting Stunned to the target for 3.0s."
@@ -174941,7 +175719,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174951,7 +175729,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20",
         "[3-piece] When the wearer deals damage, has a 20% chance of inflicting Stunned to the target for 3.0s."
@@ -174962,7 +175750,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174972,7 +175760,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] When the wearer casts an ultimate skill, allies of the same element gain 10% Ultimate Energy. Any target can only gain this effect once within 15.0s."
@@ -174985,7 +175783,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -174995,7 +175793,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] When the wearer casts an ultimate skill, allies of the same element gain 10% Ultimate Energy. Any target can only gain this effect once within 15.0s."
@@ -175006,7 +175814,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175016,7 +175824,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] The wearer gains 1.0 Ultimate Energy each time taking damage."
@@ -175029,7 +175847,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175039,7 +175857,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] The wearer gains 1.0 Ultimate Energy each time taking damage."
@@ -175050,7 +175878,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175060,7 +175888,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.15
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+15%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+15%",
         "[3-piece] Decreases the wearer's damage taken by 10%, while 15% of other allies' damage taken is transferred to the wearer."
@@ -175074,7 +175912,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175084,7 +175922,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer's attack triggers a critical hit, has a 35% chance of dealing additional [+130% Attack] Physical Damage."
@@ -175097,7 +175945,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175107,7 +175955,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer's attack triggers a critical hit, has a 35% chance of dealing additional [+130% Attack] Physical Damage."
@@ -175118,7 +175976,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175128,7 +175986,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] For each negative effect the enemy carries, the wearer's attacks ignore 7% of their Defense, up to 3 stacks."
@@ -175141,7 +176009,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175151,7 +176019,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] For each negative effect the enemy carries, the wearer's attacks ignore 7% of their Defense, up to 3 stacks."
@@ -175162,7 +176040,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175172,7 +176050,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] When the wearer's skill damage triggers a critical hit, that damage additionally increases by 16%."
@@ -175185,7 +176073,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175195,7 +176083,17 @@
       },
       "season": "s2",
       "enhancedVariant": true,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] When the wearer's skill damage triggers a critical hit, that damage additionally increases by 16%."
@@ -175206,7 +176104,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175216,7 +176114,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Enlightenment+30",
         "[3-piece] When casting a battle skill or ultimate skill, the wearer heals the ally with the lowest Current HP for [+5% HP][+1,000% Enlightenment]. This effect can only occur once every 8.0s."
@@ -175230,7 +176138,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175240,7 +176148,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20",
         "[3-piece] When the wearer successfully inflicts a debuff, all allies deal 10% more damage for 10.0s."
@@ -175254,7 +176172,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175264,7 +176182,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] When taking damage, the wearer has a 50% chance of inflicting Frozen on the attacker for 3.0s."
@@ -175278,7 +176206,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175288,7 +176216,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Skill Haste+20",
         "[3-piece] When the wearer's HP is above 70%, reduces damage taken by 20%."
@@ -175301,7 +176239,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175311,7 +176249,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Skill Haste+20",
         "[3-piece] When the wearer's HP is above 70%, reduces damage taken by 20%."
@@ -175322,7 +176270,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175332,7 +176280,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_damage": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Damage+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Damage+20%",
         "[3-piece] For every 10% HP the target loses, the wearer deals 5% increased damage to them, up to 35%."
@@ -175345,7 +176303,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175355,7 +176313,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_damage": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Damage+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Damage+20%",
         "[3-piece] For every 10% HP the target loses, the wearer deals 5% increased damage to them, up to 35%."
@@ -175366,7 +176334,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175376,7 +176344,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] Increases Derivative Damage dealt by the wearer by 20%."
@@ -175387,7 +176365,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175397,7 +176375,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] Increases Derivative Damage dealt by the wearer by 20%."
@@ -175409,7 +176397,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175419,7 +176407,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] Increases Derivative Damage dealt by the wearer by 20%."
@@ -175430,7 +176428,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175440,7 +176438,17 @@
       },
       "season": "s2",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] When casting a battle skill or ultimate skill, the wearer deals 6% more damage for 10.0s, up to 4 stacks."
@@ -175454,7 +176462,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175464,7 +176472,16 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.25
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+25%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+25%",
         "[3-piece] When the wearer casts an ultimate skill, all allies' elemental damage dealt increases by 15% for 10.0s."
@@ -175477,7 +176494,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175487,7 +176504,16 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.25
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+25%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+25%",
         "[3-piece] When the wearer casts an ultimate skill, all allies' elemental damage dealt increases by 15% for 10.0s."
@@ -175498,7 +176524,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175508,7 +176534,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20",
         "[3-piece] When the wearer deals damage, has a 20% chance of inflicting Stunned to the target for 3.0s."
@@ -175521,7 +176557,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175531,7 +176567,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20",
         "[3-piece] When the wearer deals damage, has a 20% chance of inflicting Stunned to the target for 3.0s."
@@ -175542,7 +176588,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175552,7 +176598,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] When the wearer casts an ultimate skill, allies of the same element gain 10% Ultimate Energy. Any target can only gain this effect once within 15.0s."
@@ -175565,7 +176621,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175575,7 +176631,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60",
         "[3-piece] When the wearer casts an ultimate skill, allies of the same element gain 10% Ultimate Energy. Any target can only gain this effect once within 15.0s."
@@ -175586,7 +176652,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175596,7 +176662,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "enlightenment": 30,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Enlightenment+30，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Enlightenment+30，Resistance+60",
         "[3-piece] When the wearer successfully resists enemy-inflicted effect, heals all allies for [+5% Max HP]. This effect can trigger once every 10.0s."
@@ -175609,7 +176685,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175619,7 +176695,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "enlightenment": 30,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Enlightenment+30，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Enlightenment+30，Resistance+60",
         "[3-piece] When the wearer successfully resists enemy-inflicted effect, heals all allies for [+5% Max HP]. This effect can trigger once every 10.0s."
@@ -175630,7 +176716,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175640,7 +176726,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] When the wearer takes damage, has a 50% chance of reflecting 20% of that damage back to source."
@@ -175653,7 +176749,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175663,7 +176759,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Resistance+60",
         "[3-piece] When the wearer takes damage, has a 50% chance of reflecting 20% of that damage back to source."
@@ -175674,7 +176780,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175684,7 +176790,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] The wearer gains 1.0 Ultimate Energy each time taking damage."
@@ -175697,7 +176813,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175707,7 +176823,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，Accuracy+40",
         "[3-piece] The wearer gains 1.0 Ultimate Energy each time taking damage."
@@ -175718,7 +176844,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175728,7 +176854,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] DEF%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] DEF%+20%，Skill Haste+20",
         "[3-piece] When HP drops to 25%, gains Recovery Over Time for 10s, healing [+80% Defense] per second. This effect can trigger once every 60.0s."
@@ -175742,7 +176878,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175752,7 +176888,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "hp_pct": 0.2,
+            "def_pct": 0.15
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] HP%+20%，DEF%+15%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] HP%+20%，DEF%+15%",
         "[3-piece] Decreases the wearer's damage taken by 10%, while 15% of other allies' damage taken is transferred to the wearer."
@@ -175766,7 +176912,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175776,7 +176922,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] For 12.0s after the wearer unleashes an ultimate skill, damage dealt increases by 30%."
@@ -175789,7 +176945,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175799,7 +176955,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Enlightenment+30",
         "[3-piece] For 12.0s after the wearer unleashes an ultimate skill, damage dealt increases by 30%."
@@ -175810,7 +176976,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175820,7 +176986,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Accuracy+40",
         "[3-piece] When the wearer inflicts a debuff, damage dealt increases by 8% for the next 10.0s, up to 4 stacks."
@@ -175833,7 +177009,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175843,7 +177019,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "accuracy": 40
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Accuracy+40"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Accuracy+40",
         "[3-piece] When the wearer inflicts a debuff, damage dealt increases by 8% for the next 10.0s, up to 4 stacks."
@@ -175854,7 +177040,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175864,7 +177050,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer's attack triggers a critical hit, has a 35% chance of dealing additional [+130% Attack] Physical Damage."
@@ -175877,7 +177073,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175887,7 +177083,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Attack Speed+20%",
         "[3-piece] When the wearer's attack triggers a critical hit, has a 35% chance of dealing additional [+130% Attack] Physical Damage."
@@ -175898,7 +177104,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175908,7 +177114,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] For each negative effect the enemy carries, the wearer's attacks ignore 7% of their Defense, up to 3 stacks."
@@ -175921,7 +177137,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175931,7 +177147,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Skill Haste+20",
         "[3-piece] For each negative effect the enemy carries, the wearer's attacks ignore 7% of their Defense, up to 3 stacks."
@@ -175942,7 +177168,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175952,7 +177178,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] When the wearer's skill damage triggers a critical hit, that damage additionally increases by 16%."
@@ -175965,7 +177201,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175975,7 +177211,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_pct": 0.2,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] ATK%+20%，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] ATK%+20%，Crit Rate+10%",
         "[3-piece] When the wearer's skill damage triggers a critical hit, that damage additionally increases by 16%."
@@ -175986,7 +177232,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -175996,7 +177242,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60"
       ],
@@ -176008,7 +177264,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176018,7 +177274,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "resistance": 60
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Resistance+60"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Resistance+60"
       ],
@@ -176028,7 +177294,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176038,7 +177304,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20"
       ],
@@ -176050,7 +177326,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176060,7 +177336,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 40,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+40，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+40，Skill Haste+20"
       ],
@@ -176070,7 +177356,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176080,7 +177366,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "enlightenment": 30,
+            "hp_flat": 1000
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Enlightenment+30，HP+1000"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Enlightenment+30，HP+1000"
       ],
@@ -176093,7 +177389,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176103,7 +177399,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_flat": 100,
+            "hp_flat": 1000
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Defense+100，HP+1000"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Defense+100，HP+1000"
       ],
@@ -176115,7 +177421,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176125,7 +177431,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_flat": 100,
+            "hp_flat": 1000
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Defense+100，HP+1000"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Defense+100，HP+1000"
       ],
@@ -176135,7 +177451,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176145,7 +177461,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 100,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+100，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+100，Skill Haste+20"
       ],
@@ -176157,7 +177483,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176167,7 +177493,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 100,
+            "skill_haste": 20
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+100，Skill Haste+20"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+100，Skill Haste+20"
       ],
@@ -176177,7 +177513,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176187,7 +177523,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 100,
+            "attack_speed_pct": 0.2
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+100，Attack Speed+20%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+100，Attack Speed+20%"
       ],
@@ -176200,7 +177546,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176210,7 +177556,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 100,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+100，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+100，Enlightenment+30"
       ],
@@ -176222,7 +177578,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176232,7 +177588,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 100,
+            "enlightenment": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+100，Enlightenment+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+100，Enlightenment+30"
       ],
@@ -176242,7 +177608,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176252,7 +177618,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 100,
+            "crit_rate": 0.1
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+100，Crit Rate+10%"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+100，Crit Rate+10%"
       ],
@@ -176265,7 +177641,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176275,7 +177651,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 30,
+            "resistance": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+30，Resistance+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+30，Resistance+30"
       ],
@@ -176287,7 +177673,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176297,7 +177683,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "accuracy": 30,
+            "resistance": 30
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Accuracy+30，Resistance+30"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Accuracy+30，Resistance+30"
       ],
@@ -176307,7 +177703,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176317,7 +177713,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_flat": 50,
+            "hp_flat": 500
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Defense+50，HP+500"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Defense+50，HP+500"
       ],
@@ -176329,7 +177735,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176339,7 +177745,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "def_flat": 50,
+            "hp_flat": 500
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Defense+50，HP+500"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Defense+50，HP+500"
       ],
@@ -176349,7 +177765,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176359,7 +177775,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 50,
+            "hp_flat": 500
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+50，HP+500"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+50，HP+500"
       ],
@@ -176371,7 +177797,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {
@@ -176381,7 +177807,17 @@
       },
       "season": "s1",
       "enhancedVariant": false,
-      "bonuses": [],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "sheetStats": {
+            "atk_flat": 50,
+            "hp_flat": 500
+          },
+          "evidence": "parsed_static_official_wiki_text",
+          "sourceText": "[2-piece] Attack+50，HP+500"
+        }
+      ],
       "semanticEffects": [
         "[2-piece] Attack+50，HP+500"
       ],
@@ -176391,7 +177827,7 @@
       "source": {
         "sourceId": "SRC-004",
         "url": "https://www.dragonheir.info/equipment",
-        "verification": "public_effect_text_not_structured_for_calculation"
+        "verification": "public_static_effect_text_parsed_not_client_validated"
       }
     },
     {

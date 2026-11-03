@@ -16,7 +16,7 @@
 
 1. `scripts/crawl_public_data.mjs` 按来源与日期固化 HTML 和元数据，使用 `wx` 防止覆盖旧证据。
 2. `scripts/compile_public_heroes.mjs` 从最新的英雄详情快照提取一级基础属性，并保留来源、哈希和验证状态。
-3. `scripts/compile_public_catalogs.mjs` 从目录页结构化状态生成英雄、装备、神器和套装家族；`scripts/build_game_data.mjs` 输出 HTML 使用的数据包。
+3. `scripts/compile_public_catalogs.mjs` 从目录页结构化状态生成英雄、装备、神器和套装家族；`scripts/build_game_data.mjs` 通过严格白名单把完整、无条件的静态套装句编译为面板加成，并输出 HTML 使用的数据包。未通过的效果仍保留原文。
 4. `scripts/build_import_dictionary.mjs` 把公共名称和经过溯源的中文词汇合并为导入/OCR 别名字典，碰撞不会被静默吞掉。
 5. `data/game-data.seed.json` 是少量已建模效果的人工种子，不宣称完整或客户端已验证。
 6. `examples/account-snapshot.example.json` 是合成背包，只用于导入、约束、锁定和求解测试。

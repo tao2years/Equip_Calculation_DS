@@ -140,8 +140,9 @@
   },
   "sets": {
     "totalFamilies": 248,
-    "withSemanticText": 0,
-    "executableSheetBonusDefinitions": 4,
+    "withSemanticText": 248,
+    "publicStaticSheetBonusDefinitions": 144,
+    "executableSheetBonusDefinitions": 148,
     "bySeason": {
       "s2": 63,
       "s1": 57,
@@ -260,7 +261,7 @@
     ]
   },
   "limitations": [
-    "The catalog is compiled from a public community database and is not proof of the current China client.",
+    "The catalog is compiled from the public official Wiki and is not proof of the current China client.",
     "Owned inventory, random substats, locks and equipped relationships never come from the public catalog.",
     "Most set and artifact behavior remains source text, not executable combat semantics.",
     "Hero star, inspiration and current-build growth rules require client golden cases."

@@ -3,6 +3,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseStaticSetBonus } from "./lib/parse-set-bonus.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const seed = JSON.parse(await readFile(path.join(ROOT, "data", "game-data.seed.json"), "utf8"));
@@ -84,18 +85,21 @@ const equipment = publicCatalog.equipment.map((item) => ({
 }));
 
 const publicSets = publicCatalog.setFamilies.map((family) => {
+  const bonuses = (family.effectTexts || []).map(parseStaticSetBonus).filter(Boolean);
   return {
     id: family.setDefinitionId,
     names: { en: `${family.name}${family.enhancedVariant ? "+" : ""}` },
     season: family.season,
     enhancedVariant: family.enhancedVariant,
-    bonuses: [],
+    bonuses,
     semanticEffects: family.effectTexts,
     equipmentDefinitionIds: family.equipmentDefinitionIds,
     source: {
       sourceId: "SRC-004",
       url: "https://www.dragonheir.info/equipment",
-      verification: "public_effect_text_not_structured_for_calculation"
+      verification: bonuses.length
+        ? "public_static_effect_text_parsed_not_client_validated"
+        : "public_effect_text_not_structured_for_calculation"
     }
   };
 });

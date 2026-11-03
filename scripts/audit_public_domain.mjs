@@ -78,7 +78,8 @@ const audit = {
   },
   sets: {
     totalFamilies: catalog.setFamilies.length,
-    withSemanticText: catalog.setFamilies.filter((entry) => (entry.effects || entry.semanticEffects || []).length > 0).length,
+    withSemanticText: catalog.setFamilies.filter((entry) => (entry.effectTexts || []).length > 0).length,
+    publicStaticSheetBonusDefinitions: gameData.sets.filter((entry) => entry.id.startsWith("set-public-") && (entry.bonuses || []).length > 0).length,
     executableSheetBonusDefinitions: gameData.sets.filter((entry) => (entry.bonuses || []).length > 0).length,
     bySeason: countBy(catalog.setFamilies, (entry) => entry.season)
   },
@@ -87,7 +88,7 @@ const audit = {
     slots: gameData.slotDefinitions
   },
   limitations: [
-    "The catalog is compiled from a public community database and is not proof of the current China client.",
+    "The catalog is compiled from the public official Wiki and is not proof of the current China client.",
     "Owned inventory, random substats, locks and equipped relationships never come from the public catalog.",
     "Most set and artifact behavior remains source text, not executable combat semantics.",
     "Hero star, inspiration and current-build growth rules require client golden cases."
@@ -111,7 +112,7 @@ const markdown = `# 公共领域数据覆盖审计
 - 角色：${audit.heroes.total}，其中 ${audit.heroes.withBaseStats} 条带基础属性，${audit.heroes.withPerLevelGrowth} 条带每级成长，${audit.heroes.withSkills} 条带技能文本。
 - 装备定义：${audit.equipment.total}，${audit.equipment.withKnownSlot} 条已映射槽位；仍有 ${audit.equipment.unknownSlot} 条特殊定义保持 unknown。
 - 神器：${audit.artifacts.total}，${audit.artifacts.withPrimaryStats} 条带主属性，${audit.artifacts.withRefinementCurve} 条带 0–20 级强化属性曲线，${audit.artifacts.withEffectLevels} 条带 0–5 阶精炼效果文本。两类成长不可混用。
-- 套装/变体家族：${audit.sets.totalFamilies}；当前只有 ${audit.sets.executableSheetBonusDefinitions} 组静态面板加成进入求解器。其余效果只保存原文，不假装可计算。
+- 套装/变体家族：${audit.sets.totalFamilies}；其中 ${audit.sets.publicStaticSheetBonusDefinitions} 组官方 Wiki 静态效果通过白名单语法解析，加上 4 个种子定义，共 ${audit.sets.executableSheetBonusDefinitions} 组面板加成进入求解器。条件型效果只保存原文，不假装可计算。
 
 这些数据适合充当所有账号共享的 \`GameDataVersion\`。它们不能回答用户拥有什么，也不能替代登录态采集器。
 
@@ -158,7 +159,7 @@ ${tableRows(audit.artifacts.primaryStatKinds)}
 
 七槽位模型为：${audit.definitions.slots.map((entry) => `\`${entry.id}\``).join("、")}。
 
-以下仍不能作为已验证规则：星级/灵感成长、固定值与百分比的最终结算顺序、所有条件套装/神器效果、国服当前版本差异、重击率溢出机制。
+以下仍不能作为已验证规则：星级/灵感成长、固定值与百分比的最终结算顺序、所有条件套装/神器效果、国服当前版本差异、重击率溢出机制。已解析静态套装仍属于“官方 Wiki 文本编译、未经客户端实测”。
 
 ## 数据质量与下一步
 
