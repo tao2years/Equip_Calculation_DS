@@ -233,7 +233,7 @@ const setFamilies = [...setFamilyMap.values()].map((family) => ({
 
 const output = {
   schemaVersion: "0.1.0",
-  compiledAt: new Date().toISOString(),
+  compiledAt: [heroSnapshot.metadata.retrievedAt, equipmentSnapshot.metadata.retrievedAt].sort().at(-1),
   compiler: "scripts/compile_public_catalogs.mjs",
   sources: [evidence("SRC-005", heroSnapshot), evidence("SRC-004", equipmentSnapshot)],
   limitations: [

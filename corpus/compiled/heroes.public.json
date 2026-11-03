@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "compiledAt": "2026-11-03T10:04:04.367Z",
+  "compiledAt": "2026-11-03T08:58:32.710Z",
   "compiler": "scripts/compile_public_heroes.mjs",
   "limitations": [
     "Values come from public SSR pages and are not validated against the current game client.",

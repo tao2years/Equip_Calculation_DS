@@ -75,6 +75,7 @@
             <span>优化目标</span>
             <select id="objective-select">
               <option value="crit_proxy">期望重击输出代理</option>
+              <option value="weighted_stats">自定义加权面板</option>
               <option value="atk_sheet">攻击</option>
               <option value="hp_sheet">生命</option>
               <option value="def_sheet">防御</option>
@@ -103,6 +104,13 @@
             </select>
           </label>
           <button class="button button-primary" id="calculate" type="button">开始计算</button>
+        </div>
+        <div class="weighted-objective" id="weighted-objective" hidden>
+          <div>
+            <strong>自定义加权目标</strong>
+            <p>每项贡献＝页面显示值 × 权重；百分比按 1% 为一个显示单位。零权重不参与计算。</p>
+          </div>
+          <div class="weight-grid" id="weight-grid"></div>
         </div>
         <p class="validation-message" id="validation-message" role="status"></p>
       </section>

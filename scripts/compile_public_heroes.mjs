@@ -57,6 +57,7 @@ function extractHero(html, source, metadata) {
 }
 
 const heroes = [];
+const retrievedAtValues = [];
 for (const source of SOURCES.sources.filter((entry) => entry.kind === "hero_detail")) {
   const root = path.join(ROOT, "raw", "public-web", source.sourceId);
   const dated = (await readdir(root, { withFileTypes: true }))
@@ -70,12 +71,13 @@ for (const source of SOURCES.sources.filter((entry) => entry.kind === "hero_deta
     readFile(path.join(dir, "snapshot.html"), "utf8"),
     readFile(path.join(dir, "metadata.json"), "utf8").then(JSON.parse)
   ]);
+  retrievedAtValues.push(metadata.retrievedAt);
   heroes.push(extractHero(html, source, metadata));
 }
 
 const output = {
   schemaVersion: "0.1.0",
-  compiledAt: new Date().toISOString(),
+  compiledAt: retrievedAtValues.sort().at(-1),
   compiler: "scripts/compile_public_heroes.mjs",
   limitations: [
     "Values come from public SSR pages and are not validated against the current game client.",

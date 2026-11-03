@@ -69,6 +69,8 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Artifact model regression: public +20 curve lookup, account-observed override, mismatch warnings, OCR/canonical parity and exhaustive/branch-bound Top-N parity pass. No artifact curve has been checked against a live client.
 - Hidden-browser artifact UI QA: staging Review displayed separate enhancement/refinement inputs, accepted independent edits to 20/5 while remaining exportable, and emitted no console warnings/errors; inventory cards showed enhancement, refinement and observation provenance. QA used a hidden in-app browser because the Browser plugin and a configured local Playwright runtime were absent.
 - Hidden-browser equipment-link QA: inventory selected public definition `equipment-532513`, auto-filled its slot, set and enhancement limit, persisted the owned instance linkage and rendered it without browser warnings/errors. Select labels include external IDs so duplicate public display names remain distinguishable.
+- Hidden-browser weighted-objective QA: loaded the synthetic account, selected the custom weighted panel objective, used attack weight 1 and crit-damage-per-1% weight 10, exhaustively evaluated 64 builds and rendered the single feasible result with score `1,556.95`; browser warning/error log was empty. Browser plugin and repository Playwright configuration were absent, so QA used the hidden in-app browser.
+- Public compiler/audit timestamps now derive from immutable source retrieval times. Two consecutive full verification runs left `game-data.public.json` and `import-dictionary.json` byte-identical, improving reproducibility across machines.
 
 ## Next durable steps
 

@@ -36,7 +36,7 @@ function duplicateCount(entries, getter) {
 const refinementLengths = catalog.artifacts.map((entry) => entry.refinementCurve?.length || 0);
 const audit = {
   schemaVersion: "0.1.0",
-  generatedAt: new Date().toISOString(),
+  generatedAt: gameData.dataVersion.retrievedAt,
   dataVersionId: gameData.dataVersion.id,
   evidenceState: "public_catalog_compiled_not_client_validated",
   heroes: {

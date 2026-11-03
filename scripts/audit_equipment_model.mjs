@@ -35,7 +35,7 @@ const displayNameResolvable = equipment.filter((item) => {
 const equipmentCollisions = dictionary.collisions.filter((entry) => entry.kind === "equipment");
 const audit = {
   schemaVersion: "0.1.0",
-  generatedAt: new Date().toISOString(),
+  generatedAt: gameData.dataVersion.retrievedAt,
   gameDataVersionId: gameData.dataVersion.id,
   verification: gameData.dataVersion.verification,
   counts: {

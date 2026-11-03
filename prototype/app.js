@@ -269,7 +269,35 @@ function constraintsFromUi() {
 function objectiveFromUi() {
   const value = byId("objective-select").value;
   const direction = byId("objective-direction").value;
+  if (value === "weighted_stats") {
+    const weights = {};
+    for (const input of document.querySelectorAll(".objective-weight")) {
+      const rawWeight = Number(input.value);
+      if (!Number.isFinite(rawWeight)) throw new Error(`${input.dataset.label}权重不是有效数值`);
+      if (!rawWeight) continue;
+      const definition = statDefinition(input.dataset.stat);
+      weights[definition.id] = definition.unit === "ratio" ? rawWeight * 100 : rawWeight;
+    }
+    if (!Object.keys(weights).length) throw new Error("自定义加权目标至少需要一个非零权重");
+    return { kind: "weighted_stats", direction, weights };
+  }
   return value === "crit_proxy" ? { kind: "crit_proxy", direction } : { kind: "single_stat", stat: value, direction };
+}
+
+function initializeWeightedObjective() {
+  byId("weight-grid").innerHTML = STAT_DEFINITIONS.map((definition) => `
+    <label class="weight-field">
+      <span>${escapeHtml(definition.label)}${definition.unit === "ratio" ? "（每 1%）" : ""}</span>
+      <input class="objective-weight" data-stat="${escapeHtml(definition.id)}" data-label="${escapeHtml(definition.label)}" type="number" step="any" value="0" inputmode="decimal">
+    </label>`).join("");
+  const attack = document.querySelector('.objective-weight[data-stat="atk_sheet"]');
+  const critDamage = document.querySelector('.objective-weight[data-stat="crit_damage"]');
+  attack.value = "1";
+  critDamage.value = "10";
+}
+
+function updateObjectiveEditor() {
+  byId("weighted-objective").hidden = byId("objective-select").value !== "weighted_stats";
 }
 
 function runOptimization() {
@@ -305,6 +333,7 @@ function constraintFailure(constraint, maxima, minima) {
 function formatObjectiveScore(result) {
   const objectiveId = byId("objective-select").value;
   const value = result.objectiveScore ?? result.score;
+  if (objectiveId === "weighted_stats") return Number(value || 0).toLocaleString("zh-CN", { maximumFractionDigits: 2 });
   return objectiveId !== "crit_proxy" && statDefinition(objectiveId).unit === "ratio" ? formatPct(value) : formatInt(value);
 }
 
@@ -432,7 +461,10 @@ byId("calculate").addEventListener("click", () => {
 });
 
 byId("add-constraint").addEventListener("click", () => addConstraintRow());
+byId("objective-select").addEventListener("change", updateObjectiveEditor);
 
 initializeConstraints();
+initializeWeightedObjective();
+updateObjectiveEditor();
 
 initialize();

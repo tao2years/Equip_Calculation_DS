@@ -184,3 +184,11 @@ Append-only. Newest entries go at the bottom.
 - Added a generated equipment-model audit/schema and a public-definition selection flow to the HTML inventory editor.
 - Added a dated handoff covering architecture, commands, evidence, remaining risk and the next real-client acceptance sequence.
 - Hidden-browser inventory QA selected `equipment-532513` (`Northern Gale - Helm+`), auto-filled its helmet slot, set and +20 enhancement limit, saved an owned item linked to the public definition, and rendered the linkage badge with an empty browser error log. QA used a hidden in-app browser because the Browser plugin and a configured local Playwright runtime were absent.
+
+## 2026-11-03 · OP-025
+
+- Exposed the optimizer core's existing `weighted_stats` objective in the HTML instead of limiting users to a single stat or the crit proxy. The editor accepts independent weights for all ten sheet stats and explains that ratio weights operate per displayed 1%.
+- Added validation that at least one finite non-zero weight is present and preserved maximize/minimize plus exact/heuristic solver selection.
+- Hidden-browser QA loaded the synthetic account, selected the weighted objective with attack weight 1 and crit-damage weight 10 per 1%, exhaustively evaluated 64 builds, and rendered one feasible result scoring `1,556.95`; browser warnings/errors were empty.
+- Made public compilation and audit timestamps derive from immutable source snapshots instead of wall-clock build time. Two consecutive full verification runs produced identical SHA-256 values for `game-data.public.json` and `import-dictionary.json`, preventing no-op cross-device Git churn.
+- Reconfirmed that this improves configurable calculation only. It does not change the incomplete status of real logged-in account collection or current-client formula validation.

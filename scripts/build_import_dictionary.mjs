@@ -70,7 +70,7 @@ for (const [kind, entries] of Object.entries(entities)) {
 
 const output = {
   schemaVersion: "0.1.0",
-  generatedAt: new Date().toISOString(),
+  generatedAt: gameData.dataVersion.retrievedAt,
   gameDataVersionId: gameData.dataVersion.id,
   sources: ["SRC-004", "SRC-005", "SRC-016", "SRC-021"],
   normalization: "NFKC + lowercase + remove common whitespace/punctuation; preserve percent and plus markers",

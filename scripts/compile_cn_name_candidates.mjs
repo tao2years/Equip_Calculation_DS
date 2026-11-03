@@ -174,7 +174,7 @@ for (const kind of ["hero", "artifact", "set"]) {
 
 const output = {
   schemaVersion: "0.1.0",
-  generatedAt: new Date().toISOString(),
+  generatedAt: [communitySource.capturedAt, officialSource.capturedAt].sort().at(-1),
   policy: "Candidate observations never enter the resolver until linked to a stable canonical ID with reviewed evidence.",
   sources: [communitySource, officialSource],
   dictionaryCoverageBeforeMerge: coverage,

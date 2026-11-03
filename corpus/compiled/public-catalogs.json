@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "compiledAt": "2026-11-03T10:04:04.550Z",
+  "compiledAt": "2026-11-03T08:58:38.831Z",
   "compiler": "scripts/compile_public_catalogs.mjs",
   "sources": [
     {
