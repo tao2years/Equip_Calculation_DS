@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/collector-pipeline-state.schema.json",
+  "title": "Resumable Account Collector Pipeline State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "runId", "jobId", "createdAt", "updatedAt", "status", "privacy", "inputs", "steps", "events"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "runId": {"type": "string", "minLength": 1},
+    "jobId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "updatedAt": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["running", "awaiting_ocr_review", "awaiting_staging_review", "complete", "failed"]},
+    "privacy": {
+      "type": "object", "additionalProperties": false, "required": ["localOnly", "uploadPerformed"],
+      "properties": {"localOnly": {"const": true}, "uploadPerformed": {"const": false}}
+    },
+    "inputs": {
+      "type": "object", "additionalProperties": false, "required": ["source", "profile"],
+      "properties": {
+        "source": {"$ref": "#/$defs/inputSource"},
+        "profile": {"$ref": "#/$defs/inputProfile"}
+      }
+    },
+    "steps": {"type": "object", "additionalProperties": {"$ref": "#/$defs/step"}},
+    "events": {"type": "array", "items": {"$ref": "#/$defs/event"}}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "inputSource": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256", "kind"],
+      "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha"}, "kind": {"enum": ["capture_manifest", "recognition_bundle"]}}
+    },
+    "inputProfile": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256", "profileId", "evidenceLevel"],
+      "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha"}, "profileId": {"type": "string"}, "evidenceLevel": {"type": "string"}}
+    },
+    "artifact": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256"],
+      "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha"}}
+    },
+    "step": {
+      "type": "object", "additionalProperties": false, "required": ["status", "updatedAt", "detail", "artifacts"],
+      "properties": {
+        "status": {"enum": ["complete", "waiting", "failed"]}, "updatedAt": {"type": "string", "format": "date-time"},
+        "detail": {"type": "string"}, "artifacts": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false, "required": ["timestamp", "step", "status", "detail"],
+      "properties": {"timestamp": {"type": "string", "format": "date-time"}, "step": {"type": "string"}, "status": {"type": "string"}, "detail": {"type": "string"}}
+    }
+  }
+}

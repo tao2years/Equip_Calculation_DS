@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0-prototype",
+  "snapshotId": "example-account-update-002",
+  "createdAt": "2026-11-03T13:00:00+08:00",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "sourceMethod": "synthetic_fixture",
+  "warning": "Synthetic partial rescan used to verify merge and coverage-ambiguity behavior.",
+  "ownedHeroes": [
+    {"ownedHeroId": "owned-aschetius", "heroDefinitionId": "hero-21760", "level": 2, "stars": 1, "inspiration": 0},
+    {"ownedHeroId": "owned-traveler", "heroDefinitionId": "hero-10000", "level": 1, "stars": 1, "inspiration": 0}
+  ],
+  "ownedArtifacts": [
+    {"ownedArtifactId": "art-001", "artifactDefinitionId": "artifact-eyeball-of-the-giant", "level": 6, "refinement": 1, "observedStats": [{"stat":"atk_flat","value":120,"raw_text":"攻击 +120","confidence":1},{"stat":"atk_pct","value":0.08,"raw_text":"攻击 8%","confidence":1}], "equippedBy": "owned-aschetius", "locked": false}
+  ],
+  "ownedGear": [
+    {"ownedItemId": "helm-001", "slot": "helmet", "setId": "set-barbarian", "enhanceLevel": 16, "stats": {"hp_flat": 5200, "atk_pct": 0.08, "crit_rate": 0.05}, "equippedBy": null, "locked": false},
+    {"ownedItemId": "helm-new-003", "slot": "helmet", "setId": "set-guardian", "enhanceLevel": 16, "stats": {"hp_flat": 5300, "crit_rate": 0.09}, "equippedBy": null, "locked": false}
+  ]
+}

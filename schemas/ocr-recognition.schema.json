@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/ocr-recognition.schema.json",
+  "title": "Dragonheir OCR Recognition Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "jobId", "createdAt", "sourceManifest", "privacy", "engine", "language", "images"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "jobId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "sourceManifest": {"type": "string", "minLength": 1},
+    "privacy": {"type": "object"},
+    "engine": {"type": "string", "minLength": 1},
+    "language": {"type": "string", "minLength": 1},
+    "images": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sequence", "originalName", "imageLocalPath", "imageSha256", "mediaType", "captureType", "reviewStatus", "ocrLocalPath", "width", "height", "lineCount", "detections", "lines"],
+        "properties": {
+          "sequence": {"type": "integer", "minimum": 1},
+          "originalName": {"type": "string"},
+          "imageLocalPath": {"type": "string"},
+          "imageSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "mediaType": {"type": "string"},
+          "captureType": {"type": "string"},
+          "reviewStatus": {"enum": ["pending", "accepted", "rejected"]},
+          "ocrLocalPath": {"type": "string"},
+          "width": {"type": "integer", "minimum": 1},
+          "height": {"type": "integer", "minimum": 1},
+          "lineCount": {"type": "integer", "minimum": 0},
+          "detections": {"type": "array"},
+          "lines": {"type": "array"}
+        }
+      }
+    }
+  }
+}

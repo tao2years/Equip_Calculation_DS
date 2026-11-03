@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/ocr-review.schema.json",
+  "title": "Dragonheir OCR Review Decisions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "jobId", "reviewedAt", "sourceManifest", "images"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "jobId": {"type": "string", "minLength": 1},
+    "reviewedAt": {"type": "string", "format": "date-time"},
+    "sourceManifest": {"type": "string", "minLength": 1},
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sequence", "originalName", "imageSha256", "captureType", "reviewStatus", "decisions"],
+        "properties": {
+          "sequence": {"type": "integer", "minimum": 1},
+          "originalName": {"type": "string"},
+          "imageSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "captureType": {"enum": ["unclassified", "hero_list", "hero_detail", "gear_list", "gear_detail", "artifact_list", "artifact_detail"]},
+          "reviewStatus": {"enum": ["pending", "accepted", "rejected"]},
+          "decisions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["lineIndex", "rawText", "kind", "selectedId", "status"],
+              "properties": {
+                "lineIndex": {"type": "integer", "minimum": 0},
+                "rawText": {"type": "string"},
+                "kind": {"enum": ["unresolved", "stat", "slot", "hero", "artifact", "set", "rarity"]},
+                "selectedId": {"type": ["string", "null"]},
+                "status": {"enum": ["matched", "unresolved"]}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

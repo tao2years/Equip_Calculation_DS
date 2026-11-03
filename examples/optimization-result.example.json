@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "0.1.0",
+  "requestId": "example-request-001",
+  "snapshotId": "example-account-001",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "searched": 64,
+  "solver": {
+    "mode": "exhaustive",
+    "searchSpace": 64,
+    "evaluatedBuilds": 64,
+    "visitedNodes": 127,
+    "prunedByFeasibility": 0,
+    "prunedByScore": 0,
+    "topNExact": true,
+    "validCountExact": true,
+    "extremaExact": true
+  },
+  "validCount": 1,
+  "maxima": {
+    "hp_sheet": 9287.91,
+    "atk_sheet": 635.492,
+    "def_sheet": 92.4,
+    "crit_rate": 1,
+    "crit_damage": 1.12,
+    "accuracy": 91,
+    "resistance": 64,
+    "enlightenment": 80,
+    "skill_haste": 34,
+    "attack_speed_pct": 0.27
+  },
+  "minima": {
+    "hp_sheet": 7453,
+    "atk_sheet": 475.68399999999997,
+    "def_sheet": 84,
+    "crit_rate": 0.18,
+    "crit_damage": 0.58,
+    "accuracy": 12,
+    "resistance": 0,
+    "enlightenment": 0,
+    "skill_haste": 10,
+    "attack_speed_pct": 0
+  },
+  "results": [
+    {
+      "rank": 1,
+      "score": 1210.00964,
+      "ownedArtifactId": "art-001",
+      "ownedGearIds": [
+        "helm-001",
+        "weapon-001",
+        "chest-001",
+        "gloves-001",
+        "prune-001",
+        "nrune-001"
+      ],
+      "stats": {
+        "hp_flat": 2383,
+        "def_flat": 84,
+        "atk_flat": 106.8,
+        "crit_rate": 1,
+        "crit_damage": 0.93,
+        "accuracy": 76,
+        "resistance": 0,
+        "enlightenment": 0,
+        "skill_haste": 10,
+        "attack_speed_pct": 0.27,
+        "atk_sheet": 626.948,
+        "hp_sheet": 7453,
+        "def_sheet": 84
+      },
+      "setLabels": [
+        "野蛮人 2件",
+        "捕食者 2件"
+      ],
+      "heroBaseSource": "公共目录一级基础值",
+      "artifactStatSource": "account_observed",
+      "artifactStatWarnings": [
+        "账号观测属性与公共 +6 曲线不同：atk_flat；计算采用账号观测值"
+      ]
+    }
+  ]
+}

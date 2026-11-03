@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-03T10:04:04.823Z",
+  "dataVersionId": "public-catalog-2026-11-03",
+  "evidenceState": "public_catalog_compiled_not_client_validated",
+  "heroes": {
+    "total": 351,
+    "withBaseStats": 351,
+    "withPerLevelGrowth": 351,
+    "withSkills": 351,
+    "withInspirations": 161,
+    "bySeason": {
+      "s1": 187,
+      "s4": 45,
+      "s2": 33,
+      "s3": 33,
+      "s5": 12,
+      "s6": 11,
+      "s8": 11,
+      "s7": 10,
+      "s9": 9
+    },
+    "byRarity": {
+      "Legendary": 161,
+      "Epic": 111,
+      "Rare": 71,
+      "Common": 7,
+      "Special": 1
+    },
+    "byElement": {
+      "Radiance": 61,
+      "Lightning": 60,
+      "Ice": 59,
+      "Necrosis": 59,
+      "Fire": 56,
+      "Poison": 56
+    },
+    "byOrientation": {
+      "Support": 177,
+      "Dauntless": 19,
+      "Rally": 19,
+      "Frost": 17,
+      "Summon": 16,
+      "Poison": 14,
+      "Wild": 14,
+      "Burn": 13,
+      "Aura": 12,
+      "Corrosion": 12,
+      "Ice Blast": 12,
+      "Thunderbolt": 12,
+      "Shadow": 11,
+      "Toxin": 3
+    },
+    "duplicateExternalIds": 0
+  },
+  "equipment": {
+    "total": 682,
+    "withKnownSlot": 677,
+    "unknownSlot": 5,
+    "enhancedVariants": 280,
+    "withPrimaryStats": 682,
+    "withRefinementCurve": 682,
+    "withSetEffectText": 624,
+    "bySlot": {
+      "chest": 168,
+      "gloves": 167,
+      "helmet": 147,
+      "weapon": 147,
+      "negative_rune": 24,
+      "positive_rune": 24,
+      "unknown": 5
+    },
+    "byRarity": {
+      "Legendary": 353,
+      "Mythic": 240,
+      "Epic": 45,
+      "Rare": 28,
+      "Common": 16
+    },
+    "bySeason": {
+      "s1": 182,
+      "s2": 140,
+      "s7": 80,
+      "s3": 72,
+      "s6": 72,
+      "s9": 56,
+      "s4": 40,
+      "s8": 40
+    },
+    "primaryStatKinds": {
+      "atk_flat": 510,
+      "hp_flat": 148,
+      "atk_pct": 12,
+      "unknown": 10,
+      "crit_rate": 1,
+      "hp_pct": 1
+    },
+    "duplicateExternalIds": 0
+  },
+  "artifacts": {
+    "total": 147,
+    "withPrimaryStats": 147,
+    "withRefinementCurve": 147,
+    "withEffectLevels": 147,
+    "refinementCurveLevels": {
+      "minimum": 21,
+      "maximum": 21
+    },
+    "byRarity": {
+      "Mythic": 106,
+      "Legendary": 28,
+      "Epic": 13
+    },
+    "bySeason": {
+      "s1": 92,
+      "s2": 13,
+      "s3": 13,
+      "s6": 10,
+      "s4": 6,
+      "s8": 5,
+      "s7": 4,
+      "s9": 4
+    },
+    "primaryStatKinds": {
+      "atk_flat": 73,
+      "hp_flat": 42,
+      "accuracy": 29,
+      "atk_pct": 29,
+      "def_flat": 25,
+      "hp_pct": 23,
+      "crit_rate": 17,
+      "crit_damage": 16,
+      "enlightenment": 16,
+      "def_pct": 9,
+      "resistance": 7,
+      "skill_haste": 6,
+      "attack_speed_pct": 2
+    },
+    "duplicateExternalIds": 0
+  },
+  "sets": {
+    "totalFamilies": 248,
+    "withSemanticText": 0,
+    "executableSheetBonusDefinitions": 4,
+    "bySeason": {
+      "s2": 63,
+      "s1": 57,
+      "s3": 38,
+      "s6": 28,
+      "s4": 20,
+      "s7": 14,
+      "s8": 14,
+      "s9": 14
+    }
+  },
+  "definitions": {
+    "stats": [
+      {
+        "id": "hp_flat",
+        "labelZh": "生命",
+        "unit": "flat"
+      },
+      {
+        "id": "hp_pct",
+        "labelZh": "生命%",
+        "unit": "ratio"
+      },
+      {
+        "id": "atk_flat",
+        "labelZh": "攻击",
+        "unit": "flat"
+      },
+      {
+        "id": "atk_pct",
+        "labelZh": "攻击%",
+        "unit": "ratio"
+      },
+      {
+        "id": "def_flat",
+        "labelZh": "防御",
+        "unit": "flat"
+      },
+      {
+        "id": "def_pct",
+        "labelZh": "防御%",
+        "unit": "ratio"
+      },
+      {
+        "id": "crit_rate",
+        "labelZh": "重击率",
+        "unit": "ratio"
+      },
+      {
+        "id": "crit_damage",
+        "labelZh": "重击伤害",
+        "unit": "ratio"
+      },
+      {
+        "id": "accuracy",
+        "labelZh": "效果命中",
+        "unit": "flat"
+      },
+      {
+        "id": "resistance",
+        "labelZh": "效果抵抗",
+        "unit": "flat"
+      },
+      {
+        "id": "enlightenment",
+        "labelZh": "精通",
+        "unit": "flat"
+      },
+      {
+        "id": "skill_haste",
+        "labelZh": "技能急速",
+        "unit": "flat"
+      },
+      {
+        "id": "attack_speed_pct",
+        "labelZh": "攻击速度",
+        "unit": "ratio"
+      }
+    ],
+    "slots": [
+      {
+        "id": "helmet",
+        "labelZh": "头盔",
+        "fixedMainStat": "hp_flat"
+      },
+      {
+        "id": "weapon",
+        "labelZh": "武器",
+        "fixedMainStat": "atk_flat"
+      },
+      {
+        "id": "chest",
+        "labelZh": "胸甲",
+        "fixedMainStat": null
+      },
+      {
+        "id": "gloves",
+        "labelZh": "手套",
+        "fixedMainStat": null
+      },
+      {
+        "id": "positive_rune",
+        "labelZh": "正位符文",
+        "fixedMainStat": null
+      },
+      {
+        "id": "negative_rune",
+        "labelZh": "负位符文",
+        "fixedMainStat": null
+      },
+      {
+        "id": "artifact",
+        "labelZh": "神器",
+        "fixedMainStat": null
+      }
+    ]
+  },
+  "limitations": [
+    "The catalog is compiled from a public community database and is not proof of the current China client.",
+    "Owned inventory, random substats, locks and equipped relationships never come from the public catalog.",
+    "Most set and artifact behavior remains source text, not executable combat semantics.",
+    "Hero star, inspiration and current-build growth rules require client golden cases."
+  ]
+}

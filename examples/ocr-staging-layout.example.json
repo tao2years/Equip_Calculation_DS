@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "synthetic-layout-job-001",
+  "createdAt": "2026-11-03T12:10:00+08:00",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "sourceFiles": [
+    {
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "mediaType": "image/png",
+      "localName": "evidence/hero_detail-1.png"
+    },
+    {
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "mediaType": "image/png",
+      "localName": "evidence/gear_detail-2.png"
+    },
+    {
+      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "mediaType": "image/png",
+      "localName": "evidence/artifact_detail-3.png"
+    }
+  ],
+  "records": [
+    {
+      "kind": "hero",
+      "sourceRecordId": "ocr-hero-bb38bfaaa01c72e417c1",
+      "confidence": 0.9071,
+      "fields": {
+        "name": "埃里奇",
+        "level": 1,
+        "stars": 1,
+        "inspiration": 0,
+        "baseStats": [
+          {
+            "label": "攻击",
+            "value": "1200",
+            "confidence": 0.9
+          },
+          {
+            "label": "生命",
+            "value": "18000",
+            "confidence": 0.9
+          },
+          {
+            "label": "防御",
+            "value": "750",
+            "confidence": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "ocr-gear-ac3001984e6fa8f520f0",
+      "confidence": 0.9286,
+      "fields": {
+        "slot": "武器",
+        "setName": "野蛮人",
+        "enhanceLevel": 16,
+        "locked": false,
+        "stats": [
+          {
+            "label": "攻击",
+            "value": "235",
+            "confidence": 0.9
+          },
+          {
+            "label": "重击率",
+            "value": "12%",
+            "confidence": 0.9
+          },
+          {
+            "label": "重击伤害",
+            "value": "27%",
+            "confidence": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "kind": "artifact",
+      "sourceRecordId": "ocr-artifact-8979dc62f8641a4c6793",
+      "confidence": 0.925,
+      "fields": {
+        "name": "巨人眼球",
+        "level": 6,
+        "refinement": 1,
+        "locked": false,
+        "stats": [
+          {
+            "label": "攻击",
+            "value": "120",
+            "confidence": 0.9
+          },
+          {
+            "label": "攻击%",
+            "value": "8%",
+            "confidence": 0.9
+          }
+        ]
+      }
+    }
+  ]
+}

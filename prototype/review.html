@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>龙息配装器 · 截图识别校对</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <header class="review-header">
+    <a class="brand" href="index.html">龙息配装器</a>
+    <h1>截图识别校对</h1>
+    <div class="job-progress" id="job-progress">尚未载入识别任务</div>
+    <label class="button button-secondary" for="recognition-file">载入 recognition.json</label>
+    <input id="recognition-file" type="file" accept="application/json,.json" hidden>
+    <label class="button button-secondary" for="image-files">关联原图</label>
+    <input id="image-files" type="file" accept="image/*" multiple hidden>
+    <button class="button button-secondary" id="load-example" type="button">载入示例</button>
+    <a class="button button-secondary" href="staging-review.html">进入字段校对</a>
+  </header>
+
+  <main class="review-workspace">
+    <aside class="task-rail" aria-label="识别任务与截图列表">
+      <section class="task-summary">
+        <h2>本次识别任务</h2>
+        <dl>
+          <div><dt>截图总数</dt><dd id="total-count">0 张</dd></div>
+          <div><dt>已接受</dt><dd id="accepted-count">0 张</dd></div>
+          <div><dt>待确认</dt><dd class="pending-text" id="pending-count">0 张</dd></div>
+          <div><dt>已驳回</dt><dd id="rejected-count">0 张</dd></div>
+        </dl>
+      </section>
+      <section class="privacy-note">
+        <h2>仅在本机处理，不上传</h2>
+        <p>页面只读取你选择的 JSON 与图片。导出前，所有修正保留在当前浏览器内存中。</p>
+      </section>
+      <section class="shot-section">
+        <div class="section-heading">
+          <h2>截图列表</h2>
+          <span id="source-language">—</span>
+        </div>
+        <div class="shot-list" id="shot-list">
+          <p class="empty-state">载入识别清单后开始校对</p>
+        </div>
+      </section>
+    </aside>
+
+    <section class="preview-region" aria-label="截图预览">
+      <div class="preview-toolbar">
+        <h2 id="selected-name">未选择截图</h2>
+        <div class="toolbar-actions">
+          <button class="icon-button" id="previous" type="button" aria-label="上一张">‹</button>
+          <button class="icon-button" id="next" type="button" aria-label="下一张">›</button>
+        </div>
+      </div>
+      <div class="canvas-shell" id="canvas-shell">
+        <div class="canvas-stage" id="canvas-stage">
+          <img id="preview-image" alt="待校对截图预览">
+          <div class="overlay-layer" id="overlay-layer" aria-hidden="true"></div>
+          <p class="canvas-empty" id="canvas-empty">请载入示例，或载入识别清单并关联原图</p>
+        </div>
+      </div>
+      <div class="zoom-toolbar">
+        <button class="icon-button" id="zoom-out" type="button" aria-label="缩小">−</button>
+        <output id="zoom-value">100%</output>
+        <button class="icon-button" id="zoom-in" type="button" aria-label="放大">＋</button>
+        <button class="button button-secondary" id="fit-view" type="button">适应窗口</button>
+        <label class="overlay-toggle"><input id="show-all-lines" type="checkbox">显示全部 OCR 行</label>
+      </div>
+    </section>
+
+    <aside class="inspector" aria-label="识别字段校对">
+      <div class="inspector-heading">
+        <h2>识别字段</h2>
+        <p>逐项确认字典匹配；无法判断的内容请保留为未解决。</p>
+      </div>
+      <label class="field compact-field">
+        <span>截图类型</span>
+        <select id="capture-type">
+          <option value="unclassified">未分类</option>
+          <option value="hero_list">角色列表</option>
+          <option value="hero_detail">角色详情</option>
+          <option value="gear_list">装备列表</option>
+          <option value="gear_detail">装备详情</option>
+          <option value="artifact_list">神器列表</option>
+          <option value="artifact_detail">神器详情</option>
+        </select>
+      </label>
+      <div class="filter-row" role="group" aria-label="识别字段筛选">
+        <button class="filter-button selected" data-filter="all" type="button">全部</button>
+        <button class="filter-button" data-filter="matched" type="button">已匹配</button>
+        <button class="filter-button" data-filter="unresolved" type="button">待处理</button>
+      </div>
+      <div class="field-list" id="field-list">
+        <p class="empty-state">尚无识别字段</p>
+      </div>
+      <div class="inspector-actions">
+        <button class="button button-danger" id="reject-image" type="button">驳回此图</button>
+        <button class="button button-primary" id="accept-image" type="button">接受此图</button>
+        <button class="button button-secondary export-button" id="export-review" type="button">导出校对结果</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="status-strip">
+    <span id="engine-status">Windows OCR · —</span>
+    <span id="hash-status">原图 SHA-256 尚未载入</span>
+    <span class="status-message" id="status-message" role="status"></span>
+  </footer>
+
+  <script src="review.js" type="module"></script>
+</body>
+</html>

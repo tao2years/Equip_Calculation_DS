@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-03T09:45:17.746Z",
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "win32",
+    "cpu": "Intel(R) Core(TM) i7-14650HX"
+  },
+  "fixture": {
+    "synthetic": true,
+    "distribution": "round-robin across six slots with deterministic pseudo-varied stats and four executable public set IDs",
+    "objective": "maximize crit_proxy",
+    "constraints": [
+      "crit_rate >= 0.5",
+      "accuracy >= 60"
+    ],
+    "resultLimit": 20
+  },
+  "runs": [
+    {
+      "inventoryItems": 100,
+      "candidatesBySlot": {
+        "helmet": 17,
+        "weapon": 17,
+        "chest": 17,
+        "gloves": 17,
+        "positive_rune": 16,
+        "negative_rune": 16
+      },
+      "searchSpace": 21381376,
+      "reducedSearchSpace": 1000000,
+      "evaluatedBuilds": 13899,
+      "visitedNodes": 227171,
+      "prunedByFeasibility": 25064,
+      "prunedByScore": 165491,
+      "solverMode": "heuristic_candidate_cap",
+      "topNExact": false,
+      "validCountExact": false,
+      "extremaExact": false,
+      "returnedResults": 20,
+      "durationMs": 972.86
+    },
+    {
+      "inventoryItems": 300,
+      "candidatesBySlot": {
+        "helmet": 50,
+        "weapon": 50,
+        "chest": 50,
+        "gloves": 50,
+        "positive_rune": 50,
+        "negative_rune": 50
+      },
+      "searchSpace": 15625000000,
+      "reducedSearchSpace": 1000000,
+      "evaluatedBuilds": 10535,
+      "visitedNodes": 226381,
+      "prunedByFeasibility": 5799,
+      "prunedByScore": 187409,
+      "solverMode": "heuristic_candidate_cap",
+      "topNExact": false,
+      "validCountExact": false,
+      "extremaExact": false,
+      "returnedResults": 20,
+      "durationMs": 921.32
+    },
+    {
+      "inventoryItems": 1000,
+      "candidatesBySlot": {
+        "helmet": 167,
+        "weapon": 167,
+        "chest": 167,
+        "gloves": 167,
+        "positive_rune": 166,
+        "negative_rune": 166
+      },
+      "searchSpace": 21432955421476,
+      "reducedSearchSpace": 1000000,
+      "evaluatedBuilds": 3955,
+      "visitedNodes": 132291,
+      "prunedByFeasibility": 324,
+      "prunedByScore": 114783,
+      "solverMode": "heuristic_candidate_cap",
+      "topNExact": false,
+      "validCountExact": false,
+      "extremaExact": false,
+      "returnedResults": 20,
+      "durationMs": 540.14
+    }
+  ],
+  "qualityRuns": [
+    {
+      "inventoryItems": 60,
+      "searchSpace": 1000000,
+      "heuristicReducedSearchSpace": 262144,
+      "exactDurationMs": 878.13,
+      "heuristicDurationMs": 1706.4,
+      "exactBestScore": 2642.8748327999997,
+      "heuristicBestScore": 2642.8748327999997,
+      "bestScoreGapPct": 0,
+      "top20Overlap": 18
+    }
+  ],
+  "interpretation": "Synthetic scalability evidence only. Exact branch-and-bound Top-N parity is regression-tested against exhaustive search on small fixtures; heuristic quality is separately compared with exact search. This is not real-account or formula-accuracy validation."
+}

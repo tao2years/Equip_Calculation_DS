@@ -1,0 +1,18 @@
+{
+  "sourceId": "SRC-023",
+  "kind": "official_cn_product_site",
+  "requestedUrl": "https://www.wegame.com.cn/act/wegame/lxsj20250501/index.html",
+  "finalUrl": "https://www.wegame.com.cn/act/wegame/lxsj20250501/index.html",
+  "retrievedAt": "2026-11-03T09:26:19.146Z",
+  "status": 200,
+  "mediaType": "text/html",
+  "byteLength": 45695,
+  "sha256": "3e19ed75f7a7bd01b00958576f3903f2c77f57b2cc376f9fbce183c3698c1614",
+  "region": "cn",
+  "expectedContent": [
+    "official_cn_hero_names",
+    "cn_channel",
+    "official_product_terms"
+  ],
+  "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0",
+  "sessionId": "synthetic-session-001",
+  "planId": "dragonheir-emulator-golden-v1",
+  "startedAt": "2026-11-03T12:30:00+08:00",
+  "completedAt": "2026-11-03T12:31:00+08:00",
+  "status": "partial",
+  "sourceMethod": "emulator_adb_user_initiated_screenshot",
+  "privacy": {"localOnly": true, "uploadPerformed": false},
+  "device": {"serial": "example-emulator-5554", "model": "example-model", "product": "example-product"},
+  "captures": [
+    {
+      "sequence": 1,
+      "stepId": "channel-version",
+      "captureType": "unclassified",
+      "capturedAt": "2026-11-03T12:30:30+08:00",
+      "localPath": "evidence/0001-channel-version-000000000000.png",
+      "metadataPath": "evidence/0001-channel-version-000000000000.json",
+      "mediaType": "image/png",
+      "byteLength": 1024,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "stepResults": [
+    {"stepId": "channel-version", "captured": 1, "minimumCaptures": 1, "complete": true}
+  ]
+}

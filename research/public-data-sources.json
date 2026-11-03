@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "0.1.0",
+  "sources": [
+    {
+      "sourceId": "SRC-004",
+      "kind": "equipment_catalog",
+      "url": "https://www.dragonheir.info/equipment",
+      "region": "global",
+      "expectedContent": ["equipment", "sets", "artifacts"]
+    },
+    {
+      "sourceId": "SRC-005",
+      "kind": "hero_catalog",
+      "url": "https://www.dragonheir.info/heroes",
+      "region": "global",
+      "expectedContent": ["hero_ids", "names", "elements", "orientations"]
+    },
+    {
+      "sourceId": "SRC-006",
+      "kind": "hero_detail",
+      "url": "https://www.dragonheir.info/heroes/21760",
+      "region": "global",
+      "expectedContent": ["base_stats", "skills", "inspiration"]
+    },
+    {
+      "sourceId": "SRC-017",
+      "kind": "hero_detail",
+      "url": "https://www.dragonheir.info/heroes/20400",
+      "region": "global",
+      "expectedContent": ["base_stats", "skills", "inspiration"]
+    },
+    {
+      "sourceId": "SRC-001",
+      "kind": "rule_article",
+      "url": "https://www.dragonheir.info/article/42",
+      "region": "global",
+      "expectedContent": ["slots", "equipment_categories"]
+    },
+    {
+      "sourceId": "SRC-002",
+      "kind": "rule_article",
+      "url": "https://www.dragonheir.info/article/103",
+      "region": "global",
+      "expectedContent": ["stat_rules", "refinement_examples"]
+    },
+    {
+      "sourceId": "SRC-019",
+      "kind": "official_product_site",
+      "url": "https://dragonheir.sgrastudio.com/",
+      "region": "global",
+      "expectedContent": ["current_brand", "platforms", "official_links"]
+    },
+    {
+      "sourceId": "SRC-020",
+      "kind": "official_press_release",
+      "url": "https://press.levelinfinite.com/en-GB/DRAGONHEIR-SILENT-GODS-MARKS-THIRD-ANNIVERSARY-WITH-COMMUNITY-CREATED-",
+      "region": "global",
+      "expectedContent": ["current_publisher", "current_game_state", "hero_count_claim", "platforms"]
+    },
+    {
+      "sourceId": "SRC-016",
+      "kind": "cn_equipment_guide",
+      "url": "https://www.taptap.cn/moment/661318857893348450",
+      "region": "cn",
+      "expectedContent": ["cn_stat_aliases", "cn_slot_aliases", "cn_set_names"]
+    },
+    {
+      "sourceId": "SRC-021",
+      "kind": "cn_artifact_guide",
+      "url": "https://www.taptap.cn/moment/656202193061285875",
+      "region": "cn",
+      "expectedContent": ["cn_artifact_aliases", "rarity_terms", "refinement_terms"]
+    },
+    {
+      "sourceId": "SRC-022",
+      "kind": "cn_hero_name_candidate_catalog",
+      "url": "https://m.ali213.net/news/gl2411/1542117.html",
+      "region": "cn",
+      "expectedContent": ["cn_hero_display_names", "elements", "candidate_aliases"]
+    },
+    {
+      "sourceId": "SRC-023",
+      "kind": "official_cn_product_site",
+      "url": "https://www.wegame.com.cn/act/wegame/lxsj20250501/index.html",
+      "region": "cn",
+      "expectedContent": ["official_cn_hero_names", "cn_channel", "official_product_terms"]
+    }
+  ]
+}

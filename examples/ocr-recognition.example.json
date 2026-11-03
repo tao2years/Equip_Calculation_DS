@@ -1,0 +1,918 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "example-review-job-001",
+  "createdAt": "2026-11-03T12:00:00+08:00",
+  "sourceManifest": "synthetic-review-manifest.json",
+  "privacy": {
+    "localOnly": true,
+    "containsPotentialAccountData": false
+  },
+  "engine": "Windows.Media.Ocr",
+  "language": "zh-Hans-CN",
+  "images": [
+    {
+      "sequence": 1,
+      "originalName": "prototype-browser-verified.png",
+      "imageLocalPath": "../outputs/design/prototype-browser-verified.png",
+      "imageSha256": "1ecd1cd46ddb32fea6fe663c334d6bbab995963c2363b7852973c4362fc6d9a5",
+      "mediaType": "image/png",
+      "captureType": "unclassified",
+      "reviewStatus": "pending",
+      "ocrLocalPath": "../outputs/qa/windows-ocr-prototype.json",
+      "width": 1264,
+      "height": 981,
+      "lineCount": 58,
+      "detections": [
+        {
+          "lineIndex": 3,
+          "text": "阿 斯 切 提 乌 斯",
+          "normalizedText": "阿斯切提乌斯",
+          "boundingRect": {
+            "x": 39,
+            "y": 210,
+            "width": 90,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "hero",
+              "id": "hero-21760",
+              "externalId": 21760,
+              "alias": "阿斯切提乌斯",
+              "normalized": "阿斯切提乌斯"
+            }
+          ]
+        },
+        {
+          "lineIndex": 4,
+          "text": "巨 人 眼 球 ． 炼 1",
+          "normalizedText": "巨人眼球炼1",
+          "boundingRect": {
+            "x": 40,
+            "y": 300,
+            "width": 106,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "artifact",
+              "id": "artifact-eyeball-of-the-giant",
+              "externalId": 300008,
+              "alias": "巨人眼球",
+              "normalized": "巨人眼球"
+            }
+          ]
+        },
+        {
+          "lineIndex": 9,
+          "text": "重 击 率 之",
+          "normalizedText": "重击率之",
+          "boundingRect": {
+            "x": 360,
+            "y": 178,
+            "width": 58,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "crit_rate",
+              "externalId": null,
+              "alias": "重击率",
+              "normalized": "重击率"
+            }
+          ]
+        },
+        {
+          "lineIndex": 10,
+          "text": "生 命 之",
+          "normalizedText": "生命之",
+          "boundingRect": {
+            "x": 360,
+            "y": 244,
+            "width": 43,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "hp_flat",
+              "externalId": null,
+              "alias": "生命",
+              "normalized": "生命"
+            }
+          ]
+        },
+        {
+          "lineIndex": 16,
+          "text": "正 位 符 文",
+          "normalizedText": "正位符文",
+          "boundingRect": {
+            "x": 22,
+            "y": 612,
+            "width": 61,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "positive_rune",
+              "externalId": null,
+              "alias": "正位符文",
+              "normalized": "正位符文"
+            }
+          ]
+        },
+        {
+          "lineIndex": 17,
+          "text": "负 位 符 文",
+          "normalizedText": "负位符文",
+          "boundingRect": {
+            "x": 22,
+            "y": 660,
+            "width": 61,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "negative_rune",
+              "externalId": null,
+              "alias": "负位符文",
+              "normalized": "负位符文"
+            }
+          ]
+        },
+        {
+          "lineIndex": 31,
+          "text": "· 野 蛮 人 2 件",
+          "normalizedText": "野蛮人2件",
+          "boundingRect": {
+            "x": 816,
+            "y": 712,
+            "width": 88,
+            "height": 14
+          },
+          "matches": [
+            {
+              "kind": "set",
+              "id": "set-barbarian",
+              "externalId": null,
+              "alias": "野蛮人",
+              "normalized": "野蛮人"
+            }
+          ]
+        },
+        {
+          "lineIndex": 32,
+          "text": "· 捕 食 者 2 件",
+          "normalizedText": "捕食者2件",
+          "boundingRect": {
+            "x": 816,
+            "y": 739,
+            "width": 88,
+            "height": 14
+          },
+          "matches": [
+            {
+              "kind": "set",
+              "id": "set-predator",
+              "externalId": null,
+              "alias": "捕食者",
+              "normalized": "捕食者"
+            }
+          ]
+        },
+        {
+          "lineIndex": 34,
+          "text": "命 中",
+          "normalizedText": "命中",
+          "boundingRect": {
+            "x": 938,
+            "y": 492,
+            "width": 26,
+            "height": 12
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "accuracy",
+              "externalId": null,
+              "alias": "命中",
+              "normalized": "命中"
+            }
+          ]
+        },
+        {
+          "lineIndex": 38,
+          "text": "野 蛮 ． 人 2 + 捕 食 者 2 件",
+          "normalizedText": "野蛮人2+捕食者2件",
+          "boundingRect": {
+            "x": 992,
+            "y": 533,
+            "width": 163,
+            "height": 14
+          },
+          "matches": [
+            {
+              "kind": "set",
+              "id": "set-barbarian",
+              "externalId": null,
+              "alias": "野蛮人",
+              "normalized": "野蛮人"
+            },
+            {
+              "kind": "set",
+              "id": "set-predator",
+              "externalId": null,
+              "alias": "捕食者",
+              "normalized": "捕食者"
+            }
+          ]
+        },
+        {
+          "lineIndex": 43,
+          "text": "· 二 头 盔",
+          "normalizedText": "二头盔",
+          "boundingRect": {
+            "x": 382,
+            "y": 686,
+            "width": 46,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "helmet",
+              "externalId": null,
+              "alias": "头盔",
+              "normalized": "头盔"
+            }
+          ]
+        },
+        {
+          "lineIndex": 45,
+          "text": "· 武 器 ．",
+          "normalizedText": "武器",
+          "boundingRect": {
+            "x": 382,
+            "y": 712,
+            "width": 51,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "weapon",
+              "externalId": null,
+              "alias": "武器",
+              "normalized": "武器"
+            }
+          ]
+        },
+        {
+          "lineIndex": 46,
+          "text": "weapon 一 001",
+          "normalizedText": "weapon一001",
+          "boundingRect": {
+            "x": 443,
+            "y": 713,
+            "width": 80,
+            "height": 14
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "weapon",
+              "externalId": null,
+              "alias": "weapon",
+              "normalized": "weapon"
+            }
+          ]
+        },
+        {
+          "lineIndex": 47,
+          "text": "． 胸 單 ： chest-001",
+          "normalizedText": "胸單chest001",
+          "boundingRect": {
+            "x": 382,
+            "y": 739,
+            "width": 123,
+            "height": 13
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "chest",
+              "externalId": null,
+              "alias": "chest",
+              "normalized": "chest"
+            }
+          ]
+        },
+        {
+          "lineIndex": 48,
+          "text": "． 手 套 ： 邙 oves 一 001",
+          "normalizedText": "手套邙oves一001",
+          "boundingRect": {
+            "x": 382,
+            "y": 765,
+            "width": 132,
+            "height": 15
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "gloves",
+              "externalId": null,
+              "alias": "手套",
+              "normalized": "手套"
+            }
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "龙 息 配 装 器",
+          "boundingRect": {
+            "x": 29,
+            "y": 19,
+            "width": 154,
+            "height": 29
+          }
+        },
+        {
+          "lineIndex": 1,
+          "text": "角 色 与 固 定 项",
+          "boundingRect": {
+            "x": 23,
+            "y": 103,
+            "width": 151,
+            "height": 25
+          }
+        },
+        {
+          "lineIndex": 2,
+          "text": "角 色",
+          "boundingRect": {
+            "x": 22,
+            "y": 171,
+            "width": 30,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 3,
+          "text": "阿 斯 切 提 乌 斯",
+          "boundingRect": {
+            "x": 39,
+            "y": 210,
+            "width": 90,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 4,
+          "text": "巨 人 眼 球 ． 炼 1",
+          "boundingRect": {
+            "x": 40,
+            "y": 300,
+            "width": 106,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 5,
+          "text": "离 线 到 姜 曳 片 反 4 ； seed 一 邙 ob 引 一 pub 《 化 一 2026 一 1 1 一 03",
+          "boundingRect": {
+            "x": 237,
+            "y": 30,
+            "width": 291,
+            "height": 14
+          }
+        },
+        {
+          "lineIndex": 6,
+          "text": "导 入 账 号 ON",
+          "boundingRect": {
+            "x": 1002,
+            "y": 29,
+            "width": 99,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 7,
+          "text": "载 入 示 例",
+          "boundingRect": {
+            "x": 1155,
+            "y": 29,
+            "width": 60,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 8,
+          "text": "配 装 条 件",
+          "boundingRect": {
+            "x": 360,
+            "y": 102,
+            "width": 98,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 9,
+          "text": "重 击 率 之",
+          "boundingRect": {
+            "x": 360,
+            "y": 178,
+            "width": 58,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 10,
+          "text": "生 命 之",
+          "boundingRect": {
+            "x": 360,
+            "y": 244,
+            "width": 43,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 11,
+          "text": "优 化 目 际",
+          "boundingRect": {
+            "x": 360,
+            "y": 323,
+            "width": 60,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 12,
+          "text": "推 荐 方 案",
+          "boundingRect": {
+            "x": 360,
+            "y": 428,
+            "width": 97,
+            "height": 23
+          }
+        },
+        {
+          "lineIndex": 13,
+          "text": "1 闐",
+          "boundingRect": {
+            "x": 496,
+            "y": 179,
+            "width": 22,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 14,
+          "text": "期 重 击 输 出 代 理",
+          "boundingRect": {
+            "x": 500,
+            "y": 323,
+            "width": 120,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 15,
+          "text": "固 定 项",
+          "boundingRect": {
+            "x": 23,
+            "y": 363,
+            "width": 60,
+            "height": 19
+          }
+        },
+        {
+          "lineIndex": 16,
+          "text": "正 位 符 文",
+          "boundingRect": {
+            "x": 22,
+            "y": 612,
+            "width": 61,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 17,
+          "text": "负 位 符 文",
+          "boundingRect": {
+            "x": 22,
+            "y": 660,
+            "width": 61,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 18,
+          "text": "自 动 选",
+          "boundingRect": {
+            "x": 123,
+            "y": 420,
+            "width": 38,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 19,
+          "text": "自 动 选",
+          "boundingRect": {
+            "x": 123,
+            "y": 468,
+            "width": 38,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 20,
+          "text": "自 动 选",
+          "boundingRect": {
+            "x": 123,
+            "y": 516,
+            "width": 38,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 21,
+          "text": "自 动 选",
+          "boundingRect": {
+            "x": 123,
+            "y": 564,
+            "width": 38,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 22,
+          "text": "自 动 选",
+          "boundingRect": {
+            "x": 123,
+            "y": 612,
+            "width": 38,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 23,
+          "text": "自 动 选",
+          "boundingRect": {
+            "x": 123,
+            "y": 660,
+            "width": 38,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 24,
+          "text": "100 ℃ ％",
+          "boundingRect": {
+            "x": 738,
+            "y": 534,
+            "width": 47,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 25,
+          "text": "玫 击",
+          "boundingRect": {
+            "x": 829,
+            "y": 178,
+            "width": 30,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 26,
+          "text": "效 命 巾 之",
+          "boundingRect": {
+            "x": 829,
+            "y": 244,
+            "width": 73,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 27,
+          "text": "重 击 伤",
+          "boundingRect": {
+            "x": 840,
+            "y": 492,
+            "width": 39,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 28,
+          "text": "93 ℃ ％",
+          "boundingRect": {
+            "x": 852,
+            "y": 534,
+            "width": 40,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 29,
+          "text": "套 装 与 褲 器",
+          "boundingRect": {
+            "x": 812,
+            "y": 657,
+            "width": 70,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 30,
+          "text": "· 1 申 器 ： art 一 開 1",
+          "boundingRect": {
+            "x": 816,
+            "y": 686,
+            "width": 106,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 31,
+          "text": "· 野 蛮 人 2 件",
+          "boundingRect": {
+            "x": 816,
+            "y": 712,
+            "width": 88,
+            "height": 14
+          }
+        },
+        {
+          "lineIndex": 32,
+          "text": "· 捕 食 者 2 件",
+          "boundingRect": {
+            "x": 816,
+            "y": 739,
+            "width": 88,
+            "height": 14
+          }
+        },
+        {
+          "lineIndex": 33,
+          "text": "0",
+          "boundingRect": {
+            "x": 965,
+            "y": 245,
+            "width": 8,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 34,
+          "text": "命 中",
+          "boundingRect": {
+            "x": 938,
+            "y": 492,
+            "width": 26,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 35,
+          "text": "76",
+          "boundingRect": {
+            "x": 948,
+            "y": 534,
+            "width": 16,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 36,
+          "text": "开 始 计 豈",
+          "boundingRect": {
+            "x": 1099,
+            "y": 323,
+            "width": 60,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 37,
+          "text": "谁 枚 举 64* 10 满 足 条 件",
+          "boundingRect": {
+            "x": 1076,
+            "y": 438,
+            "width": 158,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 38,
+          "text": "野 蛮 ． 人 2 + 捕 食 者 2 件",
+          "boundingRect": {
+            "x": 992,
+            "y": 533,
+            "width": 163,
+            "height": 14
+          }
+        },
+        {
+          "lineIndex": 39,
+          "text": "目 标 分 数",
+          "boundingRect": {
+            "x": 475,
+            "y": 492,
+            "width": 51,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 40,
+          "text": "1 ， 211",
+          "boundingRect": {
+            "x": 492,
+            "y": 534,
+            "width": 32,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 41,
+          "text": "方 案 详 情 （ 排 名 1)",
+          "boundingRect": {
+            "x": 379,
+            "y": 602,
+            "width": 166,
+            "height": 20
+          }
+        },
+        {
+          "lineIndex": 42,
+          "text": "装 备 旧",
+          "boundingRect": {
+            "x": 379,
+            "y": 657,
+            "width": 46,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 43,
+          "text": "· 二 头 盔",
+          "boundingRect": {
+            "x": 382,
+            "y": 686,
+            "width": 46,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 44,
+          "text": "h 刨 m 一 001",
+          "boundingRect": {
+            "x": 444,
+            "y": 687,
+            "width": 60,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 45,
+          "text": "· 武 器 ．",
+          "boundingRect": {
+            "x": 382,
+            "y": 712,
+            "width": 51,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 46,
+          "text": "weapon 一 001",
+          "boundingRect": {
+            "x": 443,
+            "y": 713,
+            "width": 80,
+            "height": 14
+          }
+        },
+        {
+          "lineIndex": 47,
+          "text": "． 胸 單 ： chest-001",
+          "boundingRect": {
+            "x": 382,
+            "y": 739,
+            "width": 123,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 48,
+          "text": "． 手 套 ： 邙 oves 一 001",
+          "boundingRect": {
+            "x": 382,
+            "y": 765,
+            "width": 132,
+            "height": 15
+          }
+        },
+        {
+          "lineIndex": 49,
+          "text": "正 亻 立 过 prune-OOl",
+          "boundingRect": {
+            "x": 398,
+            "y": 791,
+            "width": 142,
+            "height": 15
+          }
+        },
+        {
+          "lineIndex": 50,
+          "text": "负 亻 立 窨 过 nrune-001",
+          "boundingRect": {
+            "x": 398,
+            "y": 817,
+            "width": 141,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 51,
+          "text": "627",
+          "boundingRect": {
+            "x": 574,
+            "y": 534,
+            "width": 24,
+            "height": 11
+          }
+        },
+        {
+          "lineIndex": 52,
+          "text": "孔 453",
+          "boundingRect": {
+            "x": 648,
+            "y": 534,
+            "width": 35,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 53,
+          "text": "example-account-001",
+          "boundingRect": {
+            "x": 22,
+            "y": 729,
+            "width": 131,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 54,
+          "text": "2 个 角 色 。 12 件 ． 3 僻 裤 器",
+          "boundingRect": {
+            "x": 22,
+            "y": 750,
+            "width": 176,
+            "height": 12
+          }
+        },
+        {
+          "lineIndex": 55,
+          "text": "来 源 ： synthetic fixture",
+          "boundingRect": {
+            "x": 22,
+            "y": 771,
+            "width": 132,
+            "height": 14
+          }
+        },
+        {
+          "lineIndex": 56,
+          "text": "计 囗 ： 当 前 采 用 原 型 公 皇 石 出 值 × ： 1 + 白 分 比 〕 + 固 定 值 ． 当 未 用 当 前 游 戏 客 户 端 面 板 验 证 ． 结 果 只 用 于 验 证 导 ． 、 约 束 与 求 解 流",
+          "boundingRect": {
+            "x": 393,
+            "y": 870,
+            "width": 794,
+            "height": 13
+          }
+        },
+        {
+          "lineIndex": 57,
+          "text": "程 ．",
+          "boundingRect": {
+            "x": 393,
+            "y": 891,
+            "width": 18,
+            "height": 12
+          }
+        }
+      ]
+    }
+  ]
+}

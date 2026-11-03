@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>龙息配装器 · 离线原型</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">龙息配装器</div>
+    <div class="data-status" id="data-status">正在载入公共数据…</div>
+    <div class="header-actions">
+      <a class="button button-secondary" href="inventory.html">账号库存</a>
+      <a class="button button-secondary" href="review.html">截图校对</a>
+      <a class="button button-secondary" href="staging-review.html">字段校对</a>
+      <label class="button button-secondary" for="account-file">导入账号 JSON</label>
+      <input id="account-file" type="file" accept="application/json,.json" hidden>
+      <button class="button button-secondary" id="load-example" type="button">载入示例</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="control-rail" aria-label="角色和固定装备">
+      <h1>角色与固定项</h1>
+
+      <label class="field">
+        <span>角色</span>
+        <select id="hero-select"></select>
+      </label>
+
+      <label class="field">
+        <span>神器</span>
+        <select id="artifact-select"></select>
+      </label>
+
+      <div class="rail-heading">
+        <h2>固定项</h2>
+        <span>固定后不参与优化</span>
+      </div>
+      <div id="fixed-slots" class="fixed-slots"></div>
+
+      <div class="rail-heading candidate-heading">
+        <h2>候选范围</h2>
+        <span>固定项可覆盖过滤</span>
+      </div>
+      <label class="field">
+        <span>已穿戴装备</span>
+        <select id="equipped-policy">
+          <option value="all_heroes">允许拆所有角色</option>
+          <option value="selected_hero">仅允许当前角色与背包</option>
+          <option value="inventory_only">仅使用未穿戴装备</option>
+        </select>
+      </label>
+      <label class="candidate-check">
+        <input id="respect-locks" type="checkbox">
+        <span>排除锁定装备</span>
+      </label>
+
+      <div class="account-summary" id="account-summary">
+        尚未导入账号文件
+      </div>
+    </aside>
+
+    <section class="main-panel">
+      <section class="conditions" aria-labelledby="conditions-title">
+        <div class="conditions-heading">
+          <div><h2 id="conditions-title">配装条件</h2><p>可添加同一属性的上下限；百分比按页面显示值输入。</p></div>
+          <button class="button button-secondary button-compact" id="add-constraint" type="button">添加条件</button>
+        </div>
+        <div class="constraint-list" id="constraint-list"></div>
+        <div class="objective-row">
+          <label class="field objective-field">
+            <span>优化目标</span>
+            <select id="objective-select">
+              <option value="crit_proxy">期望重击输出代理</option>
+              <option value="atk_sheet">攻击</option>
+              <option value="hp_sheet">生命</option>
+              <option value="def_sheet">防御</option>
+              <option value="crit_rate">重击率</option>
+              <option value="crit_damage">重击伤害</option>
+              <option value="accuracy">效果命中</option>
+              <option value="resistance">效果抵抗</option>
+              <option value="enlightenment">精通</option>
+              <option value="skill_haste">技能急速</option>
+              <option value="attack_speed_pct">攻击速度</option>
+            </select>
+          </label>
+          <label class="field direction-field">
+            <span>方向</span>
+            <select id="objective-direction">
+              <option value="maximize">最大化</option>
+              <option value="minimize">最小化</option>
+            </select>
+          </label>
+          <label class="field solver-field">
+            <span>求解模式</span>
+            <select id="solver-mode">
+              <option value="auto">自动（大背包优先速度）</option>
+              <option value="branch_and_bound">全局精确 Top N（可能较慢）</option>
+              <option value="heuristic_candidate_cap">快速启发式（不保证全局最高）</option>
+            </select>
+          </label>
+          <button class="button button-primary" id="calculate" type="button">开始计算</button>
+        </div>
+        <p class="validation-message" id="validation-message" role="status"></p>
+      </section>
+
+      <section class="results" aria-labelledby="results-title">
+        <div class="section-title-row">
+          <h2 id="results-title">推荐方案</h2>
+          <span id="search-summary">等待计算</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>排名</th><th>目标分数</th><th>攻击</th><th>生命</th><th>防御</th><th>重击率</th><th>重击伤害</th><th>命中</th><th>套装</th>
+              </tr>
+            </thead>
+            <tbody id="result-body">
+              <tr class="empty-row"><td colspan="9">导入示例账号后开始计算</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="result-detail" aria-labelledby="detail-title">
+        <h2 id="detail-title">方案详情</h2>
+        <div id="detail-content" class="detail-grid">
+          <p>选择一条推荐方案查看装备明细和套装贡献。</p>
+        </div>
+        <div class="formula-warning">
+          <strong>计算口径：</strong>
+          当前采用原型公式 <code>基础值 × (1 + 百分比) + 固定值</code>。尚未用当前游戏客户端面板验证，结果只用于验证导入、约束与求解流程。
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

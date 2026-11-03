@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "0.1.0",
+  "compiledAt": "2026-11-03T10:04:04.367Z",
+  "compiler": "scripts/compile_public_heroes.mjs",
+  "limitations": [
+    "Values come from public SSR pages and are not validated against the current game client.",
+    "The public site may mix regions, seasons, or historical versions."
+  ],
+  "heroes": [
+    {
+      "heroDefinitionId": "hero-21760",
+      "externalId": "21760",
+      "names": {
+        "en": "Aschetius"
+      },
+      "tags": [
+        "Melee",
+        "Legendary",
+        "Fire",
+        "Burn",
+        "Dragon",
+        "Master of Lineage"
+      ],
+      "level1Stats": {
+        "hp_flat": 2383,
+        "def_flat": 84,
+        "atk_flat": 107,
+        "enlightenment": 0,
+        "crit_rate": 0.1,
+        "crit_damage": 0.5,
+        "accuracy": 0,
+        "resistance": 0,
+        "skill_haste": 0
+      },
+      "evidence": {
+        "sourceId": "SRC-006",
+        "requestedUrl": "https://www.dragonheir.info/heroes/21760",
+        "retrievedAt": "2026-11-03T08:58:26.362Z",
+        "snapshotPath": "raw/public-web/SRC-006/2026-11-03/snapshot.html",
+        "snapshotSha256": "b7d5d588ceda99d81f63857d1f760a4d1fbef25cff25ae685f9758877d5dd371"
+      },
+      "verificationState": "public_page_compiled_not_client_validated"
+    },
+    {
+      "heroDefinitionId": "hero-20400",
+      "externalId": "20400",
+      "names": {
+        "en": "Errich"
+      },
+      "tags": [
+        "Range",
+        "Legendary",
+        "Fire",
+        "Wild",
+        "Ridge Halfling",
+        "Druid"
+      ],
+      "level1Stats": {
+        "hp_flat": 1642,
+        "def_flat": 76,
+        "atk_flat": 96,
+        "enlightenment": 0,
+        "crit_rate": 0.1,
+        "crit_damage": 0.5,
+        "accuracy": 0,
+        "resistance": 0,
+        "skill_haste": 0
+      },
+      "evidence": {
+        "sourceId": "SRC-017",
+        "requestedUrl": "https://www.dragonheir.info/heroes/20400",
+        "retrievedAt": "2026-11-03T08:58:32.710Z",
+        "snapshotPath": "raw/public-web/SRC-017/2026-11-03/snapshot.html",
+        "snapshotSha256": "05b673bfb5e245270a01215d9f6a8f220428524995c9d1e5b99e2bd18727c9c1"
+      },
+      "verificationState": "public_page_compiled_not_client_validated"
+    }
+  ]
+}

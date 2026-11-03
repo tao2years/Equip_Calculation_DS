@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0",
+  "requestId": "example-request-001",
+  "snapshotId": "example-account-001",
+  "ownedHeroId": "owned-aschetius",
+  "scenarioId": null,
+  "candidatePolicy": {
+    "equippedItems": "all_heroes",
+    "allowedOwnerIds": [],
+    "respectItemLocks": false
+  },
+  "fixedItems": {
+    "artifact": "art-001"
+  },
+  "excludedItemIds": [],
+  "constraints": [
+    {"stat": "crit_rate", "op": ">=", "value": 1, "layer": "sheet"},
+    {"stat": "atk_sheet", "op": ">=", "value": 500, "layer": "sheet"},
+    {"stat": "hp_sheet", "op": ">=", "value": 7000, "layer": "sheet"},
+    {"stat": "accuracy", "op": ">=", "value": 0, "layer": "sheet"}
+  ],
+  "objective": {
+    "kind": "crit_proxy",
+    "direction": "maximize"
+  },
+  "resultLimit": 20
+}

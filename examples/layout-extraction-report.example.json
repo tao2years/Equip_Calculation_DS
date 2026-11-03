@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "createdAt": "2026-11-03T12:10:00+08:00",
+  "jobId": "synthetic-layout-job-001",
+  "profile": {
+    "id": "synthetic-cn-detail-1000-v1",
+    "clientBuild": "not-a-game-build",
+    "channel": "synthetic-fixture",
+    "language": "zh-Hans-CN"
+  },
+  "evidenceLevel": "synthetic_fixture",
+  "counts": {
+    "images": 3,
+    "extractedRecords": 3,
+    "errors": 0,
+    "warnings": 0
+  },
+  "pages": [
+    {
+      "sequence": 1,
+      "status": "extracted",
+      "profilePageId": "hero-detail-v1",
+      "recordId": "ocr-hero-bb38bfaaa01c72e417c1"
+    },
+    {
+      "sequence": 2,
+      "status": "extracted",
+      "profilePageId": "gear-detail-v1",
+      "recordId": "ocr-gear-ac3001984e6fa8f520f0"
+    },
+    {
+      "sequence": 3,
+      "status": "extracted",
+      "profilePageId": "artifact-detail-v1",
+      "recordId": "ocr-artifact-8979dc62f8641a4c6793"
+    }
+  ],
+  "issues": [],
+  "limitations": [
+    "Coordinates and anchors are synthetic and are not calibrated against any Dragonheir client build.",
+    "Content fingerprints cannot distinguish two visually identical copies of the same gear; duplicate fingerprints require manual review until a stable client identifier is available."
+  ]
+}

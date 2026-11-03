@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/collection-job.schema.json",
+  "title": "Dragonheir Screenshot Collection Job",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "jobId", "createdAt", "sourceMethod", "inputMode", "privacy", "status", "files", "extraction", "review"],
+  "properties": {
+    "schemaVersion": {"type": "string", "pattern": "^0\\.1\\.0"},
+    "jobId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "sourceMethod": {"const": "screenshot_ocr"},
+    "inputMode": {"enum": ["user_supplied_screenshot_bundle", "visible_ui_capture"]},
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localOnly", "containsPotentialAccountData"],
+      "properties": {
+        "localOnly": {"const": true},
+        "containsPotentialAccountData": {"type": "boolean"}
+      }
+    },
+    "status": {"enum": ["staged_waiting_for_classification_and_ocr", "ocr_complete_waiting_for_review", "review_complete", "failed"]},
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sequence", "originalName", "localPath", "mediaType", "byteLength", "sha256", "captureType", "reviewStatus"],
+        "properties": {
+          "sequence": {"type": "integer", "minimum": 1},
+          "originalName": {"type": "string"},
+          "localPath": {"type": "string"},
+          "mediaType": {"enum": ["image/png", "image/jpeg", "image/webp"]},
+          "byteLength": {"type": "integer", "minimum": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "captureType": {"enum": ["unclassified", "hero_list", "hero_detail", "gear_list", "gear_detail", "artifact_list", "artifact_detail"]},
+          "reviewStatus": {"enum": ["pending", "accepted", "rejected"]}
+        }
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["adapter", "adapterVersion", "completedAt", "fieldCount"],
+      "properties": {
+        "adapter": {"type": ["string", "null"]},
+        "adapterVersion": {"type": ["string", "null"]},
+        "completedAt": {"type": ["string", "null"], "format": "date-time"},
+        "fieldCount": {"type": "integer", "minimum": 0}
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["completedAt", "unresolvedFields"],
+      "properties": {
+        "completedAt": {"type": ["string", "null"], "format": "date-time"},
+        "unresolvedFields": {"type": ["integer", "null"], "minimum": 0}
+      }
+    }
+  }
+}

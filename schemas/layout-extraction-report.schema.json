@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/layout-extraction-report.schema.json",
+  "title": "OCR Layout Extraction Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "createdAt", "jobId", "profile", "evidenceLevel", "counts", "pages", "issues", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "jobId": {"type": "string", "minLength": 1},
+    "profile": {
+      "type": "object", "additionalProperties": false, "required": ["id", "clientBuild", "channel", "language"],
+      "properties": {
+        "id": {"type": "string"}, "clientBuild": {"type": "string"}, "channel": {"type": "string"}, "language": {"type": "string"}
+      }
+    },
+    "evidenceLevel": {"enum": ["synthetic_fixture", "golden_screenshot_calibrated", "runtime_validated"]},
+    "counts": {
+      "type": "object", "additionalProperties": false, "required": ["images", "extractedRecords", "errors", "warnings"],
+      "properties": {
+        "images": {"type": "integer", "minimum": 0}, "extractedRecords": {"type": "integer", "minimum": 0},
+        "errors": {"type": "integer", "minimum": 0}, "warnings": {"type": "integer", "minimum": 0}
+      }
+    },
+    "pages": {"type": "array", "items": {"type": "object"}},
+    "issues": {"type": "array", "items": {"type": "object"}},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

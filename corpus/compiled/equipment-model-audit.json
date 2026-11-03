@@ -1,0 +1,882 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-03T10:04:04.897Z",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "verification": "public_catalog_compiled_not_client_validated",
+  "counts": {
+    "total": 682,
+    "knownSlot": 677,
+    "unknownSlot": 5,
+    "linkedSet": 624,
+    "unlinkedSet": 58,
+    "withPrimaryStats": 682,
+    "completeLevelCurve": 682,
+    "canonicalIdResolvable": 682,
+    "externalIdResolvable": 682,
+    "displayNameResolvable": 554,
+    "ambiguousDisplayNames": 52
+  },
+  "distributions": {
+    "slot": {
+      "chest": 168,
+      "gloves": 167,
+      "helmet": 147,
+      "negative_rune": 24,
+      "positive_rune": 24,
+      "unknown": 5,
+      "weapon": 147
+    },
+    "rarity": {
+      "common": 16,
+      "epic": 45,
+      "legendary": 353,
+      "mythic": 240,
+      "rare": 28
+    },
+    "season": {
+      "s1": 182,
+      "s2": 140,
+      "s3": 72,
+      "s4": 40,
+      "s6": 72,
+      "s7": 80,
+      "s8": 40,
+      "s9": 56
+    }
+  },
+  "unresolved": {
+    "unknownSlotDefinitionIds": [
+      "equipment-1010",
+      "equipment-1009",
+      "equipment-1008",
+      "equipment-1007",
+      "equipment-1006"
+    ],
+    "displayNameCollisions": [
+      {
+        "kind": "equipment",
+        "normalized": "firenegativerune",
+        "matches": [
+          {
+            "id": "equipment-10001",
+            "alias": "Fire Negative Rune"
+          },
+          {
+            "id": "equipment-20001",
+            "alias": "Fire Negative Rune"
+          },
+          {
+            "id": "equipment-30001",
+            "alias": "Fire Negative Rune"
+          },
+          {
+            "id": "equipment-40001",
+            "alias": "Fire Negative Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "poisonnegativerune",
+        "matches": [
+          {
+            "id": "equipment-10002",
+            "alias": "Poison Negative Rune"
+          },
+          {
+            "id": "equipment-20002",
+            "alias": "Poison Negative Rune"
+          },
+          {
+            "id": "equipment-30002",
+            "alias": "Poison Negative Rune"
+          },
+          {
+            "id": "equipment-40002",
+            "alias": "Poison Negative Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "icenegativerune",
+        "matches": [
+          {
+            "id": "equipment-10003",
+            "alias": "Ice Negative Rune"
+          },
+          {
+            "id": "equipment-20003",
+            "alias": "Ice Negative Rune"
+          },
+          {
+            "id": "equipment-30003",
+            "alias": "Ice Negative Rune"
+          },
+          {
+            "id": "equipment-40003",
+            "alias": "Ice Negative Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "necrosisnegativerune",
+        "matches": [
+          {
+            "id": "equipment-10004",
+            "alias": "Necrosis Negative Rune"
+          },
+          {
+            "id": "equipment-20004",
+            "alias": "Necrosis Negative Rune"
+          },
+          {
+            "id": "equipment-30004",
+            "alias": "Necrosis Negative Rune"
+          },
+          {
+            "id": "equipment-40004",
+            "alias": "Necrosis Negative Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "lightningnegativerune",
+        "matches": [
+          {
+            "id": "equipment-10005",
+            "alias": "Lightning Negative Rune"
+          },
+          {
+            "id": "equipment-20005",
+            "alias": "Lightning Negative Rune"
+          },
+          {
+            "id": "equipment-30005",
+            "alias": "Lightning Negative Rune"
+          },
+          {
+            "id": "equipment-40005",
+            "alias": "Lightning Negative Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "radiancenegativerune",
+        "matches": [
+          {
+            "id": "equipment-10006",
+            "alias": "Radiance Negative Rune"
+          },
+          {
+            "id": "equipment-20006",
+            "alias": "Radiance Negative Rune"
+          },
+          {
+            "id": "equipment-30006",
+            "alias": "Radiance Negative Rune"
+          },
+          {
+            "id": "equipment-40006",
+            "alias": "Radiance Negative Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "firepositiverune",
+        "matches": [
+          {
+            "id": "equipment-11001",
+            "alias": "Fire Positive Rune"
+          },
+          {
+            "id": "equipment-21001",
+            "alias": "Fire Positive Rune"
+          },
+          {
+            "id": "equipment-31001",
+            "alias": "Fire Positive Rune"
+          },
+          {
+            "id": "equipment-41001",
+            "alias": "Fire Positive Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "poisonpositiverune",
+        "matches": [
+          {
+            "id": "equipment-11002",
+            "alias": "Poison Positive Rune"
+          },
+          {
+            "id": "equipment-21002",
+            "alias": "Poison Positive Rune"
+          },
+          {
+            "id": "equipment-31002",
+            "alias": "Poison Positive Rune"
+          },
+          {
+            "id": "equipment-41002",
+            "alias": "Poison Positive Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "icepositiverune",
+        "matches": [
+          {
+            "id": "equipment-11003",
+            "alias": "Ice Positive Rune"
+          },
+          {
+            "id": "equipment-21003",
+            "alias": "Ice Positive Rune"
+          },
+          {
+            "id": "equipment-31003",
+            "alias": "Ice Positive Rune"
+          },
+          {
+            "id": "equipment-41003",
+            "alias": "Ice Positive Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "necrosispositiverune",
+        "matches": [
+          {
+            "id": "equipment-11004",
+            "alias": "Necrosis Positive Rune"
+          },
+          {
+            "id": "equipment-21004",
+            "alias": "Necrosis Positive Rune"
+          },
+          {
+            "id": "equipment-31004",
+            "alias": "Necrosis Positive Rune"
+          },
+          {
+            "id": "equipment-41004",
+            "alias": "Necrosis Positive Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "lightningpositiverune",
+        "matches": [
+          {
+            "id": "equipment-11005",
+            "alias": "Lightning Positive Rune"
+          },
+          {
+            "id": "equipment-21005",
+            "alias": "Lightning Positive Rune"
+          },
+          {
+            "id": "equipment-31005",
+            "alias": "Lightning Positive Rune"
+          },
+          {
+            "id": "equipment-41005",
+            "alias": "Lightning Positive Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "radiancepositiverune",
+        "matches": [
+          {
+            "id": "equipment-11006",
+            "alias": "Radiance Positive Rune"
+          },
+          {
+            "id": "equipment-21006",
+            "alias": "Radiance Positive Rune"
+          },
+          {
+            "id": "equipment-31006",
+            "alias": "Radiance Positive Rune"
+          },
+          {
+            "id": "equipment-41006",
+            "alias": "Radiance Positive Rune"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemasterspipe",
+        "matches": [
+          {
+            "id": "equipment-380661",
+            "alias": "Forge Master's Pipe"
+          },
+          {
+            "id": "equipment-601169",
+            "alias": "Forge Master's Pipe"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemastersarmor",
+        "matches": [
+          {
+            "id": "equipment-380662",
+            "alias": "Forge Master's Armor"
+          },
+          {
+            "id": "equipment-601170",
+            "alias": "Forge Master's Armor"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemastersgauntlets",
+        "matches": [
+          {
+            "id": "equipment-380663",
+            "alias": "Forge Master's Gauntlets"
+          },
+          {
+            "id": "equipment-601171",
+            "alias": "Forge Master's Gauntlets"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemastershelm",
+        "matches": [
+          {
+            "id": "equipment-380664",
+            "alias": "Forge Master's Helm"
+          },
+          {
+            "id": "equipment-601172",
+            "alias": "Forge Master's Helm"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeystaff",
+        "matches": [
+          {
+            "id": "equipment-380665",
+            "alias": "Great River Abbey Staff"
+          },
+          {
+            "id": "equipment-601173",
+            "alias": "Great River Abbey Staff"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeyrobe",
+        "matches": [
+          {
+            "id": "equipment-380666",
+            "alias": "Great River Abbey Robe"
+          },
+          {
+            "id": "equipment-601174",
+            "alias": "Great River Abbey Robe"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeygloves",
+        "matches": [
+          {
+            "id": "equipment-380667",
+            "alias": "Great River Abbey Gloves"
+          },
+          {
+            "id": "equipment-601175",
+            "alias": "Great River Abbey Gloves"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeyhood",
+        "matches": [
+          {
+            "id": "equipment-380668",
+            "alias": "Great River Abbey Hood"
+          },
+          {
+            "id": "equipment-601176",
+            "alias": "Great River Abbey Hood"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenadestaff",
+        "matches": [
+          {
+            "id": "equipment-380669",
+            "alias": "Deerfield Serenade Staff"
+          },
+          {
+            "id": "equipment-601177",
+            "alias": "Deerfield Serenade Staff"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenaderobe",
+        "matches": [
+          {
+            "id": "equipment-380670",
+            "alias": "Deerfield Serenade Robe"
+          },
+          {
+            "id": "equipment-601178",
+            "alias": "Deerfield Serenade Robe"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenadegloves",
+        "matches": [
+          {
+            "id": "equipment-380671",
+            "alias": "Deerfield Serenade Gloves"
+          },
+          {
+            "id": "equipment-601179",
+            "alias": "Deerfield Serenade Gloves"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenadehood",
+        "matches": [
+          {
+            "id": "equipment-380672",
+            "alias": "Deerfield Serenade Hood"
+          },
+          {
+            "id": "equipment-601180",
+            "alias": "Deerfield Serenade Hood"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "eyeofthearcanearmor",
+        "matches": [
+          {
+            "id": "equipment-380940",
+            "alias": "Eye of the Arcane - Armor"
+          },
+          {
+            "id": "equipment-602162",
+            "alias": "Eye of the Arcane - Armor"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "eyeofthearcanegloves",
+        "matches": [
+          {
+            "id": "equipment-380941",
+            "alias": "Eye of the Arcane - Gloves"
+          },
+          {
+            "id": "equipment-602163",
+            "alias": "Eye of the Arcane - Gloves"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "ragingwildfireweapon",
+        "matches": [
+          {
+            "id": "equipment-380943",
+            "alias": "Raging Wildfire - Weapon"
+          },
+          {
+            "id": "equipment-602165",
+            "alias": "Raging Wildfire - Weapon"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "ragingwildfirehelm",
+        "matches": [
+          {
+            "id": "equipment-380946",
+            "alias": "Raging Wildfire - Helm"
+          },
+          {
+            "id": "equipment-602168",
+            "alias": "Raging Wildfire - Helm"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "orchestralharmonyarmor",
+        "matches": [
+          {
+            "id": "equipment-380948",
+            "alias": "Orchestral Harmony - Armor"
+          },
+          {
+            "id": "equipment-602170",
+            "alias": "Orchestral Harmony - Armor"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "orchestralharmonygloves",
+        "matches": [
+          {
+            "id": "equipment-380949",
+            "alias": "Orchestral Harmony - Gloves"
+          },
+          {
+            "id": "equipment-602171",
+            "alias": "Orchestral Harmony - Gloves"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "bardicinspirationweapon",
+        "matches": [
+          {
+            "id": "equipment-380951",
+            "alias": "Bardic Inspiration - Weapon"
+          },
+          {
+            "id": "equipment-602173",
+            "alias": "Bardic Inspiration - Weapon"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "bardicinspirationhelm",
+        "matches": [
+          {
+            "id": "equipment-380954",
+            "alias": "Bardic Inspiration - Helm"
+          },
+          {
+            "id": "equipment-602176",
+            "alias": "Bardic Inspiration - Helm"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemasterspipe+",
+        "matches": [
+          {
+            "id": "equipment-381107",
+            "alias": "Forge Master's Pipe+"
+          },
+          {
+            "id": "equipment-611145",
+            "alias": "Forge Master's Pipe+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemastersarmor+",
+        "matches": [
+          {
+            "id": "equipment-381108",
+            "alias": "Forge Master's Armor+"
+          },
+          {
+            "id": "equipment-611146",
+            "alias": "Forge Master's Armor+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemastersgauntlets+",
+        "matches": [
+          {
+            "id": "equipment-381109",
+            "alias": "Forge Master's Gauntlets+"
+          },
+          {
+            "id": "equipment-611147",
+            "alias": "Forge Master's Gauntlets+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "forgemastershelm+",
+        "matches": [
+          {
+            "id": "equipment-381110",
+            "alias": "Forge Master's Helm+"
+          },
+          {
+            "id": "equipment-611148",
+            "alias": "Forge Master's Helm+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeystaff+",
+        "matches": [
+          {
+            "id": "equipment-381111",
+            "alias": "Great River Abbey Staff+"
+          },
+          {
+            "id": "equipment-611149",
+            "alias": "Great River Abbey Staff+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeyrobe+",
+        "matches": [
+          {
+            "id": "equipment-381112",
+            "alias": "Great River Abbey Robe+"
+          },
+          {
+            "id": "equipment-611150",
+            "alias": "Great River Abbey Robe+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeygloves+",
+        "matches": [
+          {
+            "id": "equipment-381113",
+            "alias": "Great River Abbey Gloves+"
+          },
+          {
+            "id": "equipment-611151",
+            "alias": "Great River Abbey Gloves+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "greatriverabbeyhood+",
+        "matches": [
+          {
+            "id": "equipment-381114",
+            "alias": "Great River Abbey Hood+"
+          },
+          {
+            "id": "equipment-611152",
+            "alias": "Great River Abbey Hood+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenadestaff+",
+        "matches": [
+          {
+            "id": "equipment-381115",
+            "alias": "Deerfield Serenade Staff+"
+          },
+          {
+            "id": "equipment-611153",
+            "alias": "Deerfield Serenade Staff+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenaderobe+",
+        "matches": [
+          {
+            "id": "equipment-381116",
+            "alias": "Deerfield Serenade Robe+"
+          },
+          {
+            "id": "equipment-611154",
+            "alias": "Deerfield Serenade Robe+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenadegloves+",
+        "matches": [
+          {
+            "id": "equipment-381117",
+            "alias": "Deerfield Serenade Gloves+"
+          },
+          {
+            "id": "equipment-611155",
+            "alias": "Deerfield Serenade Gloves+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "deerfieldserenadehood+",
+        "matches": [
+          {
+            "id": "equipment-381118",
+            "alias": "Deerfield Serenade Hood+"
+          },
+          {
+            "id": "equipment-611156",
+            "alias": "Deerfield Serenade Hood+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "eyeofthearcanearmor+",
+        "matches": [
+          {
+            "id": "equipment-381280",
+            "alias": "Eye of the Arcane - Armor+"
+          },
+          {
+            "id": "equipment-612186",
+            "alias": "Eye of the Arcane - Armor+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "eyeofthearcanegloves+",
+        "matches": [
+          {
+            "id": "equipment-381281",
+            "alias": "Eye of the Arcane - Gloves+"
+          },
+          {
+            "id": "equipment-612187",
+            "alias": "Eye of the Arcane - Gloves+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "ragingwildfireweapon+",
+        "matches": [
+          {
+            "id": "equipment-381283",
+            "alias": "Raging Wildfire - Weapon+"
+          },
+          {
+            "id": "equipment-612189",
+            "alias": "Raging Wildfire - Weapon+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "ragingwildfirehelm+",
+        "matches": [
+          {
+            "id": "equipment-381286",
+            "alias": "Raging Wildfire - Helm+"
+          },
+          {
+            "id": "equipment-612192",
+            "alias": "Raging Wildfire - Helm+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "orchestralharmonyarmor+",
+        "matches": [
+          {
+            "id": "equipment-381288",
+            "alias": "Orchestral Harmony - Armor+"
+          },
+          {
+            "id": "equipment-612194",
+            "alias": "Orchestral Harmony - Armor+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "orchestralharmonygloves+",
+        "matches": [
+          {
+            "id": "equipment-381289",
+            "alias": "Orchestral Harmony - Gloves+"
+          },
+          {
+            "id": "equipment-612195",
+            "alias": "Orchestral Harmony - Gloves+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "bardicinspirationweapon+",
+        "matches": [
+          {
+            "id": "equipment-381291",
+            "alias": "Bardic Inspiration - Weapon+"
+          },
+          {
+            "id": "equipment-612197",
+            "alias": "Bardic Inspiration - Weapon+"
+          }
+        ]
+      },
+      {
+        "kind": "equipment",
+        "normalized": "bardicinspirationhelm+",
+        "matches": [
+          {
+            "id": "equipment-381294",
+            "alias": "Bardic Inspiration - Helm+"
+          },
+          {
+            "id": "equipment-612200",
+            "alias": "Bardic Inspiration - Helm+"
+          }
+        ]
+      }
+    ]
+  }
+}

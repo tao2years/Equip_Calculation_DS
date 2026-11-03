@@ -1,0 +1,18 @@
+{
+  "sourceId": "SRC-021",
+  "kind": "cn_artifact_guide",
+  "requestedUrl": "https://www.taptap.cn/moment/656202193061285875",
+  "finalUrl": "https://www.taptap.cn/moment/656202193061285875",
+  "retrievedAt": "2026-11-03T09:06:09.022Z",
+  "status": 200,
+  "mediaType": "text/html;charset=utf-8",
+  "byteLength": 252542,
+  "sha256": "66f4e08d94638d81b5ab2fd488298cc0783f0270bd14bbe0600155405d19020a",
+  "region": "cn",
+  "expectedContent": [
+    "cn_artifact_aliases",
+    "rarity_terms",
+    "refinement_terms"
+  ],
+  "snapshotPath": "raw/public-web/SRC-021/2026-11-03/snapshot.html"
+}

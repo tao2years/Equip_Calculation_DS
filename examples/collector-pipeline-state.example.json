@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "0.1.0",
+  "runId": "pipeline-synthetic-layout-job-001-example",
+  "jobId": "synthetic-layout-job-001",
+  "createdAt": "2026-11-03T12:20:00+08:00",
+  "updatedAt": "2026-11-03T12:20:00+08:00",
+  "status": "awaiting_staging_review",
+  "privacy": {
+    "localOnly": true,
+    "uploadPerformed": false
+  },
+  "inputs": {
+    "source": {
+      "path": "examples/ocr-recognition-layout.example.json",
+      "sha256": "2c752ce20aef1a16b6ee4156c27dfdbb8ebce10aa41d80a517e1a79577b3cf1a",
+      "kind": "recognition_bundle"
+    },
+    "profile": {
+      "path": "examples/layout-profile.synthetic.json",
+      "sha256": "8003cb2fd4a5a84302239c6cd21af4e150529e7e61fd58d2a4579aa1f189d9a4",
+      "profileId": "synthetic-cn-detail-1000-v1",
+      "evidenceLevel": "synthetic_fixture"
+    }
+  },
+  "steps": {
+    "ocr": {
+      "status": "complete",
+      "updatedAt": "2026-11-03T12:20:00+08:00",
+      "detail": "External immutable recognition bundle supplied; OCR execution skipped",
+      "artifacts": [
+        {
+          "path": "examples/ocr-recognition-layout.example.json",
+          "sha256": "2c752ce20aef1a16b6ee4156c27dfdbb8ebce10aa41d80a517e1a79577b3cf1a"
+        }
+      ]
+    },
+    "ocr_review": {
+      "status": "complete",
+      "updatedAt": "2026-11-03T12:20:00+08:00",
+      "detail": "3 accepted, 0 rejected",
+      "artifacts": [
+        {
+          "path": "examples/ocr-review-layout.example.json",
+          "sha256": "f33983b19acbbd35c08afd2e6800dcb478d1dd12fc4a07451732d6754c0dbb20"
+        },
+        {
+          "path": "examples/ocr-recognition-reviewed-layout.example.json",
+          "sha256": "2f811ba58b88c0f684266520c1e83c9cc27b8dd95c6a439bbc2dec98b5cfa2be"
+        },
+        {
+          "path": "examples/ocr-review-application-report.example.json",
+          "sha256": "b0cb1706f356fbebe0ab5a17ad5abdfa07e5d898566d59f527a1998855404aca"
+        }
+      ]
+    },
+    "layout": {
+      "status": "complete",
+      "updatedAt": "2026-11-03T12:20:00+08:00",
+      "detail": "3 records, 0 errors, evidence=synthetic_fixture",
+      "artifacts": [
+        {
+          "path": "examples/ocr-staging-layout.example.json",
+          "sha256": "b33c91973c535e43f2a01eca0e4957ee31d58732816857d5a0c5b6ae66680d12"
+        },
+        {
+          "path": "examples/layout-extraction-report.example.json",
+          "sha256": "f740ced63d6bda90264726b11c14a3a9381d1d3e5eef948e81c29131e2b77e5f"
+        }
+      ]
+    },
+    "staging_review": {
+      "status": "waiting",
+      "updatedAt": "2026-11-03T12:20:00+08:00",
+      "detail": "Machine staging requires field-level review; resume with --reviewed-staging <file>",
+      "artifacts": []
+    }
+  },
+  "events": [
+    {
+      "timestamp": "2026-11-03T12:20:00+08:00",
+      "step": "ocr",
+      "status": "complete",
+      "detail": "External immutable recognition bundle supplied; OCR execution skipped"
+    },
+    {
+      "timestamp": "2026-11-03T12:20:00+08:00",
+      "step": "ocr_review",
+      "status": "complete",
+      "detail": "3 accepted, 0 rejected"
+    },
+    {
+      "timestamp": "2026-11-03T12:20:00+08:00",
+      "step": "layout",
+      "status": "complete",
+      "detail": "3 records, 0 errors, evidence=synthetic_fixture"
+    },
+    {
+      "timestamp": "2026-11-03T12:20:00+08:00",
+      "step": "staging_review",
+      "status": "waiting",
+      "detail": "Machine staging requires field-level review; resume with --reviewed-staging <file>"
+    }
+  ]
+}

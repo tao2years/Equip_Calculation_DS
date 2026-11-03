@@ -1,0 +1,3230 @@
+{
+    "schemaVersion":  "0.1.0",
+    "engine":  "windows.media.ocr",
+    "language":  "zh-Hans-CN",
+    "input":  {
+                  "localName":  "prototype-browser-verified.png",
+                  "sha256":  "1ecd1cd46ddb32fea6fe663c334d6bbab995963c2363b7852973c4362fc6d9a5",
+                  "width":  1264,
+                  "height":  981
+              },
+    "textAngle":  0,
+    "text":  "龙 息 配 装 器 角 色 与 固 定 项 角 色 阿 斯 切 提 乌 斯 巨 人 眼 球 ． 炼 1 离 线 到 姜 曳 片 反 4 ； seed 一 邙 ob 引 一 pub 《 化 一 2026 一 1 1 一 03 导 入 账 号 ON 载 入 示 例 配 装 条 件 重 击 率 之 生 命 之 优 化 目 际 推 荐 方 案 1 闐 期 重 击 输 出 代 理 固 定 项 正 位 符 文 负 位 符 文 自 动 选 自 动 选 自 动 选 自 动 选 自 动 选 自 动 选 100 ℃ ％ 玫 击 效 命 巾 之 重 击 伤 93 ℃ ％ 套 装 与 褲 器 · 1 申 器 ： art 一 開 1 · 野 蛮 人 2 件 · 捕 食 者 2 件 0 命 中 76 开 始 计 豈 谁 枚 举 64* 10 满 足 条 件 野 蛮 ． 人 2 + 捕 食 者 2 件 目 标 分 数 1 ， 211 方 案 详 情 （ 排 名 1) 装 备 旧 · 二 头 盔 h 刨 m 一 001 · 武 器 ． weapon 一 001 ． 胸 單 ： chest-001 ． 手 套 ： 邙 oves 一 001 正 亻 立 过 prune-OOl 负 亻 立 窨 过 nrune-001 627 孔 453 example-account-001 2 个 角 色 。 12 件 ． 3 僻 裤 器 来 源 ： synthetic fixture 计 囗 ： 当 前 采 用 原 型 公 皇 石 出 值 × ： 1 + 白 分 比 〕 + 固 定 值 ． 当 未 用 当 前 游 戏 客 户 端 面 板 验 证 ． 结 果 只 用 于 验 证 导 ． 、 约 束 与 求 解 流 程 ．",
+    "lines":  [
+                  {
+                      "text":  "龙 息 配 装 器",
+                      "words":  [
+                                    {
+                                        "text":  "龙",
+                                        "boundingRect":  {
+                                                             "x":  29,
+                                                             "y":  19,
+                                                             "width":  29,
+                                                             "height":  29
+                                                         }
+                                    },
+                                    {
+                                        "text":  "息",
+                                        "boundingRect":  {
+                                                             "x":  61,
+                                                             "y":  19,
+                                                             "width":  27,
+                                                             "height":  28
+                                                         }
+                                    },
+                                    {
+                                        "text":  "配",
+                                        "boundingRect":  {
+                                                             "x":  91,
+                                                             "y":  19,
+                                                             "width":  29,
+                                                             "height":  29
+                                                         }
+                                    },
+                                    {
+                                        "text":  "装",
+                                        "boundingRect":  {
+                                                             "x":  122,
+                                                             "y":  19,
+                                                             "width":  29,
+                                                             "height":  29
+                                                         }
+                                    },
+                                    {
+                                        "text":  "器",
+                                        "boundingRect":  {
+                                                             "x":  154,
+                                                             "y":  20,
+                                                             "width":  29,
+                                                             "height":  28
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "角 色 与 固 定 项",
+                      "words":  [
+                                    {
+                                        "text":  "角",
+                                        "boundingRect":  {
+                                                             "x":  23,
+                                                             "y":  104,
+                                                             "width":  22,
+                                                             "height":  24
+                                                         }
+                                    },
+                                    {
+                                        "text":  "色",
+                                        "boundingRect":  {
+                                                             "x":  48,
+                                                             "y":  103,
+                                                             "width":  24,
+                                                             "height":  24
+                                                         }
+                                    },
+                                    {
+                                        "text":  "与",
+                                        "boundingRect":  {
+                                                             "x":  74,
+                                                             "y":  103,
+                                                             "width":  23,
+                                                             "height":  25
+                                                         }
+                                    },
+                                    {
+                                        "text":  "固",
+                                        "boundingRect":  {
+                                                             "x":  100,
+                                                             "y":  104,
+                                                             "width":  23,
+                                                             "height":  24
+                                                         }
+                                    },
+                                    {
+                                        "text":  "定",
+                                        "boundingRect":  {
+                                                             "x":  125,
+                                                             "y":  103,
+                                                             "width":  24,
+                                                             "height":  24
+                                                         }
+                                    },
+                                    {
+                                        "text":  "项",
+                                        "boundingRect":  {
+                                                             "x":  150,
+                                                             "y":  104,
+                                                             "width":  24,
+                                                             "height":  24
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "角 色",
+                      "words":  [
+                                    {
+                                        "text":  "角",
+                                        "boundingRect":  {
+                                                             "x":  22,
+                                                             "y":  171,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "色",
+                                        "boundingRect":  {
+                                                             "x":  37,
+                                                             "y":  171,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "阿 斯 切 提 乌 斯",
+                      "words":  [
+                                    {
+                                        "text":  "阿",
+                                        "boundingRect":  {
+                                                             "x":  39,
+                                                             "y":  210,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "斯",
+                                        "boundingRect":  {
+                                                             "x":  54,
+                                                             "y":  210,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "切",
+                                        "boundingRect":  {
+                                                             "x":  70,
+                                                             "y":  210,
+                                                             "width":  13,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "提",
+                                        "boundingRect":  {
+                                                             "x":  84,
+                                                             "y":  210,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "乌",
+                                        "boundingRect":  {
+                                                             "x":  99,
+                                                             "y":  210,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "斯",
+                                        "boundingRect":  {
+                                                             "x":  114,
+                                                             "y":  210,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "巨 人 眼 球 ． 炼 1",
+                      "words":  [
+                                    {
+                                        "text":  "巨",
+                                        "boundingRect":  {
+                                                             "x":  40,
+                                                             "y":  300,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "人",
+                                        "boundingRect":  {
+                                                             "x":  55,
+                                                             "y":  300,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "眼",
+                                        "boundingRect":  {
+                                                             "x":  69,
+                                                             "y":  300,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "球",
+                                        "boundingRect":  {
+                                                             "x":  84,
+                                                             "y":  300,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  103,
+                                                             "y":  306,
+                                                             "width":  3,
+                                                             "height":  2
+                                                         }
+                                    },
+                                    {
+                                        "text":  "炼",
+                                        "boundingRect":  {
+                                                             "x":  126,
+                                                             "y":  300,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  141,
+                                                             "y":  301,
+                                                             "width":  5,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "离 线 到 姜 曳 片 反 4 ； seed 一 邙 ob 引 一 pub 《 化 一 2026 一 1 1 一 03",
+                      "words":  [
+                                    {
+                                        "text":  "离",
+                                        "boundingRect":  {
+                                                             "x":  237,
+                                                             "y":  30,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "线",
+                                        "boundingRect":  {
+                                                             "x":  251,
+                                                             "y":  30,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "到",
+                                        "boundingRect":  {
+                                                             "x":  269,
+                                                             "y":  36,
+                                                             "width":  2,
+                                                             "height":  2
+                                                         }
+                                    },
+                                    {
+                                        "text":  "姜",
+                                        "boundingRect":  {
+                                                             "x":  275,
+                                                             "y":  30,
+                                                             "width":  8,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "曳",
+                                        "boundingRect":  {
+                                                             "x":  282,
+                                                             "y":  30,
+                                                             "width":  7,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "片",
+                                        "boundingRect":  {
+                                                             "x":  304,
+                                                             "y":  30,
+                                                             "width":  5,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "反",
+                                        "boundingRect":  {
+                                                             "x":  309,
+                                                             "y":  30,
+                                                             "width":  8,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "boundingRect":  {
+                                                             "x":  318,
+                                                             "y":  30,
+                                                             "width":  10,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "；",
+                                        "boundingRect":  {
+                                                             "x":  327,
+                                                             "y":  32,
+                                                             "width":  4,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "seed",
+                                        "boundingRect":  {
+                                                             "x":  336,
+                                                             "y":  31,
+                                                             "width":  27,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  365,
+                                                             "y":  37,
+                                                             "width":  4,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "邙",
+                                        "boundingRect":  {
+                                                             "x":  370,
+                                                             "y":  31,
+                                                             "width":  11,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "ob",
+                                        "boundingRect":  {
+                                                             "x":  382,
+                                                             "y":  31,
+                                                             "width":  15,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "引",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  31,
+                                                             "width":  10,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  409,
+                                                             "y":  37,
+                                                             "width":  5,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "pub",
+                                        "boundingRect":  {
+                                                             "x":  415,
+                                                             "y":  31,
+                                                             "width":  23,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "《",
+                                        "boundingRect":  {
+                                                             "x":  439,
+                                                             "y":  31,
+                                                             "width":  2,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "化",
+                                        "boundingRect":  {
+                                                             "x":  442,
+                                                             "y":  31,
+                                                             "width":  9,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  452,
+                                                             "y":  37,
+                                                             "width":  5,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "2026",
+                                        "boundingRect":  {
+                                                             "x":  457,
+                                                             "y":  31,
+                                                             "width":  30,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  488,
+                                                             "y":  37,
+                                                             "width":  5,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  494,
+                                                             "y":  31,
+                                                             "width":  4,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  502,
+                                                             "y":  31,
+                                                             "width":  4,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  509,
+                                                             "y":  37,
+                                                             "width":  4,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "03",
+                                        "boundingRect":  {
+                                                             "x":  514,
+                                                             "y":  31,
+                                                             "width":  14,
+                                                             "height":  10
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "导 入 账 号 ON",
+                      "words":  [
+                                    {
+                                        "text":  "导",
+                                        "boundingRect":  {
+                                                             "x":  1002,
+                                                             "y":  29,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "入",
+                                        "boundingRect":  {
+                                                             "x":  1017,
+                                                             "y":  29,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "账",
+                                        "boundingRect":  {
+                                                             "x":  1033,
+                                                             "y":  29,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "号",
+                                        "boundingRect":  {
+                                                             "x":  1047,
+                                                             "y":  29,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "ON",
+                                        "boundingRect":  {
+                                                             "x":  1080,
+                                                             "y":  30,
+                                                             "width":  21,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "载 入 示 例",
+                      "words":  [
+                                    {
+                                        "text":  "载",
+                                        "boundingRect":  {
+                                                             "x":  1155,
+                                                             "y":  29,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "入",
+                                        "boundingRect":  {
+                                                             "x":  1171,
+                                                             "y":  29,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "示",
+                                        "boundingRect":  {
+                                                             "x":  1185,
+                                                             "y":  29,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "例",
+                                        "boundingRect":  {
+                                                             "x":  1200,
+                                                             "y":  29,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "配 装 条 件",
+                      "words":  [
+                                    {
+                                        "text":  "配",
+                                        "boundingRect":  {
+                                                             "x":  360,
+                                                             "y":  103,
+                                                             "width":  24,
+                                                             "height":  22
+                                                         }
+                                    },
+                                    {
+                                        "text":  "装",
+                                        "boundingRect":  {
+                                                             "x":  385,
+                                                             "y":  102,
+                                                             "width":  23,
+                                                             "height":  23
+                                                         }
+                                    },
+                                    {
+                                        "text":  "条",
+                                        "boundingRect":  {
+                                                             "x":  410,
+                                                             "y":  102,
+                                                             "width":  23,
+                                                             "height":  23
+                                                         }
+                                    },
+                                    {
+                                        "text":  "件",
+                                        "boundingRect":  {
+                                                             "x":  434,
+                                                             "y":  102,
+                                                             "width":  24,
+                                                             "height":  24
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "重 击 率 之",
+                      "words":  [
+                                    {
+                                        "text":  "重",
+                                        "boundingRect":  {
+                                                             "x":  360,
+                                                             "y":  178,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "击",
+                                        "boundingRect":  {
+                                                             "x":  375,
+                                                             "y":  178,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "率",
+                                        "boundingRect":  {
+                                                             "x":  390,
+                                                             "y":  178,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "之",
+                                        "boundingRect":  {
+                                                             "x":  410,
+                                                             "y":  181,
+                                                             "width":  8,
+                                                             "height":  9
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "生 命 之",
+                      "words":  [
+                                    {
+                                        "text":  "生",
+                                        "boundingRect":  {
+                                                             "x":  360,
+                                                             "y":  244,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "命",
+                                        "boundingRect":  {
+                                                             "x":  375,
+                                                             "y":  244,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "之",
+                                        "boundingRect":  {
+                                                             "x":  395,
+                                                             "y":  247,
+                                                             "width":  8,
+                                                             "height":  9
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "优 化 目 际",
+                      "words":  [
+                                    {
+                                        "text":  "优",
+                                        "boundingRect":  {
+                                                             "x":  360,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "化",
+                                        "boundingRect":  {
+                                                             "x":  375,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "目",
+                                        "boundingRect":  {
+                                                             "x":  391,
+                                                             "y":  323,
+                                                             "width":  13,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "际",
+                                        "boundingRect":  {
+                                                             "x":  405,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "推 荐 方 案",
+                      "words":  [
+                                    {
+                                        "text":  "推",
+                                        "boundingRect":  {
+                                                             "x":  360,
+                                                             "y":  428,
+                                                             "width":  24,
+                                                             "height":  23
+                                                         }
+                                    },
+                                    {
+                                        "text":  "荐",
+                                        "boundingRect":  {
+                                                             "x":  385,
+                                                             "y":  428,
+                                                             "width":  23,
+                                                             "height":  23
+                                                         }
+                                    },
+                                    {
+                                        "text":  "方",
+                                        "boundingRect":  {
+                                                             "x":  410,
+                                                             "y":  428,
+                                                             "width":  22,
+                                                             "height":  23
+                                                         }
+                                    },
+                                    {
+                                        "text":  "案",
+                                        "boundingRect":  {
+                                                             "x":  434,
+                                                             "y":  428,
+                                                             "width":  23,
+                                                             "height":  23
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1 闐",
+                      "words":  [
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  496,
+                                                             "y":  179,
+                                                             "width":  5,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "闐",
+                                        "boundingRect":  {
+                                                             "x":  502,
+                                                             "y":  179,
+                                                             "width":  16,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "期 重 击 输 出 代 理",
+                      "words":  [
+                                    {
+                                        "text":  "期",
+                                        "boundingRect":  {
+                                                             "x":  500,
+                                                             "y":  323,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "重",
+                                        "boundingRect":  {
+                                                             "x":  530,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "击",
+                                        "boundingRect":  {
+                                                             "x":  545,
+                                                             "y":  323,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "输",
+                                        "boundingRect":  {
+                                                             "x":  560,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "出",
+                                        "boundingRect":  {
+                                                             "x":  575,
+                                                             "y":  323,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "代",
+                                        "boundingRect":  {
+                                                             "x":  590,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "理",
+                                        "boundingRect":  {
+                                                             "x":  605,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "固 定 项",
+                      "words":  [
+                                    {
+                                        "text":  "固",
+                                        "boundingRect":  {
+                                                             "x":  23,
+                                                             "y":  363,
+                                                             "width":  18,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "定",
+                                        "boundingRect":  {
+                                                             "x":  43,
+                                                             "y":  363,
+                                                             "width":  19,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "项",
+                                        "boundingRect":  {
+                                                             "x":  63,
+                                                             "y":  363,
+                                                             "width":  20,
+                                                             "height":  19
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "正 位 符 文",
+                      "words":  [
+                                    {
+                                        "text":  "正",
+                                        "boundingRect":  {
+                                                             "x":  22,
+                                                             "y":  612,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "位",
+                                        "boundingRect":  {
+                                                             "x":  37,
+                                                             "y":  612,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "符",
+                                        "boundingRect":  {
+                                                             "x":  52,
+                                                             "y":  612,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "文",
+                                        "boundingRect":  {
+                                                             "x":  67,
+                                                             "y":  612,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "负 位 符 文",
+                      "words":  [
+                                    {
+                                        "text":  "负",
+                                        "boundingRect":  {
+                                                             "x":  22,
+                                                             "y":  660,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "位",
+                                        "boundingRect":  {
+                                                             "x":  37,
+                                                             "y":  660,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "符",
+                                        "boundingRect":  {
+                                                             "x":  52,
+                                                             "y":  660,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "文",
+                                        "boundingRect":  {
+                                                             "x":  67,
+                                                             "y":  660,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "自 动 选",
+                      "words":  [
+                                    {
+                                        "text":  "自",
+                                        "boundingRect":  {
+                                                             "x":  123,
+                                                             "y":  420,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "动",
+                                        "boundingRect":  {
+                                                             "x":  135,
+                                                             "y":  420,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "选",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  421,
+                                                             "width":  13,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "自 动 选",
+                      "words":  [
+                                    {
+                                        "text":  "自",
+                                        "boundingRect":  {
+                                                             "x":  123,
+                                                             "y":  468,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "动",
+                                        "boundingRect":  {
+                                                             "x":  135,
+                                                             "y":  468,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "选",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  469,
+                                                             "width":  13,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "自 动 选",
+                      "words":  [
+                                    {
+                                        "text":  "自",
+                                        "boundingRect":  {
+                                                             "x":  123,
+                                                             "y":  516,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "动",
+                                        "boundingRect":  {
+                                                             "x":  135,
+                                                             "y":  516,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "选",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  517,
+                                                             "width":  13,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "自 动 选",
+                      "words":  [
+                                    {
+                                        "text":  "自",
+                                        "boundingRect":  {
+                                                             "x":  123,
+                                                             "y":  564,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "动",
+                                        "boundingRect":  {
+                                                             "x":  135,
+                                                             "y":  564,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "选",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  565,
+                                                             "width":  13,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "自 动 选",
+                      "words":  [
+                                    {
+                                        "text":  "自",
+                                        "boundingRect":  {
+                                                             "x":  123,
+                                                             "y":  612,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "动",
+                                        "boundingRect":  {
+                                                             "x":  135,
+                                                             "y":  612,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "选",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  613,
+                                                             "width":  13,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "自 动 选",
+                      "words":  [
+                                    {
+                                        "text":  "自",
+                                        "boundingRect":  {
+                                                             "x":  123,
+                                                             "y":  660,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "动",
+                                        "boundingRect":  {
+                                                             "x":  135,
+                                                             "y":  660,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "选",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  661,
+                                                             "width":  13,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "100 ℃ ％",
+                      "words":  [
+                                    {
+                                        "text":  "100",
+                                        "boundingRect":  {
+                                                             "x":  738,
+                                                             "y":  534,
+                                                             "width":  23,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "℃",
+                                        "boundingRect":  {
+                                                             "x":  762,
+                                                             "y":  534,
+                                                             "width":  10,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "％",
+                                        "boundingRect":  {
+                                                             "x":  773,
+                                                             "y":  534,
+                                                             "width":  12,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "玫 击",
+                      "words":  [
+                                    {
+                                        "text":  "玫",
+                                        "boundingRect":  {
+                                                             "x":  829,
+                                                             "y":  178,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "击",
+                                        "boundingRect":  {
+                                                             "x":  844,
+                                                             "y":  178,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "效 命 巾 之",
+                      "words":  [
+                                    {
+                                        "text":  "效",
+                                        "boundingRect":  {
+                                                             "x":  829,
+                                                             "y":  244,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "命",
+                                        "boundingRect":  {
+                                                             "x":  859,
+                                                             "y":  244,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "巾",
+                                        "boundingRect":  {
+                                                             "x":  874,
+                                                             "y":  244,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "之",
+                                        "boundingRect":  {
+                                                             "x":  894,
+                                                             "y":  247,
+                                                             "width":  8,
+                                                             "height":  9
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "重 击 伤",
+                      "words":  [
+                                    {
+                                        "text":  "重",
+                                        "boundingRect":  {
+                                                             "x":  840,
+                                                             "y":  492,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "击",
+                                        "boundingRect":  {
+                                                             "x":  853,
+                                                             "y":  492,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "伤",
+                                        "boundingRect":  {
+                                                             "x":  866,
+                                                             "y":  492,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "93 ℃ ％",
+                      "words":  [
+                                    {
+                                        "text":  "93",
+                                        "boundingRect":  {
+                                                             "x":  852,
+                                                             "y":  534,
+                                                             "width":  16,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "℃",
+                                        "boundingRect":  {
+                                                             "x":  869,
+                                                             "y":  534,
+                                                             "width":  10,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "％",
+                                        "boundingRect":  {
+                                                             "x":  880,
+                                                             "y":  534,
+                                                             "width":  12,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "套 装 与 褲 器",
+                      "words":  [
+                                    {
+                                        "text":  "套",
+                                        "boundingRect":  {
+                                                             "x":  812,
+                                                             "y":  657,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "装",
+                                        "boundingRect":  {
+                                                             "x":  826,
+                                                             "y":  657,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "与",
+                                        "boundingRect":  {
+                                                             "x":  840,
+                                                             "y":  657,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "褲",
+                                        "boundingRect":  {
+                                                             "x":  854,
+                                                             "y":  657,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "器",
+                                        "boundingRect":  {
+                                                             "x":  869,
+                                                             "y":  657,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "· 1 申 器 ： art 一 開 1",
+                      "words":  [
+                                    {
+                                        "text":  "·",
+                                        "boundingRect":  {
+                                                             "x":  816,
+                                                             "y":  690,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  831,
+                                                             "y":  686,
+                                                             "width":  5,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "申",
+                                        "boundingRect":  {
+                                                             "x":  836,
+                                                             "y":  686,
+                                                             "width":  10,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "器",
+                                        "boundingRect":  {
+                                                             "x":  847,
+                                                             "y":  686,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "：",
+                                        "boundingRect":  {
+                                                             "x":  864,
+                                                             "y":  690,
+                                                             "width":  2,
+                                                             "height":  8
+                                                         }
+                                    },
+                                    {
+                                        "text":  "art",
+                                        "boundingRect":  {
+                                                             "x":  876,
+                                                             "y":  688,
+                                                             "width":  18,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  895,
+                                                             "y":  693,
+                                                             "width":  4,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "開",
+                                        "boundingRect":  {
+                                                             "x":  900,
+                                                             "y":  687,
+                                                             "width":  16,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  917,
+                                                             "y":  687,
+                                                             "width":  5,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "· 野 蛮 人 2 件",
+                      "words":  [
+                                    {
+                                        "text":  "·",
+                                        "boundingRect":  {
+                                                             "x":  816,
+                                                             "y":  716,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "野",
+                                        "boundingRect":  {
+                                                             "x":  831,
+                                                             "y":  712,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "蛮",
+                                        "boundingRect":  {
+                                                             "x":  846,
+                                                             "y":  712,
+                                                             "width":  15,
+                                                             "height":  14
+                                                         }
+                                    },
+                                    {
+                                        "text":  "人",
+                                        "boundingRect":  {
+                                                             "x":  861,
+                                                             "y":  712,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "2",
+                                        "boundingRect":  {
+                                                             "x":  880,
+                                                             "y":  713,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "件",
+                                        "boundingRect":  {
+                                                             "x":  888,
+                                                             "y":  712,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "· 捕 食 者 2 件",
+                      "words":  [
+                                    {
+                                        "text":  "·",
+                                        "boundingRect":  {
+                                                             "x":  816,
+                                                             "y":  742,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "捕",
+                                        "boundingRect":  {
+                                                             "x":  831,
+                                                             "y":  739,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "食",
+                                        "boundingRect":  {
+                                                             "x":  847,
+                                                             "y":  739,
+                                                             "width":  14,
+                                                             "height":  14
+                                                         }
+                                    },
+                                    {
+                                        "text":  "者",
+                                        "boundingRect":  {
+                                                             "x":  861,
+                                                             "y":  739,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "2",
+                                        "boundingRect":  {
+                                                             "x":  880,
+                                                             "y":  740,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "件",
+                                        "boundingRect":  {
+                                                             "x":  888,
+                                                             "y":  739,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0",
+                      "words":  [
+                                    {
+                                        "text":  "0",
+                                        "boundingRect":  {
+                                                             "x":  965,
+                                                             "y":  245,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "命 中",
+                      "words":  [
+                                    {
+                                        "text":  "命",
+                                        "boundingRect":  {
+                                                             "x":  938,
+                                                             "y":  492,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "中",
+                                        "boundingRect":  {
+                                                             "x":  952,
+                                                             "y":  492,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "76",
+                      "words":  [
+                                    {
+                                        "text":  "76",
+                                        "boundingRect":  {
+                                                             "x":  948,
+                                                             "y":  534,
+                                                             "width":  16,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "开 始 计 豈",
+                      "words":  [
+                                    {
+                                        "text":  "开",
+                                        "boundingRect":  {
+                                                             "x":  1099,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "始",
+                                        "boundingRect":  {
+                                                             "x":  1114,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "计",
+                                        "boundingRect":  {
+                                                             "x":  1130,
+                                                             "y":  323,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "豈",
+                                        "boundingRect":  {
+                                                             "x":  1144,
+                                                             "y":  323,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "谁 枚 举 64* 10 满 足 条 件",
+                      "words":  [
+                                    {
+                                        "text":  "谁",
+                                        "boundingRect":  {
+                                                             "x":  1076,
+                                                             "y":  438,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "枚",
+                                        "boundingRect":  {
+                                                             "x":  1088,
+                                                             "y":  438,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "举",
+                                        "boundingRect":  {
+                                                             "x":  1101,
+                                                             "y":  438,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "64*",
+                                        "boundingRect":  {
+                                                             "x":  1118,
+                                                             "y":  438,
+                                                             "width":  31,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "10",
+                                        "boundingRect":  {
+                                                             "x":  1160,
+                                                             "y":  438,
+                                                             "width":  22,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "满",
+                                        "boundingRect":  {
+                                                             "x":  1182,
+                                                             "y":  438,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "足",
+                                        "boundingRect":  {
+                                                             "x":  1195,
+                                                             "y":  438,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "条",
+                                        "boundingRect":  {
+                                                             "x":  1208,
+                                                             "y":  438,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "件",
+                                        "boundingRect":  {
+                                                             "x":  1222,
+                                                             "y":  438,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "野 蛮 ． 人 2 + 捕 食 者 2 件",
+                      "words":  [
+                                    {
+                                        "text":  "野",
+                                        "boundingRect":  {
+                                                             "x":  992,
+                                                             "y":  533,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "蛮",
+                                        "boundingRect":  {
+                                                             "x":  1007,
+                                                             "y":  533,
+                                                             "width":  15,
+                                                             "height":  14
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  1022,
+                                                             "y":  544,
+                                                             "width":  3,
+                                                             "height":  2
+                                                         }
+                                    },
+                                    {
+                                        "text":  "人",
+                                        "boundingRect":  {
+                                                             "x":  1025,
+                                                             "y":  533,
+                                                             "width":  12,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "2",
+                                        "boundingRect":  {
+                                                             "x":  1041,
+                                                             "y":  534,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "+",
+                                        "boundingRect":  {
+                                                             "x":  1070,
+                                                             "y":  537,
+                                                             "width":  8,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "捕",
+                                        "boundingRect":  {
+                                                             "x":  1082,
+                                                             "y":  533,
+                                                             "width":  16,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "食",
+                                        "boundingRect":  {
+                                                             "x":  1098,
+                                                             "y":  533,
+                                                             "width":  14,
+                                                             "height":  14
+                                                         }
+                                    },
+                                    {
+                                        "text":  "者",
+                                        "boundingRect":  {
+                                                             "x":  1113,
+                                                             "y":  533,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "2",
+                                        "boundingRect":  {
+                                                             "x":  1132,
+                                                             "y":  534,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "件",
+                                        "boundingRect":  {
+                                                             "x":  1140,
+                                                             "y":  533,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "目 标 分 数",
+                      "words":  [
+                                    {
+                                        "text":  "目",
+                                        "boundingRect":  {
+                                                             "x":  475,
+                                                             "y":  492,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "标",
+                                        "boundingRect":  {
+                                                             "x":  487,
+                                                             "y":  492,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "分",
+                                        "boundingRect":  {
+                                                             "x":  500,
+                                                             "y":  492,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "数",
+                                        "boundingRect":  {
+                                                             "x":  513,
+                                                             "y":  492,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1 ， 211",
+                      "words":  [
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  492,
+                                                             "y":  534,
+                                                             "width":  4,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "，",
+                                        "boundingRect":  {
+                                                             "x":  499,
+                                                             "y":  543,
+                                                             "width":  2,
+                                                             "height":  4
+                                                         }
+                                    },
+                                    {
+                                        "text":  "211",
+                                        "boundingRect":  {
+                                                             "x":  502,
+                                                             "y":  534,
+                                                             "width":  22,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "方 案 详 情 （ 排 名 1)",
+                      "words":  [
+                                    {
+                                        "text":  "方",
+                                        "boundingRect":  {
+                                                             "x":  379,
+                                                             "y":  603,
+                                                             "width":  20,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "案",
+                                        "boundingRect":  {
+                                                             "x":  400,
+                                                             "y":  602,
+                                                             "width":  19,
+                                                             "height":  20
+                                                         }
+                                    },
+                                    {
+                                        "text":  "详",
+                                        "boundingRect":  {
+                                                             "x":  420,
+                                                             "y":  603,
+                                                             "width":  19,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "情",
+                                        "boundingRect":  {
+                                                             "x":  440,
+                                                             "y":  603,
+                                                             "width":  20,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "（",
+                                        "boundingRect":  {
+                                                             "x":  473,
+                                                             "y":  603,
+                                                             "width":  7,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "排",
+                                        "boundingRect":  {
+                                                             "x":  481,
+                                                             "y":  603,
+                                                             "width":  20,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "名",
+                                        "boundingRect":  {
+                                                             "x":  501,
+                                                             "y":  603,
+                                                             "width":  19,
+                                                             "height":  19
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1)",
+                                        "boundingRect":  {
+                                                             "x":  528,
+                                                             "y":  603,
+                                                             "width":  17,
+                                                             "height":  19
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "装 备 旧",
+                      "words":  [
+                                    {
+                                        "text":  "装",
+                                        "boundingRect":  {
+                                                             "x":  379,
+                                                             "y":  657,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "备",
+                                        "boundingRect":  {
+                                                             "x":  393,
+                                                             "y":  657,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "旧",
+                                        "boundingRect":  {
+                                                             "x":  411,
+                                                             "y":  658,
+                                                             "width":  14,
+                                                             "height":  10
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "· 二 头 盔",
+                      "words":  [
+                                    {
+                                        "text":  "·",
+                                        "boundingRect":  {
+                                                             "x":  382,
+                                                             "y":  690,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "二",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  693,
+                                                             "width":  3,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "头",
+                                        "boundingRect":  {
+                                                             "x":  400,
+                                                             "y":  686,
+                                                             "width":  12,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "盔",
+                                        "boundingRect":  {
+                                                             "x":  413,
+                                                             "y":  686,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "h 刨 m 一 001",
+                      "words":  [
+                                    {
+                                        "text":  "h",
+                                        "boundingRect":  {
+                                                             "x":  444,
+                                                             "y":  687,
+                                                             "width":  7,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "刨",
+                                        "boundingRect":  {
+                                                             "x":  452,
+                                                             "y":  687,
+                                                             "width":  10,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "m",
+                                        "boundingRect":  {
+                                                             "x":  464,
+                                                             "y":  690,
+                                                             "width":  11,
+                                                             "height":  8
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  476,
+                                                             "y":  693,
+                                                             "width":  5,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "001",
+                                        "boundingRect":  {
+                                                             "x":  482,
+                                                             "y":  687,
+                                                             "width":  22,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "· 武 器 ．",
+                      "words":  [
+                                    {
+                                        "text":  "·",
+                                        "boundingRect":  {
+                                                             "x":  382,
+                                                             "y":  716,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "武",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  712,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "器",
+                                        "boundingRect":  {
+                                                             "x":  413,
+                                                             "y":  712,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  430,
+                                                             "y":  716,
+                                                             "width":  3,
+                                                             "height":  2
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "weapon 一 001",
+                      "words":  [
+                                    {
+                                        "text":  "weapon",
+                                        "boundingRect":  {
+                                                             "x":  443,
+                                                             "y":  716,
+                                                             "width":  51,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  496,
+                                                             "y":  719,
+                                                             "width":  4,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "001",
+                                        "boundingRect":  {
+                                                             "x":  501,
+                                                             "y":  713,
+                                                             "width":  22,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "． 胸 單 ： chest-001",
+                      "words":  [
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  382,
+                                                             "y":  742,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "胸",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  739,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "單",
+                                        "boundingRect":  {
+                                                             "x":  414,
+                                                             "y":  739,
+                                                             "width":  13,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "：",
+                                        "boundingRect":  {
+                                                             "x":  430,
+                                                             "y":  743,
+                                                             "width":  3,
+                                                             "height":  8
+                                                         }
+                                    },
+                                    {
+                                        "text":  "chest-001",
+                                        "boundingRect":  {
+                                                             "x":  443,
+                                                             "y":  740,
+                                                             "width":  62,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "． 手 套 ： 邙 oves 一 001",
+                      "words":  [
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  382,
+                                                             "y":  768,
+                                                             "width":  6,
+                                                             "height":  6
+                                                         }
+                                    },
+                                    {
+                                        "text":  "手",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  765,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "套",
+                                        "boundingRect":  {
+                                                             "x":  413,
+                                                             "y":  765,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "：",
+                                        "boundingRect":  {
+                                                             "x":  430,
+                                                             "y":  769,
+                                                             "width":  3,
+                                                             "height":  8
+                                                         }
+                                    },
+                                    {
+                                        "text":  "邙",
+                                        "boundingRect":  {
+                                                             "x":  443,
+                                                             "y":  766,
+                                                             "width":  12,
+                                                             "height":  14
+                                                         }
+                                    },
+                                    {
+                                        "text":  "oves",
+                                        "boundingRect":  {
+                                                             "x":  456,
+                                                             "y":  769,
+                                                             "width":  29,
+                                                             "height":  8
+                                                         }
+                                    },
+                                    {
+                                        "text":  "一",
+                                        "boundingRect":  {
+                                                             "x":  486,
+                                                             "y":  772,
+                                                             "width":  5,
+                                                             "height":  1
+                                                         }
+                                    },
+                                    {
+                                        "text":  "001",
+                                        "boundingRect":  {
+                                                             "x":  492,
+                                                             "y":  766,
+                                                             "width":  22,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "正 亻 立 过 prune-OOl",
+                      "words":  [
+                                    {
+                                        "text":  "正",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  791,
+                                                             "width":  15,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "亻",
+                                        "boundingRect":  {
+                                                             "x":  413,
+                                                             "y":  791,
+                                                             "width":  5,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "立",
+                                        "boundingRect":  {
+                                                             "x":  417,
+                                                             "y":  791,
+                                                             "width":  11,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "过",
+                                        "boundingRect":  {
+                                                             "x":  455,
+                                                             "y":  793,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "prune-OOl",
+                                        "boundingRect":  {
+                                                             "x":  474,
+                                                             "y":  792,
+                                                             "width":  66,
+                                                             "height":  14
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "负 亻 立 窨 过 nrune-001",
+                      "words":  [
+                                    {
+                                        "text":  "负",
+                                        "boundingRect":  {
+                                                             "x":  398,
+                                                             "y":  817,
+                                                             "width":  14,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "亻",
+                                        "boundingRect":  {
+                                                             "x":  413,
+                                                             "y":  817,
+                                                             "width":  5,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "立",
+                                        "boundingRect":  {
+                                                             "x":  417,
+                                                             "y":  817,
+                                                             "width":  11,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "窨",
+                                        "boundingRect":  {
+                                                             "x":  433,
+                                                             "y":  817,
+                                                             "width":  10,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "过",
+                                        "boundingRect":  {
+                                                             "x":  455,
+                                                             "y":  819,
+                                                             "width":  8,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "nrune-001",
+                                        "boundingRect":  {
+                                                             "x":  474,
+                                                             "y":  818,
+                                                             "width":  65,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "627",
+                      "words":  [
+                                    {
+                                        "text":  "627",
+                                        "boundingRect":  {
+                                                             "x":  574,
+                                                             "y":  534,
+                                                             "width":  24,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "孔 453",
+                      "words":  [
+                                    {
+                                        "text":  "孔",
+                                        "boundingRect":  {
+                                                             "x":  648,
+                                                             "y":  534,
+                                                             "width":  10,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "453",
+                                        "boundingRect":  {
+                                                             "x":  659,
+                                                             "y":  534,
+                                                             "width":  24,
+                                                             "height":  11
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "example-account-001",
+                      "words":  [
+                                    {
+                                        "text":  "example-account-001",
+                                        "boundingRect":  {
+                                                             "x":  22,
+                                                             "y":  729,
+                                                             "width":  131,
+                                                             "height":  13
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2 个 角 色 。 12 件 ． 3 僻 裤 器",
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "boundingRect":  {
+                                                             "x":  22,
+                                                             "y":  752,
+                                                             "width":  7,
+                                                             "height":  9
+                                                         }
+                                    },
+                                    {
+                                        "text":  "个",
+                                        "boundingRect":  {
+                                                             "x":  32,
+                                                             "y":  750,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "角",
+                                        "boundingRect":  {
+                                                             "x":  46,
+                                                             "y":  750,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "色",
+                                        "boundingRect":  {
+                                                             "x":  59,
+                                                             "y":  750,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "。",
+                                        "boundingRect":  {
+                                                             "x":  76,
+                                                             "y":  756,
+                                                             "width":  2,
+                                                             "height":  2
+                                                         }
+                                    },
+                                    {
+                                        "text":  "12",
+                                        "boundingRect":  {
+                                                             "x":  83,
+                                                             "y":  752,
+                                                             "width":  12,
+                                                             "height":  9
+                                                         }
+                                    },
+                                    {
+                                        "text":  "件",
+                                        "boundingRect":  {
+                                                             "x":  99,
+                                                             "y":  750,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  142,
+                                                             "y":  756,
+                                                             "width":  2,
+                                                             "height":  2
+                                                         }
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "boundingRect":  {
+                                                             "x":  148,
+                                                             "y":  752,
+                                                             "width":  6,
+                                                             "height":  9
+                                                         }
+                                    },
+                                    {
+                                        "text":  "僻",
+                                        "boundingRect":  {
+                                                             "x":  158,
+                                                             "y":  750,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "裤",
+                                        "boundingRect":  {
+                                                             "x":  172,
+                                                             "y":  750,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "器",
+                                        "boundingRect":  {
+                                                             "x":  185,
+                                                             "y":  750,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "来 源 ： synthetic fixture",
+                      "words":  [
+                                    {
+                                        "text":  "来",
+                                        "boundingRect":  {
+                                                             "x":  22,
+                                                             "y":  771,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "源",
+                                        "boundingRect":  {
+                                                             "x":  35,
+                                                             "y":  771,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "：",
+                                        "boundingRect":  {
+                                                             "x":  50,
+                                                             "y":  775,
+                                                             "width":  2,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "synthetic",
+                                        "boundingRect":  {
+                                                             "x":  61,
+                                                             "y":  772,
+                                                             "width":  51,
+                                                             "height":  13
+                                                         }
+                                    },
+                                    {
+                                        "text":  "fixture",
+                                        "boundingRect":  {
+                                                             "x":  118,
+                                                             "y":  772,
+                                                             "width":  36,
+                                                             "height":  10
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "计 囗 ： 当 前 采 用 原 型 公 皇 石 出 值 × ： 1 + 白 分 比 〕 + 固 定 值 ． 当 未 用 当 前 游 戏 客 户 端 面 板 验 证 ． 结 果 只 用 于 验 证 导 ． 、 约 束 与 求 解 流",
+                      "words":  [
+                                    {
+                                        "text":  "计",
+                                        "boundingRect":  {
+                                                             "x":  393,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "囗",
+                                        "boundingRect":  {
+                                                             "x":  420,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "：",
+                                        "boundingRect":  {
+                                                             "x":  447,
+                                                             "y":  874,
+                                                             "width":  3,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "当",
+                                        "boundingRect":  {
+                                                             "x":  462,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "前",
+                                        "boundingRect":  {
+                                                             "x":  475,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "采",
+                                        "boundingRect":  {
+                                                             "x":  488,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "用",
+                                        "boundingRect":  {
+                                                             "x":  501,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "原",
+                                        "boundingRect":  {
+                                                             "x":  514,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "型",
+                                        "boundingRect":  {
+                                                             "x":  526,
+                                                             "y":  870,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "公",
+                                        "boundingRect":  {
+                                                             "x":  540,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "皇",
+                                        "boundingRect":  {
+                                                             "x":  571,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "石",
+                                        "boundingRect":  {
+                                                             "x":  584,
+                                                             "y":  871,
+                                                             "width":  5,
+                                                             "height":  10
+                                                         }
+                                    },
+                                    {
+                                        "text":  "出",
+                                        "boundingRect":  {
+                                                             "x":  590,
+                                                             "y":  870,
+                                                             "width":  5,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "值",
+                                        "boundingRect":  {
+                                                             "x":  597,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "×",
+                                        "boundingRect":  {
+                                                             "x":  618,
+                                                             "y":  872,
+                                                             "width":  7,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "：",
+                                        "boundingRect":  {
+                                                             "x":  638,
+                                                             "y":  871,
+                                                             "width":  3,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "boundingRect":  {
+                                                             "x":  643,
+                                                             "y":  872,
+                                                             "width":  3,
+                                                             "height":  9
+                                                         }
+                                    },
+                                    {
+                                        "text":  "+",
+                                        "boundingRect":  {
+                                                             "x":  654,
+                                                             "y":  873,
+                                                             "width":  7,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "白",
+                                        "boundingRect":  {
+                                                             "x":  668,
+                                                             "y":  871,
+                                                             "width":  11,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "分",
+                                        "boundingRect":  {
+                                                             "x":  681,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "比",
+                                        "boundingRect":  {
+                                                             "x":  695,
+                                                             "y":  870,
+                                                             "width":  10,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "〕",
+                                        "boundingRect":  {
+                                                             "x":  707,
+                                                             "y":  871,
+                                                             "width":  3,
+                                                             "height":  11
+                                                         }
+                                    },
+                                    {
+                                        "text":  "+",
+                                        "boundingRect":  {
+                                                             "x":  719,
+                                                             "y":  873,
+                                                             "width":  7,
+                                                             "height":  7
+                                                         }
+                                    },
+                                    {
+                                        "text":  "固",
+                                        "boundingRect":  {
+                                                             "x":  733,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "定",
+                                        "boundingRect":  {
+                                                             "x":  746,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "值",
+                                        "boundingRect":  {
+                                                             "x":  759,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  771,
+                                                             "y":  879,
+                                                             "width":  4,
+                                                             "height":  3
+                                                         }
+                                    },
+                                    {
+                                        "text":  "当",
+                                        "boundingRect":  {
+                                                             "x":  785,
+                                                             "y":  870,
+                                                             "width":  11,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "未",
+                                        "boundingRect":  {
+                                                             "x":  797,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "用",
+                                        "boundingRect":  {
+                                                             "x":  810,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "当",
+                                        "boundingRect":  {
+                                                             "x":  823,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "前",
+                                        "boundingRect":  {
+                                                             "x":  836,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "游",
+                                        "boundingRect":  {
+                                                             "x":  849,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "戏",
+                                        "boundingRect":  {
+                                                             "x":  862,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "客",
+                                        "boundingRect":  {
+                                                             "x":  875,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "户",
+                                        "boundingRect":  {
+                                                             "x":  888,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "端",
+                                        "boundingRect":  {
+                                                             "x":  901,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "面",
+                                        "boundingRect":  {
+                                                             "x":  914,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "板",
+                                        "boundingRect":  {
+                                                             "x":  927,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "验",
+                                        "boundingRect":  {
+                                                             "x":  940,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "证",
+                                        "boundingRect":  {
+                                                             "x":  954,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  968,
+                                                             "y":  879,
+                                                             "width":  2,
+                                                             "height":  3
+                                                         }
+                                    },
+                                    {
+                                        "text":  "结",
+                                        "boundingRect":  {
+                                                             "x":  979,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "果",
+                                        "boundingRect":  {
+                                                             "x":  992,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "只",
+                                        "boundingRect":  {
+                                                             "x":  1005,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "用",
+                                        "boundingRect":  {
+                                                             "x":  1017,
+                                                             "y":  870,
+                                                             "width":  14,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "于",
+                                        "boundingRect":  {
+                                                             "x":  1031,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "验",
+                                        "boundingRect":  {
+                                                             "x":  1044,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "证",
+                                        "boundingRect":  {
+                                                             "x":  1058,
+                                                             "y":  870,
+                                                             "width":  12,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "导",
+                                        "boundingRect":  {
+                                                             "x":  1070,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  1083,
+                                                             "y":  880,
+                                                             "width":  3,
+                                                             "height":  2
+                                                         }
+                                    },
+                                    {
+                                        "text":  "、",
+                                        "boundingRect":  {
+                                                             "x":  1097,
+                                                             "y":  880,
+                                                             "width":  3,
+                                                             "height":  3
+                                                         }
+                                    },
+                                    {
+                                        "text":  "约",
+                                        "boundingRect":  {
+                                                             "x":  1109,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "束",
+                                        "boundingRect":  {
+                                                             "x":  1122,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "与",
+                                        "boundingRect":  {
+                                                             "x":  1135,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "求",
+                                        "boundingRect":  {
+                                                             "x":  1148,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "解",
+                                        "boundingRect":  {
+                                                             "x":  1161,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "流",
+                                        "boundingRect":  {
+                                                             "x":  1174,
+                                                             "y":  870,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "程 ．",
+                      "words":  [
+                                    {
+                                        "text":  "程",
+                                        "boundingRect":  {
+                                                             "x":  393,
+                                                             "y":  891,
+                                                             "width":  13,
+                                                             "height":  12
+                                                         }
+                                    },
+                                    {
+                                        "text":  "．",
+                                        "boundingRect":  {
+                                                             "x":  407,
+                                                             "y":  900,
+                                                             "width":  4,
+                                                             "height":  3
+                                                         }
+                                    }
+                                ]
+                  }
+              ]
+}

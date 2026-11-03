@@ -1,0 +1,19 @@
+{
+  "sourceId": "SRC-005",
+  "kind": "hero_catalog",
+  "requestedUrl": "https://www.dragonheir.info/heroes",
+  "finalUrl": "https://www.dragonheir.info/heroes",
+  "retrievedAt": "2026-11-03T08:58:38.831Z",
+  "status": 200,
+  "mediaType": "text/html; charset=utf-8",
+  "byteLength": 2097435,
+  "sha256": "382165ee7d0debb03d8ad61df9b1140ece70a43b32f3a6d8d47bd7a037bc99fd",
+  "region": "global",
+  "expectedContent": [
+    "hero_ids",
+    "names",
+    "elements",
+    "orientations"
+  ],
+  "snapshotPath": "raw/public-web/SRC-005/2026-11-03/snapshot.html"
+}

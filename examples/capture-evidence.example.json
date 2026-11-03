@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.1.0",
+  "capturedAt": "2026-11-03T12:30:00+08:00",
+  "sourceMethod": "emulator_adb_user_initiated_screenshot",
+  "privacy": {"localOnly": true, "uploadPerformed": false},
+  "device": {"serial": "example-emulator-5554", "model": "example-model", "product": "example-product"},
+  "captureType": "gear_detail",
+  "image": {
+    "localName": "gear-detail-0001.png",
+    "mediaType": "image/png",
+    "byteLength": 1024,
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "limitations": "Synthetic metadata fixture. It does not prove a live emulator capture."
+}

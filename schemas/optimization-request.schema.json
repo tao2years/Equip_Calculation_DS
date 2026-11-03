@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/optimization-request.schema.json",
+  "title": "Dragonheir Optimization Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "requestId", "snapshotId", "ownedHeroId", "candidatePolicy", "constraints", "objective", "resultLimit"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "requestId": {"type": "string", "minLength": 1},
+    "snapshotId": {"type": "string", "minLength": 1},
+    "ownedHeroId": {"type": "string", "minLength": 1},
+    "scenarioId": {"type": ["string", "null"]},
+    "candidatePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["equippedItems"],
+      "properties": {
+        "equippedItems": {"enum": ["inventory_only", "selected_heroes", "all_heroes"]},
+        "allowedOwnerIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "default": []},
+        "respectItemLocks": {"type": "boolean", "default": true}
+      }
+    },
+    "fixedItems": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact": {"type": "string"},
+        "helmet": {"type": "string"},
+        "weapon": {"type": "string"},
+        "chest": {"type": "string"},
+        "gloves": {"type": "string"},
+        "positive_rune": {"type": "string"},
+        "negative_rune": {"type": "string"}
+      },
+      "default": {}
+    },
+    "excludedItemIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "default": []},
+    "constraints": {"type": "array", "items": {"$ref": "#/$defs/constraint"}},
+    "objective": {"$ref": "#/$defs/objective"},
+    "resultLimit": {"type": "integer", "minimum": 1, "maximum": 1000}
+  },
+  "$defs": {
+    "statKey": {
+      "enum": ["hp_sheet", "atk_sheet", "def_sheet", "crit_rate", "crit_damage", "accuracy", "resistance", "enlightenment", "skill_haste", "attack_speed_pct"]
+    },
+    "constraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stat", "op", "value", "layer"],
+      "properties": {
+        "stat": {"$ref": "#/$defs/statKey"},
+        "op": {"enum": [">=", "<=", "=", ">", "<"]},
+        "value": {"type": "number"},
+        "layer": {"enum": ["sheet", "conditional", "encounter"]}
+      }
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "direction"],
+      "properties": {
+        "kind": {"enum": ["single_stat", "weighted_stats", "crit_proxy", "scenario_metric"]},
+        "direction": {"enum": ["maximize", "minimize"]},
+        "stat": {"$ref": "#/$defs/statKey"},
+        "weights": {
+          "type": "object",
+          "additionalProperties": {"type": "number"},
+          "default": {}
+        },
+        "metric_id": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

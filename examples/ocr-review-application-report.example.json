@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "synthetic-layout-job-001",
+  "createdAt": "2026-11-03T12:09:00+08:00",
+  "sourceRecognition": "synthetic-layout-manifest.json",
+  "reviewedAt": "2026-11-03T12:08:00+08:00",
+  "counts": {
+    "total": 3,
+    "accepted": 3,
+    "rejected": 0
+  },
+  "issues": []
+}

@@ -1,0 +1,18 @@
+{
+  "sourceId": "SRC-017",
+  "kind": "hero_detail",
+  "requestedUrl": "https://www.dragonheir.info/heroes/20400",
+  "finalUrl": "https://www.dragonheir.info/heroes/20400",
+  "retrievedAt": "2026-11-03T08:58:32.710Z",
+  "status": 200,
+  "mediaType": "text/html; charset=utf-8",
+  "byteLength": 2322933,
+  "sha256": "05b673bfb5e245270a01215d9f6a8f220428524995c9d1e5b99e2bd18727c9c1",
+  "region": "global",
+  "expectedContent": [
+    "base_stats",
+    "skills",
+    "inspiration"
+  ],
+  "snapshotPath": "raw/public-web/SRC-017/2026-11-03/snapshot.html"
+}

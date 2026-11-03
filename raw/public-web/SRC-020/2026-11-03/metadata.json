@@ -1,0 +1,19 @@
+{
+  "sourceId": "SRC-020",
+  "kind": "official_press_release",
+  "requestedUrl": "https://press.levelinfinite.com/en-GB/DRAGONHEIR-SILENT-GODS-MARKS-THIRD-ANNIVERSARY-WITH-COMMUNITY-CREATED-",
+  "finalUrl": "https://press.levelinfinite.com/en-GB/DRAGONHEIR-SILENT-GODS-MARKS-THIRD-ANNIVERSARY-WITH-COMMUNITY-CREATED-",
+  "retrievedAt": "2026-11-03T09:03:55.982Z",
+  "status": 200,
+  "mediaType": "text/html; charset=utf-8",
+  "byteLength": 44562,
+  "sha256": "f8ed00fabad3b40d0997fa8b49b0dcb442e9166561656afe8a6dcd44f89e1446",
+  "region": "global",
+  "expectedContent": [
+    "current_publisher",
+    "current_game_state",
+    "hero_count_claim",
+    "platforms"
+  ],
+  "snapshotPath": "raw/public-web/SRC-020/2026-11-03/snapshot.html"
+}

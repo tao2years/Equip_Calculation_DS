@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "synthetic-layout-job-001",
+  "reviewedAt": "2026-11-03T12:08:00+08:00",
+  "sourceManifest": "synthetic-layout-manifest.json",
+  "images": [
+    {
+      "sequence": 1,
+      "originalName": "hero_detail-1.png",
+      "imageSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "captureType": "hero_detail",
+      "reviewStatus": "accepted",
+      "decisions": [
+        {
+          "lineIndex": 1,
+          "rawText": "埃里奇",
+          "kind": "hero",
+          "selectedId": "hero-errich",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 5,
+          "rawText": "攻击",
+          "kind": "stat",
+          "selectedId": "atk_flat",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 7,
+          "rawText": "生命",
+          "kind": "stat",
+          "selectedId": "hp_flat",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 9,
+          "rawText": "防御",
+          "kind": "stat",
+          "selectedId": "def_flat",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "originalName": "gear_detail-2.png",
+      "imageSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "captureType": "gear_detail",
+      "reviewStatus": "accepted",
+      "decisions": [
+        {
+          "lineIndex": 1,
+          "rawText": "武器",
+          "kind": "slot",
+          "selectedId": "weapon",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 2,
+          "rawText": "野蛮人",
+          "kind": "set",
+          "selectedId": "set-barbarian",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 4,
+          "rawText": "攻击",
+          "kind": "stat",
+          "selectedId": "atk_flat",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 6,
+          "rawText": "重击率",
+          "kind": "stat",
+          "selectedId": "crit_rate",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 8,
+          "rawText": "重击伤害",
+          "kind": "stat",
+          "selectedId": "crit_damage",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "originalName": "artifact_detail-3.png",
+      "imageSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "captureType": "artifact_detail",
+      "reviewStatus": "accepted",
+      "decisions": [
+        {
+          "lineIndex": 1,
+          "rawText": "巨人眼球",
+          "kind": "artifact",
+          "selectedId": "artifact-eyeball-of-the-giant",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 4,
+          "rawText": "攻击",
+          "kind": "stat",
+          "selectedId": "atk_flat",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 6,
+          "rawText": "攻击%",
+          "kind": "stat",
+          "selectedId": "atk_pct",
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

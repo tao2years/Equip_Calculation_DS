@@ -1,0 +1,17 @@
+{
+  "sourceId": "SRC-001",
+  "kind": "rule_article",
+  "requestedUrl": "https://www.dragonheir.info/article/42",
+  "finalUrl": "https://www.dragonheir.info/article/42",
+  "retrievedAt": "2026-11-03T08:58:37.906Z",
+  "status": 200,
+  "mediaType": "text/html; charset=utf-8",
+  "byteLength": 64432,
+  "sha256": "4a41860f16b60b67a595a24cd1cfe0ee6e03eaae7d36e597b1ccf8872c99ead2",
+  "region": "global",
+  "expectedContent": [
+    "slots",
+    "equipment_categories"
+  ],
+  "snapshotPath": "raw/public-web/SRC-001/2026-11-03/snapshot.html"
+}

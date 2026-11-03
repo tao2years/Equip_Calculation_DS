@@ -1,0 +1,17 @@
+{
+  "sourceId": "SRC-002",
+  "kind": "rule_article",
+  "requestedUrl": "https://www.dragonheir.info/article/103",
+  "finalUrl": "https://www.dragonheir.info/article/103",
+  "retrievedAt": "2026-11-03T08:58:37.945Z",
+  "status": 200,
+  "mediaType": "text/html; charset=utf-8",
+  "byteLength": 80354,
+  "sha256": "335d4cd13be278f3a38cdca6176afbfddda060de598bfd7475eb25b9220013a7",
+  "region": "global",
+  "expectedContent": [
+    "stat_rules",
+    "refinement_examples"
+  ],
+  "snapshotPath": "raw/public-web/SRC-002/2026-11-03/snapshot.html"
+}

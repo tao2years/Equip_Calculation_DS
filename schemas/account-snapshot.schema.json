@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/account-snapshot.schema.json",
+  "title": "Dragonheir Account Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "snapshotId", "createdAt", "gameDataVersionId", "sourceMethod", "ownedHeroes", "ownedGear", "ownedArtifacts"],
+  "properties": {
+    "schemaVersion": {"type": "string", "pattern": "^0\\.[12]\\.0"},
+    "snapshotId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "gameDataVersionId": {"type": "string", "minLength": 1},
+    "sourceMethod": {
+      "enum": ["manual", "json", "csv", "screenshot_ocr", "visible_ui_ocr", "official_api", "mixed", "synthetic_fixture"]
+    },
+    "sourceFiles": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/sourceFile"},
+      "default": []
+    },
+    "warning": {"type": "string"},
+    "ownedHeroes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ownedHero"}
+    },
+    "ownedGear": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ownedGear"}
+    },
+    "ownedArtifacts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ownedArtifact"}
+    }
+  },
+  "$defs": {
+    "sourceFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sha256", "mediaType"],
+      "properties": {
+        "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+        "mediaType": {"type": "string"},
+        "localName": {"type": ["string", "null"]}
+      }
+    },
+    "observedValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stat", "value"],
+      "properties": {
+        "stat": {
+          "enum": ["hp_flat", "hp_pct", "atk_flat", "atk_pct", "def_flat", "def_pct", "crit_rate", "crit_damage", "accuracy", "resistance", "enlightenment", "skill_haste", "attack_speed_pct", "damage_bonus_pct", "damage_reduction_pct"]
+        },
+        "value": {"type": "number"},
+        "raw_text": {"type": ["string", "null"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1, "default": 1}
+      }
+    },
+    "ownedHero": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ownedHeroId", "heroDefinitionId", "level"],
+      "properties": {
+        "ownedHeroId": {"type": "string", "minLength": 1},
+        "heroDefinitionId": {"type": "string", "minLength": 1},
+        "level": {"type": "integer", "minimum": 1},
+        "stars": {"type": ["integer", "null"], "minimum": 1},
+        "inspiration": {"type": ["integer", "null"], "minimum": 0},
+        "baseStatsOverride": {
+          "type": "object",
+          "description": "Optional account-observed pre-equipment hero stats. When present, the solver uses these instead of public level-growth inference.",
+          "additionalProperties": {"type": "number"}
+        },
+        "observedSheetStats": {"type": "array", "items": {"$ref": "#/$defs/observedValue"}, "default": []}
+      }
+    },
+    "ownedGear": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ownedItemId", "slot", "enhanceLevel", "stats", "locked"],
+      "properties": {
+        "ownedItemId": {"type": "string", "minLength": 1},
+        "definitionId": {"type": ["string", "null"]},
+        "displayName": {"type": ["string", "null"]},
+        "slot": {"enum": ["helmet", "weapon", "chest", "gloves", "positive_rune", "negative_rune"]},
+        "rarity": {"enum": ["common", "rare", "epic", "legendary", "mythic", "unknown"]},
+        "setId": {"type": ["string", "null"]},
+        "enhanceLevel": {"type": "integer", "minimum": 0},
+        "stats": {"type": "object", "additionalProperties": {"type": "number"}},
+        "mainStat": {"$ref": "#/$defs/observedValue"},
+        "substats": {"type": "array", "items": {"$ref": "#/$defs/observedValue"}, "maxItems": 8},
+        "locked": {"type": "boolean"},
+        "equippedBy": {"type": ["string", "null"]},
+        "sourceConfidence": {"type": "number", "minimum": 0, "maximum": 1, "default": 1}
+      }
+    },
+    "ownedArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ownedArtifactId", "artifactDefinitionId", "refinement", "locked"],
+      "properties": {
+        "ownedArtifactId": {"type": "string", "minLength": 1},
+        "artifactDefinitionId": {"type": "string", "minLength": 1},
+        "level": {"type": "integer", "minimum": 0, "maximum": 20, "description": "Artifact enhancement level used to select static sheet stats from GameData.levelCurve."},
+        "refinement": {"type": "integer", "minimum": 0, "maximum": 5, "description": "Artifact skill refinement rank used to select effect text; it does not change static sheet stats."},
+        "locked": {"type": "boolean"},
+        "equippedBy": {"type": ["string", "null"]},
+        "stats": {"type": "object", "description": "Deprecated normalized observed-stat override retained for 0.1 snapshot compatibility.", "additionalProperties": {"type": "number"}},
+        "effectStats": {"type": "object", "description": "Deprecated experimental field. Conditional artifact effects are not added to sheet stats.", "additionalProperties": {"type": "number"}},
+        "observedStats": {"type": "array", "items": {"$ref": "#/$defs/observedValue"}, "default": []}
+      }
+    }
+  }
+}

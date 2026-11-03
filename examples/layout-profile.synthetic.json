@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "0.1.0",
+  "profileId": "synthetic-cn-detail-1000-v1",
+  "channel": "synthetic-fixture",
+  "clientBuild": "not-a-game-build",
+  "language": "zh-Hans-CN",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "referenceViewport": {"width": 1000, "height": 1000},
+  "recordId": {"strategy": "content_fingerprint", "prefix": "ocr"},
+  "evidenceLevel": "synthetic_fixture",
+  "limitations": [
+    "Coordinates and anchors are synthetic and are not calibrated against any Dragonheir client build.",
+    "Content fingerprints cannot distinguish two visually identical copies of the same gear; duplicate fingerprints require manual review until a stable client identifier is available."
+  ],
+  "pages": [
+    {
+      "id": "hero-detail-v1", "kind": "hero", "captureTypes": ["hero_detail"],
+      "classifier": {"requiredTexts": ["角色详情"]},
+      "fields": [
+        {"target": "name", "mode": "dictionary", "dictionaryKind": "hero", "region": {"x": 0.05, "y": 0.08, "width": 0.45, "height": 0.06}, "required": true},
+        {"target": "level", "mode": "integer", "region": {"x": 0.05, "y": 0.15, "width": 0.3, "height": 0.06}, "required": true},
+        {"target": "stars", "mode": "integer", "region": {"x": 0.05, "y": 0.20, "width": 0.3, "height": 0.06}, "required": false},
+        {"target": "inspiration", "mode": "integer", "region": {"x": 0.05, "y": 0.25, "width": 0.3, "height": 0.06}, "required": false}
+      ],
+      "statGroups": [{
+        "target": "baseStats", "required": true,
+        "rows": [
+          {"labelRegion": {"x": 0.08, "y": 0.34, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.34, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true},
+          {"labelRegion": {"x": 0.08, "y": 0.39, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.39, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true},
+          {"labelRegion": {"x": 0.08, "y": 0.44, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.44, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true}
+        ]
+      }]
+    },
+    {
+      "id": "gear-detail-v1", "kind": "gear", "captureTypes": ["gear_detail"],
+      "classifier": {"requiredTexts": ["装备详情"]},
+      "fields": [
+        {"target": "slot", "mode": "dictionary", "dictionaryKind": "slot", "region": {"x": 0.05, "y": 0.08, "width": 0.35, "height": 0.06}, "required": true},
+        {"target": "setName", "mode": "dictionary", "dictionaryKind": "set", "region": {"x": 0.05, "y": 0.14, "width": 0.35, "height": 0.06}, "required": true},
+        {"target": "enhanceLevel", "mode": "integer", "region": {"x": 0.05, "y": 0.20, "width": 0.35, "height": 0.06}, "required": true},
+        {"target": "locked", "mode": "constant", "value": false, "required": false}
+      ],
+      "statGroups": [{
+        "target": "stats", "required": true,
+        "rows": [
+          {"labelRegion": {"x": 0.08, "y": 0.29, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.29, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true},
+          {"labelRegion": {"x": 0.08, "y": 0.34, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.34, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true},
+          {"labelRegion": {"x": 0.08, "y": 0.39, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.39, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true}
+        ]
+      }]
+    },
+    {
+      "id": "artifact-detail-v1", "kind": "artifact", "captureTypes": ["artifact_detail"],
+      "classifier": {"requiredTexts": ["神器详情"]},
+      "fields": [
+        {"target": "name", "mode": "dictionary", "dictionaryKind": "artifact", "region": {"x": 0.05, "y": 0.08, "width": 0.45, "height": 0.06}, "required": true},
+        {"target": "level", "mode": "integer", "region": {"x": 0.05, "y": 0.14, "width": 0.3, "height": 0.06}, "required": true},
+        {"target": "refinement", "mode": "integer", "region": {"x": 0.05, "y": 0.20, "width": 0.3, "height": 0.06}, "required": true},
+        {"target": "locked", "mode": "constant", "value": false, "required": false}
+      ],
+      "statGroups": [{
+        "target": "stats", "required": true,
+        "rows": [
+          {"labelRegion": {"x": 0.08, "y": 0.29, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.29, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true},
+          {"labelRegion": {"x": 0.08, "y": 0.34, "width": 0.2, "height": 0.045}, "valueRegion": {"x": 0.38, "y": 0.34, "width": 0.2, "height": 0.045}, "dictionaryKind": "stat", "required": true}
+        ]
+      }]
+    }
+  ]
+}

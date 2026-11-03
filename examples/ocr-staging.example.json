@@ -1,0 +1,464 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "example-ocr-job-001",
+  "createdAt": "2026-11-03T12:00:00+08:00",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "sourceFiles": [
+    {
+      "sha256": "83346f8d7f34a98e9e2b43b32fc002b465d0eda6a721a4c722d1d29aefcde529",
+      "mediaType": "application/x-synthetic-fixture",
+      "localName": "synthetic-fixture"
+    }
+  ],
+  "records": [
+    {
+      "kind": "hero",
+      "sourceRecordId": "owned-aschetius",
+      "confidence": 0.99,
+      "fields": {
+        "name": "Aschetius",
+        "level": "1",
+        "stars": "1",
+        "inspiration": "0",
+        "baseStats": []
+      }
+    },
+    {
+      "kind": "hero",
+      "sourceRecordId": "owned-errich",
+      "confidence": 0.99,
+      "fields": {
+        "name": "Errich",
+        "level": "1",
+        "stars": "1",
+        "inspiration": "0",
+        "baseStats": []
+      }
+    },
+    {
+      "kind": "artifact",
+      "sourceRecordId": "art-001",
+      "confidence": 0.99,
+      "fields": {
+        "name": "巨人眼球",
+        "level": "+6",
+        "refinement": "+1",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "攻击",
+            "value": "120",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "8%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "artifact",
+      "sourceRecordId": "art-002",
+      "confidence": 0.99,
+      "fields": {
+        "name": "Volcanic Disc",
+        "level": "+7",
+        "refinement": "+1",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "生命",
+            "value": "900",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "6%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "artifact",
+      "sourceRecordId": "art-003",
+      "confidence": 0.99,
+      "fields": {
+        "name": "Malicious Manacle",
+        "level": "+10",
+        "refinement": "+1",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "攻击",
+            "value": "150",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击伤害",
+            "value": "12%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "20%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "helm-001",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "头盔",
+        "setId": "set-barbarian",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "生命",
+            "value": "5070",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "8%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "5%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "helm-002",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "头盔",
+        "setId": "set-guardian",
+        "enhanceLevel": "+16",
+        "locked": true,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "生命",
+            "value": "5070",
+            "confidence": 0.99
+          },
+          {
+            "label": "生命%",
+            "value": "12%",
+            "confidence": 0.99
+          },
+          {
+            "label": "效果命中",
+            "value": "12",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "weapon-001",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "武器",
+        "setId": "set-barbarian",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "攻击",
+            "value": "235",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击伤害",
+            "value": "8%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "5%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "weapon-002",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "武器",
+        "setId": "set-goblin",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "攻击",
+            "value": "235",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "12%",
+            "confidence": 0.99
+          },
+          {
+            "label": "技能急速",
+            "value": "10",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "chest-001",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "胸甲",
+        "setId": "set-predator",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "攻击%",
+            "value": "25%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "5%",
+            "confidence": 0.99
+          },
+          {
+            "label": "效果命中",
+            "value": "12",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "chest-002",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "胸甲",
+        "setId": "set-guardian",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "生命%",
+            "value": "25%",
+            "confidence": 0.99
+          },
+          {
+            "label": "防御%",
+            "value": "10%",
+            "confidence": 0.99
+          },
+          {
+            "label": "效果命中",
+            "value": "15",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "gloves-001",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "手套",
+        "setId": "set-predator",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "重击率",
+            "value": "40%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击伤害",
+            "value": "8%",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "5%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "gloves-002",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "手套",
+        "setId": "set-barbarian",
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "重击伤害",
+            "value": "27%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "8%",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "8%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "prune-001",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "正位符文",
+        "setId": null,
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "重击伤害",
+            "value": "27%",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "12%",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击速度",
+            "value": "7.000000000000001%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "prune-002",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "正位符文",
+        "setId": null,
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "精通",
+            "value": "80",
+            "confidence": 0.99
+          },
+          {
+            "label": "技能急速",
+            "value": "12",
+            "confidence": 0.99
+          },
+          {
+            "label": "攻击%",
+            "value": "8%",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "nrune-001",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "负位符文",
+        "setId": null,
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": "owned-aschetius",
+        "stats": [
+          {
+            "label": "效果命中",
+            "value": "64",
+            "confidence": 0.99
+          },
+          {
+            "label": "重击率",
+            "value": "13%",
+            "confidence": 0.99
+          },
+          {
+            "label": "技能急速",
+            "value": "10",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gear",
+      "sourceRecordId": "nrune-002",
+      "confidence": 0.99,
+      "fields": {
+        "slot": "负位符文",
+        "setId": null,
+        "enhanceLevel": "+16",
+        "locked": false,
+        "equippedBy": null,
+        "stats": [
+          {
+            "label": "生命%",
+            "value": "25%",
+            "confidence": 0.99
+          },
+          {
+            "label": "效果抵抗",
+            "value": "64",
+            "confidence": 0.99
+          },
+          {
+            "label": "技能急速",
+            "value": "12",
+            "confidence": 0.99
+          }
+        ]
+      }
+    }
+  ]
+}

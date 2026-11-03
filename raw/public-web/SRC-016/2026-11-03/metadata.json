@@ -1,0 +1,18 @@
+{
+  "sourceId": "SRC-016",
+  "kind": "cn_equipment_guide",
+  "requestedUrl": "https://www.taptap.cn/moment/661318857893348450",
+  "finalUrl": "https://www.taptap.cn/moment/661318857893348450",
+  "retrievedAt": "2026-11-03T09:06:09.190Z",
+  "status": 200,
+  "mediaType": "text/html;charset=utf-8",
+  "byteLength": 321667,
+  "sha256": "644403c107495cd25969a9ff5d6c799932bcc73e257490b9ffb8eead4e05a4bc",
+  "region": "cn",
+  "expectedContent": [
+    "cn_stat_aliases",
+    "cn_slot_aliases",
+    "cn_set_names"
+  ],
+  "snapshotPath": "raw/public-web/SRC-016/2026-11-03/snapshot.html"
+}

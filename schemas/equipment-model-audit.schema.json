@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/equipment-model-audit.schema.json",
+  "title": "Equipment Definition and Account-Linkage Audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "gameDataVersionId", "verification", "counts", "distributions", "unresolved"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "gameDataVersionId": {"type": "string"},
+    "verification": {"type": "string"},
+    "counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "distributions": {
+      "type": "object",
+      "required": ["slot", "rarity", "season"],
+      "properties": {
+        "slot": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "rarity": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "season": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+      }
+    },
+    "unresolved": {
+      "type": "object",
+      "required": ["unknownSlotDefinitionIds", "displayNameCollisions"],
+      "properties": {
+        "unknownSlotDefinitionIds": {"type": "array", "items": {"type": "string"}},
+        "displayNameCollisions": {"type": "array"}
+      }
+    }
+  }
+}

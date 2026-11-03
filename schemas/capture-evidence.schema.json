@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/capture-evidence.schema.json",
+  "title": "Dragonheir User-Initiated Capture Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "capturedAt", "sourceMethod", "privacy", "device", "captureType", "image", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "capturedAt": {"type": "string", "format": "date-time"},
+    "sourceMethod": {"const": "emulator_adb_user_initiated_screenshot"},
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localOnly", "uploadPerformed"],
+      "properties": {"localOnly": {"const": true}, "uploadPerformed": {"const": false}}
+    },
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["serial", "model", "product"],
+      "properties": {
+        "serial": {"type": "string", "minLength": 1},
+        "model": {"type": ["string", "null"]},
+        "product": {"type": ["string", "null"]}
+      }
+    },
+    "captureType": {"enum": ["unclassified", "hero_list", "hero_detail", "gear_list", "gear_detail", "artifact_list", "artifact_detail"]},
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localName", "mediaType", "byteLength", "sha256"],
+      "properties": {
+        "localName": {"type": "string", "minLength": 1},
+        "mediaType": {"const": "image/png"},
+        "byteLength": {"type": "integer", "minimum": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "limitations": {"type": "string", "minLength": 1}
+  }
+}

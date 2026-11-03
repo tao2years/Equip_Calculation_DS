@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/game-data.schema.json",
+  "title": "Dragonheir Versioned Public Game Data",
+  "type": "object",
+  "required": ["schemaVersion", "dataVersion", "statDefinitions", "slotDefinitions", "heroes", "equipment", "sets", "artifacts"],
+  "properties": {
+    "schemaVersion": {"type": "string"},
+    "dataVersion": {
+      "type": "object",
+      "required": ["id", "region", "channel", "releaseLine", "retrievedAt", "verification"]
+    },
+    "statDefinitions": {"type": "array", "items": {"$ref": "#/$defs/statDefinition"}},
+    "slotDefinitions": {"type": "array", "items": {"$ref": "#/$defs/slotDefinition"}},
+    "heroes": {"type": "array", "items": {"$ref": "#/$defs/hero"}},
+    "equipment": {"type": "array", "items": {"$ref": "#/$defs/equipment"}},
+    "sets": {"type": "array", "items": {"$ref": "#/$defs/set"}},
+    "artifacts": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "calculationAssumptions": {"type": "object"}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["sourceId", "url", "verification"],
+      "properties": {
+        "sourceId": {"type": "string", "pattern": "^SRC-[0-9]{3}$"},
+        "url": {"type": "string", "format": "uri"},
+        "verification": {"type": "string"}
+      }
+    },
+    "statDefinition": {
+      "type": "object",
+      "required": ["id", "labelZh", "unit"],
+      "properties": {
+        "id": {"type": "string"},
+        "labelZh": {"type": "string"},
+        "unit": {"enum": ["flat", "ratio"]}
+      }
+    },
+    "slotDefinition": {
+      "type": "object",
+      "required": ["id", "labelZh", "fixedMainStat"],
+      "properties": {
+        "id": {"type": "string"},
+        "labelZh": {"type": "string"},
+        "fixedMainStat": {"type": ["string", "null"]}
+      }
+    },
+    "hero": {
+      "type": "object",
+      "required": ["id", "names", "baseStats", "source"],
+      "properties": {
+        "id": {"type": "string"},
+        "names": {"type": "object"},
+        "baseStats": {"type": "object", "additionalProperties": {"type": "number"}},
+        "source": {"$ref": "#/$defs/source"}
+      }
+    },
+    "set": {
+      "type": "object",
+      "required": ["id", "names", "bonuses", "source"],
+      "properties": {
+        "id": {"type": "string"},
+        "names": {"type": "object"},
+        "bonuses": {"type": "array"},
+        "source": {"$ref": "#/$defs/source"}
+      }
+    },
+    "equipment": {
+      "type": "object",
+      "required": ["id", "names", "rarity", "slot", "enhancementLimit", "primaryStatKinds", "levelCurve", "source"],
+      "properties": {
+        "id": {"type": "string"},
+        "externalId": {"type": ["integer", "string", "null"]},
+        "names": {"type": "object"},
+        "rarity": {"type": "string"},
+        "season": {"type": ["string", "null"]},
+        "slot": {"enum": ["helmet", "weapon", "chest", "gloves", "positive_rune", "negative_rune", "unknown"]},
+        "setId": {"type": ["string", "null"]},
+        "enhancedVariant": {"type": "boolean"},
+        "enhancementLimit": {"type": "integer", "minimum": 0},
+        "primaryStatKinds": {"type": "array", "items": {"type": "string"}},
+        "primaryStats": {"type": "array"},
+        "levelCurve": {"type": "array"},
+        "semanticEffects": {"type": "array", "items": {"type": "string"}},
+        "assetUrl": {"type": ["string", "null"]},
+        "source": {"$ref": "#/$defs/source"}
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["id", "names", "rarity", "primaryStatKinds", "effectSummary", "source"],
+      "properties": {
+        "id": {"type": "string"},
+        "names": {"type": "object"},
+        "rarity": {"type": "string"},
+        "primaryStatKinds": {"type": "array", "items": {"type": "string"}},
+        "primaryStats": {"type": "array"},
+        "levelCurve": {
+          "type": "array",
+          "description": "Static artifact sheet stats by artifact enhancement level. This is independent from effect refinement.",
+          "items": {
+            "type": "object",
+            "required": ["level", "values", "displayValues"],
+            "properties": {
+              "level": {"type": "integer", "minimum": 0},
+              "values": {"type": "object", "additionalProperties": {"type": ["number", "null"]}},
+              "displayValues": {"type": "object"}
+            }
+          }
+        },
+        "effectLevels": {
+          "type": "array",
+          "description": "Artifact skill text by refinement rank. Text is evidence, not an automatically applied sheet-stat bonus."
+        },
+        "effectSummary": {"type": "string"},
+        "restrictions": {"type": ["object", "null"]},
+        "source": {"$ref": "#/$defs/source"}
+      }
+    }
+  }
+}

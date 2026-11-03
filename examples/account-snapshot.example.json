@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.2.0-prototype",
+  "snapshotId": "example-account-001",
+  "createdAt": "2026-11-03T12:00:00+08:00",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "sourceMethod": "synthetic_fixture",
+  "warning": "This is synthetic inventory for UI and solver testing; item values are not claimed as live game drops.",
+  "ownedHeroes": [
+    {"ownedHeroId": "owned-aschetius", "heroDefinitionId": "hero-21760", "level": 1, "stars": 1, "inspiration": 0},
+    {"ownedHeroId": "owned-errich", "heroDefinitionId": "hero-20400", "level": 1, "stars": 1, "inspiration": 0}
+  ],
+  "ownedArtifacts": [
+    {"ownedArtifactId": "art-001", "artifactDefinitionId": "artifact-eyeball-of-the-giant", "level": 6, "refinement": 1, "observedStats": [{"stat":"atk_flat","value":120,"raw_text":"攻击 +120","confidence":1},{"stat":"atk_pct","value":0.08,"raw_text":"攻击 8%","confidence":1}], "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedArtifactId": "art-002", "artifactDefinitionId": "artifact-volcanic-disc", "level": 7, "refinement": 1, "observedStats": [{"stat":"hp_flat","value":900,"raw_text":"生命 +900","confidence":1},{"stat":"atk_pct","value":0.06,"raw_text":"攻击 6%","confidence":1}], "equippedBy": null, "locked": false},
+    {"ownedArtifactId": "art-003", "artifactDefinitionId": "artifact-malicious-manacle", "level": 10, "refinement": 1, "observedStats": [{"stat":"atk_flat","value":150,"raw_text":"攻击 +150","confidence":1},{"stat":"crit_damage","value":0.12,"raw_text":"重击伤害 12%","confidence":1},{"stat":"crit_rate","value":0.2,"raw_text":"重击率 20%","confidence":1}], "equippedBy": null, "locked": false}
+  ],
+  "ownedGear": [
+    {"ownedItemId": "helm-001", "slot": "helmet", "setId": "set-barbarian", "enhanceLevel": 16, "stats": {"hp_flat": 5070, "atk_pct": 0.08, "crit_rate": 0.05}, "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedItemId": "helm-002", "slot": "helmet", "setId": "set-guardian", "enhanceLevel": 16, "stats": {"hp_flat": 5070, "hp_pct": 0.12, "accuracy": 12}, "equippedBy": null, "locked": true},
+    {"ownedItemId": "weapon-001", "slot": "weapon", "setId": "set-barbarian", "enhanceLevel": 16, "stats": {"atk_flat": 235, "crit_damage": 0.08, "crit_rate": 0.05}, "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedItemId": "weapon-002", "slot": "weapon", "setId": "set-goblin", "enhanceLevel": 16, "stats": {"atk_flat": 235, "atk_pct": 0.12, "skill_haste": 10}, "equippedBy": null, "locked": false},
+    {"ownedItemId": "chest-001", "slot": "chest", "setId": "set-predator", "enhanceLevel": 16, "stats": {"atk_pct": 0.25, "crit_rate": 0.05, "accuracy": 12}, "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedItemId": "chest-002", "slot": "chest", "setId": "set-guardian", "enhanceLevel": 16, "stats": {"hp_pct": 0.25, "def_pct": 0.1, "accuracy": 15}, "equippedBy": null, "locked": false},
+    {"ownedItemId": "gloves-001", "slot": "gloves", "setId": "set-predator", "enhanceLevel": 16, "stats": {"crit_rate": 0.4, "crit_damage": 0.08, "atk_pct": 0.05}, "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedItemId": "gloves-002", "slot": "gloves", "setId": "set-barbarian", "enhanceLevel": 16, "stats": {"crit_damage": 0.27, "crit_rate": 0.08, "atk_pct": 0.08}, "equippedBy": null, "locked": false},
+    {"ownedItemId": "prune-001", "slot": "positive_rune", "setId": null, "enhanceLevel": 16, "stats": {"crit_damage": 0.27, "crit_rate": 0.12, "attack_speed_pct": 0.07}, "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedItemId": "prune-002", "slot": "positive_rune", "setId": null, "enhanceLevel": 16, "stats": {"enlightenment": 80, "skill_haste": 12, "atk_pct": 0.08}, "equippedBy": null, "locked": false},
+    {"ownedItemId": "nrune-001", "slot": "negative_rune", "setId": null, "enhanceLevel": 16, "stats": {"accuracy": 64, "crit_rate": 0.13, "skill_haste": 10}, "equippedBy": "owned-aschetius", "locked": false},
+    {"ownedItemId": "nrune-002", "slot": "negative_rune", "setId": null, "enhanceLevel": 16, "stats": {"hp_pct": 0.25, "resistance": 64, "skill_haste": 12}, "equippedBy": null, "locked": false}
+  ]
+}

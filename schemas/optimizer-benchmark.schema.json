@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/optimizer-benchmark.schema.json",
+  "title": "Synthetic Optimizer Scalability Benchmark",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "environment", "fixture", "runs", "qualityRuns", "interpretation"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "environment": {"type": "object", "required": ["node", "platform", "cpu"]},
+    "fixture": {"type": "object", "required": ["synthetic", "distribution", "objective", "constraints", "resultLimit"]},
+    "runs": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["inventoryItems", "candidatesBySlot", "searchSpace", "reducedSearchSpace", "evaluatedBuilds", "visitedNodes", "prunedByFeasibility", "prunedByScore", "solverMode", "topNExact", "validCountExact", "extremaExact", "returnedResults", "durationMs"],
+        "properties": {
+          "inventoryItems": {"type": "integer", "minimum": 6}, "candidatesBySlot": {"type": "object"},
+          "searchSpace": {"type": "integer", "minimum": 1}, "reducedSearchSpace": {"type": "integer", "minimum": 1},
+          "evaluatedBuilds": {"type": "integer", "minimum": 0}, "visitedNodes": {"type": "integer", "minimum": 0},
+          "prunedByFeasibility": {"type": "integer", "minimum": 0}, "prunedByScore": {"type": "integer", "minimum": 0},
+          "solverMode": {"enum": ["exhaustive", "branch_and_bound", "heuristic_candidate_cap"]},
+          "topNExact": {"type": "boolean"}, "validCountExact": {"type": "boolean"}, "extremaExact": {"type": "boolean"},
+          "returnedResults": {"type": "integer", "minimum": 0}, "durationMs": {"type": "number", "minimum": 0}
+        }
+      }
+    },
+    "qualityRuns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["inventoryItems", "searchSpace", "heuristicReducedSearchSpace", "exactDurationMs", "heuristicDurationMs", "exactBestScore", "heuristicBestScore", "bestScoreGapPct", "top20Overlap"]
+      }
+    },
+    "interpretation": {"type": "string", "minLength": 1}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/ocr-review-application-report.schema.json",
+  "title": "OCR Review Application Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "jobId", "createdAt", "sourceRecognition", "reviewedAt", "counts", "issues"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "jobId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "sourceRecognition": {"type": "string"},
+    "reviewedAt": {"type": "string", "format": "date-time"},
+    "counts": {
+      "type": "object", "additionalProperties": false, "required": ["total", "accepted", "rejected"],
+      "properties": {
+        "total": {"type": "integer", "minimum": 0}, "accepted": {"type": "integer", "minimum": 0}, "rejected": {"type": "integer", "minimum": 0}
+      }
+    },
+    "issues": {"type": "array", "items": {"type": "object"}}
+  }
+}

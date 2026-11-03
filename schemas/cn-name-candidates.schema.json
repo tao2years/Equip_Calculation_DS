@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/cn-name-candidates.schema.json",
+  "title": "Dragonheir Chinese Name Candidate Corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "policy", "sources", "dictionaryCoverageBeforeMerge", "observations", "reconciliationLeads"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "policy": {"type": "string"},
+    "sources": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sourceId", "sourceClass", "snapshotPath", "url", "capturedAt", "sha256"],
+        "properties": {
+          "sourceId": {"type": "string"},
+          "sourceClass": {"type": "string"},
+          "snapshotPath": {"type": "string"},
+          "url": {"type": "string", "format": "uri"},
+          "capturedAt": {"type": "string", "format": "date-time"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "dictionaryCoverageBeforeMerge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hero", "artifact", "set"],
+      "properties": {
+        "hero": {"$ref": "#/$defs/coverage"},
+        "artifact": {"$ref": "#/$defs/coverage"},
+        "set": {"$ref": "#/$defs/coverage"}
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["observationId", "entityKind", "displayName", "element", "sourceId", "sourceClass", "evidenceStatus", "mappingStatus", "canonicalHeroId", "sourceLocator", "notes"],
+        "properties": {
+          "observationId": {"type": "string", "pattern": "^CNH-[CO]-[0-9]{3}$"},
+          "entityKind": {"const": "hero"},
+          "displayName": {"type": "string", "minLength": 1},
+          "element": {
+            "oneOf": [
+              {"type": "null"},
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["labelZh", "id"],
+                "properties": {"labelZh": {"type": "string"}, "id": {"type": "string"}}
+              }
+            ]
+          },
+          "sourceId": {"enum": ["SRC-022", "SRC-023"]},
+          "sourceClass": {"type": "string"},
+          "evidenceStatus": {"enum": ["community_name_candidate", "official_name_observation"]},
+          "mappingStatus": {"const": "unlinked_candidate"},
+          "canonicalHeroId": {"type": "null"},
+          "sourceLocator": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["snapshotPath", "detailUrl", "extraction"],
+            "properties": {
+              "snapshotPath": {"type": "string"},
+              "detailUrl": {"type": ["string", "null"]},
+              "extraction": {"type": "string"}
+            }
+          },
+          "notes": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "reconciliationLeads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["officialDisplayName", "communityDisplayName", "relation", "editDistance", "status", "reason"],
+        "properties": {
+          "officialDisplayName": {"type": "string"},
+          "communityDisplayName": {"type": "string"},
+          "relation": {"enum": ["exact_text", "prefix_text", "edit_distance_le_2"]},
+          "editDistance": {"type": "integer", "minimum": 0},
+          "status": {"const": "review_lead_only"},
+          "reason": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["totalCanonicalEntities", "entitiesWithNonAsciiAlias"],
+      "properties": {
+        "totalCanonicalEntities": {"type": "integer", "minimum": 0},
+        "entitiesWithNonAsciiAlias": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

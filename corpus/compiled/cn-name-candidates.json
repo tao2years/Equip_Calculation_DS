@@ -1,0 +1,1743 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-03T10:04:04.957Z",
+  "policy": "Candidate observations never enter the resolver until linked to a stable canonical ID with reviewed evidence.",
+  "sources": [
+    {
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+      "url": "https://m.ali213.net/news/gl2411/1542117.html",
+      "capturedAt": "2026-11-03T09:26:19.200Z",
+      "sha256": "640b20579eddf1b6b10454614253a4bc0241c1c80a34110632983e710a54bedb"
+    },
+    {
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+      "url": "https://www.wegame.com.cn/act/wegame/lxsj20250501/index.html",
+      "capturedAt": "2026-11-03T09:26:19.146Z",
+      "sha256": "3e19ed75f7a7bd01b00958576f3903f2c77f57b2cc376f9fbce183c3698c1614"
+    }
+  ],
+  "dictionaryCoverageBeforeMerge": {
+    "hero": {
+      "totalCanonicalEntities": 351,
+      "entitiesWithNonAsciiAlias": 2
+    },
+    "artifact": {
+      "totalCanonicalEntities": 147,
+      "entitiesWithNonAsciiAlias": 14
+    },
+    "set": {
+      "totalCanonicalEntities": 252,
+      "entitiesWithNonAsciiAlias": 4
+    }
+  },
+  "observations": [
+    {
+      "observationId": "CNH-C-001",
+      "entityKind": "hero",
+      "displayName": "氏族之火胡尔",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542041.html",
+        "extraction": "hero catalog table byte/character offset 26837"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-002",
+      "entityKind": "hero",
+      "displayName": "暗火拉什",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542025.html",
+        "extraction": "hero catalog table byte/character offset 27468"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-003",
+      "entityKind": "hero",
+      "displayName": "拜日萨满克莱",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542009.html",
+        "extraction": "hero catalog table byte/character offset 28095"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-004",
+      "entityKind": "hero",
+      "displayName": "大号角埃里奇",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542003.html",
+        "extraction": "hero catalog table byte/character offset 28743"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-005",
+      "entityKind": "hero",
+      "displayName": "嚼矿者杰恩",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1541979.html",
+        "extraction": "hero catalog table byte/character offset 29346"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-006",
+      "entityKind": "hero",
+      "displayName": "灯烛菲莉丝蒂",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542097.html",
+        "extraction": "hero catalog table byte/character offset 29920"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-007",
+      "entityKind": "hero",
+      "displayName": "狂人领班卡斯",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542135.html",
+        "extraction": "hero catalog table byte/character offset 30512"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-008",
+      "entityKind": "hero",
+      "displayName": "红鸢尾芙罗拉",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542153.html",
+        "extraction": "hero catalog table byte/character offset 31087"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-009",
+      "entityKind": "hero",
+      "displayName": "龙血之火加莉",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542167.html",
+        "extraction": "hero catalog table byte/character offset 31662"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-010",
+      "entityKind": "hero",
+      "displayName": "丑八怪丹",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546323.html",
+        "extraction": "hero catalog table byte/character offset 32254"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-011",
+      "entityKind": "hero",
+      "displayName": "乐天派阿尔菲",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546341.html",
+        "extraction": "hero catalog table byte/character offset 32827"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-012",
+      "entityKind": "hero",
+      "displayName": "余烬裴拉",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546363.html",
+        "extraction": "hero catalog table byte/character offset 33402"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-013",
+      "entityKind": "hero",
+      "displayName": "吞火者莉可",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546377.html",
+        "extraction": "hero catalog table byte/character offset 33992"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-014",
+      "entityKind": "hero",
+      "displayName": "奔逃之焰卡拉",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547063.html",
+        "extraction": "hero catalog table byte/character offset 34566"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-015",
+      "entityKind": "hero",
+      "displayName": "快手小子布洛",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547083.html",
+        "extraction": "hero catalog table byte/character offset 35142"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-016",
+      "entityKind": "hero",
+      "displayName": "暗域医者阿道",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547115.html",
+        "extraction": "hero catalog table byte/character offset 35736"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-017",
+      "entityKind": "hero",
+      "displayName": "漂浮火球弗丽",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547141.html",
+        "extraction": "hero catalog table byte/character offset 36313"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-018",
+      "entityKind": "hero",
+      "displayName": "火焰戍卫特娜",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547157.html",
+        "extraction": "hero catalog table byte/character offset 36890"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-019",
+      "entityKind": "hero",
+      "displayName": "烈火锤霍鲁斯",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547179.html",
+        "extraction": "hero catalog table byte/character offset 37484"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-020",
+      "entityKind": "hero",
+      "displayName": "追索者伊索尔",
+      "element": {
+        "labelZh": "火焰",
+        "id": "fire"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547205.html",
+        "extraction": "hero catalog table byte/character offset 38061"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-021",
+      "entityKind": "hero",
+      "displayName": "寒岭之脊罗要",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1563891.html",
+        "extraction": "hero catalog table byte/character offset 39002"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-022",
+      "entityKind": "hero",
+      "displayName": "守护之盾埃尔",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547249.html",
+        "extraction": "hero catalog table byte/character offset 39607"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-023",
+      "entityKind": "hero",
+      "displayName": "博学者维迪米",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547239.html",
+        "extraction": "hero catalog table byte/character offset 40212"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-024",
+      "entityKind": "hero",
+      "displayName": "冰冷秘药拉瓦",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1547213.html",
+        "extraction": "hero catalog table byte/character offset 40834"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-025",
+      "entityKind": "hero",
+      "displayName": "黎明之翼路西",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546295.html",
+        "extraction": "hero catalog table byte/character offset 41439"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-026",
+      "entityKind": "hero",
+      "displayName": "荆棘之女瓦妮",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546267.html",
+        "extraction": "hero catalog table byte/character offset 42044"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-027",
+      "entityKind": "hero",
+      "displayName": "朔风之主希维",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546249.html",
+        "extraction": "hero catalog table byte/character offset 42666"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-028",
+      "entityKind": "hero",
+      "displayName": "朔风之主希维",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546231.html",
+        "extraction": "hero catalog table byte/character offset 43243"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-029",
+      "entityKind": "hero",
+      "displayName": "惑心歌者多尔",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1546199.html",
+        "extraction": "hero catalog table byte/character offset 43820"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-030",
+      "entityKind": "hero",
+      "displayName": "开拓者尤里恩",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544195.html",
+        "extraction": "hero catalog table byte/character offset 44414"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-031",
+      "entityKind": "hero",
+      "displayName": "寒冰獠牙特罗",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544169.html",
+        "extraction": "hero catalog table byte/character offset 45017"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-032",
+      "entityKind": "hero",
+      "displayName": "守望之歌非洛",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544149.html",
+        "extraction": "hero catalog table byte/character offset 45622"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-033",
+      "entityKind": "hero",
+      "displayName": "冰锋奥斯特",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542203.html",
+        "extraction": "hero catalog table byte/character offset 46244"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-034",
+      "entityKind": "hero",
+      "displayName": "冬之铁骑霍查",
+      "element": {
+        "labelZh": "冷冻",
+        "id": "cold"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542187.html",
+        "extraction": "hero catalog table byte/character offset 46848"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-035",
+      "entityKind": "hero",
+      "displayName": "阴墟之主勒瓦",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544135.html",
+        "extraction": "hero catalog table byte/character offset 47830"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-036",
+      "entityKind": "hero",
+      "displayName": "缄默回声古恩",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544117.html",
+        "extraction": "hero catalog table byte/character offset 48435"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-037",
+      "entityKind": "hero",
+      "displayName": "猩红巫妖夏拉",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544109.html",
+        "extraction": "hero catalog table byte/character offset 49040"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-038",
+      "entityKind": "hero",
+      "displayName": "无光神官托因",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544083.html",
+        "extraction": "hero catalog table byte/character offset 49662"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-039",
+      "entityKind": "hero",
+      "displayName": "幽影巨魔里佩",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544067.html",
+        "extraction": "hero catalog table byte/character offset 50267"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-040",
+      "entityKind": "hero",
+      "displayName": "帝国之影尤迪",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544061.html",
+        "extraction": "hero catalog table byte/character offset 50872"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-041",
+      "entityKind": "hero",
+      "displayName": "孕死者普莱察",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544041.html",
+        "extraction": "hero catalog table byte/character offset 51492"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-042",
+      "entityKind": "hero",
+      "displayName": "噬魂刑官盖奥",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544021.html",
+        "extraction": "hero catalog table byte/character offset 52097"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-043",
+      "entityKind": "hero",
+      "displayName": "叹息王伊兹拉",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1544007.html",
+        "extraction": "hero catalog table byte/character offset 52700"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-044",
+      "entityKind": "hero",
+      "displayName": "亡魂之踏贝伦",
+      "element": {
+        "labelZh": "暗蚀",
+        "id": "necrosis"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542249.html",
+        "extraction": "hero catalog table byte/character offset 53322"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-045",
+      "entityKind": "hero",
+      "displayName": "骄阳玫瑰阿西",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543977.html",
+        "extraction": "hero catalog table byte/character offset 54427"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-046",
+      "entityKind": "hero",
+      "displayName": "风流大炮费尔",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543951.html",
+        "extraction": "hero catalog table byte/character offset 55032"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-047",
+      "entityKind": "hero",
+      "displayName": "解忧琴阿尔顿",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543923.html",
+        "extraction": "hero catalog table byte/character offset 55609"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-048",
+      "entityKind": "hero",
+      "displayName": "破冰之手休伯",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543909.html",
+        "extraction": "hero catalog table byte/character offset 56203"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-049",
+      "entityKind": "hero",
+      "displayName": "残光洛伦",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543869.html",
+        "extraction": "hero catalog table byte/character offset 56780"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-050",
+      "entityKind": "hero",
+      "displayName": "明光牧师吉莉",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543843.html",
+        "extraction": "hero catalog table byte/character offset 57355"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-051",
+      "entityKind": "hero",
+      "displayName": "新月领主席兰",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543287.html",
+        "extraction": "hero catalog table byte/character offset 57949"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-052",
+      "entityKind": "hero",
+      "displayName": "准骑士萨高米",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543267.html",
+        "extraction": "hero catalog table byte/character offset 58526"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-053",
+      "entityKind": "hero",
+      "displayName": "不盲者弥希亚",
+      "element": {
+        "labelZh": "光耀",
+        "id": "radiance"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542267.html",
+        "extraction": "hero catalog table byte/character offset 59103"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-054",
+      "entityKind": "hero",
+      "displayName": "黑喙纳斯婕卡",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543251.html",
+        "extraction": "hero catalog table byte/character offset 59970"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-055",
+      "entityKind": "hero",
+      "displayName": "风暴将军苏塔",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543219.html",
+        "extraction": "hero catalog table byte/character offset 60575"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-056",
+      "entityKind": "hero",
+      "displayName": "避风港塔玛尔",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543203.html",
+        "extraction": "hero catalog table byte/character offset 61152"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-057",
+      "entityKind": "hero",
+      "displayName": "暴虐之角拜昂",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543177.html",
+        "extraction": "hero catalog table byte/character offset 61746"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-058",
+      "entityKind": "hero",
+      "displayName": "大酋长格里什",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543167.html",
+        "extraction": "hero catalog table byte/character offset 62323"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-059",
+      "entityKind": "hero",
+      "displayName": "古木伊维里欧",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543155.html",
+        "extraction": "hero catalog table byte/character offset 62900"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-060",
+      "entityKind": "hero",
+      "displayName": "剥面人加雷特",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543137.html",
+        "extraction": "hero catalog table byte/character offset 63494"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-061",
+      "entityKind": "hero",
+      "displayName": "先知鼠婆泽菲",
+      "element": {
+        "labelZh": "闪电",
+        "id": "lightning"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542293.html",
+        "extraction": "hero catalog table byte/character offset 64071"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-062",
+      "entityKind": "hero",
+      "displayName": "苦行修士杜兰",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543127.html",
+        "extraction": "hero catalog table byte/character offset 65012"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-063",
+      "entityKind": "hero",
+      "displayName": "沼泽女王蕾塔",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543111.html",
+        "extraction": "hero catalog table byte/character offset 65617"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-064",
+      "entityKind": "hero",
+      "displayName": "毒蕈托维尔",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543095.html",
+        "extraction": "hero catalog table byte/character offset 66194"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-065",
+      "entityKind": "hero",
+      "displayName": "母狼维卡娜",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1543053.html",
+        "extraction": "hero catalog table byte/character offset 66787"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-066",
+      "entityKind": "hero",
+      "displayName": "抛尸者图奇",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542429.html",
+        "extraction": "hero catalog table byte/character offset 67363"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-067",
+      "entityKind": "hero",
+      "displayName": "子夜罗塞尔",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542383.html",
+        "extraction": "hero catalog table byte/character offset 67939"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-068",
+      "entityKind": "hero",
+      "displayName": "密林祭司雅莎",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542405.html",
+        "extraction": "hero catalog table byte/character offset 68532"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-069",
+      "entityKind": "hero",
+      "displayName": "困兽厄尔丹",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542367.html",
+        "extraction": "hero catalog table byte/character offset 69107"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-C-070",
+      "entityKind": "hero",
+      "displayName": "剧毒巫医欧勾",
+      "element": {
+        "labelZh": "毒素",
+        "id": "poison"
+      },
+      "sourceId": "SRC-022",
+      "sourceClass": "community_catalog",
+      "evidenceStatus": "community_name_candidate",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-022/2026-11-03/snapshot.html",
+        "detailUrl": "https://m.ali213.net/news/gl2411/1542323.html",
+        "extraction": "hero catalog table byte/character offset 69667"
+      },
+      "notes": [
+        "Transcribed literally from the community catalog; spelling, truncation and current-client applicability are unverified."
+      ]
+    },
+    {
+      "observationId": "CNH-O-001",
+      "entityKind": "hero",
+      "displayName": "新月领主席兰多尔",
+      "element": null,
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "evidenceStatus": "official_name_observation",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+        "detailUrl": null,
+        "extraction": "camp-title byte/character offset 24814"
+      },
+      "notes": [
+        "Official marketing-page name observation; the page does not expose a stable bilingual hero ID."
+      ]
+    },
+    {
+      "observationId": "CNH-O-002",
+      "entityKind": "hero",
+      "displayName": "困兽厄尔丹",
+      "element": null,
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "evidenceStatus": "official_name_observation",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+        "detailUrl": null,
+        "extraction": "camp-title byte/character offset 25043"
+      },
+      "notes": [
+        "Official marketing-page name observation; the page does not expose a stable bilingual hero ID."
+      ]
+    },
+    {
+      "observationId": "CNH-O-003",
+      "entityKind": "hero",
+      "displayName": "先知鼠辈泽菲",
+      "element": null,
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "evidenceStatus": "official_name_observation",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+        "detailUrl": null,
+        "extraction": "camp-title byte/character offset 25290"
+      },
+      "notes": [
+        "Official marketing-page name observation; the page does not expose a stable bilingual hero ID."
+      ]
+    },
+    {
+      "observationId": "CNH-O-004",
+      "entityKind": "hero",
+      "displayName": "朔风之主希维塔尔",
+      "element": null,
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "evidenceStatus": "official_name_observation",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+        "detailUrl": null,
+        "extraction": "camp-title byte/character offset 25550"
+      },
+      "notes": [
+        "Official marketing-page name observation; the page does not expose a stable bilingual hero ID."
+      ]
+    },
+    {
+      "observationId": "CNH-O-005",
+      "entityKind": "hero",
+      "displayName": "幸运猎手辛特蕾莉拉",
+      "element": null,
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "evidenceStatus": "official_name_observation",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+        "detailUrl": null,
+        "extraction": "camp-title byte/character offset 25759"
+      },
+      "notes": [
+        "Official marketing-page name observation; the page does not expose a stable bilingual hero ID."
+      ]
+    },
+    {
+      "observationId": "CNH-O-006",
+      "entityKind": "hero",
+      "displayName": "红鸢尾芙罗拉",
+      "element": null,
+      "sourceId": "SRC-023",
+      "sourceClass": "official_cn_product_site",
+      "evidenceStatus": "official_name_observation",
+      "mappingStatus": "unlinked_candidate",
+      "canonicalHeroId": null,
+      "sourceLocator": {
+        "snapshotPath": "raw/public-web/SRC-023/2026-11-03/snapshot.html",
+        "detailUrl": null,
+        "extraction": "camp-title byte/character offset 25982"
+      },
+      "notes": [
+        "Official marketing-page name observation; the page does not expose a stable bilingual hero ID."
+      ]
+    }
+  ],
+  "reconciliationLeads": [
+    {
+      "officialDisplayName": "新月领主席兰多尔",
+      "communityDisplayName": "新月领主席兰",
+      "relation": "prefix_text",
+      "editDistance": 2,
+      "status": "review_lead_only",
+      "reason": "Text similarity is not sufficient to assign a stable canonical hero ID."
+    },
+    {
+      "officialDisplayName": "困兽厄尔丹",
+      "communityDisplayName": "困兽厄尔丹",
+      "relation": "exact_text",
+      "editDistance": 0,
+      "status": "review_lead_only",
+      "reason": "Text similarity is not sufficient to assign a stable canonical hero ID."
+    },
+    {
+      "officialDisplayName": "先知鼠辈泽菲",
+      "communityDisplayName": "先知鼠婆泽菲",
+      "relation": "edit_distance_le_2",
+      "editDistance": 1,
+      "status": "review_lead_only",
+      "reason": "Text similarity is not sufficient to assign a stable canonical hero ID."
+    },
+    {
+      "officialDisplayName": "朔风之主希维塔尔",
+      "communityDisplayName": "朔风之主希维",
+      "relation": "prefix_text",
+      "editDistance": 2,
+      "status": "review_lead_only",
+      "reason": "Text similarity is not sufficient to assign a stable canonical hero ID."
+    },
+    {
+      "officialDisplayName": "朔风之主希维塔尔",
+      "communityDisplayName": "朔风之主希维",
+      "relation": "prefix_text",
+      "editDistance": 2,
+      "status": "review_lead_only",
+      "reason": "Text similarity is not sufficient to assign a stable canonical hero ID."
+    },
+    {
+      "officialDisplayName": "红鸢尾芙罗拉",
+      "communityDisplayName": "红鸢尾芙罗拉",
+      "relation": "exact_text",
+      "editDistance": 0,
+      "status": "review_lead_only",
+      "reason": "Text similarity is not sufficient to assign a stable canonical hero ID."
+    }
+  ]
+}

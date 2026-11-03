@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "0.1.0",
+  "input": {
+    "localName": "prototype-browser-verified.png",
+    "sha256": "1ecd1cd46ddb32fea6fe663c334d6bbab995963c2363b7852973c4362fc6d9a5",
+    "width": 1264,
+    "height": 981
+  },
+  "engine": "windows.media.ocr",
+  "language": "zh-Hans-CN",
+  "kinds": [
+    "stat",
+    "slot",
+    "hero",
+    "artifact",
+    "rarity"
+  ],
+  "detectionCount": 12,
+  "matchCountByKind": {
+    "stat": 3,
+    "slot": 7,
+    "hero": 1,
+    "artifact": 1,
+    "rarity": 0
+  },
+  "detections": [
+    {
+      "lineIndex": 3,
+      "text": "阿 斯 切 提 乌 斯",
+      "normalizedText": "阿斯切提乌斯",
+      "boundingRect": {
+        "x": 39,
+        "y": 210,
+        "width": 90,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "hero",
+          "id": "hero-21760",
+          "externalId": 21760,
+          "alias": "阿斯切提乌斯",
+          "normalized": "阿斯切提乌斯"
+        }
+      ]
+    },
+    {
+      "lineIndex": 4,
+      "text": "巨 人 眼 球 ． 炼 1",
+      "normalizedText": "巨人眼球炼1",
+      "boundingRect": {
+        "x": 40,
+        "y": 300,
+        "width": 106,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "artifact",
+          "id": "artifact-eyeball-of-the-giant",
+          "externalId": 300008,
+          "alias": "巨人眼球",
+          "normalized": "巨人眼球"
+        }
+      ]
+    },
+    {
+      "lineIndex": 9,
+      "text": "重 击 率 之",
+      "normalizedText": "重击率之",
+      "boundingRect": {
+        "x": 360,
+        "y": 178,
+        "width": 58,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "stat",
+          "id": "crit_rate",
+          "externalId": null,
+          "alias": "重击率",
+          "normalized": "重击率"
+        }
+      ]
+    },
+    {
+      "lineIndex": 10,
+      "text": "生 命 之",
+      "normalizedText": "生命之",
+      "boundingRect": {
+        "x": 360,
+        "y": 244,
+        "width": 43,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "stat",
+          "id": "hp_flat",
+          "externalId": null,
+          "alias": "生命",
+          "normalized": "生命"
+        }
+      ]
+    },
+    {
+      "lineIndex": 16,
+      "text": "正 位 符 文",
+      "normalizedText": "正位符文",
+      "boundingRect": {
+        "x": 22,
+        "y": 612,
+        "width": 61,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "positive_rune",
+          "externalId": null,
+          "alias": "正位符文",
+          "normalized": "正位符文"
+        }
+      ]
+    },
+    {
+      "lineIndex": 17,
+      "text": "负 位 符 文",
+      "normalizedText": "负位符文",
+      "boundingRect": {
+        "x": 22,
+        "y": 660,
+        "width": 61,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "negative_rune",
+          "externalId": null,
+          "alias": "负位符文",
+          "normalized": "负位符文"
+        }
+      ]
+    },
+    {
+      "lineIndex": 34,
+      "text": "命 中",
+      "normalizedText": "命中",
+      "boundingRect": {
+        "x": 938,
+        "y": 492,
+        "width": 26,
+        "height": 12
+      },
+      "matches": [
+        {
+          "kind": "stat",
+          "id": "accuracy",
+          "externalId": null,
+          "alias": "命中",
+          "normalized": "命中"
+        }
+      ]
+    },
+    {
+      "lineIndex": 43,
+      "text": "· 二 头 盔",
+      "normalizedText": "二头盔",
+      "boundingRect": {
+        "x": 382,
+        "y": 686,
+        "width": 46,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "helmet",
+          "externalId": null,
+          "alias": "头盔",
+          "normalized": "头盔"
+        }
+      ]
+    },
+    {
+      "lineIndex": 45,
+      "text": "· 武 器 ．",
+      "normalizedText": "武器",
+      "boundingRect": {
+        "x": 382,
+        "y": 712,
+        "width": 51,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "weapon",
+          "externalId": null,
+          "alias": "武器",
+          "normalized": "武器"
+        }
+      ]
+    },
+    {
+      "lineIndex": 46,
+      "text": "weapon 一 001",
+      "normalizedText": "weapon一001",
+      "boundingRect": {
+        "x": 443,
+        "y": 713,
+        "width": 80,
+        "height": 14
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "weapon",
+          "externalId": null,
+          "alias": "weapon",
+          "normalized": "weapon"
+        }
+      ]
+    },
+    {
+      "lineIndex": 47,
+      "text": "． 胸 單 ： chest-001",
+      "normalizedText": "胸單chest001",
+      "boundingRect": {
+        "x": 382,
+        "y": 739,
+        "width": 123,
+        "height": 13
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "chest",
+          "externalId": null,
+          "alias": "chest",
+          "normalized": "chest"
+        }
+      ]
+    },
+    {
+      "lineIndex": 48,
+      "text": "． 手 套 ： 邙 oves 一 001",
+      "normalizedText": "手套邙oves一001",
+      "boundingRect": {
+        "x": 382,
+        "y": 765,
+        "width": 132,
+        "height": 15
+      },
+      "matches": [
+        {
+          "kind": "slot",
+          "id": "gloves",
+          "externalId": null,
+          "alias": "手套",
+          "normalized": "手套"
+        }
+      ]
+    }
+  ]
+}

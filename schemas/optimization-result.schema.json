@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/optimization-result.schema.json",
+  "title": "Dragonheir Optimization Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "requestId", "snapshotId", "gameDataVersionId", "searched", "solver", "validCount", "maxima", "minima", "results"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "requestId": {"type": "string"},
+    "snapshotId": {"type": "string"},
+    "gameDataVersionId": {"type": "string"},
+    "searched": {"type": "integer", "minimum": 0},
+    "solver": {
+      "type": "object",
+      "required": ["mode", "searchSpace", "evaluatedBuilds", "visitedNodes", "prunedByFeasibility", "prunedByScore", "topNExact", "validCountExact", "extremaExact"],
+      "properties": {
+        "mode": {"enum": ["exhaustive", "branch_and_bound", "heuristic_candidate_cap"]},
+        "searchSpace": {"type": "integer", "minimum": 0},
+        "reducedSearchSpace": {"type": "integer", "minimum": 0},
+        "evaluatedBuilds": {"type": "integer", "minimum": 0},
+        "visitedNodes": {"type": "integer", "minimum": 0},
+        "prunedByFeasibility": {"type": "integer", "minimum": 0},
+        "prunedByScore": {"type": "integer", "minimum": 0},
+        "topNExact": {"type": "boolean"},
+        "validCountExact": {"type": "boolean"},
+        "extremaExact": {"type": "boolean"},
+        "optimality": {"type": "string"},
+        "candidateCounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["slot", "before", "after"],
+            "properties": {
+              "slot": {"type": "string"}, "before": {"type": "integer", "minimum": 0}, "after": {"type": "integer", "minimum": 0}
+            }
+          }
+        }
+      }
+    },
+    "validCount": {"type": "integer", "minimum": 0},
+    "maxima": {"type": "object", "additionalProperties": {"type": "number"}},
+    "minima": {"type": "object", "additionalProperties": {"type": "number"}},
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rank", "score", "ownedArtifactId", "ownedGearIds", "stats", "setLabels", "heroBaseSource"],
+        "properties": {
+          "rank": {"type": "integer", "minimum": 1},
+          "score": {"type": "number"},
+          "ownedArtifactId": {"type": "string"},
+          "ownedGearIds": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "string"}},
+          "stats": {"type": "object", "additionalProperties": {"type": "number"}},
+          "setLabels": {"type": "array", "items": {"type": "string"}},
+          "heroBaseSource": {"type": "string"},
+          "artifactStatSource": {"enum": ["account_observed", "legacy_account_stats", "public_level_curve", "unavailable"]},
+          "artifactStatWarnings": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

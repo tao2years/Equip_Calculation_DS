@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "synthetic-layout-job-001",
+  "createdAt": "2026-11-03T12:09:00+08:00",
+  "sourceManifest": "synthetic-layout-manifest.json",
+  "privacy": {
+    "localOnly": true,
+    "containsPotentialAccountData": false
+  },
+  "engine": "synthetic-coordinate-fixture+human-review",
+  "language": "zh-Hans-CN",
+  "images": [
+    {
+      "sequence": 1,
+      "originalName": "hero_detail-1.png",
+      "imageLocalPath": "evidence/hero_detail-1.png",
+      "imageSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "mediaType": "image/png",
+      "captureType": "hero_detail",
+      "reviewStatus": "accepted",
+      "ocrLocalPath": "derived/hero_detail-1.json",
+      "width": 1000,
+      "height": 1000,
+      "lineCount": 11,
+      "detections": [
+        {
+          "lineIndex": 1,
+          "text": "埃里奇",
+          "normalizedText": "埃里奇",
+          "boundingRect": {
+            "x": 60,
+            "y": 95,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "hero",
+              "id": "hero-errich",
+              "externalId": null,
+              "alias": "埃里奇",
+              "normalized": "埃里奇"
+            }
+          ]
+        },
+        {
+          "lineIndex": 5,
+          "text": "攻击",
+          "normalizedText": "攻击",
+          "boundingRect": {
+            "x": 100,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "atk_flat",
+              "externalId": null,
+              "alias": "攻击",
+              "normalized": "攻击"
+            }
+          ]
+        },
+        {
+          "lineIndex": 7,
+          "text": "生命",
+          "normalizedText": "生命",
+          "boundingRect": {
+            "x": 100,
+            "y": 400,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "hp_flat",
+              "externalId": null,
+              "alias": "生命",
+              "normalized": "生命"
+            }
+          ]
+        },
+        {
+          "lineIndex": 9,
+          "text": "防御",
+          "normalizedText": "防御",
+          "boundingRect": {
+            "x": 100,
+            "y": 450,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "def_flat",
+              "externalId": null,
+              "alias": "防御",
+              "normalized": "防御"
+            }
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "角色详情",
+          "boundingRect": {
+            "x": 40,
+            "y": 20,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 1,
+          "text": "埃里奇",
+          "boundingRect": {
+            "x": 60,
+            "y": 95,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 2,
+          "text": "等级 1",
+          "boundingRect": {
+            "x": 60,
+            "y": 165,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 3,
+          "text": "星级 1",
+          "boundingRect": {
+            "x": 60,
+            "y": 215,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 4,
+          "text": "灵感 0",
+          "boundingRect": {
+            "x": 60,
+            "y": 265,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 5,
+          "text": "攻击",
+          "boundingRect": {
+            "x": 100,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 6,
+          "text": "1200",
+          "boundingRect": {
+            "x": 400,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 7,
+          "text": "生命",
+          "boundingRect": {
+            "x": 100,
+            "y": 400,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 8,
+          "text": "18000",
+          "boundingRect": {
+            "x": 400,
+            "y": 400,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 9,
+          "text": "防御",
+          "boundingRect": {
+            "x": 100,
+            "y": 450,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 10,
+          "text": "750",
+          "boundingRect": {
+            "x": 400,
+            "y": 450,
+            "width": 120,
+            "height": 24
+          }
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "originalName": "gear_detail-2.png",
+      "imageLocalPath": "evidence/gear_detail-2.png",
+      "imageSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "mediaType": "image/png",
+      "captureType": "gear_detail",
+      "reviewStatus": "accepted",
+      "ocrLocalPath": "derived/gear_detail-2.json",
+      "width": 1000,
+      "height": 1000,
+      "lineCount": 10,
+      "detections": [
+        {
+          "lineIndex": 1,
+          "text": "武器",
+          "normalizedText": "武器",
+          "boundingRect": {
+            "x": 60,
+            "y": 95,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "slot",
+              "id": "weapon",
+              "externalId": null,
+              "alias": "武器",
+              "normalized": "武器"
+            }
+          ]
+        },
+        {
+          "lineIndex": 2,
+          "text": "野蛮人",
+          "normalizedText": "野蛮人",
+          "boundingRect": {
+            "x": 60,
+            "y": 155,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "set",
+              "id": "set-barbarian",
+              "externalId": null,
+              "alias": "野蛮人",
+              "normalized": "野蛮人"
+            }
+          ]
+        },
+        {
+          "lineIndex": 4,
+          "text": "攻击",
+          "normalizedText": "攻击",
+          "boundingRect": {
+            "x": 100,
+            "y": 300,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "atk_flat",
+              "externalId": null,
+              "alias": "攻击",
+              "normalized": "攻击"
+            }
+          ]
+        },
+        {
+          "lineIndex": 6,
+          "text": "重击率",
+          "normalizedText": "重击率",
+          "boundingRect": {
+            "x": 100,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "crit_rate",
+              "externalId": null,
+              "alias": "重击率",
+              "normalized": "重击率"
+            }
+          ]
+        },
+        {
+          "lineIndex": 8,
+          "text": "重击伤害",
+          "normalizedText": "重击伤害",
+          "boundingRect": {
+            "x": 100,
+            "y": 400,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "crit_damage",
+              "externalId": null,
+              "alias": "重击伤害",
+              "normalized": "重击伤害"
+            }
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "装备详情",
+          "boundingRect": {
+            "x": 40,
+            "y": 20,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 1,
+          "text": "武器",
+          "boundingRect": {
+            "x": 60,
+            "y": 95,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 2,
+          "text": "野蛮人",
+          "boundingRect": {
+            "x": 60,
+            "y": 155,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 3,
+          "text": "强化 +16",
+          "boundingRect": {
+            "x": 60,
+            "y": 210,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 4,
+          "text": "攻击",
+          "boundingRect": {
+            "x": 100,
+            "y": 300,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 5,
+          "text": "235",
+          "boundingRect": {
+            "x": 400,
+            "y": 300,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 6,
+          "text": "重击率",
+          "boundingRect": {
+            "x": 100,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 7,
+          "text": "12%",
+          "boundingRect": {
+            "x": 400,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 8,
+          "text": "重击伤害",
+          "boundingRect": {
+            "x": 100,
+            "y": 400,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 9,
+          "text": "27%",
+          "boundingRect": {
+            "x": 400,
+            "y": 400,
+            "width": 120,
+            "height": 24
+          }
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "originalName": "artifact_detail-3.png",
+      "imageLocalPath": "evidence/artifact_detail-3.png",
+      "imageSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "mediaType": "image/png",
+      "captureType": "artifact_detail",
+      "reviewStatus": "accepted",
+      "ocrLocalPath": "derived/artifact_detail-3.json",
+      "width": 1000,
+      "height": 1000,
+      "lineCount": 8,
+      "detections": [
+        {
+          "lineIndex": 1,
+          "text": "巨人眼球",
+          "normalizedText": "巨人眼球",
+          "boundingRect": {
+            "x": 60,
+            "y": 95,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "artifact",
+              "id": "artifact-eyeball-of-the-giant",
+              "externalId": 300008,
+              "alias": "巨人眼球",
+              "normalized": "巨人眼球"
+            }
+          ]
+        },
+        {
+          "lineIndex": 4,
+          "text": "攻击",
+          "normalizedText": "攻击",
+          "boundingRect": {
+            "x": 100,
+            "y": 300,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "atk_flat",
+              "externalId": null,
+              "alias": "攻击",
+              "normalized": "攻击"
+            }
+          ]
+        },
+        {
+          "lineIndex": 6,
+          "text": "攻击%",
+          "normalizedText": "攻击%",
+          "boundingRect": {
+            "x": 100,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          },
+          "matches": [
+            {
+              "kind": "stat",
+              "id": "atk_pct",
+              "externalId": null,
+              "alias": "攻击%",
+              "normalized": "攻击%"
+            }
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "神器详情",
+          "boundingRect": {
+            "x": 40,
+            "y": 20,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 1,
+          "text": "巨人眼球",
+          "boundingRect": {
+            "x": 60,
+            "y": 95,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 2,
+          "text": "强化 +6",
+          "boundingRect": {
+            "x": 60,
+            "y": 155,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 3,
+          "text": "精炼 1",
+          "boundingRect": {
+            "x": 60,
+            "y": 215,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 4,
+          "text": "攻击",
+          "boundingRect": {
+            "x": 100,
+            "y": 300,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 5,
+          "text": "120",
+          "boundingRect": {
+            "x": 400,
+            "y": 300,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 6,
+          "text": "攻击%",
+          "boundingRect": {
+            "x": 100,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "lineIndex": 7,
+          "text": "8%",
+          "boundingRect": {
+            "x": 400,
+            "y": 350,
+            "width": 120,
+            "height": 24
+          }
+        }
+      ]
+    }
+  ]
+}

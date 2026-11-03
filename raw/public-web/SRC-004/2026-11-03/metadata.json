@@ -1,0 +1,18 @@
+{
+  "sourceId": "SRC-004",
+  "kind": "equipment_catalog",
+  "requestedUrl": "https://www.dragonheir.info/equipment",
+  "finalUrl": "https://www.dragonheir.info/equipment",
+  "retrievedAt": "2026-11-03T08:58:38.241Z",
+  "status": 200,
+  "mediaType": "text/html; charset=utf-8",
+  "byteLength": 3537977,
+  "sha256": "e8537cfbb7e6166768ce3e726b0b72663d71a50c125edfb052c8a6d69cfcd3a4",
+  "region": "global",
+  "expectedContent": [
+    "equipment",
+    "sets",
+    "artifacts"
+  ],
+  "snapshotPath": "raw/public-web/SRC-004/2026-11-03/snapshot.html"
+}

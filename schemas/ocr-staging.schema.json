@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/ocr-staging.schema.json",
+  "title": "Dragonheir OCR Staging Records",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "jobId", "createdAt", "gameDataVersionId", "sourceFiles", "records"],
+  "properties": {
+    "schemaVersion": {"type": "string", "pattern": "^0\\.1\\.0"},
+    "jobId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "gameDataVersionId": {"type": "string", "minLength": 1},
+    "sourceFiles": {"type": "array", "items": {"$ref": "#/$defs/sourceFile"}},
+    "records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/record"}},
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewedAt", "sourceStagingSha256", "tool"],
+      "properties": {
+        "status": {"const": "human_reviewed"},
+        "reviewedAt": {"type": "string", "format": "date-time"},
+        "sourceStagingSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "tool": {"const": "prototype/staging-review.html"}
+      }
+    }
+  },
+  "$defs": {
+    "sourceFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sha256", "mediaType", "localName"],
+      "properties": {
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "mediaType": {"type": "string"},
+        "localName": {"type": ["string", "null"]}
+      }
+    },
+    "statObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "value", "confidence"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "value": {"type": ["string", "number"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "sourceRecordId", "confidence", "fields"],
+      "properties": {
+        "kind": {"enum": ["hero", "gear", "artifact"]},
+        "sourceRecordId": {"type": "string", "minLength": 1},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "fields": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "definitionId": {"type": ["string", "null"]},
+            "slot": {"type": "string"},
+            "setId": {"type": ["string", "null"]},
+            "setName": {"type": ["string", "null"]},
+            "level": {"type": ["string", "number", "null"]},
+            "stars": {"type": ["string", "number", "null"]},
+            "inspiration": {"type": ["string", "number", "null"]},
+            "refinement": {"type": ["string", "number", "null"]},
+            "enhanceLevel": {"type": ["string", "number", "null"]},
+            "locked": {"type": ["boolean", "null"]},
+            "equippedBy": {"type": ["string", "null"]},
+            "stats": {"type": "array", "items": {"$ref": "#/$defs/statObservation"}},
+            "baseStats": {"type": "array", "items": {"$ref": "#/$defs/statObservation"}}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>龙息配装器 · 结构化字段校对</title>
+  <link rel="stylesheet" href="staging-review.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">龙息配装器</a>
+    <div><h1>结构化字段校对</h1><p>第二级 Review · machine staging → reviewed staging</p></div>
+    <nav><a href="review.html">返回截图校对</a><a href="inventory.html">账号库存</a></nav>
+    <label class="button" for="staging-file">载入 machine-staging.json</label>
+    <input id="staging-file" type="file" accept="application/json,.json" hidden>
+    <button class="button" id="load-example" type="button">载入示例</button>
+    <button class="button primary" id="export-reviewed" type="button" disabled>导出 reviewed staging</button>
+  </header>
+
+  <main class="workspace">
+    <aside class="record-rail">
+      <section class="summary">
+        <h2>任务概览</h2>
+        <dl><div><dt>任务</dt><dd id="job-id">—</dd></div><div><dt>角色</dt><dd id="hero-count">0</dd></div><div><dt>装备</dt><dd id="gear-count">0</dd></div><div><dt>神器</dt><dd id="artifact-count">0</dd></div></dl>
+      </section>
+      <div class="rail-actions"><button data-add-kind="hero" type="button">＋角色</button><button data-add-kind="gear" type="button">＋装备</button><button data-add-kind="artifact" type="button">＋神器</button></div>
+      <div class="record-list" id="record-list"><p class="empty">载入 staging 后开始校对</p></div>
+    </aside>
+
+    <section class="editor-panel" aria-labelledby="editor-title">
+      <div class="editor-heading"><div><h2 id="editor-title">尚未选择记录</h2><p id="record-subtitle">字段修改只保存在当前浏览器内存中</p></div><button class="danger ghost" id="delete-record" type="button" disabled>删除记录</button></div>
+      <div id="record-editor" class="record-editor"><p class="empty large">选择左侧记录，逐项确认名称、槽位、强化等级和属性。</p></div>
+    </section>
+
+    <aside class="validation-panel">
+      <h2>校验结果</h2>
+      <p class="validation-state" id="validation-state">等待载入</p>
+      <div class="validation-block"><h3>错误</h3><ul id="error-list"><li>尚未运行校验</li></ul></div>
+      <div class="validation-block"><h3>警告</h3><ul id="warning-list"><li>—</li></ul></div>
+      <div class="canonical-preview"><h3>账号快照预览</h3><p id="snapshot-preview">只有全部字段可解析时才允许导出。</p></div>
+      <div class="provenance"><h3>来源证明</h3><p>导出文件会记录原始 machine staging 的 SHA-256。管线会核对该哈希，防止把其他任务的校对文件混入当前运行。</p><code id="source-hash">—</code></div>
+    </aside>
+  </main>
+  <footer><span id="data-status">正在载入字典与公共数据…</span><span id="status-message" role="status"></span></footer>
+  <datalist id="hero-aliases"></datalist><datalist id="artifact-aliases"></datalist><datalist id="set-aliases"></datalist><datalist id="stat-aliases"></datalist>
+  <script type="module" src="staging-review.js"></script>
+</body>
+</html>

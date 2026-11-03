@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "0.1.0",
+  "jobId": "example-review-job-001",
+  "reviewedAt": "2026-11-03T12:10:00+08:00",
+  "sourceManifest": "synthetic-review-manifest.json",
+  "images": [
+    {
+      "sequence": 1,
+      "originalName": "prototype-browser-verified.png",
+      "imageSha256": "1ecd1cd46ddb32fea6fe663c334d6bbab995963c2363b7852973c4362fc6d9a5",
+      "captureType": "unclassified",
+      "reviewStatus": "pending",
+      "decisions": [
+        {
+          "lineIndex": 3,
+          "rawText": "阿 斯 切 提 乌 斯",
+          "kind": "hero",
+          "selectedId": "hero-21760",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 4,
+          "rawText": "巨 人 眼 球 ． 炼 1",
+          "kind": "artifact",
+          "selectedId": "artifact-eyeball-of-the-giant",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 9,
+          "rawText": "重 击 率 之",
+          "kind": "stat",
+          "selectedId": "crit_rate",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 10,
+          "rawText": "生 命 之",
+          "kind": "stat",
+          "selectedId": "hp_flat",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 16,
+          "rawText": "正 位 符 文",
+          "kind": "slot",
+          "selectedId": "positive_rune",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 17,
+          "rawText": "负 位 符 文",
+          "kind": "slot",
+          "selectedId": "negative_rune",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 31,
+          "rawText": "· 野 蛮 人 2 件",
+          "kind": "set",
+          "selectedId": "set-barbarian",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 32,
+          "rawText": "· 捕 食 者 2 件",
+          "kind": "set",
+          "selectedId": "set-predator",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 34,
+          "rawText": "命 中",
+          "kind": "stat",
+          "selectedId": "accuracy",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 38,
+          "rawText": "野 蛮 ． 人 2 + 捕 食 者 2 件",
+          "kind": "unresolved",
+          "selectedId": null,
+          "status": "unresolved"
+        },
+        {
+          "lineIndex": 43,
+          "rawText": "· 二 头 盔",
+          "kind": "slot",
+          "selectedId": "helmet",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 45,
+          "rawText": "· 武 器 ．",
+          "kind": "slot",
+          "selectedId": "weapon",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 46,
+          "rawText": "weapon 一 001",
+          "kind": "slot",
+          "selectedId": "weapon",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 47,
+          "rawText": "． 胸 單 ： chest-001",
+          "kind": "slot",
+          "selectedId": "chest",
+          "status": "matched"
+        },
+        {
+          "lineIndex": 48,
+          "rawText": "． 手 套 ： 邙 oves 一 001",
+          "kind": "slot",
+          "selectedId": "gloves",
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}
