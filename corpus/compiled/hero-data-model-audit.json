@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-03T10:14:26.753Z",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "evidenceLevel": "public_catalog_audit_not_client_validated",
+  "requiredBaseStats": [
+    "hp_flat",
+    "def_flat",
+    "atk_flat",
+    "crit_rate",
+    "crit_damage",
+    "accuracy",
+    "resistance",
+    "enlightenment",
+    "skill_haste",
+    "attack_speed_pct"
+  ],
+  "counts": {
+    "totalHeroes": 351,
+    "completeBaseStats": 351,
+    "withSkills": 351,
+    "independentlyCrosschecked": 2,
+    "crosscheckFailed": 0,
+    "anomalyCandidates": 1,
+    "withNonzeroRatioGrowth": 137
+  },
+  "distributions": {
+    "hp_flat": {
+      "count": 351,
+      "min": 1341.8000000000002,
+      "q1": 1579.1999999999998,
+      "median": 1917,
+      "q3": 2164.7999999999997,
+      "max": 27500,
+      "upperReviewFence": 5678.4
+    },
+    "def_flat": {
+      "count": 351,
+      "min": 53.6,
+      "q1": 65,
+      "median": 70,
+      "q3": 76.8,
+      "max": 131.2,
+      "upperReviewFence": 147.59999999999997
+    },
+    "atk_flat": {
+      "count": 351,
+      "min": 63.4,
+      "q1": 77.4,
+      "median": 83.2,
+      "q3": 90,
+      "max": 2500,
+      "upperReviewFence": 165.59999999999997
+    }
+  },
+  "crosschecks": [
+    {
+      "heroDefinitionId": "hero-20400",
+      "name": "埃里奇",
+      "sourceId": "SRC-017",
+      "snapshotSha256": "05b673bfb5e245270a01215d9f6a8f220428524995c9d1e5b99e2bd18727c9c1",
+      "comparisons": [
+        {
+          "stat": "hp_flat",
+          "catalog": 1641.6,
+          "detail": 1642,
+          "delta": -0.4,
+          "tolerance": 0.5,
+          "withinTolerance": true
+        },
+        {
+          "stat": "def_flat",
+          "catalog": 76,
+          "detail": 76,
+          "delta": 0,
+          "tolerance": 0.5,
+          "withinTolerance": true
+        },
+        {
+          "stat": "atk_flat",
+          "catalog": 95.8,
+          "detail": 96,
+          "delta": -0.2,
+          "tolerance": 0.5,
+          "withinTolerance": true
+        },
+        {
+          "stat": "enlightenment",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "crit_rate",
+          "catalog": 0.1,
+          "detail": 0.1,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "crit_damage",
+          "catalog": 0.5,
+          "detail": 0.5,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "accuracy",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "resistance",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "skill_haste",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "heroDefinitionId": "hero-21760",
+      "name": "阿斯切提乌斯",
+      "sourceId": "SRC-006",
+      "snapshotSha256": "b7d5d588ceda99d81f63857d1f760a4d1fbef25cff25ae685f9758877d5dd371",
+      "comparisons": [
+        {
+          "stat": "hp_flat",
+          "catalog": 2383,
+          "detail": 2383,
+          "delta": 0,
+          "tolerance": 0.5,
+          "withinTolerance": true
+        },
+        {
+          "stat": "def_flat",
+          "catalog": 84,
+          "detail": 84,
+          "delta": 0,
+          "tolerance": 0.5,
+          "withinTolerance": true
+        },
+        {
+          "stat": "atk_flat",
+          "catalog": 106.8,
+          "detail": 107,
+          "delta": -0.2,
+          "tolerance": 0.5,
+          "withinTolerance": true
+        },
+        {
+          "stat": "enlightenment",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "crit_rate",
+          "catalog": 0.1,
+          "detail": 0.1,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "crit_damage",
+          "catalog": 0.5,
+          "detail": 0.5,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "accuracy",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "resistance",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        },
+        {
+          "stat": "skill_haste",
+          "catalog": 0,
+          "detail": 0,
+          "delta": 0,
+          "tolerance": 0.000001,
+          "withinTolerance": true
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "anomalyCandidates": [
+    {
+      "heroDefinitionId": "hero-10002",
+      "externalId": 10002,
+      "name": "Child of Chaos",
+      "flags": [
+        "robust_upper_outlier:hp_flat",
+        "robust_upper_outlier:atk_flat"
+      ]
+    }
+  ],
+  "ratioGrowthRisk": {
+    "affectedHeroCount": 137,
+    "affectedStats": [
+      "attack_speed_pct",
+      "crit_damage",
+      "crit_rate"
+    ],
+    "interpretation": "The public field is preserved but is not assumed to be a literal per-character-level increment. Level > 1 requires account-observed baseStatsOverride by default."
+  },
+  "limitations": [
+    "All 351 catalog records are compiled from one public catalog snapshot that can mix seasons, regions or special forms.",
+    "Only two heroes have independent detail-page snapshots in the local corpus.",
+    "Distribution flags are review candidates, not proof that the public record is wrong.",
+    "No hero base-stat record has been validated against the target live client."
+  ]
+}

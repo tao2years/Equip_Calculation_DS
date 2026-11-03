@@ -13,6 +13,28 @@
     "statDefinitions": {"type": "array", "items": {"$ref": "#/$defs/statDefinition"}},
     "slotDefinitions": {"type": "array", "items": {"$ref": "#/$defs/slotDefinition"}},
     "heroes": {"type": "array", "items": {"$ref": "#/$defs/hero"}},
+    "heroDataQuality": {
+      "type": "object",
+      "required": ["methodVersion", "records"],
+      "properties": {
+        "methodVersion": {"type": "string"},
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["heroDefinitionId", "evidenceStatus", "anomalyFlags", "ratioGrowthStats", "requiresObservedBaseStats", "crosscheckStatus"],
+            "properties": {
+              "heroDefinitionId": {"type": "string"},
+              "evidenceStatus": {"enum": ["independent_detail_crosschecked", "public_catalog_only"]},
+              "anomalyFlags": {"type": "array", "items": {"type": "string"}},
+              "ratioGrowthStats": {"type": "array", "items": {"type": "string"}},
+              "requiresObservedBaseStats": {"type": "boolean"},
+              "crosscheckStatus": {"enum": ["passed", "failed", null]}
+            }
+          }
+        }
+      }
+    },
     "equipment": {"type": "array", "items": {"$ref": "#/$defs/equipment"}},
     "sets": {"type": "array", "items": {"$ref": "#/$defs/set"}},
     "artifacts": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},

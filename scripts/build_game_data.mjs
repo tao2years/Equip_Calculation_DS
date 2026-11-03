@@ -4,10 +4,12 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseStaticSetBonus } from "./lib/parse-set-bonus.mjs";
+import { analyzeHeroDataQuality } from "./lib/hero-data-quality.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const seed = JSON.parse(await readFile(path.join(ROOT, "data", "game-data.seed.json"), "utf8"));
 const publicCatalog = JSON.parse(await readFile(path.join(ROOT, "corpus", "compiled", "public-catalogs.json"), "utf8"));
+const heroDetails = JSON.parse(await readFile(path.join(ROOT, "corpus", "compiled", "heroes.public.json"), "utf8"));
 
 const seedHeroById = new Map(seed.heroes.map((hero) => [hero.id, hero]));
 const seedArtifactByName = new Map(seed.artifacts.map((artifact) => [artifact.names.en.toLowerCase(), artifact]));
@@ -35,6 +37,7 @@ const heroes = publicCatalog.heroes.map((hero) => {
     }
   };
 });
+const heroQualityAnalysis = analyzeHeroDataQuality(heroes, heroDetails.heroes);
 
 const artifacts = publicCatalog.artifacts.map((artifact) => {
   const override = seedArtifactByName.get(artifact.name.toLowerCase());
@@ -124,6 +127,17 @@ const data = {
   statDefinitions: seed.statDefinitions,
   slotDefinitions: seed.slotDefinitions,
   heroes,
+  heroDataQuality: {
+    methodVersion: "0.1.0",
+    records: heroQualityAnalysis.records.map((record) => ({
+      heroDefinitionId: record.heroDefinitionId,
+      evidenceStatus: record.evidenceStatus,
+      anomalyFlags: record.anomalyFlags,
+      ratioGrowthStats: record.ratioGrowthStats,
+      requiresObservedBaseStats: record.requiresObservedBaseStats,
+      crosscheckStatus: record.crosscheck?.status || null
+    }))
+  },
   equipment,
   sets,
   artifacts,

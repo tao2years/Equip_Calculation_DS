@@ -12,6 +12,7 @@
 - [端到端数据管线](topics/end-to-end-data-pipeline.md)：公共图鉴、账号快照、Schema 与离线求解器如何汇合。
 - [神器等级、精炼与属性来源](topics/artifact-model.md)：0–20 强化、0–5 精炼、账号观测覆盖与条件效果边界。
 - [装备词条与强化机制](topics/equipment-affix-mechanics.md)：官方 Wiki 可证实的 roll 区间、强化增量、计算候选和仍未知的强化次数。
+- [公共角色属性覆盖与计算可信度](topics/hero-public-data-quality.md)：351 个角色的字段覆盖、独立交叉校验、异常复核与求解门禁。
 
 ## 主要输出
 
@@ -28,6 +29,7 @@
 - [求解器合成规模基准](../outputs/optimizer-scalability-benchmark.md)
 - [神器数据模型审计](../outputs/artifact-data-model-audit.md)
 - [公共装备定义与账号关联审计](../outputs/equipment-data-model-audit.md)
+- [公共角色数据模型审计](../outputs/hero-data-model-audit.md)
 - [当前阶段交接说明](../outputs/HANDOFF-2026-11-03.md)
 - [登录账号采集实验计划](../research/client-capture-plan.md)
 

@@ -25846,6 +25846,3131 @@
       }
     }
   ],
+  "heroDataQuality": {
+    "methodVersion": "0.1.0",
+    "records": [
+      {
+        "heroDefinitionId": "hero-10000",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-10002",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [
+          "robust_upper_outlier:hp_flat",
+          "robust_upper_outlier:atk_flat"
+        ],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": true,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20000",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20010",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20020",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20030",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20040",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20050",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20060",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20070",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20080",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20090",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20100",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20110",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20120",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20130",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20140",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20150",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20160",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20170",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20180",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20190",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20200",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20210",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20220",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20230",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20240",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20250",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20260",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20270",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20280",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20290",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20300",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20310",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20320",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20340",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20350",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20360",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20370",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20380",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20390",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20400",
+        "evidenceStatus": "independent_detail_crosschecked",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": "passed"
+      },
+      {
+        "heroDefinitionId": "hero-20410",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20420",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20430",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20440",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20450",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20460",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20470",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20480",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20490",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20500",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20510",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20520",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20530",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20540",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20550",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20560",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20570",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20580",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20590",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20600",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20610",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20620",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20630",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20640",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20650",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20660",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20670",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20680",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20690",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20700",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20710",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20720",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20730",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20740",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20750",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20760",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20770",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20780",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20790",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20800",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20810",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20820",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20830",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20840",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20850",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20860",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20870",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20880",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20890",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20900",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20910",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20920",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20930",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20940",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20950",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20960",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20970",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20980",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-20990",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21000",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21010",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21020",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21030",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21040",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21050",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21060",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21070",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21080",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21090",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21100",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21110",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21120",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21130",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21140",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21150",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21160",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21170",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21180",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21190",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21200",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21210",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21220",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21230",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21240",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21250",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21260",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21270",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21280",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21290",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21300",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21310",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21320",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21330",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21340",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21350",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21360",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21370",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21380",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21390",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21400",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21410",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21420",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21430",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21440",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21450",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21460",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21470",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21480",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21490",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21500",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21510",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21520",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21530",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21540",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21550",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21560",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21570",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21580",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21590",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21600",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21610",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21620",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21630",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21640",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21660",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21670",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21680",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21690",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21700",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21710",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21720",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21730",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21740",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21750",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21760",
+        "evidenceStatus": "independent_detail_crosschecked",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": "passed"
+      },
+      {
+        "heroDefinitionId": "hero-21770",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21780",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21790",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21800",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21810",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21820",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21830",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21840",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21850",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21860",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21870",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21880",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21890",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21900",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21910",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21920",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21930",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21940",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21950",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21960",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21970",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21980",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-21990",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22000",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22010",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22020",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22030",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22040",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22050",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22060",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22080",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22100",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22110",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22120",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22130",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22140",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22150",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22160",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22180",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22190",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22200",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22210",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22220",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22230",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22250",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22260",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22270",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22280",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22290",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22300",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22310",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22320",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22330",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22340",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22350",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22360",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22370",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22380",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22390",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22400",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22410",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22420",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22430",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22440",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22450",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22460",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "attack_speed_pct"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22470",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22480",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22490",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22520",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22540",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22550",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22570",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22580",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22590",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22620",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22640",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22660",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22680",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22690",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22700",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22710",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22720",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22770",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22780",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22790",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22800",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22810",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22820",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate",
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22840",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22850",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22860",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22870",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22880",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22890",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22901",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22920",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22980",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-22990",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23000",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23011",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23020",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23050",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23060",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23080",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23090",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23100",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23110",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23120",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23130",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23140",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23150",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23160",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23170",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23180",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23190",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23200",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23210",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23220",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23230",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23240",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23250",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23260",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23270",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23280",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23290",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23300",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23310",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23320",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23330",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23340",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23350",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23360",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23370",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23380",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23390",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_rate"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23400",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23410",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23470",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23480",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23510",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23550",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23570",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23580",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23600",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23610",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23670",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23680",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23780",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23790",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23800",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23820",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23900",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23940",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-23980",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24030",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24260",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24290",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24300",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24330",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24340",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24380",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24400",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24420",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24490",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24560",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24580",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24630",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24680",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24700",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24770",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-24780",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [
+          "crit_damage"
+        ],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-26000",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      },
+      {
+        "heroDefinitionId": "hero-27010",
+        "evidenceStatus": "public_catalog_only",
+        "anomalyFlags": [],
+        "ratioGrowthStats": [],
+        "requiresObservedBaseStats": false,
+        "crosscheckStatus": null
+      }
+    ]
+  },
   "equipment": [
     {
       "id": "equipment-532513",

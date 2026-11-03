@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/hero-data-model-audit.schema.json",
+  "title": "Dragonheir Hero Data Model Audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "gameDataVersionId", "evidenceLevel", "requiredBaseStats", "counts", "distributions", "crosschecks", "anomalyCandidates", "ratioGrowthRisk", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "gameDataVersionId": {"type": "string"},
+    "evidenceLevel": {"const": "public_catalog_audit_not_client_validated"},
+    "requiredBaseStats": {"type": "array", "minItems": 10, "items": {"type": "string"}},
+    "counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "distributions": {"type": "object"},
+    "crosschecks": {"type": "array"},
+    "anomalyCandidates": {"type": "array"},
+    "ratioGrowthRisk": {"type": "object"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

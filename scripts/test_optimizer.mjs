@@ -77,6 +77,11 @@ leveledWithoutObservation.ownedHeroes[0].level = 2;
 assert.throws(() => enumerateBuilds({ ...request, account: leveledWithoutObservation }), /缺少账号观测基础属性/);
 const explicitlyUnverifiedGrowth = enumerateBuilds({ ...request, account: leveledWithoutObservation, allowUnverifiedHeroGrowth: true });
 assert.match(explicitlyUnverifiedGrowth.results[0].heroBaseSource, /未验证星级\/灵感修正/);
+const anomalyGameData = structuredClone(gameData);
+anomalyGameData.heroDataQuality.records.find((entry) => entry.heroDefinitionId === account.ownedHeroes[0].heroDefinitionId).requiresObservedBaseStats = true;
+anomalyGameData.heroDataQuality.records.find((entry) => entry.heroDefinitionId === account.ownedHeroes[0].heroDefinitionId).anomalyFlags = ["synthetic_test_outlier"];
+assert.throws(() => enumerateBuilds({ ...request, gameData: anomalyGameData }), /公共基础属性触发数据异常复核/);
+assert.throws(() => enumerateBuilds({ ...request, gameData: anomalyGameData, allowUnverifiedHeroGrowth: true }), /公共基础属性触发数据异常复核/);
 
 const fixed = enumerateBuilds({ ...request, fixed: { helmet: "helm-002" } });
 assert.equal(fixed.searched, 32);

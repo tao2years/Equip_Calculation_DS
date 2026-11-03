@@ -307,3 +307,11 @@ Append-only. Newest entries go at the bottom.
 - Added `collect-account.cmd` as the double-clickable repository-root entry. The wizard remains user-driven: it does not log in, click, navigate, read memory or intercept traffic.
 - Doctor now distinguishes channel capture readiness from local processing readiness and keeps `gameClientVerified=false`. On this machine the official-PC capture adapter and Windows OCR are available; emulator capture correctly reports `adb executable not found`; neither path claims a live client.
 - Added PowerShell regression coverage for readiness structure, safety invariants and official-PC full-plan routing.
+
+## 2026-11-03 · OP-042
+
+- Added a deterministic public-hero quality audit. All 351 catalog records contain the ten required level-one fields and skill data; two independent detail pages pass within rounding tolerance, while the remaining 349 are still single-catalog evidence.
+- Flagged one review candidate (`Child of Chaos`, `hero-10002`) for robust upper outliers in HP and attack. The flag is not treated as proof of error; it now requires account-observed base stats before inventory admission or optimization, and the unverified-growth research switch cannot bypass this gate.
+- Identified 137 records with nonzero ratio growth fields whose semantics are not client-validated. Public growth remains research evidence; level greater than 1 still requires account observation unless an explicit research override is set.
+- Added `GameData.heroDataQuality`, a generated JSON/Markdown audit, Schema validation, optimizer/inventory regressions and refresh/verify integration.
+- Hidden IAB QA selected the flagged hero, observed both warning flags, confirmed missing observed stats kept the hero count at zero, then supplied an observed panel and confirmed successful admission with the “账号基础面板” label. No visible browser window was opened.

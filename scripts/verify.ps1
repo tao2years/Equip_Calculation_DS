@@ -66,6 +66,7 @@ try {
     node --check scripts/test_adb_adapter.mjs
     node --check scripts/audit_public_domain.mjs
     node --check scripts/audit_equipment_model.mjs
+    node --check scripts/audit_hero_model.mjs
     node --check scripts/compile_cn_name_candidates.mjs
     node --check scripts/test_capture_plan.mjs
     node --check scripts/test_account_collector.mjs
@@ -87,6 +88,7 @@ try {
     node scripts/build_equipment_rules.mjs
     node scripts/audit_public_domain.mjs
     node scripts/audit_equipment_model.mjs
+    node scripts/audit_hero_model.mjs
     node scripts/compile_cn_name_candidates.mjs
     node scripts/test_import_dictionary.mjs
     node scripts/build_ocr_staging_fixture.mjs
@@ -170,6 +172,7 @@ pairs = [
     ('schemas/end-to-end-acceptance.schema.json', 'outputs/end-to-end-acceptance.json'),
     ('schemas/optimizer-benchmark.schema.json', 'corpus/compiled/optimizer-scalability-benchmark.json'),
     ('schemas/equipment-model-audit.schema.json', 'corpus/compiled/equipment-model-audit.json'),
+    ('schemas/hero-data-model-audit.schema.json', 'corpus/compiled/hero-data-model-audit.json'),
 ]
 for schema_path, data_path in pairs:
     with (root / schema_path).open(encoding='utf-8') as handle:

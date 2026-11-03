@@ -201,6 +201,8 @@ byId("hero-form").addEventListener("submit", (event) => {
     if (state.account.ownedHeroes.some((entry) => entry.heroDefinitionId === definitionId)) throw new Error("该角色已经在账号中");
     const level = Number(byId("hero-level").value);
     const baseStatsOverride = parseStats(byId("hero-base-stats").value, state.gameData.statDefinitions.map((entry) => entry.id));
+    const quality = state.gameData.heroDataQuality?.records?.find((entry) => entry.heroDefinitionId === definitionId);
+    if (quality?.requiresObservedBaseStats && !Object.keys(baseStatsOverride).length) throw new Error(`该角色的公共基础属性触发异常复核（${quality.anomalyFlags.join("、")}），必须填写账号观测基础属性`);
     if (level > 1 && !Object.keys(baseStatsOverride).length) throw new Error("等级大于 1 的角色必须填写账号观测的无装备基础属性");
     state.account.ownedHeroes.push({
       ownedHeroId: nextOwnedId("hero-manual", state.account.ownedHeroes, "ownedHeroId"),
@@ -212,6 +214,11 @@ byId("hero-form").addEventListener("submit", (event) => {
     });
     render(); showMessage("角色已添加");
   } catch (error) { showMessage(error.message, "error"); }
+});
+
+byId("hero-definition").addEventListener("change", () => {
+  const quality = state.gameData.heroDataQuality?.records?.find((entry) => entry.heroDefinitionId === byId("hero-definition").value);
+  if (quality?.requiresObservedBaseStats) showMessage(`该公共角色记录触发异常复核：${quality.anomalyFlags.join("、")}；添加前必须填写账号观测基础属性`, "warning");
 });
 
 byId("gear-form").addEventListener("submit", (event) => {

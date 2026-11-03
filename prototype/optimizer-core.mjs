@@ -8,6 +8,7 @@ function gameDataIndexes(gameData) {
     indexes = {
       sets: new Map((gameData.sets || []).map((entry) => [entry.id, entry])),
       heroes: new Map((gameData.heroes || []).map((entry) => [entry.id, entry])),
+      heroQuality: new Map((gameData.heroDataQuality?.records || []).map((entry) => [entry.heroDefinitionId, entry])),
       artifacts: new Map((gameData.artifacts || []).map((entry) => [entry.id, entry]))
     };
     gameDataIndexCache.set(gameData, indexes);
@@ -382,6 +383,10 @@ export function enumerateBuilds({
   if (!ownedHero) throw new Error(`Unknown owned hero ${ownedHeroId}`);
   const hero = gameDataIndexes(gameData).heroes.get(ownedHero.heroDefinitionId);
   if (!hero) throw new Error(`Missing hero definition ${ownedHero.heroDefinitionId}`);
+  const heroQuality = gameDataIndexes(gameData).heroQuality.get(hero.id);
+  if (heroQuality?.requiresObservedBaseStats && !ownedHero.baseStatsOverride) {
+    throw new Error(`角色 ${ownedHero.ownedHeroId} 的公共基础属性触发数据异常复核（${heroQuality.anomalyFlags.join(", ")}）；必须提供账号观测 baseStatsOverride`);
+  }
   if (Number(ownedHero.level || 1) > 1 && !ownedHero.baseStatsOverride && !allowUnverifiedHeroGrowth) {
     throw new Error(`角色 ${ownedHero.ownedHeroId} 为 ${ownedHero.level} 级但缺少账号观测基础属性；公共每级成长尚未验证，已阻止计算`);
   }

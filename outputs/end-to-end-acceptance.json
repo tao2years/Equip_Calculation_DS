@@ -14,7 +14,7 @@
     },
     "gameData": {
       "path": "data\\game-data.public.json",
-      "sha256": "48e0d4738516887c4bf1592d428c2474705755c999877d085c0f7ba1428cba2e",
+      "sha256": "b686cb360dfbf89759048d5ebda1b51eabab13c783f2d400293797dd008214d2",
       "versionId": "public-catalog-2026-11-03"
     }
   },

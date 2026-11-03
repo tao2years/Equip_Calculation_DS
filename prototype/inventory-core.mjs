@@ -101,6 +101,7 @@ export function validateEditableSnapshot(account, gameData) {
   }
 
   const heroIds = new Set(gameData.heroes.map((entry) => entry.id));
+  const heroQuality = new Map((gameData.heroDataQuality?.records || []).map((entry) => [entry.heroDefinitionId, entry]));
   const artifactIds = new Set(gameData.artifacts.map((entry) => entry.id));
   const equipmentById = new Map((gameData.equipment || []).map((entry) => [entry.id, entry]));
   const setIds = new Set(gameData.sets.map((entry) => entry.id));
@@ -108,6 +109,8 @@ export function validateEditableSnapshot(account, gameData) {
   for (const hero of account.ownedHeroes) {
     if (!heroIds.has(hero.heroDefinitionId)) errors.push(`未知角色定义：${hero.heroDefinitionId}`);
     if (!Number.isInteger(hero.level) || hero.level < 1) errors.push(`角色 ${hero.ownedHeroId} 等级无效`);
+    const quality = heroQuality.get(hero.heroDefinitionId);
+    if (quality?.requiresObservedBaseStats && (!hero.baseStatsOverride || !Object.keys(hero.baseStatsOverride).length)) errors.push(`角色 ${hero.ownedHeroId} 的公共基础属性触发异常复核，必须填写账号观测基础属性`);
     if (hero.level > 1 && (!hero.baseStatsOverride || !Object.keys(hero.baseStatsOverride).length)) errors.push(`角色 ${hero.ownedHeroId} 等级大于 1 但缺少账号观测基础属性`);
   }
   for (const item of account.ownedGear) {
