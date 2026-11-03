@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "0.1.0",
+  "planId": "dragonheir-official-pc-golden-v1",
+  "channel": "official_pc",
+  "description": "User-driven visible-window evidence collection for the first official-PC Dragonheir OCR and formula golden set. The tool captures only after the user presses Enter.",
+  "steps": [
+    {
+      "id": "channel-version",
+      "title": "渠道与版本",
+      "captureType": "unclassified",
+      "minimumCaptures": 1,
+      "instructions": "在官方 PC 客户端中打开能显示渠道、客户端版本或服务器信息的页面；确认窗口内没有账号密码、手机号或令牌后再截屏。",
+      "completionEvidence": "至少一张可识别官方 PC 渠道和版本的截图。"
+    },
+    {
+      "id": "hero-list",
+      "title": "已拥有角色列表",
+      "captureType": "hero_list",
+      "minimumCaptures": 1,
+      "instructions": "从角色列表顶部开始。每截一张后由用户手动滚动，保留相邻角色作为分页锚点，直到列表末尾。",
+      "completionEvidence": "首屏、末屏和连续重叠锚点，可与客户端角色总数对账。"
+    },
+    {
+      "id": "hero-detail-golden",
+      "title": "角色详情 golden set",
+      "captureType": "hero_detail",
+      "minimumCaptures": 5,
+      "instructions": "选择至少五个等级、星级或灵感不同的角色，截取完整成长状态和面板；优先包含将用于配装的角色。",
+      "completionEvidence": "至少五张能读取名称、等级、成长状态和面板的截图。"
+    },
+    {
+      "id": "gear-list",
+      "title": "装备背包列表",
+      "captureType": "gear_list",
+      "minimumCaptures": 1,
+      "instructions": "从装备背包顶部开始，记录筛选和排序状态；由用户手动滚动到末尾，保持相邻物品重叠以检测漏页。",
+      "completionEvidence": "首屏、末屏、排序状态和可对账的总数或连续锚点。"
+    },
+    {
+      "id": "gear-detail-golden",
+      "title": "装备详情 golden set",
+      "captureType": "gear_detail",
+      "minimumCaptures": 30,
+      "instructions": "覆盖六个装备槽位、多个品质和强化等级。每张必须显示槽位、套装、强化、主副词条、锁定和穿戴者（若页面提供）。",
+      "completionEvidence": "至少三十件可人工逐字段标注的装备详情。"
+    },
+    {
+      "id": "artifact-list",
+      "title": "已拥有神器列表",
+      "captureType": "artifact_list",
+      "minimumCaptures": 2,
+      "instructions": "从神器列表顶部开始并由用户手动滚动到末尾，保持相邻神器重叠。",
+      "completionEvidence": "列表起点、终点和拥有状态可对账。"
+    },
+    {
+      "id": "artifact-detail-golden",
+      "title": "神器详情 golden set",
+      "captureType": "artifact_detail",
+      "minimumCaptures": 10,
+      "instructions": "选择至少十件不同品质、主属性和精炼/强化状态的神器，显示名称、当前等级、属性、锁定和穿戴者。",
+      "completionEvidence": "至少十件可人工逐字段标注的神器详情。"
+    }
+  ]
+}

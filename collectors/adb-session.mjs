@@ -37,6 +37,7 @@ if (!planPath) throw new Error("Missing --plan capture-plan.json");
 const plan = JSON.parse(await readFile(path.resolve(planPath), "utf8"));
 const planErrors = validateCapturePlan(plan);
 if (planErrors.length) throw new Error(`Capture plan validation failed: ${planErrors.join("; ")}`);
+if (plan.channel !== "emulator") throw new Error(`ADB session requires a channel=emulator plan; received ${plan.channel}`);
 const summary = summarizeCapturePlan(plan);
 
 if (hasFlag("dry-run")) {

@@ -72,6 +72,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Hidden-browser weighted-objective QA: loaded the synthetic account, selected the custom weighted panel objective, used attack weight 1 and crit-damage-per-1% weight 10, exhaustively evaluated 64 builds and rendered the single feasible result with score `1,556.95`; browser warning/error log was empty. Browser plugin and repository Playwright configuration were absent, so QA used the hidden in-app browser.
 - Public compiler/audit timestamps now derive from immutable source retrieval times. Two consecutive full verification runs left `game-data.public.json` and `import-dictionary.json` byte-identical, improving reproducibility across machines.
 - Official-PC candidate adapter now supports an explicit-PID, visible-window-only screenshot with PNG/SHA-256/bounds metadata and no input automation. A guided 7-stage PC session reuses the ADB capture plan and produces a pipeline-compatible manifest. Windows capability probe, invalid-PID/no-output guard, dry-run and ADB/PC manifest normalization passed; no game window was captured, so client/DPI/occlusion behavior remains unvalidated.
+- Emulator and official-PC capture plans are now separate, both require 7 stages / at least 50 golden screenshots, and each session runner rejects the other channel's plan before capture.
 
 ## Next durable steps
 

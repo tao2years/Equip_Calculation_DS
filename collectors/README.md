@@ -12,7 +12,7 @@ node collectors/cli.mjs adb-probe
 node collectors/cli.mjs adb-screenshot --output capture.png --capture-type gear_detail
 node collectors/cli.mjs window-probe
 node collectors/cli.mjs window-screenshot --pid 1234 --output capture.png --capture-type hero_detail
-node collectors/window-session.mjs --plan examples/emulator-capture-plan.example.json --pid 1234 --output captures
+node collectors/window-session.mjs --plan examples/pc-capture-plan.example.json --pid 1234 --output captures
 node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run
 node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --output captures
 node collectors/cli.mjs stage-screenshots --input screenshots --output staging
