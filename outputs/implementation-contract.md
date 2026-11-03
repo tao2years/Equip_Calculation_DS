@@ -70,6 +70,7 @@ OptimizationRequest + HTML UI ────────┴─> Top N BuildResult
 4. 所有低置信字段进入 Review；未解决字段阻止 finalize；
 5. 生成的账号文件通过 Schema、语义校验并能被 HTML 直接导入。
 6. 账号快照必须通过独立人工参考的完整性审计：三类总数、六槽位数量、角色/神器 ID 集合、重复与未知引用全部一致；仅 pipeline complete 不算采集完成。
+7. 计算公式必须通过带渠道/build/来源证据的客户端面板 golden cases；synthetic formula cases 只能证明实现算术，不能作为客户端准确性证据。
 
 ## 2. 成品 B：公共游戏数据爬取与版本库
 

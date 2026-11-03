@@ -55,6 +55,8 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 
 生成账号文件后还必须运行 `audit-account`。它将快照与独立人工清点参考对比：角色/装备/神器总数、六个装备槽位数量、完整角色/神器定义 ID、重复 owned ID、重复定义和未知公共引用。只有全部一致才返回 `passed`；这证明与参考一致，但不会把参考本身未经验证的完整性夸大为事实。
 
+`validate_formula_cases.mjs` 是计算准确性门：把角色基础属性、装备/神器汇总加成与客户端观测面板逐属性比较。当前仓库只有 synthetic arithmetic fixture，只证明代码按既定公式执行；在目标渠道/build 的穿戴前后截图进入 `client_observation` golden cases 前，不能把原型公式称为客户端精确公式。
+
 无需打开网页也可以用同一个求解核心执行请求：
 
 ```powershell
@@ -62,6 +64,10 @@ node scripts/solve_request.mjs `
   --account examples/account-snapshot.example.json `
   --request examples/optimization-request.example.json `
   --output examples/optimization-result.example.json
+
+node scripts/validate_formula_cases.mjs `
+  --input examples/formula-golden-cases.synthetic.json `
+  --output examples/formula-validation-report.example.json
 ```
 
 重建公共数据并验证仓库：

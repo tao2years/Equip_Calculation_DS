@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/formula-golden-cases.schema.json",
+  "title": "Dragonheir Sheet Formula Golden Cases",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "suiteId", "createdAt", "evidenceLevel", "region", "channel", "gameBuild", "cases"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "suiteId": {"type": "string", "minLength": 1},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "evidenceLevel": {"enum": ["synthetic_fixture", "client_observation"]},
+    "region": {"type": "string", "minLength": 1},
+    "channel": {"type": "string", "minLength": 1},
+    "gameBuild": {"type": ["string", "null"]},
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["caseId", "heroDefinitionId", "baseStats", "bonusStats", "observedSheetStats", "absoluteTolerance", "sourceEvidence"],
+        "properties": {
+          "caseId": {"type": "string", "minLength": 1},
+          "heroDefinitionId": {"type": "string", "minLength": 1},
+          "baseStats": {"type": "object", "additionalProperties": {"type": "number"}},
+          "bonusStats": {"type": "object", "additionalProperties": {"type": "number"}},
+          "observedSheetStats": {"type": "object", "additionalProperties": {"type": "number"}},
+          "absoluteTolerance": {"type": "number", "minimum": 0},
+          "sourceEvidence": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+        }
+      }
+    }
+  }
+}

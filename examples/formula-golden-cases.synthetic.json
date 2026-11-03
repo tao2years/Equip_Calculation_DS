@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0",
+  "suiteId": "synthetic-sheet-formula-v1",
+  "createdAt": "2026-11-03T12:00:00+08:00",
+  "evidenceLevel": "synthetic_fixture",
+  "region": "synthetic",
+  "channel": "synthetic_fixture",
+  "gameBuild": null,
+  "cases": [
+    {
+      "caseId": "flat-and-percent-all-three",
+      "heroDefinitionId": "synthetic-hero-001",
+      "baseStats": {"hp_flat": 10000, "atk_flat": 500, "def_flat": 400, "crit_rate": 0.05, "crit_damage": 0.5, "accuracy": 0},
+      "bonusStats": {"hp_flat": 1000, "hp_pct": 0.2, "atk_flat": 100, "atk_pct": 0.3, "def_flat": 40, "def_pct": 0.1, "crit_rate": 0.5, "crit_damage": 0.25, "accuracy": 60},
+      "observedSheetStats": {"hp_sheet": 13000, "atk_sheet": 750, "def_sheet": 480, "crit_rate": 0.55, "crit_damage": 0.75, "accuracy": 60},
+      "absoluteTolerance": 0.000001,
+      "sourceEvidence": ["synthetic arithmetic fixture; not a client screenshot"]
+    },
+    {
+      "caseId": "ratio-and-utility-addition",
+      "heroDefinitionId": "synthetic-hero-002",
+      "baseStats": {"hp_flat": 8000, "atk_flat": 600, "def_flat": 300, "crit_rate": 0.1, "crit_damage": 0.5, "resistance": 10, "skill_haste": 5},
+      "bonusStats": {"crit_rate": 0.2, "crit_damage": 0.4, "resistance": 50, "skill_haste": 15, "attack_speed_pct": 0.2},
+      "observedSheetStats": {"hp_sheet": 8000, "atk_sheet": 600, "def_sheet": 300, "crit_rate": 0.3, "crit_damage": 0.9, "resistance": 60, "skill_haste": 20, "attack_speed_pct": 0.2},
+      "absoluteTolerance": 0.000001,
+      "sourceEvidence": ["synthetic arithmetic fixture; not a client screenshot"]
+    }
+  ]
+}

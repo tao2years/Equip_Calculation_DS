@@ -66,6 +66,8 @@ try {
     node --check prototype/staging-review-core.mjs
     node --check scripts/test_staging_review_core.mjs
     node --check scripts/test_account_completeness.mjs
+    node --check scripts/validate_formula_cases.mjs
+    node --check scripts/test_formula_cases.mjs
 
     node scripts/compile_public_heroes.mjs
     node scripts/compile_public_catalogs.mjs
@@ -90,6 +92,7 @@ try {
     node scripts/test_capture_plan.mjs
     node scripts/test_staging_review_core.mjs
     node scripts/test_account_completeness.mjs
+    node scripts/test_formula_cases.mjs
     node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run | Out-Null
     node collectors/window-session.mjs --plan examples/pc-capture-plan.example.json --dry-run | Out-Null
     node scripts/solve_request.mjs --output examples/optimization-result.example.json
@@ -112,6 +115,8 @@ pairs = [
     ('schemas/account-snapshot.schema.json', 'examples/account-snapshot-update.example.json'),
     ('schemas/account-completeness-reference.schema.json', 'examples/account-completeness-reference.example.json'),
     ('schemas/account-completeness-report.schema.json', 'examples/account-completeness-report.example.json'),
+    ('schemas/formula-golden-cases.schema.json', 'examples/formula-golden-cases.synthetic.json'),
+    ('schemas/formula-validation-report.schema.json', 'examples/formula-validation-report.example.json'),
     ('schemas/game-data.schema.json', 'data/game-data.seed.json'),
     ('schemas/game-data.schema.json', 'data/game-data.public.json'),
     ('schemas/import-dictionary.schema.json', 'data/import-dictionary.json'),

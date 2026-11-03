@@ -209,3 +209,10 @@ Append-only. Newest entries go at the bottom.
 - `audit-account` writes a durable report and exits non-zero on mismatch, separating pipeline completion from collection completeness. The report explicitly limits its claim to agreement with the supplied reference.
 - Synthetic regression passes for the exact 2-hero/12-gear/3-artifact fixture and correctly fails after one negative rune is removed or a hero definition is duplicated. No live reference has been supplied, so this is acceptance tooling rather than live completeness evidence.
 - Full verification now covers 30 schema artifacts and 23 schema definitions, including both completeness input and report contracts.
+
+## 2026-11-03 · OP-028
+
+- Added a sheet-formula golden-case contract and validator. Each case carries evidence level, region, channel, build, source evidence, base stats, aggregated bonuses, observed panel stats and absolute tolerance.
+- Validation invokes the same `calculateSheet` implementation used by HTML/CLI and reports every predicted/observed/error value. Synthetic cases cover flat/percentage ordering plus ratio/utility addition; a deliberate one-point attack mismatch correctly fails.
+- Synthetic success is explicitly limited to implementation arithmetic. No live client panel case exists, so formula and DPS accuracy remain unverified.
+- Full verification now covers 32 schema artifacts and 25 schema definitions, including formula-suite and validation-report contracts.

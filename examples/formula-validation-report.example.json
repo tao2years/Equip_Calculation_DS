@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "0.1.0",
+  "validatedAt": "2026-11-03T12:00:00+08:00",
+  "suiteId": "synthetic-sheet-formula-v1",
+  "formulaId": "prototype-sheet-v1",
+  "evidenceLevel": "synthetic_fixture",
+  "status": "passed",
+  "counts": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "caseId": "flat-and-percent-all-three",
+      "status": "passed",
+      "failedStats": [],
+      "comparisons": {
+        "hp_sheet": {
+          "predicted": 13000,
+          "observed": 13000,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "atk_sheet": {
+          "predicted": 750,
+          "observed": 750,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "def_sheet": {
+          "predicted": 480.00000000000006,
+          "observed": 480,
+          "absoluteError": 5.684341886080802e-14,
+          "pass": true
+        },
+        "crit_rate": {
+          "predicted": 0.55,
+          "observed": 0.55,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "crit_damage": {
+          "predicted": 0.75,
+          "observed": 0.75,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "accuracy": {
+          "predicted": 60,
+          "observed": 60,
+          "absoluteError": 0,
+          "pass": true
+        }
+      },
+      "sourceEvidence": [
+        "synthetic arithmetic fixture; not a client screenshot"
+      ]
+    },
+    {
+      "caseId": "ratio-and-utility-addition",
+      "status": "passed",
+      "failedStats": [],
+      "comparisons": {
+        "hp_sheet": {
+          "predicted": 8000,
+          "observed": 8000,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "atk_sheet": {
+          "predicted": 600,
+          "observed": 600,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "def_sheet": {
+          "predicted": 300,
+          "observed": 300,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "crit_rate": {
+          "predicted": 0.30000000000000004,
+          "observed": 0.3,
+          "absoluteError": 5.551115123125783e-17,
+          "pass": true
+        },
+        "crit_damage": {
+          "predicted": 0.9,
+          "observed": 0.9,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "resistance": {
+          "predicted": 60,
+          "observed": 60,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "skill_haste": {
+          "predicted": 20,
+          "observed": 20,
+          "absoluteError": 0,
+          "pass": true
+        },
+        "attack_speed_pct": {
+          "predicted": 0.2,
+          "observed": 0.2,
+          "absoluteError": 0,
+          "pass": true
+        }
+      },
+      "sourceEvidence": [
+        "synthetic arithmetic fixture; not a client screenshot"
+      ]
+    }
+  ],
+  "limitations": "Synthetic cases validate implementation arithmetic only and provide no evidence that the formula matches a live client."
+}

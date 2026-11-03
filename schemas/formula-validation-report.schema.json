@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.dragonheir.tools/schemas/formula-validation-report.schema.json",
+  "title": "Dragonheir Sheet Formula Validation Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "validatedAt", "suiteId", "formulaId", "evidenceLevel", "status", "counts", "cases", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "validatedAt": {"type": "string", "format": "date-time"},
+    "suiteId": {"type": "string"},
+    "formulaId": {"const": "prototype-sheet-v1"},
+    "evidenceLevel": {"enum": ["synthetic_fixture", "client_observation"]},
+    "status": {"enum": ["passed", "failed"]},
+    "counts": {"type": "object"},
+    "cases": {"type": "array"},
+    "limitations": {"type": "string"}
+  }
+}
