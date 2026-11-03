@@ -264,3 +264,10 @@ Append-only. Newest entries go at the bottom.
 - Added a conservative public set-effect compiler. It accepts only complete static-stat sentences with a piece threshold, known stat label, numeric value and matching flat/percentage unit; conditional prose, unknown labels and malformed units reject the entire sentence.
 - The immutable current official-Wiki snapshot yields 144 executable public set-family definitions. Together with four seed definitions, `game-data.public.json` now exposes 148 sets with sheet bonuses while retaining all raw effect text.
 - Added parser rejection cases and an end-to-end solver assertion proving a compiled public two-piece set contributes 20% HP and 60 Resistance. Generated coverage/audit outputs and handoff documentation now distinguish parsed official-Wiki evidence from client validation.
+
+## 2026-11-03 · OP-036
+
+- Audited the existing capture plan against the user's actual “all owned assets” requirement and found it was a 50-image calibration sample, not a full-account proof.
+- Added channel-specific full-account plans alongside the existing golden plans. Full plans require complete hero/gear/artifact lists plus detail evidence for every owned object; list/detail stages require an explicit `complete` confirmation before the session can be marked complete.
+- Changed the unified account collector to default to full mode, retained explicit `--mode golden`, and added an `audit` command that routes the final account file through independent manual-reference completeness checks.
+- Added plan/schema/routing/audit regression coverage and updated operator, research, completion-audit and handoff documentation. No live-client completeness claim was made.

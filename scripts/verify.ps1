@@ -66,6 +66,7 @@ try {
     node --check scripts/audit_equipment_model.mjs
     node --check scripts/compile_cn_name_candidates.mjs
     node --check scripts/test_capture_plan.mjs
+    node --check scripts/test_account_collector.mjs
     node --check prototype/review.js
     node --check prototype/staging-review.js
     node --check prototype/staging-review-core.mjs
@@ -99,13 +100,17 @@ try {
     node scripts/test_inventory_core.mjs
     node scripts/test_adb_adapter.mjs
     node scripts/test_capture_plan.mjs
+    node scripts/test_account_collector.mjs
     node scripts/test_staging_review_core.mjs
     node scripts/test_account_completeness.mjs
     node scripts/test_formula_cases.mjs
     node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --dry-run | Out-Null
     node collectors/window-session.mjs --plan examples/pc-capture-plan.example.json --dry-run | Out-Null
+    node collectors/adb-session.mjs --plan examples/emulator-full-account-capture-plan.json --dry-run | Out-Null
+    node collectors/window-session.mjs --plan examples/pc-full-account-capture-plan.json --dry-run | Out-Null
     node collectors/account-collector.mjs plan --channel emulator | Out-Null
     node collectors/account-collector.mjs plan --channel official_pc | Out-Null
+    node collectors/account-collector.mjs plan --channel emulator --mode golden | Out-Null
     node collectors/account-collector.mjs status --state examples/collector-pipeline-state.example.json | Out-Null
     node scripts/solve_request.mjs --output examples/optimization-result.example.json
     if ($env:OS -eq 'Windows_NT') {
@@ -151,6 +156,8 @@ pairs = [
     ('schemas/pc-window-capture-session.schema.json', 'examples/pc-window-capture-session.example.json'),
     ('schemas/capture-plan.schema.json', 'examples/emulator-capture-plan.example.json'),
     ('schemas/capture-plan.schema.json', 'examples/pc-capture-plan.example.json'),
+    ('schemas/capture-plan.schema.json', 'examples/emulator-full-account-capture-plan.json'),
+    ('schemas/capture-plan.schema.json', 'examples/pc-full-account-capture-plan.json'),
     ('schemas/capture-session.schema.json', 'examples/capture-session.example.json'),
     ('schemas/optimization-request.schema.json', 'examples/optimization-request.example.json'),
     ('schemas/optimization-result.schema.json', 'examples/optimization-result.example.json'),

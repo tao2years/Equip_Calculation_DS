@@ -3,6 +3,10 @@
 ## 当前可执行入口
 
 ```powershell
+node collectors/account-collector.mjs plan --channel emulator
+node collectors/account-collector.mjs capture --channel emulator --output account-runs
+node collectors/account-collector.mjs plan --channel official_pc --mode golden
+node collectors/account-collector.mjs audit --account account.json --reference manual-reference.json --output completeness-report.json
 node collectors/cli.mjs probe
 node collectors/cli.mjs init --output account.json --game-data-version public-catalog-2026-11-03
 node collectors/cli.mjs import-json --input account.json --output normalized.json
@@ -33,9 +37,11 @@ node collectors/pipeline.mjs --manifest staging/<job>/manifest.json --profile pr
 
 官方 PC 路线新增了只读 `window-probe` 与 `window-screenshot`。后者必须传入用户明确选择的 PID，只对该进程当前可见且未最小化的主窗口执行 `CopyFromScreen`，并输出 PNG、窗口边界、SHA-256 与限制说明。适配器不会枚举所有窗口、不会点击或导航；窗口被遮挡、全屏独占、DPI 缩放和客户端渲染方式都可能影响结果，必须在真实客户端 golden screenshots 上验证。
 
-`window-session.mjs` 将版本化 capture plan 复用到 PC 客户端。它与 ADB 会话使用相同的阶段、最低数量、回车截屏/`n` 前进/`q` 部分结束语义，生成独立证据和 `manifest.json`；该 manifest 的 `captures[]` 可被现有 pipeline 归一化。程序不会主动寻找或操作游戏窗口，PID 必须由用户明确提供。
+`account-collector.mjs` 默认选择 `full_account` 计划，而不是校准抽样：三类列表必须完整走到末尾，角色/装备/神器详情必须逐个覆盖所有拥有对象；每个全量阶段输入 `n` 后还要键入 `complete`，确认才进入 manifest。`--mode golden` 明确只用于 OCR/公式校准，不能作为完整账号证据。统一入口的 `audit` 命令把最终快照交给同一完整性审计。
 
-`adb-session.mjs` 在单张截图能力之上提供引导式会话。它读取版本化 capture plan，逐步显示人工导航说明；每次回车才截屏，阶段最低数量不满足时拒绝直接进入下一步，但允许用 `q` 生成 partial session。图片和逐图元数据不可覆盖，最终 manifest 记录每一步是否达到门槛。`--dry-run` 不需要 ADB，可用于 Review 计划。
+`window-session.mjs` 将版本化 capture plan 复用到 PC 客户端。它与 ADB 会话使用相同的阶段、最低数量、覆盖确认、回车截屏/`n` 前进/`q` 部分结束语义，生成独立证据和 `manifest.json`；该 manifest 的 `captures[]` 可被现有 pipeline 归一化。程序不会主动寻找或操作游戏窗口，PID 必须由用户明确提供。
+
+`adb-session.mjs` 在单张截图能力之上提供引导式会话。它读取版本化 capture plan，逐步显示人工导航说明；每次回车才截屏，阶段最低数量不满足时拒绝直接进入下一步，full 的列表/详情阶段还需键入 `complete`，否则不能完成。允许用 `q` 生成 partial session。图片和逐图元数据不可覆盖，最终 manifest 记录数量与覆盖确认。`--dry-run` 不需要 ADB，可用于 Review 计划。
 
 别名字典由 `scripts/build_import_dictionary.mjs` 生成。当前包含 13 种属性、7 个槽位、6 种品质、351 个英雄、147 件神器和 252 个套装定义。负载关键类别（属性、槽位、品质、神器）没有未处理冲突；同名英雄和跨赛季同名套装保留为歧义，必须结合外部 ID、赛季或截图上下文解析。
 
@@ -81,6 +87,7 @@ node collectors/account-collector.mjs plan --channel official_pc
 node collectors/account-collector.mjs capture --channel official_pc --pid 1234 --output account-runs
 node collectors/account-collector.mjs process --manifest account-runs/<session>/manifest.json --profile <real-layout.json> --output account-runs/<session>/pipeline
 node collectors/account-collector.mjs status --state account-runs/<session>/pipeline/pipeline-state.json
+node collectors/account-collector.mjs audit --account account-runs/<session>/pipeline/account-snapshot.json --reference manual-reference.json --output account-runs/<session>/completeness-report.json
 ```
 
 `process` 第一次会停在 OCR 行级 Review，第二次会停在字段级 Review；分别传回导出的 `--ocr-review` 和 `--reviewed-staging` 后继续。统一入口不会自动登录、点击、读内存或抓包。

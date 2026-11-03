@@ -6,7 +6,7 @@ import path from "node:path";
 import process from "node:process";
 import readline from "node:readline/promises";
 import { captureAdbPng, probeAdb, selectAdbDevice } from "./lib/adb.mjs";
-import { summarizeCapturePlan, validateCapturePlan } from "./lib/capture-plan.mjs";
+import { captureStepComplete, requiresCoverageConfirmation, summarizeCapturePlan, validateCapturePlan } from "./lib/capture-plan.mjs";
 
 function option(name, fallback = null) {
   const inline = process.argv.find((value) => value.startsWith(`--${name}=`));
@@ -79,6 +79,7 @@ try {
   console.log("No taps or navigation will be performed. Navigate in the emulator yourself.");
   for (const step of plan.steps) {
     let captured = 0;
+    let coverageConfirmed = !requiresCoverageConfirmation(step);
     console.log(`\n[${step.id}] ${step.title}`);
     console.log(step.instructions);
     while (true) {
@@ -88,6 +89,11 @@ try {
         if (captured < step.minimumCaptures) {
           console.log(`Need at least ${step.minimumCaptures} captures for this step; currently ${captured}. Use q to finish as partial.`);
           continue;
+        }
+        if (requiresCoverageConfirmation(step)) {
+          const confirmation = (await prompt.question(`Type complete to confirm ${step.coverageRequirement} coverage, or press Enter to continue capturing: `)).trim().toLowerCase();
+          if (confirmation !== "complete") continue;
+          coverageConfirmed = true;
         }
         break;
       }
@@ -118,7 +124,14 @@ try {
       session.captures.push(record);
       console.log(`Captured ${imageName}`);
     }
-    session.stepResults.push({ stepId: step.id, captured, minimumCaptures: step.minimumCaptures, complete: captured >= step.minimumCaptures });
+    session.stepResults.push({
+      stepId: step.id,
+      captured,
+      minimumCaptures: step.minimumCaptures,
+      coverageRequirement: step.coverageRequirement,
+      coverageConfirmed,
+      complete: captureStepComplete(step, captured, coverageConfirmed)
+    });
     if (quitEarly) break;
   }
 } finally {

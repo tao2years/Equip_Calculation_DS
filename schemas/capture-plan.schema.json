@@ -4,11 +4,12 @@
   "title": "Dragonheir Guided Capture Plan",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "planId", "channel", "description", "steps"],
+  "required": ["schemaVersion", "planId", "channel", "purpose", "description", "steps"],
   "properties": {
-    "schemaVersion": {"const": "0.1.0"},
+    "schemaVersion": {"const": "0.2.0"},
     "planId": {"type": "string", "minLength": 1},
     "channel": {"enum": ["emulator", "official_pc", "steam", "unknown"]},
+    "purpose": {"enum": ["golden_calibration", "full_account"]},
     "description": {"type": "string", "minLength": 1},
     "steps": {
       "type": "array",
@@ -16,11 +17,12 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "title", "captureType", "minimumCaptures", "instructions", "completionEvidence"],
+        "required": ["id", "title", "captureType", "minimumCaptures", "coverageRequirement", "instructions", "completionEvidence"],
         "properties": {
           "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
           "title": {"type": "string", "minLength": 1},
           "captureType": {"enum": ["unclassified", "hero_list", "hero_detail", "gear_list", "gear_detail", "artifact_list", "artifact_detail"]},
+          "coverageRequirement": {"enum": ["minimum_sample", "channel_identity", "complete_list", "all_owned_details"]},
           "minimumCaptures": {"type": "integer", "minimum": 0},
           "instructions": {"type": "string", "minLength": 1},
           "completionEvidence": {"type": "string", "minLength": 1}

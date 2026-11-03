@@ -54,6 +54,8 @@
           "stepId": {"type": "string"},
           "captured": {"type": "integer", "minimum": 0},
           "minimumCaptures": {"type": "integer", "minimum": 0},
+          "coverageRequirement": {"enum": ["minimum_sample", "channel_identity", "complete_list", "all_owned_details"]},
+          "coverageConfirmed": {"type": "boolean"},
           "complete": {"type": "boolean"}
         }
       }

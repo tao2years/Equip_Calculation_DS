@@ -55,7 +55,7 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - 1 working local Windows OCR adapter; the installed Simplified Chinese recognizer extracted 58 lines from the prototype screenshot and the expanded dictionary scanner located 15 relevant lines. No live-game accuracy has been measured.
 - 1 batch recognition smoke test and 1 hidden-browser Review workflow: unresolved fields block acceptance, a chosen candidate clears the gate, 1536×1024 and 390×844 layouts were checked, and browser logs were clean.
 - 1 ADB adapter unit suite covering device-list parsing, authorization and ambiguous-device selection; current environment probe returns `adb executable not found`.
-- 1 guided capture-plan suite: 7 stages and 50 minimum golden screenshots, plus dry-run output and capture plan/session schemas. No live PNG has been captured from an emulator.
+- 2×2 guided capture-plan suite: emulator/PC 各有 full-account 与 golden-calibration 计划。golden 为 7 阶段/最低 50 张；full 要求三类列表到末尾及所有拥有对象详情覆盖确认。dry-run、路由与 Schema 通过；无 live PNG。
 - Hidden-browser optimizer regression at 1440×900 and 390×844: default result, dynamic defense constraint, maximum/minimum defense objective, generic theoretical maximum, mobile layout and zero relevant console messages all passed.
 - Inventory-editor regression: the example loaded as 2 heroes/12 gear/3 artifacts; delete/add preserved unique IDs, session handoff preserved counts, and the optimizer enumerated 64 builds with 1 feasible result. Desktop console was clean; compact 500px headless render had no clipping after the responsive fix.
 - Repeat-import regression: merging a synthetic partial rescan produced 3 heroes/13 gear/3 artifacts and the expected per-entity diff; 11 absent gear and 2 absent artifacts were retained with an explicit coverage warning. Browser console remained clean.
@@ -72,17 +72,18 @@ Phase 1/2 boundary — the single-hero solver, immutable screenshot staging, loc
 - Hidden-browser weighted-objective QA: loaded the synthetic account, selected the custom weighted panel objective, used attack weight 1 and crit-damage-per-1% weight 10, exhaustively evaluated 64 builds and rendered the single feasible result with score `1,556.95`; browser warning/error log was empty. Browser plugin and repository Playwright configuration were absent, so QA used the hidden in-app browser.
 - Public compiler/audit timestamps now derive from immutable source retrieval times. Two consecutive full verification runs left `game-data.public.json` and `import-dictionary.json` byte-identical, improving reproducibility across machines.
 - Official-PC candidate adapter now supports an explicit-PID, visible-window-only screenshot with PNG/SHA-256/bounds metadata and no input automation. A guided 7-stage PC session reuses the ADB capture plan and produces a pipeline-compatible manifest. Windows capability probe, invalid-PID/no-output guard, dry-run and ADB/PC manifest normalization passed; no game window was captured, so client/DPI/occlusion behavior remains unvalidated.
-- Emulator and official-PC capture plans are now separate, both require 7 stages / at least 50 golden screenshots, and each session runner rejects the other channel's plan before capture.
+- Emulator 和 official-PC capture plans 按渠道分开；每个渠道又区分 full-account 与 50 张 golden-calibration。session runner 拒绝错误渠道，full 阶段没有显式覆盖确认时不能 complete。
 - Post-finalize account completeness audit now compares a snapshot to an independent manual reference across total counts, six gear-slot counts, hero/artifact ID sets, duplicate owned/definition IDs and unknown public references. Synthetic pass, missing gear/slot and duplicate-hero regressions pass; no live manual reference exists yet.
 - Sheet-formula golden-case harness now compares the shared optimizer formula against observed stats with per-case tolerances and evidence/channel/build metadata. Synthetic arithmetic pass and deliberate mismatch detection pass; there are no `client_observation` cases yet.
 
 - Steam 官方社区公告快照现已明确将 `dragonheir.info` 称为 official Wiki；来源身份已确认，但所有编译数值仍保持未经过客户端验证的证据等级。对 829 条原始目录对象的字段审计还确认：公开对象包含强化上限与主属性曲线，不包含完整随机副词条池、roll 落点、次数或概率。
 - `scripts/refresh_public_data.mjs` 现提供跨平台的一键公共数据刷新：校验并复用同日不可变快照或抓取新日期的装备目录、英雄目录与官方 Wiki 身份公告，再重建 GameData、导入词典和审计输出。编译产物顶层 provenance 已包含 SRC-004/005/024 三条快照哈希。
 - 新增由 SRC-002 哈希约束生成的 `equipment-rules.public.json`：5 组副词条 roll/单次强化规则、4 组主属性里程碑与 3 条机制公式候选。强化事件总次数仍为显式未知，规则尚未进入求解器自动计算。
-- `collectors/account-collector.mjs` 现将模拟器/官方 PC 计划、引导采集、pipeline 处理和状态查询统一为 plan/capture/process/status 四个命令；底层仍保留两级人工 Review 和渠道边界。两个渠道 plan 与状态摘要已回归，真实客户端 capture 未执行。
+- `collectors/account-collector.mjs` 现将模拟器/官方 PC 计划、引导采集、pipeline 处理、状态查询和完整性审计统一为 plan/capture/process/status/audit；底层仍保留两级人工 Review 和渠道边界。full/golden 路由与合成 audit 已回归，真实客户端 capture 未执行。
 - 新增 `full_crit_damage_proxy`：共享求解器自动强制重击率≥100%，结果 JSON 保存 applied/implied constraints。隐藏 HTML QA 在没有手工重击条件时得到唯一 100% 方案（627 攻击、93% 重击伤害、分数 1210.01）；固定低暴头盔后正确证明理论最高仅 85%。
 - 高等级角色不再静默使用未验证的公共成长外推：等级＞1 必须有账号观测 `baseStatsOverride`，库存编辑器新增无装备基础属性输入；研究 CLI 可显式允许外推。单元测试与隐藏库存 UI 已验证缺失阻断、补齐后添加成功。
 - 官方 Wiki 套装静态效果已进入可执行数据：248 个公共家族中 144 个完整无条件句通过白名单解析，加上 4 个种子定义，共 148 个套装可计算面板加成；条件/未知/单位异常文本整句拒绝并保留原文。真实求解链路测试已验证两件套生命百分比与抗性生效。
+- 账号采集计划已纠正“校准抽样≠全账号”的边界：统一 CLI 默认 full，要求全部角色/装备/神器列表与详情覆盖确认，并内置 audit 路由；golden 必须显式选择。当前仍缺真实客户端 profile 与全量实测。
 
 ## Next durable steps
 

@@ -35,8 +35,20 @@ function run(script, args) {
 
 function channelConfig() {
   const channel = required("channel");
-  if (channel === "emulator") return { channel, script: "collectors/adb-session.mjs", plan: "examples/emulator-capture-plan.example.json" };
-  if (channel === "official_pc") return { channel, script: "collectors/window-session.mjs", plan: "examples/pc-capture-plan.example.json" };
+  const mode = option("mode", "full");
+  if (!["full", "golden"].includes(mode)) throw new Error(`Unsupported --mode=${mode}; expected full or golden`);
+  if (channel === "emulator") return {
+    channel,
+    mode,
+    script: "collectors/adb-session.mjs",
+    plan: mode === "full" ? "examples/emulator-full-account-capture-plan.json" : "examples/emulator-capture-plan.example.json"
+  };
+  if (channel === "official_pc") return {
+    channel,
+    mode,
+    script: "collectors/window-session.mjs",
+    plan: mode === "full" ? "examples/pc-full-account-capture-plan.json" : "examples/pc-capture-plan.example.json"
+  };
   throw new Error(`Unsupported --channel=${channel}; expected emulator or official_pc`);
 }
 
@@ -44,11 +56,13 @@ if (!command || flag("help") || command === "help") {
   console.log(`Dragonheir account collector
 
 Commands:
-  plan    --channel emulator|official_pc
-  capture --channel emulator|official_pc --output <dir> [--serial <adb>] [--pid <number>]
+  plan    --channel emulator|official_pc [--mode full|golden]
+  capture --channel emulator|official_pc --output <dir> [--mode full|golden] [--serial <adb>] [--pid <number>]
   process --manifest <manifest.json> --profile <layout.json> --output <dir> [--ocr-review <json>] [--reviewed-staging <json>]
+  audit   --account <account.json> --reference <manual-reference.json> --output <report.json> [--game-data <json>]
   status  --state <pipeline-state.json>
 
+Full mode is the default and requires explicit complete-list/all-owned-detail confirmations. Golden mode captures calibration samples only and cannot prove account completeness.
 The collector never logs in, clicks, reads process memory or intercepts traffic. Capture is user-driven. Processing stops at two mandatory human Review gates.`);
   process.exit(0);
 }
@@ -73,6 +87,15 @@ if (command === "plan") {
   if (option("reviewed-staging")) args.push("--reviewed-staging", path.resolve(option("reviewed-staging")));
   if (flag("allow-partial")) args.push("--allow-partial");
   run("collectors/pipeline.mjs", args);
+} else if (command === "audit") {
+  const args = [
+    "audit-account",
+    "--input", path.resolve(required("account")),
+    "--reference", path.resolve(required("reference")),
+    "--output", path.resolve(required("output"))
+  ];
+  if (option("game-data")) args.push("--game-data", path.resolve(option("game-data")));
+  run("collectors/cli.mjs", args);
 } else if (command === "status") {
   const statePath = path.resolve(required("state"));
   const state = JSON.parse(await readFile(statePath, "utf8"));

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "0.2.0",
+  "planId": "dragonheir-official-pc-full-account-v1",
+  "channel": "official_pc",
+  "purpose": "full_account",
+  "description": "User-driven complete owned-account capture from an explicitly selected visible PC client window.",
+  "steps": [
+    {
+      "id": "channel-version",
+      "title": "渠道与版本",
+      "captureType": "unclassified",
+      "minimumCaptures": 1,
+      "coverageRequirement": "channel_identity",
+      "instructions": "在官方 PC 客户端中打开能显示渠道、客户端版本和服务器信息的页面；确认没有密码、手机号或令牌后截屏。",
+      "completionEvidence": "至少一张可识别渠道、版本和服务器范围的截图。"
+    },
+    {
+      "id": "hero-list-all",
+      "title": "全部已拥有角色列表",
+      "captureType": "hero_list",
+      "minimumCaptures": 1,
+      "coverageRequirement": "complete_list",
+      "instructions": "从角色列表顶部开始逐屏截取到末尾；相邻截图保留重叠角色。记录界面总数（若显示），不要只截常用角色。",
+      "completionEvidence": "首屏、末屏、连续重叠锚点和客户端显示总数（若有）。"
+    },
+    {
+      "id": "hero-detail-all",
+      "title": "全部已拥有角色详情",
+      "captureType": "hero_detail",
+      "minimumCaptures": 1,
+      "coverageRequirement": "all_owned_details",
+      "instructions": "逐个打开每个已拥有角色并截取名称、等级、星级/灵感和面板。优先记录无装备基础面板；无法卸装时保留当前面板并在 Review 中标记，不能冒充裸属性。",
+      "completionEvidence": "角色列表中的每个拥有角色都有可关联的详情截图。"
+    },
+    {
+      "id": "gear-list-all",
+      "title": "全部装备背包列表",
+      "captureType": "gear_list",
+      "minimumCaptures": 1,
+      "coverageRequirement": "complete_list",
+      "instructions": "清除筛选后从背包顶部逐屏截取到末尾，记录排序与总数；相邻截图保留重叠物品。若按槽位分页，六个槽位都必须完成。",
+      "completionEvidence": "六槽位均有起点、终点、连续锚点和可对账总数。"
+    },
+    {
+      "id": "gear-detail-all",
+      "title": "全部装备详情",
+      "captureType": "gear_detail",
+      "minimumCaptures": 1,
+      "coverageRequirement": "all_owned_details",
+      "instructions": "逐件打开账号中每件装备，截取 definition/名称、槽位、套装、强化、全部主副词条、锁定和穿戴者。视觉完全相同的装备也分别截图。",
+      "completionEvidence": "人工清点中的每件装备都有独立详情证据，可按六槽位计数对账。"
+    },
+    {
+      "id": "artifact-list-all",
+      "title": "全部已拥有神器列表",
+      "captureType": "artifact_list",
+      "minimumCaptures": 1,
+      "coverageRequirement": "complete_list",
+      "instructions": "从神器列表顶部逐屏截取到末尾并保留重叠锚点，记录拥有状态和总数。",
+      "completionEvidence": "神器列表起点、终点、连续锚点和拥有总数。"
+    },
+    {
+      "id": "artifact-detail-all",
+      "title": "全部已拥有神器详情",
+      "captureType": "artifact_detail",
+      "minimumCaptures": 1,
+      "coverageRequirement": "all_owned_details",
+      "instructions": "逐个打开每件已拥有神器，截取名称、强化等级、精炼阶数、静态属性、锁定和穿戴者。",
+      "completionEvidence": "神器列表中的每件已拥有神器都有可关联的详情截图。"
+    }
+  ]
+}

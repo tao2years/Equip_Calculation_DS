@@ -22,13 +22,14 @@
 先决条件：用户选择一个允许 ADB 调试的模拟器，主动完成登录，并在实验期间自行控制账号。
 
 1. `node collectors/cli.mjs adb-probe`：只检查 ADB 与已授权设备。
-2. `node collectors/adb-session.mjs --plan examples/emulator-capture-plan.example.json --output captures` 启动引导式会话；也可先用 `--dry-run` Review 7 个阶段和最低 50 张截图。
+2. 先用 `node collectors/account-collector.mjs plan --channel emulator --mode golden` Review 校准计划并取得真实 layout profile；校准通过后，`node collectors/account-collector.mjs capture --channel emulator --output captures` 默认执行全账号计划。全账号计划不是固定 50 张抽样，而是要求三个列表到末尾和所有拥有对象详情覆盖确认。
 3. 用户导航到角色列表、装备列表、神器列表或详情页，程序只在用户回车时截取当前画面。
 4. 会话保存 PNG、逐图 JSON、计划快照和 complete/partial manifest；不自动点击、不上传。
 5. `stage-screenshots`/`ocr-bundle` 生成文字、坐标和字典命中。
 6. Review UI 修正字段；布局解析器输出 `OcrStaging`。
 7. `finalize-staging` 生成 `AccountSnapshot`。
-8. 人工核对列表数量、随机抽样详情、重复/漏项与穿戴关系。
+8. 人工核对列表数量、详情覆盖、重复/漏项与穿戴关系。
+9. full 模式生成快照后，通过 `account-collector.mjs audit` 与独立人工清点 reference 对账；未通过不得标为全账号完成。
 
 ## 需要覆盖的页面
 
@@ -36,7 +37,7 @@
 
 - 角色列表：拥有状态、名称/头像、分页或滚动边界。
 - 角色详情：等级、星级、灵感、元素/定位、未穿装备或当前面板。
-- 用 5–10 个角色建立 growth/面板 golden cases，不要求首轮逐个角色抓所有技能文本；技能文本属于公共 definition。
+- golden 模式用 5–10 个角色建立 growth/面板校准；full 模式逐个采集所有拥有角色的等级、成长状态和可用基础面板。技能文本属于公共 definition，不在账号文件重复抓取。
 
 ### 装备
 

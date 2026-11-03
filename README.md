@@ -23,6 +23,10 @@ powershell -ExecutionPolicy Bypass -File .\scripts\serve_prototype.ps1
 账号采集 CLI：
 
 ```powershell
+node collectors/account-collector.mjs plan --channel emulator
+node collectors/account-collector.mjs capture --channel emulator --output account-runs
+node collectors/account-collector.mjs plan --channel official_pc --mode golden
+node collectors/account-collector.mjs audit --account account.json --reference manual-reference.json --output completeness-report.json
 node collectors/cli.mjs probe
 node collectors/cli.mjs validate-account --input account.json
 node collectors/cli.mjs audit-account --input account.json --reference manual-reference.json --output completeness-report.json
@@ -45,9 +49,11 @@ node collectors/cli.mjs finalize-staging --input ocr-staging.json --output accou
 
 `window-screenshot` 是官方 PC 客户端候选入口：只接受用户明确给出的进程 PID，只截取当前可见且未最小化的主窗口，保存本地 PNG、窗口边界与哈希元数据，不枚举窗口标题、不自动登录或点击。本机 Windows 能力探测已通过，但没有游戏客户端，因此尚未验证遮挡、DPI、全屏模式和真实页面覆盖。
 
-`window-session.mjs` 将同一份 7 阶段采集计划应用到 PC 窗口：用户自行在游戏内导航，每次按回车才截屏；各阶段最低截图数未满足时不能进入下一步，提前退出只会生成 `partial` manifest。该 manifest 可直接交给后续 OCR/pipeline，dry-run 已通过但真实窗口会话尚未执行。
+统一入口 `account-collector.mjs` 默认使用 `full` 模式：角色、装备、神器列表必须走到末尾，三个详情阶段要求逐个覆盖所有拥有对象；输入 `n` 后还必须键入 `complete` 才记录覆盖确认。`--mode golden` 只采集 50 张校准样本，不能证明账号完整。最终账号仍须运行统一入口的 `audit`，与独立人工 reference 对账。
 
-`adb-session.mjs` 是引导式完整采集程序。它按 7 个阶段提示用户手动打开渠道/版本、角色列表、角色详情、装备列表/详情、神器列表/详情；回车截屏，`n` 进入下一阶段，`q` 以 partial 状态结束。示例计划至少覆盖 50 张 golden screenshots，并为每张图保存独立元数据和最终 manifest。
+`window-session.mjs` 将同一份 7 阶段采集计划应用到 PC 窗口：用户自行在游戏内导航，每次按回车才截屏；各阶段最低截图数或全量覆盖确认未满足时不能得到 complete，提前退出只会生成 `partial` manifest。该 manifest 可直接交给后续 OCR/pipeline，dry-run 已通过但真实窗口会话尚未执行。
+
+`adb-session.mjs` 是底层引导式采集程序。它按 7 个阶段提示用户手动打开渠道/版本、角色列表、角色详情、装备列表/详情、神器列表/详情；回车截屏，`n` 进入下一阶段，`q` 以 partial 状态结束。仓库分别提供全账号计划和最低 50 张的 golden 校准计划，并为每张图保存独立元数据和最终 manifest。
 
 `ocr-bundle` 会对任务内全部原图运行本机 Windows OCR，并另存 `recognition.json`、逐图文字与坐标；它拒绝覆盖已有识别证据。`extract-layout` 再按渠道/build 专属 profile 生成 staging 与问题报告。当前只有三类合成详情页通过这条链路，尚无真实国服 profile。校对页可关联本地原图、叠加 OCR 框、修正字典候选、接受/驳回截图并导出 Review 决策；在没有目标客户端与真实样本时不宣称真实 OCR 准确率或自动登录采集已完成。
 
