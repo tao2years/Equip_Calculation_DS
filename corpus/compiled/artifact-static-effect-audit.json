@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-03T10:14:26.753Z",
+  "gameDataVersionId": "public-catalog-2026-11-03",
+  "parserVersion": "artifact-static-effect-0.1.0",
+  "evidenceLevel": "public_effect_text_parsed_not_client_validated",
+  "counts": {
+    "totalArtifacts": 147,
+    "artifactsWithEffectText": 147,
+    "compiledStaticArtifacts": 5,
+    "compiledRefinementLevels": 30,
+    "retainedAsTextOnly": 142
+  },
+  "compiledArtifacts": [
+    {
+      "artifactDefinitionId": "artifact-400007",
+      "name": "Rift Hourglass",
+      "refinementLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "skill_haste": 50
+          },
+          "rawText": "The wearer gains 50.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "skill_haste": 60
+          },
+          "rawText": "The wearer gains 60.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "skill_haste": 70
+          },
+          "rawText": "The wearer gains 70.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "skill_haste": 80
+          },
+          "rawText": "The wearer gains 80.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "skill_haste": 90
+          },
+          "rawText": "The wearer gains 90.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "skill_haste": 100
+          },
+          "rawText": "The wearer gains 100.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        }
+      ],
+      "source": {
+        "sourceId": "SRC-004",
+        "url": "https://www.dragonheir.info/equipment",
+        "verification": "public_catalog_compiled_not_client_validated"
+      }
+    },
+    {
+      "artifactDefinitionId": "artifact-200008",
+      "name": "Troll's Heart",
+      "refinementLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "hp_pct": 0.1
+          },
+          "rawText": "The wearer obtains 10% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "hp_pct": 0.12
+          },
+          "rawText": "The wearer obtains 12% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "hp_pct": 0.14
+          },
+          "rawText": "The wearer obtains 14% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "hp_pct": 0.16
+          },
+          "rawText": "The wearer obtains 16% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "hp_pct": 0.18
+          },
+          "rawText": "The wearer obtains 18% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "hp_pct": 0.2
+          },
+          "rawText": "The wearer obtains 20% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        }
+      ],
+      "source": {
+        "sourceId": "SRC-004",
+        "url": "https://www.dragonheir.info/equipment",
+        "verification": "public_catalog_compiled_not_client_validated"
+      }
+    },
+    {
+      "artifactDefinitionId": "artifact-200005",
+      "name": "Dancing Gyro",
+      "refinementLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "attack_speed_pct": 0.15
+          },
+          "rawText": "The wearer obtains 15% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "attack_speed_pct": 0.17
+          },
+          "rawText": "The wearer obtains 17% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "attack_speed_pct": 0.19
+          },
+          "rawText": "The wearer obtains 19% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "attack_speed_pct": 0.21
+          },
+          "rawText": "The wearer obtains 21% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "attack_speed_pct": 0.23
+          },
+          "rawText": "The wearer obtains 23% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "attack_speed_pct": 0.25
+          },
+          "rawText": "The wearer obtains 25% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        }
+      ],
+      "source": {
+        "sourceId": "SRC-004",
+        "url": "https://www.dragonheir.info/equipment",
+        "verification": "public_catalog_compiled_not_client_validated"
+      }
+    },
+    {
+      "artifactDefinitionId": "artifact-meditator-pipe",
+      "name": "冥想者烟斗",
+      "refinementLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "enlightenment": 20
+          },
+          "rawText": "The wearer obtains 20.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "enlightenment": 23
+          },
+          "rawText": "The wearer obtains 23.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "enlightenment": 26
+          },
+          "rawText": "The wearer obtains 26.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "enlightenment": 29
+          },
+          "rawText": "The wearer obtains 29.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "enlightenment": 32
+          },
+          "rawText": "The wearer obtains 32.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "enlightenment": 35
+          },
+          "rawText": "The wearer obtains 35.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        }
+      ],
+      "source": {
+        "sourceId": "SRC-004",
+        "url": "https://www.dragonheir.info/equipment",
+        "verification": "public_catalog_compiled_not_client_validated"
+      }
+    },
+    {
+      "artifactDefinitionId": "artifact-ancestor-bone",
+      "name": "先祖之骨",
+      "refinementLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "crit_damage": 0.15
+          },
+          "rawText": "The wearer obtains 15% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "crit_damage": 0.17
+          },
+          "rawText": "The wearer obtains 17% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "crit_damage": 0.19
+          },
+          "rawText": "The wearer obtains 19% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "crit_damage": 0.21
+          },
+          "rawText": "The wearer obtains 21% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "crit_damage": 0.23
+          },
+          "rawText": "The wearer obtains 23% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "crit_damage": 0.25
+          },
+          "rawText": "The wearer obtains 25% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        }
+      ],
+      "source": {
+        "sourceId": "SRC-004",
+        "url": "https://www.dragonheir.info/equipment",
+        "verification": "public_catalog_compiled_not_client_validated"
+      }
+    }
+  ],
+  "limitations": [
+    "Only a complete single sentence matching the unconditional wearer stat whitelist is compiled.",
+    "Every refinement rank must parse successfully or the artifact remains text-only.",
+    "Conditional, timed, chance-based, target-dependent, hero-specific and encounter effects are not added to sheet stats.",
+    "No compiled effect has been validated against the target live client."
+  ]
+}

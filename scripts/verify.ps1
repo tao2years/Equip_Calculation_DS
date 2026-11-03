@@ -29,6 +29,9 @@ try {
     node --check scripts/build_game_data.mjs
     node --check scripts/lib/parse-set-bonus.mjs
     node --check scripts/test_parse_set_bonus.mjs
+    node --check scripts/lib/parse-artifact-static-effect.mjs
+    node --check scripts/test_parse_artifact_static_effect.mjs
+    node --check scripts/audit_artifact_static_effects.mjs
     node --check scripts/build_import_dictionary.mjs
     node --check scripts/build_equipment_rules.mjs
     node --check scripts/test_import_dictionary.mjs
@@ -85,11 +88,13 @@ try {
     node scripts/compile_public_catalogs.mjs
     node scripts/build_game_data.mjs
     node scripts/test_parse_set_bonus.mjs
+    node scripts/test_parse_artifact_static_effect.mjs
     node scripts/build_import_dictionary.mjs
     node scripts/build_equipment_rules.mjs
     node scripts/audit_public_domain.mjs
     node scripts/audit_equipment_model.mjs
     node scripts/audit_hero_model.mjs
+    node scripts/audit_artifact_static_effects.mjs
     node scripts/compile_cn_name_candidates.mjs
     node scripts/test_import_dictionary.mjs
     node scripts/build_ocr_staging_fixture.mjs
@@ -175,6 +180,7 @@ pairs = [
     ('schemas/optimizer-benchmark.schema.json', 'corpus/compiled/optimizer-scalability-benchmark.json'),
     ('schemas/equipment-model-audit.schema.json', 'corpus/compiled/equipment-model-audit.json'),
     ('schemas/hero-data-model-audit.schema.json', 'corpus/compiled/hero-data-model-audit.json'),
+    ('schemas/artifact-static-effect-audit.schema.json', 'corpus/compiled/artifact-static-effect-audit.json'),
 ]
 for schema_path, data_path in pairs:
     with (root / schema_path).open(encoding='utf-8') as handle:

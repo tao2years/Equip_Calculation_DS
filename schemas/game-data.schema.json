@@ -135,6 +135,21 @@
           "type": "array",
           "description": "Artifact skill text by refinement rank. Text is evidence, not an automatically applied sheet-stat bonus."
         },
+        "staticEffectLevels": {
+          "type": "array",
+          "description": "Strictly parsed unconditional sheet-stat effects by refinement rank. Empty means the effect remains text-only.",
+          "items": {
+            "type": "object",
+            "required": ["refinement", "values", "rawText", "parserVersion", "evidenceLevel"],
+            "properties": {
+              "refinement": {"type": "integer", "minimum": 0, "maximum": 5},
+              "values": {"type": "object", "additionalProperties": {"type": "number"}},
+              "rawText": {"type": "string"},
+              "parserVersion": {"type": "string"},
+              "evidenceLevel": {"type": "string"}
+            }
+          }
+        },
         "effectSummary": {"type": "string"},
         "restrictions": {"type": ["object", "null"]},
         "source": {"$ref": "#/$defs/source"}

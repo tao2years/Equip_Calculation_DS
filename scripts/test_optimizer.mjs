@@ -44,6 +44,23 @@ const observedOverride = resolveArtifactStats(gameData, {
 assert.equal(observedOverride.source, "account_observed");
 assert.deepEqual(observedOverride.stats, { atk_flat: 999 });
 assert(observedOverride.warnings.some((entry) => entry.includes("计算采用账号观测值")));
+const staticArtifact = resolveArtifactStats(gameData, {
+  ownedArtifactId: "static-effect",
+  artifactDefinitionId: "artifact-ancestor-bone",
+  level: 20,
+  refinement: 0,
+  locked: false
+});
+assert.equal(staticArtifact.source, "public_level_curve+static_effect");
+assert.equal(staticArtifact.stats.atk_flat, 195);
+assert.equal(Number(staticArtifact.stats.hp_pct.toFixed(2)), 0.35);
+assert.equal(Number(staticArtifact.stats.crit_damage.toFixed(2)), 0.15);
+assert(staticArtifact.warnings.some((entry) => entry.includes("公共文本白名单解析")));
+const refinedStaticArtifact = resolveArtifactStats(gameData, { ownedArtifactId: "static-effect-r5", artifactDefinitionId: "artifact-ancestor-bone", level: 20, refinement: 5, locked: false });
+assert.equal(Number(refinedStaticArtifact.stats.crit_damage.toFixed(2)), 0.25);
+const observedStaticArtifact = resolveArtifactStats(gameData, { ownedArtifactId: "static-effect-observed", artifactDefinitionId: "artifact-ancestor-bone", level: 20, refinement: 0, observedStats: [{ stat: "atk_flat", value: 999 }], locked: false });
+assert.equal(observedStaticArtifact.stats.atk_flat, 999);
+assert.equal(Number(observedStaticArtifact.stats.crit_damage.toFixed(2)), 0.15);
 const result = enumerateBuilds(request);
 assert.equal(result.searched, 64);
 assert.equal(result.validCount, 1);

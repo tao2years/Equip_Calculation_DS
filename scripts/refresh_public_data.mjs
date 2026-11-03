@@ -18,6 +18,7 @@ const BUILD_STEPS = [
   "scripts/audit_public_domain.mjs",
   "scripts/audit_equipment_model.mjs",
   "scripts/audit_hero_model.mjs",
+  "scripts/audit_artifact_static_effects.mjs",
   "scripts/compile_cn_name_candidates.mjs"
 ];
 

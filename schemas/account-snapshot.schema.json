@@ -146,7 +146,7 @@
         "equippedBy": {"type": ["string", "null"]},
         "stats": {"type": "object", "description": "Deprecated normalized observed-stat override retained for 0.1 snapshot compatibility.", "additionalProperties": {"type": "number"}},
         "effectStats": {"type": "object", "description": "Deprecated experimental field. Conditional artifact effects are not added to sheet stats.", "additionalProperties": {"type": "number"}},
-        "observedStats": {"type": "array", "items": {"$ref": "#/$defs/observedValue"}, "default": []},
+        "observedStats": {"type": "array", "description": "Observed static attribute lines from the artifact detail panel. This excludes separately described artifact effects.", "items": {"$ref": "#/$defs/observedValue"}, "default": []},
         "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
         "fieldEvidence": {"type": "array", "items": {"$ref": "#/$defs/fieldEvidence"}}
       }

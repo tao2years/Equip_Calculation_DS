@@ -70,7 +70,8 @@ function renderDetail(entry, kind) {
     const set = state.gameData.sets.find((item) => item.id === entry.setId);
     domain = `<div class="detail-section"><h3>装备信息</h3><p>槽位：${escapeHtml(SLOT_LABELS[entry.slot] || "待核实")} · 强化上限：${escapeHtml(entry.enhancementLimit ?? "未知")} · 套装：${escapeHtml(set ? displayName(set) : "散件 / 未知")}</p></div>`;
   } else if (kind === "artifacts") {
-    domain = `<div class="detail-section"><h3>精炼 0 效果</h3><p>${escapeHtml(entry.effectSummary || "无效果文本")}</p><p>限制：${escapeHtml(entry.restrictions || "未记录")}</p></div>`;
+    const staticEffect = entry.staticEffectLevels?.find((level) => level.refinement === 0);
+    domain = `<div class="detail-section"><h3>精炼 0 效果</h3><p>${escapeHtml(entry.effectSummary || "无效果文本")}</p>${staticEffect ? `<p>可执行常驻面板：${escapeHtml(Object.entries(staticEffect.values).map(([stat, value]) => formatPublicStat(stat, value, state.gameData.statDefinitions)).join("，"))}</p>` : `<p>当前保持文本态，不加入常驻面板。</p>`}<p>限制：${escapeHtml(entry.restrictions || "未记录")}</p></div>`;
   } else {
     domain = `<div class="detail-section"><h3>套装效果</h3><ul>${(entry.bonuses || []).map((bonus) => `<li>${escapeHtml(bonus.pieces)} 件：${escapeHtml(Object.entries(bonus.sheetStats || {}).map(([stat, value]) => formatPublicStat(stat, value, state.gameData.statDefinitions)).join("，") || bonus.rawText || "未建模")}</li>`).join("") || "<li>当前没有可执行静态加成</li>"}</ul></div>`;
   }

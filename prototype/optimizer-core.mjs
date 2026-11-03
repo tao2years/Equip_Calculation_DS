@@ -72,30 +72,42 @@ export function resolveArtifactStats(gameData, artifact) {
   if (!artifact) return { stats: {}, source: "none", definition: null, publicStats: {}, observedStats: {}, warnings: ["未选择神器"] };
   const definition = gameDataIndexes(gameData).artifacts.get(artifact.artifactDefinitionId) || null;
   const level = Number(artifact.level);
+  const refinement = Number(artifact.refinement);
   const curve = definition?.levelCurve || definition?.refinementCurve || [];
   const curveEntry = Number.isInteger(level) ? curve.find((entry) => entry.level === level) : null;
-  const publicStats = Object.fromEntries(Object.entries(curveEntry?.values || {}).filter(([, value]) => typeof value === "number"));
+  const curveStats = Object.fromEntries(Object.entries(curveEntry?.values || {}).filter(([, value]) => typeof value === "number"));
+  const staticEffectEntry = Number.isInteger(refinement) ? definition?.staticEffectLevels?.find((entry) => entry.refinement === refinement) : null;
+  const staticEffectStats = Object.fromEntries(Object.entries(staticEffectEntry?.values || {}).filter(([, value]) => typeof value === "number"));
+  const publicStats = { ...curveStats };
+  addStats(publicStats, staticEffectStats);
   const observedStats = observedArtifactStats(artifact);
   const warnings = [];
   if (!definition) warnings.push(`神器定义不存在：${artifact.artifactDefinitionId}`);
   else if (!Number.isInteger(level)) warnings.push("账号神器缺少强化等级，无法选择公共属性曲线");
   else if (!curveEntry) warnings.push(`公共目录没有神器 +${level} 的属性曲线`);
+  if (definition?.staticEffectLevels?.length && !Number.isInteger(refinement)) warnings.push("账号神器缺少精炼阶数，无法选择已编译常驻效果");
+  else if (definition?.staticEffectLevels?.length && !staticEffectEntry) warnings.push(`公共目录没有神器精炼 ${refinement} 的已编译常驻效果`);
+  if (Object.keys(staticEffectStats).length) warnings.push("神器常驻精炼效果来自公共文本白名单解析，尚未经过客户端验证");
   if (Object.keys(observedStats).length) {
-    if (Object.keys(publicStats).length) {
-      const mismatches = [...new Set([...Object.keys(observedStats), ...Object.keys(publicStats)])]
-        .filter((key) => Math.abs((observedStats[key] || 0) - (publicStats[key] || 0)) > 1e-9);
+    if (Object.keys(curveStats).length) {
+      const mismatches = [...new Set([...Object.keys(observedStats), ...Object.keys(curveStats)])]
+        .filter((key) => Math.abs((observedStats[key] || 0) - (curveStats[key] || 0)) > 1e-9);
       if (mismatches.length) warnings.push(`账号观测属性与公共 +${level} 曲线不同：${mismatches.join("、")}；计算采用账号观测值`);
     }
+    const resolvedStats = { ...observedStats };
+    addStats(resolvedStats, staticEffectStats);
     return {
-      stats: observedStats,
-      source: Array.isArray(artifact.observedStats) && artifact.observedStats.length ? "account_observed" : "legacy_account_stats",
+      stats: resolvedStats,
+      source: `${Array.isArray(artifact.observedStats) && artifact.observedStats.length ? "account_observed" : "legacy_account_stats"}${Object.keys(staticEffectStats).length ? "+public_static_effect" : ""}`,
       definition,
       publicStats,
+      curveStats,
+      staticEffectStats,
       observedStats,
       warnings
     };
   }
-  if (Object.keys(publicStats).length) return { stats: publicStats, source: "public_level_curve", definition, publicStats, observedStats, warnings };
+  if (Object.keys(publicStats).length) return { stats: publicStats, source: `public_level_curve${Object.keys(staticEffectStats).length ? "+static_effect" : ""}`, definition, publicStats, curveStats, staticEffectStats, observedStats, warnings };
   warnings.push("神器没有可用于计算的静态面板属性");
   return { stats: {}, source: "unavailable", definition, publicStats, observedStats, warnings };
 }

@@ -28,6 +28,7 @@
 - [三项成品实施与验收合同](../outputs/implementation-contract.md)
 - [求解器合成规模基准](../outputs/optimizer-scalability-benchmark.md)
 - [神器数据模型审计](../outputs/artifact-data-model-audit.md)
+- [神器常驻效果编译审计](../outputs/artifact-static-effect-audit.md)
 - [公共装备定义与账号关联审计](../outputs/equipment-data-model-audit.md)
 - [公共角色数据模型审计](../outputs/hero-data-model-audit.md)
 - [当前阶段交接说明](../outputs/HANDOFF-2026-11-03.md)

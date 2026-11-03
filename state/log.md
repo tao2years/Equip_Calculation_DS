@@ -322,3 +322,11 @@ Append-only. Newest entries go at the bottom.
 - Added search, season/rarity filters, review-only filters, 50-row pagination, keyboard-selectable rows and source-aware detail views. Hero details show level-one stats, skills and quality gates; artifact details show +20 static stats and refinement text; equipment details show slot/set uncertainty.
 - Added pure core regression coverage for dataset counts, stable-ID search, the single flagged hero, 58 equipment records needing slot/set review, pagination and ratio formatting.
 - Hidden IAB QA confirmed the `hero-10002` outlier values/warning, Ancestor's Bone +20 stats/refinement effect and the 58-row equipment review filter. The page was tested in a hidden browser and saved as `outputs/design/public-data-browser.png`; no visible window was opened.
+
+## 2026-11-03 · OP-044
+
+- Audited all 147 artifact refinement-text families. A strict complete-sentence parser accepts only unconditional wearer sheet stats with valid flat/ratio units and requires all six refinement ranks to parse; 5 artifacts / 30 ranks pass, while 142 artifacts remain text-only.
+- Added `staticEffectLevels` to public GameData and a generated JSON/Markdown audit. The accepted set is Ancestor's Bone, Meditator Pipe, Rift Hourglass, Troll's Heart and Dancing Gyro.
+- Updated artifact resolution so public or account-observed enhancement stats are resolved first, then the selected refinement's compiled static effect is added with an explicit not-client-validated warning. Account-observed artifact lines are compared only against the public enhancement curve, not against effect text.
+- Added parser rejection cases for nearby-ally, chance/timed, multi-clause/rarity-dependent and invalid-unit prose, plus optimizer regressions for refinement 0/5 and observed-stat coexistence.
+- Hidden IAB QA confirmed Ancestor's Bone renders the +20 curve separately from the executable refinement-0 Crit Damage 15% effect, while Elven Hunter's Quiver remains explicitly text-only. The public-data screenshot was refreshed without opening a visible window.

@@ -181341,6 +181341,7 @@
           "description": "When any ally gains an Aura, all allies receive [3000% Enlightenment][15% of the target's Max HP]healing. This has a 20.0s cooldown (tasks can still be completed to trigger this after Auras reach maximum stacks).\\nAll allies except the hero can each gain 2 Auras (these can be the same Auras). After gaining 2 Auras, completing a task again grants 20% increased damage dealt."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When any ally gains an Aura, all allies receive [2000% Enlightenment][10% of the target's Max HP]healing. This has a 20.0s cooldown (tasks can still be completed to trigger this after Auras reach maximum stacks).\\nAll allies except the hero can each gain 2 Auras (these can be the same Auras). After gaining 2 Auras, completing a task again grants 7% increased damage dealt.",
       "restrictions": null,
       "source": {
@@ -181650,6 +181651,7 @@
           "description": "Each stack of Rally Monelisse has increases the damage she deals by 20%. Every time Rally gained or consumed through battle skills and ultimate skills reaches 5 stack(s), permanently increases Attack by 15%, up to 4 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Each stack of Rally Monelisse has increases the damage she deals by 7%. Every time Rally gained or consumed through battle skills and ultimate skills reaches 5 stack(s), permanently increases Attack by 3%, up to 4 stacks.",
       "restrictions": null,
       "source": {
@@ -181959,6 +181961,7 @@
           "description": "When a Specter vanishes, the damage dealt to the target increases to Damage Intensification stacks *[240% Attack] Necrotic Damage. At the same time, directly gains a [+500%Attack] shield for 5.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When a Specter vanishes, the damage dealt to the target increases to Damage Intensification stacks *[165% Attack] Necrotic Damage. At the same time, directly gains a [+500%Attack] shield for 5.0s.",
       "restrictions": null,
       "source": {
@@ -182268,6 +182271,7 @@
           "description": "The Mire Toxin effect is enhanced. When Corrosion is inflicted on a Mire Toxin bearer, the effect increases to 25%.\\nEach time the hero consumes Corruption to deal True Damage to an enemy affected by Mire Toxin, the hero's Attack increases by 3%, up to 8 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The Mire Toxin effect is enhanced. When Corrosion is inflicted on a Mire Toxin bearer, the effect increases to 20%.\\nEach time the hero consumes Corruption to deal True Damage to an enemy affected by Mire Toxin, the hero's Attack increases by 1%, up to 8 stacks.",
       "restrictions": null,
       "source": {
@@ -182577,6 +182581,7 @@
           "description": "While the Child of Chaos is on the field, all allies sharing his element gain 30% Damage Bonus, while allies of a different element gain 30% Damage Reduction."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "While the Child of Chaos is on the field, all allies sharing his element gain 10% Damage Bonus, while allies of a different element gain 10% Damage Reduction.",
       "restrictions": null,
       "source": {
@@ -182886,6 +182891,7 @@
           "description": "At the start of battle, Khrysos increases his Max HP by 10%. The shields he grants are boosted by a percentage of his Max HP. For every 50 Accuracy, the shields granted by his skills are amplified by 2%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "At the start of battle, Khrysos increases his Max HP by 5%. The shields he grants are boosted by a percentage of his Max HP. For every 50 Accuracy, the shields granted by his skills are amplified by 1%.",
       "restrictions": null,
       "source": {
@@ -183195,6 +183201,7 @@
           "description": "When Elecebre successfully inflicts control effects with her skills, there is a 80% chance for 2 allies with the lowest Current HP to gain 1 stack of Aegis. If this effect enables any hero to have more than 3 stacks of Aegis, grants 20% Damage Reduction to them for 10.0s.\nAegis: When taking damage, consumes 1 stack to reduce the damage taken by 70%, up to 10 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When Elecebre successfully inflicts control effects with her skills, there is a 30% chance for 2 allies with the lowest Current HP to gain 1 stack of Aegis. If this effect enables any hero to have more than 3 stacks of Aegis, grants 20% Damage Reduction to them for 10.0s.\nAegis: When taking damage, consumes 1 stack to reduce the damage taken by 70%, up to 10 stacks.",
       "restrictions": null,
       "source": {
@@ -183504,6 +183511,7 @@
           "description": "Each time allies consume the mark granted by Gladys, they gain 1 stack(s) of Secret of Heavens permanently. When Gladys grants Rally to an ally, they gain 5 stack(s) of Secret of Heavens.\nSecret of Heavens: Each stack increases the wearer's Crit Damage by 1%, up to 200 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Each time allies consume the mark granted by Gladys, they gain 1 stack(s) of Secret of Heavens permanently. When Gladys grants Rally to an ally, they gain 5 stack(s) of Secret of Heavens.\nSecret of Heavens: Each stack increases the wearer's Crit Damage by 1%, up to 100 stacks.",
       "restrictions": null,
       "source": {
@@ -183813,6 +183821,7 @@
           "description": "Each time the Potent Medicine state deals damage to an enemy, it has a 100% chance to ignore Resistance and apply 2 stacks of Toxin. For enemies inflicted with Potent Medicine, each Potent Medicine increases Poison Derivative Damage taken by 3%, up to 50%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Each time the Potent Medicine state deals damage to an enemy, it has a 100% chance to ignore Resistance and apply 2 stacks of Toxin. For enemies inflicted with Potent Medicine, each Potent Medicine increases Poison Derivative Damage taken by 0%, up to 50%.",
       "restrictions": null,
       "source": {
@@ -184122,6 +184131,7 @@
           "description": "While the summoned unit belonging to a Summoner School hero is present on the field, the hero's damage taken is reduced by 35%. Each time any summoned unit deals damage, additional damage equal to 75% of Bernade's Attack is also dealt."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "While the summoned unit belonging to a Summoner School hero is present on the field, the hero's damage taken is reduced by 10%. Each time any summoned unit deals damage, additional damage equal to 50% of Bernade's Attack is also dealt.",
       "restrictions": null,
       "source": {
@@ -184431,6 +184441,7 @@
           "description": "While Fredegonda is on the field, Ice Crystal heroes gain a Damage Bonus equal to their own Ice Crystal count * 5% and a Damage Reduction equal to their own Ice Crystal count * 3%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "While Fredegonda is on the field, Ice Crystal heroes gain a Damage Bonus equal to their own Ice Crystal count * 1% and a Damage Reduction equal to their own Ice Crystal count * 0%.",
       "restrictions": null,
       "source": {
@@ -184740,6 +184751,7 @@
           "description": "Each time an ally triggers Blast or dispels Burn, Paixton deals an additional hit of 240% Fire Enlightenment Damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Each time an ally triggers Blast or dispels Burn, Paixton deals an additional hit of 80% Fire Enlightenment Damage.",
       "restrictions": null,
       "source": {
@@ -185049,6 +185061,7 @@
           "description": "The healing Berengar receives from Evil Aura is increased by 100%. When this effect expires, allies under Chaos gain a shield equal to 40% of Berengar's Max HP. When Berengar reaches full HP through Evil Aura, the Chaos state on allies is immediately dispelled."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The healing Berengar receives from Evil Aura is increased by 50%. When this effect expires, allies under Chaos gain a shield equal to 20% of Berengar's Max HP. When Berengar reaches full HP through Evil Aura, the Chaos state on allies is immediately dispelled.",
       "restrictions": null,
       "source": {
@@ -185358,6 +185371,7 @@
           "description": "Mithrasea's damage taken is reduced by 20%. After the battle begins, she performs Stellar Sense every 20s. If any allies have fallen, the first fallen ally is resurrected."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Mithrasea's damage taken is reduced by 10%. After the battle begins, she performs Stellar Sense every 30s. If any allies have fallen, the first fallen ally is resurrected.",
       "restrictions": null,
       "source": {
@@ -185667,6 +185681,7 @@
           "description": "When Grishnaar takes damage, there is a(n) 100% chance to deal [+100% Defense] Lightning Damage to the damage source. At the same time, the damage dealt by the source is reduced by 5%, lasting 10.0s, up to 5 stacks. This skill effect cannot be triggered by damage-sharing effects other than Ally Protection."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When Grishnaar takes damage, there is a(n) 100% chance to deal [+50% Defense] Lightning Damage to the damage source. At the same time, the damage dealt by the source is reduced by 1%, lasting 10.0s, up to 5 stacks. This skill effect cannot be triggered by damage-sharing effects other than Ally Protection.",
       "restrictions": null,
       "source": {
@@ -185976,6 +185991,7 @@
           "description": "When the wearer's faction activates a 3-hero/5-hero Elemental Affinity, all allies deal increased damage by 5%/10%, and take reduced damage by 5%/10%. Allies of the same element as the wearer gain an additional bonus of 50%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer's faction activates a 3-hero/5-hero Elemental Affinity, all allies deal increased damage by 5%/10%, and take reduced damage by 5%/10%. Allies of the same element as the wearer gain an additional bonus of 25%.",
       "restrictions": null,
       "source": {
@@ -186285,6 +186301,7 @@
           "description": "The first time the wearer's HP falls below 50%, they gain 55% Damage Reduction and restore 3% of their Max HP every 1s for 10.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The first time the wearer's HP falls below 50%, they gain 30% Damage Reduction and restore 3% of their Max HP every 1s for 10.0s.",
       "restrictions": null,
       "source": {
@@ -186594,6 +186611,7 @@
           "description": "When a shield granted by the wearer is broken, the shield-bearer is healed for 30% of the damage that broke the shield. This has a 10.0s cooldown. At the start of battle, grants all allies an undispellable, unstealable [+10%Max HP] shield."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When a shield granted by the wearer is broken, the shield-bearer is healed for 5% of the damage that broke the shield. This has a 10.0s cooldown. At the start of battle, grants all allies an undispellable, unstealable [+10%Max HP] shield.",
       "restrictions": null,
       "source": {
@@ -186903,6 +186921,7 @@
           "description": "While Saverio is on the field, triggering Bloodmoon Power has a 50% chance to not be consumed, and the hero gains 20% Damage Bonus for every 10s he survives, up to 100%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "While Saverio is on the field, triggering Bloodmoon Power has a 50% chance to not be consumed, and the hero gains 10% Damage Bonus for every 10s he survives, up to 50%.",
       "restrictions": null,
       "source": {
@@ -187212,6 +187231,7 @@
           "description": "When Reytah's ultimate skill extends 3 or more debuffs on a target in a single cast, inflicts Defense Penalty II on the target for 12.0s and grants allied units 18% Damage Bonus for 12.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When Reytah's ultimate skill extends 3 or more debuffs on a target in a single cast, inflicts Defense Penalty II on the target for 12.0s and grants allied units 5% Damage Bonus for 12.0s.",
       "restrictions": null,
       "source": {
@@ -187521,6 +187541,7 @@
           "description": "When the wearer's damage reduces any enemy's HP below 50%, deals bonus damage equal to 400% of the wearer's Attack to that enemy. This can only trigger once every 20.0s per enemy."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer's damage reduces any enemy's HP below 50%, deals bonus damage equal to 150% of the wearer's Attack to that enemy. This can only trigger once every 20.0s per enemy.",
       "restrictions": null,
       "source": {
@@ -187830,6 +187851,7 @@
           "description": "When the wearer deals damage to an enemy via the ultimate skill, there is a 50% chance to reduce the target's Ultimate Energy by 10.0 and apply Recharging Speed Penalty for 5.0s. This can only trigger once every 10.0s per enemy."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer deals damage to an enemy via the ultimate skill, there is a 25% chance to reduce the target's Ultimate Energy by 10.0 and apply Recharging Speed Penalty for 5.0s. This can only trigger once every 10.0s per enemy.",
       "restrictions": null,
       "source": {
@@ -188139,6 +188161,7 @@
           "description": "When the wearer applies a buff, debuff, or control effect, there is a 100% chance to extend its duration by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer applies a buff, debuff, or control effect, there is a 100% chance to extend its duration by 10%.",
       "restrictions": null,
       "source": {
@@ -188448,6 +188471,7 @@
           "description": "For each unique buff, debuff, or control effect currently active on the wearer, the wearer's damage dealt increases by 3% and damage taken decreases by 3%, up to 10 times."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "For each unique buff, debuff, or control effect currently active on the wearer, the wearer's damage dealt increases by 1.5% and damage taken decreases by 1.5%, up to 10 times.",
       "restrictions": null,
       "source": {
@@ -188757,6 +188781,7 @@
           "description": "The wearer gains a [+20%Max HP] shield every 20s that lasts for 10.0s. When the shield is destroyed, the wearer locks on the 2 enemy unit(s) with the most damage dealt to the shield, inflicting them with Attack Penalty II for 10.0s.\nThe shield takes effect immediately as the battle starts."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains a [+20%Max HP] shield every 30s that lasts for 10.0s. When the shield is destroyed, the wearer locks on the 1 enemy unit(s) with the most damage dealt to the shield, inflicting them with Attack Penalty II for 10.0s.\nThe shield takes effect immediately as the battle starts.",
       "restrictions": null,
       "source": {
@@ -189066,6 +189091,7 @@
           "description": "For each enemy within 1 tile of the wearer, gains a 12% Damage Bonus, up to 3 stacks. If there are 2 or more enemies within 1 tile of the wearer, gains a 15% Damage Reduction."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "For each enemy within 1 tile of the wearer, gains a 5% Damage Bonus, up to 3 stacks. If there are 2 or more enemies within 1 tile of the wearer, gains a 15% Damage Reduction.",
       "restrictions": null,
       "source": {
@@ -189375,6 +189401,7 @@
           "description": "At the start of the battle, the wearer gains Debuff Immunity and Control Immunity for 10.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "At the start of the battle, the wearer gains Debuff Immunity and Control Immunity for 5.0s.",
       "restrictions": null,
       "source": {
@@ -189684,6 +189711,7 @@
           "description": "When the wearer takes damage, healing equal to 25% of the damage taken is triggered and distributed evenly to allies around the hero."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer takes damage, healing equal to 10% of the damage taken is triggered and distributed evenly to allies around the hero.",
       "restrictions": null,
       "source": {
@@ -189993,6 +190021,7 @@
           "description": "When inflicted with Ultimate Down, the wearer becomes immune to it and gains 15.0 Ultimate Energy. This effect triggers once every 15.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When inflicted with Ultimate Down, the wearer becomes immune to it and gains 5.0 Ultimate Energy. This effect triggers once every 15.0s.",
       "restrictions": null,
       "source": {
@@ -190302,6 +190331,7 @@
           "description": "When the wearer receives healing, gains 4% Damage Up and 2% Damage Reduction for 10.0s. This effect can stack up to 10 times."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer receives healing, gains 2% Damage Up and 1% Damage Reduction for 10.0s. This effect can stack up to 10 times.",
       "restrictions": null,
       "source": {
@@ -190611,6 +190641,7 @@
           "description": "When the wearer is under buffs/shields, gains 15% Damage Up for each. When under debuffs/control effects, gains 15% Damage Reduction for each."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer is under buffs/shields, gains 7% Damage Up for each. When under debuffs/control effects, gains 7% Damage Reduction for each.",
       "restrictions": null,
       "source": {
@@ -190920,6 +190951,7 @@
           "description": "When the wearer performs healing, converts 50% of overhealing into a Seed applied to the target. The Seed provides Healing Over Time to the target for 5s. Targets affected by the Seed take 15% reduced damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer performs healing, converts 25% of overhealing into a Seed applied to the target. The Seed provides Healing Over Time to the target for 5s. Targets affected by the Seed take 5% reduced damage.",
       "restrictions": null,
       "source": {
@@ -191229,6 +191261,7 @@
           "description": "When the wearer defeats any enemy, recovers 40% of their Max HP and gains 20.0 Ultimate Energy. This effect can only trigger once every 3.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer defeats any enemy, recovers 15% of their Max HP and gains 10.0 Ultimate Energy. This effect can only trigger once every 3.0s.",
       "restrictions": null,
       "source": {
@@ -191538,6 +191571,7 @@
           "description": "If all allied heroes are of the same element, they gain 15% Damage Up and 10% increased shield received at the start of battle."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "If all allied heroes are of the same element, they gain 7% Damage Up and 5% increased shield received at the start of battle.",
       "restrictions": null,
       "source": {
@@ -191847,6 +191881,7 @@
           "description": "At the start of battle, for each ally with an active Elemental Affinity, increases Attack and Defense by 2% for all allies with an active Elemental Affinity."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "At the start of battle, for each ally with an active Elemental Affinity, increases Attack and Defense by 1% for all allies with an active Elemental Affinity.",
       "restrictions": null,
       "source": {
@@ -192156,6 +192191,7 @@
           "description": "When an ally's HP drops below 40%,\nheals them for [+10%Max HP][+1000%Enlightenment]. This effect can trigger once every 15.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When an ally's HP drops below 40%,\nheals them for [+5%Max HP][+500%Enlightenment]. This effect can trigger once every 15.0s.",
       "restrictions": null,
       "source": {
@@ -192465,6 +192501,7 @@
           "description": "At the start of battle, grants all allies 5 stack(s) of Precept. Each time an ultimate skill is cast, grants all allies 1 stack of Precept.\nPrecept: Each stack increases Resistance by 15.0. Dispels 1 stack each time an effect is successfully resisted. Up to 8 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "At the start of battle, grants all allies 2 stack(s) of Precept. Each time an ultimate skill is cast, grants all allies 1 stack of Precept.\nPrecept: Each stack increases Resistance by 15.0. Dispels 1 stack each time an effect is successfully resisted. Up to 8 stacks.",
       "restrictions": null,
       "source": {
@@ -192774,6 +192811,7 @@
           "description": "After each ultimate skill cast, the wearer restores 25% of Ultimate Energy.\nThe amount of Ultimate Energy restored is reduced by 5% each time this effect triggers, down to a minimum of 5%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "After each ultimate skill cast, the wearer restores 15% of Ultimate Energy.\nThe amount of Ultimate Energy restored is reduced by 5% each time this effect triggers, down to a minimum of 5%.",
       "restrictions": null,
       "source": {
@@ -193083,6 +193121,7 @@
           "description": "The No.2 time the wearer casts an ultimate skill, enemies affected (damaged or debuffed) by it have their healing received reduced by 50% for 10.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The No.6 time the wearer casts an ultimate skill, enemies affected (damaged or debuffed) by it have their healing received reduced by 50% for 10.0s.",
       "restrictions": null,
       "source": {
@@ -193392,6 +193431,7 @@
           "description": "When the wearer inflicts a debuff with a battle skill or ultimate skill, if the target is already affected by that debuff, the wearer also inflicts Defense Penalty II for 6.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer inflicts a debuff with a battle skill or ultimate skill, if the target is already affected by that debuff, the wearer also inflicts Defense Penalty II for 3.0s.",
       "restrictions": null,
       "source": {
@@ -193701,6 +193741,7 @@
           "description": "Guinavivre's basic attack inflicts an additional stack of  for s.\n: When taking Lightning Damage that triggers a critical hit, the damage is increased by , up to  stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Guinavivre's basic attack inflicts an additional stack of  for s.\n: When taking Lightning Damage that triggers a critical hit, the damage is increased by , up to  stacks.",
       "restrictions": null,
       "source": {
@@ -194010,6 +194051,7 @@
           "description": "Each time the wearer deals Derivative Damage, their Enlightenment increases by  for s, up to  stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Each time the wearer deals Derivative Damage, their Enlightenment increases by  for s, up to  stacks.",
       "restrictions": null,
       "source": {
@@ -194319,6 +194361,7 @@
           "description": "The first  ultimate skill(s) the wearer casts in each battle grant all ally heroes  stack(s) of Aegis for s.\nAegis: When taking damage, consumes 1 stack to reduce the damage taken by ."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The first  ultimate skill(s) the wearer casts in each battle grant all ally heroes  stack(s) of Aegis for s.\nAegis: When taking damage, consumes 1 stack to reduce the damage taken by .",
       "restrictions": null,
       "source": {
@@ -194628,6 +194671,7 @@
           "description": "Active in the Grand Gladiator Arena only: When damaging a debuffed enemy, the wearer heals the ally with the lowest Current HP for  of the damage dealt. (This healing cannot exceed  of the ally's Max HP.)"
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Active in the Grand Gladiator Arena only: When damaging a debuffed enemy, the wearer heals the ally with the lowest Current HP for  of the damage dealt. (This healing cannot exceed  of the ally's Max HP.)",
       "restrictions": null,
       "source": {
@@ -194937,6 +194981,7 @@
           "description": "Every s after the battle starts, randomly marks 1 enemy and 1 ally. Marked enemies permanently take  increased damage, and marked allies permanently receive  increased healing."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Every s after the battle starts, randomly marks 1 enemy and 1 ally. Marked enemies permanently take  increased damage, and marked allies permanently receive  increased healing.",
       "restrictions": null,
       "source": {
@@ -195246,6 +195291,7 @@
           "description": "At the beginning of the battle, increases all allies' damage dealt by  for s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "At the beginning of the battle, increases all allies' damage dealt by  for s.",
       "restrictions": null,
       "source": {
@@ -195555,6 +195601,7 @@
           "description": "The wearer gains  for s if their HP is below  and they are not under the effect of  applied by this Artifact when taking damage. Also, the wearer takes  less AOE damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains  for s if their HP is below  and they are not under the effect of  applied by this Artifact when taking damage. Also, the wearer takes  less AOE damage.",
       "restrictions": null,
       "source": {
@@ -195864,6 +195911,7 @@
           "description": "Upon gaining Shadow Energy, the wearer gains an additional Attack Up for s equal to  of the Shadow Energy gained."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Upon gaining Shadow Energy, the wearer gains an additional Attack Up for s equal to  of the Shadow Energy gained.",
       "restrictions": null,
       "source": {
@@ -196173,6 +196221,7 @@
           "description": "When the wearer consumes Aura Energy, their Max HP is increased. For every  Aura Energy consumed, they gain 1 stack of  Max HP Up, up to 30 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer consumes Aura Energy, their Max HP is increased. For every  Aura Energy consumed, they gain 1 stack of  Max HP Up, up to 30 stacks.",
       "restrictions": null,
       "source": {
@@ -196482,6 +196531,7 @@
           "description": "Increases the effect of  inflicted by the wearer by  and Poison Damage dealt by ."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the effect of  inflicted by the wearer by  and Poison Damage dealt by .",
       "restrictions": null,
       "source": {
@@ -196791,6 +196841,7 @@
           "description": "Aemonleyda takes  less damage from single-target attacks, and her damage based on Max HP is increased by an additional ."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Aemonleyda takes  less damage from single-target attacks, and her damage based on Max HP is increased by an additional .",
       "restrictions": null,
       "source": {
@@ -197100,6 +197151,7 @@
           "description": "Enters Demon form, gaining  for s. While in Demon form, Ozul's basic attacks deal an additional  damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Enters Demon form, gaining  for s. While in Demon form, Ozul's basic attacks deal an additional  damage.",
       "restrictions": null,
       "source": {
@@ -197409,6 +197461,7 @@
           "description": "When Rook casts a skill to deal True Damage, this damage is increased by ."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When Rook casts a skill to deal True Damage, this damage is increased by .",
       "restrictions": null,
       "source": {
@@ -197718,6 +197771,7 @@
           "description": "When equipped by Naro, grants the following effects: Dealing damage to an enemy with Empyrean Treads refreshes their Empyrean Treads duration. For each enemy hit by the battle skill movement, the hero receives [+10%Max HP] healing. This can trigger 3 time(s) per spellcasting."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When equipped by Naro, grants the following effects: Dealing damage to an enemy with Empyrean Treads refreshes their Empyrean Treads duration. For each enemy hit by the battle skill movement, the hero receives [+5%Max HP] healing. This can trigger 3 time(s) per spellcasting.",
       "restrictions": null,
       "source": {
@@ -198027,6 +198081,7 @@
           "description": "The wearer's healing increases by 30%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's healing increases by 15%.",
       "restrictions": null,
       "source": {
@@ -198336,6 +198391,7 @@
           "description": "The wearer's HP increases by 15%, and Defense by 15%. This effect doubles for non-Legendary Heroes."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's HP increases by 5%, and Defense by 5%. This effect doubles for non-Legendary Heroes.",
       "restrictions": null,
       "source": {
@@ -198646,6 +198702,7 @@
           "description": "Aschetius gains 20% Crit Rate, and the damage bonus from using Pyrokinesis to dispel Burn increases to 250%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Aschetius gains 20% Crit Rate, and the damage bonus from using Pyrokinesis to dispel Burn increases to 150%.",
       "restrictions": {
         "heroIds": [
@@ -198959,6 +199016,7 @@
           "description": "Perkunte's Lightning Chain and Lightning Bolt ignore the target's 40% Defense. When there are fewer than 5 enemies on the field, the damage dealt by Lightning Bolt is increased by 50% for each enemy fewer than 5."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Perkunte's Lightning Chain and Lightning Bolt ignore the target's 20% Defense. When there are fewer than 5 enemies on the field, the damage dealt by Lightning Bolt is increased by 20% for each enemy fewer than 5.",
       "restrictions": null,
       "source": {
@@ -199268,6 +199326,7 @@
           "description": "Beldelle deals 60% more Runaway Storm damage, while increases the percentage of Crit Damage converted into Mortal Wound by 60% for Frost's Favor."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Beldelle deals 15% more Runaway Storm damage, while increases the percentage of Crit Damage converted into Mortal Wound by 15% for Frost's Favor.",
       "restrictions": null,
       "source": {
@@ -199577,6 +199636,7 @@
           "description": "The wearer deals 20% more Lightning Chain damage, with each enemy under Electrocuted on the field further increasing the Lightning Chain damage by 4%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer deals 10% more Lightning Chain damage, with each enemy under Electrocuted on the field further increasing the Lightning Chain damage by 2%.",
       "restrictions": null,
       "source": {
@@ -199886,6 +199946,7 @@
           "description": "The wearer's damage dealt to enemies inflicted with Burn is increased by 4% for each stack of Burn they possess."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's damage dealt to enemies inflicted with Burn is increased by 2% for each stack of Burn they possess.",
       "restrictions": null,
       "source": {
@@ -200195,6 +200256,7 @@
           "description": "When the wearer consumes Ice Crystals, their next battle skill deals extra 25% damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer consumes Ice Crystals, their next battle skill deals extra 15% damage.",
       "restrictions": null,
       "source": {
@@ -200504,6 +200566,7 @@
           "description": "Upon resisting a negative effect, the wearer increases all allies' damage by 15% for 10s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Upon resisting a negative effect, the wearer increases all allies' damage by 7% for 10s.",
       "restrictions": null,
       "source": {
@@ -200813,6 +200876,7 @@
           "description": "The wearer's damage reduces the target's Max HP by 20% of that damage. The Max HP reduction can be up to 50% for any target. This effect cannot trigger on bosses."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's damage reduces the target's Max HP by 10% of that damage. The Max HP reduction can be up to 50% for any target. This effect cannot trigger on bosses.",
       "restrictions": null,
       "source": {
@@ -201122,6 +201186,7 @@
           "description": "As the battle starts, the wearer has a 100.0% chance of inflicting Attack Penalty II on the enemy with the highest Attack for 20.0s. If the target's Attack exceeds twice the wearer's, this debuff cannot be dispelled for its duration."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "As the battle starts, the wearer has a 100.0% chance of inflicting Attack Penalty II on the enemy with the highest Attack for 10.0s. If the target's Attack exceeds twice the wearer's, this debuff cannot be dispelled for its duration.",
       "restrictions": null,
       "source": {
@@ -201431,6 +201496,7 @@
           "description": "The wearer deals more damage based on the Defense gap between them and the enemy. If the target's Defense reaches 200% of the wearer's, the bonus damage caps at 40%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer deals more damage based on the Defense gap between them and the enemy. If the target's Defense reaches 200% of the wearer's, the bonus damage caps at 20%.",
       "restrictions": null,
       "source": {
@@ -201740,6 +201806,7 @@
           "description": "Enemies affected by debuffs continuously lose HP. For each debuff stack they possess, they take Necrotic Damage equal to [+200% Attack] from the Dark Lady every 2s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Enemies affected by debuffs continuously lose HP. For each debuff stack they possess, they take Necrotic Damage equal to [+100% Attack] from the Dark Lady every 2s.",
       "restrictions": null,
       "source": {
@@ -202049,6 +202116,7 @@
           "description": "When equipped by Divine Ascetic: At the start of battle, he gains 10 stacks of Obsession. When the Obsession reaches max stacks, his damage is increased by 30%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When equipped by Divine Ascetic: At the start of battle, he gains 10 stacks of Obsession. When the Obsession reaches max stacks, his damage is increased by 15%.",
       "restrictions": null,
       "source": {
@@ -202358,6 +202426,7 @@
           "description": "Each time Guenhwyvar deals damage, reduces the target's Defense by 2.5% in 10s, 4 stacks at most."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Each time Guenhwyvar deals damage, reduces the target's Defense by 2.5% in 10s, 2 stacks at most.",
       "restrictions": null,
       "source": {
@@ -202667,6 +202736,7 @@
           "description": "When the wearer successfully resists a negative effect, has a 50% chance of reflecting it to its source, ignoring the enemy's Resistance."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer successfully resists a negative effect, has a 25% chance of reflecting it to its source, ignoring the enemy's Resistance.",
       "restrictions": null,
       "source": {
@@ -202976,6 +203046,7 @@
           "description": "When the wearer is affected by control effects, gains 3 stack(s) of Sanctuary for 10.0s.\nSanctuary: When taking damage, consumes 1 stack to reduce that instance of damage by 70%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer is affected by control effects, gains 1 stack(s) of Sanctuary for 10.0s.\nSanctuary: When taking damage, consumes 1 stack to reduce that instance of damage by 70%.",
       "restrictions": null,
       "source": {
@@ -203285,6 +203356,7 @@
           "description": "The wearer's ultimate skill deals additional [+5%Target's Max HP]True Damage (not exceeding 200% Attack).\nIf the target's HP is below 10%, executes them."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's ultimate skill deals additional [+5%Target's Max HP]True Damage (not exceeding 200% Attack).\nIf the target's HP is below 5%, executes them.",
       "restrictions": null,
       "source": {
@@ -203594,6 +203666,7 @@
           "description": "The wearer's damage inflicts a 5s Curse to enemies. If an enemy dies while cursed, creates an explosion dealing [+150% Attack] True Damage to surrounding enemies."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's damage inflicts a 5s Curse to enemies. If an enemy dies while cursed, creates an explosion dealing [+75% Attack] True Damage to surrounding enemies.",
       "restrictions": null,
       "source": {
@@ -203903,6 +203976,7 @@
           "description": "The wearer's attacks ignore shields on enemies."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's attacks ignore shields on enemies.",
       "restrictions": null,
       "source": {
@@ -204212,6 +204286,7 @@
           "description": "The wearer deals 20% increased damage to enemies without buffs. If the targets are inflicted with Control, the wearer deals 40% increased damage instead."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer deals 10% increased damage to enemies without buffs. If the targets are inflicted with Control, the wearer deals 20% increased damage instead.",
       "restrictions": null,
       "source": {
@@ -204521,6 +204596,7 @@
           "description": "The shield effect granted by the wearer is increased by 25%, and its duration is extended by 30%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The shield effect granted by the wearer is increased by 10%, and its duration is extended by 30%.",
       "restrictions": null,
       "source": {
@@ -204830,6 +204906,7 @@
           "description": "The wearer gains the following effects every 20s: for the first 10s, the wearer gains 1 stack of 6% Attack Up per second; for the next 10s, the wearer loses 1 stack of that Attack Up per second."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains the following effects every 20s: for the first 10s, the wearer gains 1 stack of 3% Attack Up per second; for the next 10s, the wearer loses 1 stack of that Attack Up per second.",
       "restrictions": null,
       "source": {
@@ -205139,6 +205216,7 @@
           "description": "As the battle starts, a [15% Max HP] shield that lasts for 15.0s is granted to each ally."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "As the battle starts, a [10% Max HP] shield that lasts for 15.0s is granted to each ally.",
       "restrictions": null,
       "source": {
@@ -205448,6 +205526,7 @@
           "description": "Shield granted by the wearer to an ally also reduces the damage done to the ally by 17%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Shield granted by the wearer to an ally also reduces the damage done to the ally by 10%.",
       "restrictions": null,
       "source": {
@@ -205757,6 +205836,7 @@
           "description": "Derivative Damage dealt by the wearer gains a Damage Bonus based on the distance between the wearer and the enemy, increasing by 7% per tile, with the Damage Bonus capped at 5 tiles."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Derivative Damage dealt by the wearer gains a Damage Bonus based on the distance between the wearer and the enemy, increasing by 3% per tile, with the Damage Bonus capped at 5 tiles.",
       "restrictions": null,
       "source": {
@@ -206066,6 +206146,7 @@
           "description": "When an undead creature summoned by the wearer dies, the summoned unit deals [75% Attack][+75%Attack]Necrotic Damage to nearby enemies."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When an undead creature summoned by the wearer dies, the summoned unit deals [50% Attack][+50%Attack]Necrotic Damage to nearby enemies.",
       "restrictions": null,
       "source": {
@@ -206375,6 +206456,7 @@
           "description": "After consuming Rally by casting a skill, the wearer's damage is increased by 10% for 15.0s. The effect is capped at 3 stacks, and each stack has a separate duration that cannot be reset."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "After consuming Rally by casting a skill, the wearer's damage is increased by 5% for 15.0s. The effect is capped at 3 stacks, and each stack has a separate duration that cannot be reset.",
       "restrictions": null,
       "source": {
@@ -206684,6 +206766,7 @@
           "description": "When the wearer successfully inflicts Poison on an enemy, there is a 60% chance of triggering a Poison Explosion. It takes effect on the same target once every 6.0s at most."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer successfully inflicts Poison on an enemy, there is a 60% chance of triggering a Poison Explosion. It takes effect on the same target once every 9.0s at most.",
       "restrictions": null,
       "source": {
@@ -206993,6 +207076,7 @@
           "description": "The wearer's damage is increased by 3% for 15.0s after casting the ultimate skill, during which time 1 extra stack of this effect is granted upon each of the wearer's basic attack, capped at 10 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's damage is increased by 1% for 15.0s after casting the ultimate skill, during which time 1 extra stack of this effect is granted upon each of the wearer's basic attack, capped at 10 stacks.",
       "restrictions": null,
       "source": {
@@ -207302,6 +207386,7 @@
           "description": "The Frost inflicted by the wearer has a 50% chance to be undispellable. After the wearer successfully inflicts Frost on the enemy, the Cold Damage dealt will be increased by 3% for 10.0s, up to 5 stacks. Each stack has a separate duration that can't be refreshed."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The Frost inflicted by the wearer has a 50% chance to be undispellable. After the wearer successfully inflicts Frost on the enemy, the Cold Damage dealt will be increased by 1% for 10.0s, up to 5 stacks. Each stack has a separate duration that can't be refreshed.",
       "restrictions": null,
       "source": {
@@ -207611,6 +207696,7 @@
           "description": "When an ally's Wild dice roll is ≥5, the wearer gains 7% Damage Bonus for 10.0s, up to 5 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When an ally's Wild dice roll is ≥5, the wearer gains 3% Damage Bonus for 10.0s, up to 5 stacks.",
       "restrictions": null,
       "source": {
@@ -207920,6 +208006,7 @@
           "description": "Lelwanis's Lady of Dark Ruins has a 100% chance to summon 2 corpses. For every 10 stacks of Dragon Blood, Lelwanis gains 10% Defense Penetration and increases the damage of Dragon of Death by 10%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Lelwanis's Lady of Dark Ruins has a 100% chance to summon 2 corpses. For every 10 stacks of Dragon Blood, Lelwanis gains 5% Defense Penetration and increases the damage of Dragon of Death by 5%.",
       "restrictions": null,
       "source": {
@@ -208229,6 +208316,7 @@
           "description": "When Nastjenka triggers a critical hit with a feather shot from Wild Beak, the follow-up damage from this particular feather will increase by 150%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When Nastjenka triggers a critical hit with a feather shot from Wild Beak, the follow-up damage from this particular feather will increase by 50%.",
       "restrictions": null,
       "source": {
@@ -208538,6 +208626,7 @@
           "description": "When the Vortex created by Flora through Pillar of Secret Flame explodes, each stack of energy increases the burst damage by 8%, up to 20 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the Vortex created by Flora through Pillar of Secret Flame explodes, each stack of energy increases the burst damage by 3%, up to 20 stacks.",
       "restrictions": null,
       "source": {
@@ -208847,6 +208936,7 @@
           "description": "When Thelendor's Lunar Arrival triggers a critical hit, he gains 1 stack of Rally. Lunar Retribution unleashes a rain of moonlight with duration extended by 3s, and the maximum number of moonlight beams channeled at a single target increased by 6."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When Thelendor's Lunar Arrival triggers a critical hit, he gains 1 stack of Rally. Lunar Retribution unleashes a rain of moonlight with duration extended by 1.5s, and the maximum number of moonlight beams channeled at a single target increased by 1.",
       "restrictions": null,
       "source": {
@@ -209156,6 +209246,7 @@
           "description": "Increases Lothair's damage dealt with Poisonous Intention by 20%, with a 30% chance of dealing double damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases Lothair's damage dealt with Poisonous Intention by 10%, with a 15% chance of dealing double damage.",
       "restrictions": null,
       "source": {
@@ -209465,6 +209556,7 @@
           "description": "While Icewind is in effect, any enemy with HP below 25% will be executed by Hvitar. Her Breath of Frost receives enhancement in Damage Bonus: Each enemy inflicted with Frost on the battlefield increases the damage by 25%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "While Icewind is in effect, any enemy with HP below 15% will be executed by Hvitar. Her Breath of Frost receives enhancement in Damage Bonus: Each enemy inflicted with Frost on the battlefield increases the damage by 20%.",
       "restrictions": null,
       "source": {
@@ -209774,6 +209866,7 @@
           "description": "When the wearer uses ultimate skill to deal damage to the enemy, there's a 60.0% chance of inflicting Defense Penalty II on the target for 10.0s.\nDerivative Damage won't trigger this effect, and Defense Penalty II can only be inflicted once per target by a single cast of ultimate skill."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer uses ultimate skill to deal damage to the enemy, there's a 35.0% chance of inflicting Defense Penalty II on the target for 10.0s.\nDerivative Damage won't trigger this effect, and Defense Penalty II can only be inflicted once per target by a single cast of ultimate skill.",
       "restrictions": null,
       "source": {
@@ -210083,6 +210176,7 @@
           "description": "Ranged heroes in the team gain 10% of the wearer's Attack."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Ranged heroes in the team gain 5% of the wearer's Attack.",
       "restrictions": null,
       "source": {
@@ -210392,6 +210486,7 @@
           "description": "When the wearer takes damage, it has a 30% chance of creating an energy blast, dealing [+200%Defense]Fire Damage to surrounding enemies and reducing their damage dealt by 15% for 5.0s. The energy blast can only be triggered once every 2.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer takes damage, it has a 30% chance of creating an energy blast, dealing [+200%Defense]Fire Damage to surrounding enemies and reducing their damage dealt by 15% for 5.0s. The energy blast can only be triggered once every 4.0s.",
       "restrictions": null,
       "source": {
@@ -210701,6 +210796,7 @@
           "description": "100% of the overheal from the wearer will be equally converted into a shield."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "50% of the overheal from the wearer will be equally converted into a shield.",
       "restrictions": null,
       "source": {
@@ -211010,6 +211106,7 @@
           "description": "When the wearer heals an ally, increases the ally's damage by 5% for 10.0s, up to 3 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer heals an ally, increases the ally's damage by 2% for 10.0s, up to 3 stacks.",
       "restrictions": null,
       "source": {
@@ -211319,6 +211416,7 @@
           "description": "In each battle, the wearer's first 2 ultimate skill casting(s) will trigger guaranteed crit effects."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "In each battle, the wearer's first 1 ultimate skill casting(s) will trigger guaranteed crit effects.",
       "restrictions": null,
       "source": {
@@ -211626,6 +211724,62 @@
           "id": 7000485,
           "name": "Time Leaper",
           "description": "The wearer gains 100.0 extra Skill Haste."
+        }
+      ],
+      "staticEffectLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "skill_haste": 50
+          },
+          "rawText": "The wearer gains 50.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "skill_haste": 60
+          },
+          "rawText": "The wearer gains 60.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "skill_haste": 70
+          },
+          "rawText": "The wearer gains 70.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "skill_haste": 80
+          },
+          "rawText": "The wearer gains 80.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "skill_haste": 90
+          },
+          "rawText": "The wearer gains 90.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "skill_haste": 100
+          },
+          "rawText": "The wearer gains 100.0 extra Skill Haste.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
         }
       ],
       "effectSummary": "The wearer gains 50.0 extra Skill Haste.",
@@ -211937,6 +212091,7 @@
           "description": "The initial recharge time of the wearer's battle skill is reduced by 3s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The initial recharge time of the wearer's battle skill is reduced by 1.5s.",
       "restrictions": null,
       "source": {
@@ -212246,6 +212401,7 @@
           "description": "When the wearer deals damage to the enemy, each stack of debuff on the enemy grants 1% Damage Bonus, up to 20 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer deals damage to the enemy, each stack of debuff on the enemy grants 0% Damage Bonus, up to 20 stacks.",
       "restrictions": null,
       "source": {
@@ -212555,6 +212711,7 @@
           "description": "When an ally summons an undead creature, Necrotic Damage dealt by the wearer will increase by 5% for 10.0s, up to 6 stacks. Each stack has a separate duration that cannot be reset."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When an ally summons an undead creature, Necrotic Damage dealt by the wearer will increase by 3% for 10.0s, up to 6 stacks. Each stack has a separate duration that cannot be reset.",
       "restrictions": null,
       "source": {
@@ -212864,6 +213021,7 @@
           "description": "This ultimate skill gains 25% Damage Bonus each time the wearer successfully casts Rally."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "This ultimate skill gains 15% Damage Bonus each time the wearer successfully casts Rally.",
       "restrictions": null,
       "source": {
@@ -213173,6 +213331,7 @@
           "description": "When the wearer launches a basic attack, it has a 60% chance of triggering a 2-attack combo. This effect can only be triggered once every 2.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer launches a basic attack, it has a 60% chance of triggering a 2-attack combo. This effect can only be triggered once every 7.0s.",
       "restrictions": null,
       "source": {
@@ -213482,6 +213641,7 @@
           "description": "When the wearer deals damage to an enemy under Frost, there's a 30% chance of creating an ice storm at their position, inflicting [+300%Attack]Cold Damage on enemies within range. The ice storm can only be triggered once every 4.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer deals damage to an enemy under Frost, there's a 30% chance of creating an ice storm at their position, inflicting [+300%Attack]Cold Damage on enemies within range. The ice storm can only be triggered once every 9.0s.",
       "restrictions": null,
       "source": {
@@ -213791,6 +213951,7 @@
           "description": "When the wearer's Wild skill dice roll ≥ 5, the current instance of skill gains a 30% Damage Bonus."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer's Wild skill dice roll ≥ 5, the current instance of skill gains a 10% Damage Bonus.",
       "restrictions": null,
       "source": {
@@ -214100,6 +214261,7 @@
           "description": "For each debuff the wearer has, reduces damage taken by 5%, up to 6 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "For each debuff the wearer has, reduces damage taken by 5%, up to 2 stacks.",
       "restrictions": null,
       "source": {
@@ -214409,6 +214571,7 @@
           "description": "The wearer's summoned units deal 20% increased damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's summoned units deal 10% increased damage.",
       "restrictions": null,
       "source": {
@@ -214718,6 +214881,7 @@
           "description": "When the wearer uses their battle skills to heal allies other than themself, they have a 50% chance to heal an additional ally with [12% of this ally's max HP]. This effect triggers once every 5.0s at most."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer uses their battle skills to heal allies other than themself, they have a 50% chance to heal an additional ally with [7% of this ally's max HP]. This effect triggers once every 5.0s at most.",
       "restrictions": null,
       "source": {
@@ -215027,6 +215191,7 @@
           "description": "The wearer's attacks cannot trigger critical hits, but deal 35% more Derivative Damage."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's attacks cannot trigger critical hits, but deal 20% more Derivative Damage.",
       "restrictions": null,
       "source": {
@@ -215336,6 +215501,7 @@
           "description": "For each type of buff the wearer has, their damage taken is reduced by 3%, up to 5 stacks."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "For each type of buff the wearer has, their damage taken is reduced by 2%, up to 5 stacks.",
       "restrictions": null,
       "source": {
@@ -215645,6 +215811,7 @@
           "description": "The wearer gains 10.0 Ultimate Energy after killing an enemy. This effect can only be triggered once every 2.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains 10.0 Ultimate Energy after killing an enemy. This effect can only be triggered once every 7.0s.",
       "restrictions": null,
       "source": {
@@ -215954,6 +216121,7 @@
           "description": "The wearer grants 15% more Shield."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer grants 10% more Shield.",
       "restrictions": null,
       "source": {
@@ -216263,6 +216431,7 @@
           "description": "When the wearer uses ultimate skill to deal damage to the enemies, it has a 75.0% chance of inflicting Defense Penalty I on one of the targets for 10.0s.\nDerivative Damage won't trigger this effect."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer uses ultimate skill to deal damage to the enemies, it has a 50.0% chance of inflicting Defense Penalty I on one of the targets for 10.0s.\nDerivative Damage won't trigger this effect.",
       "restrictions": null,
       "source": {
@@ -216572,6 +216741,7 @@
           "description": "Reduces the wearer's AOE Damage taken by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Reduces the wearer's AOE Damage taken by 10%.",
       "restrictions": null,
       "source": {
@@ -216881,6 +217051,7 @@
           "description": "The wearer gains a [500% Defense] shield for 10.0s when their HP is below 30%. This effect can only be triggered once every 45.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains a [250% Defense] shield for 10.0s when their HP is below 30%. This effect can only be triggered once every 45.0s.",
       "restrictions": null,
       "source": {
@@ -217190,6 +217361,7 @@
           "description": "When the wearer heals allies with HP below 40%, the amount of healing is increased by 30%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer heals allies with HP below 15%, the amount of healing is increased by 30%.",
       "restrictions": null,
       "source": {
@@ -217499,6 +217671,7 @@
           "description": "Increases the wearer's Ultimate Energy by 10% after unleashing ultimate skill."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's Ultimate Energy by 5% after unleashing ultimate skill.",
       "restrictions": null,
       "source": {
@@ -217808,6 +217981,7 @@
           "description": "After the wearer launches a battle skill, the recharge time will reduce by 10%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "After the wearer launches a battle skill, the recharge time will reduce by 5%.",
       "restrictions": null,
       "source": {
@@ -218117,6 +218291,7 @@
           "description": "When the wearer launches an ultimate skill, has a 100.0% chance of obtaining 20% extra Crit Rate for 10.0s. This effect can only be triggered once every 15.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer launches an ultimate skill, has a 50.0% chance of obtaining 20% extra Crit Rate for 10.0s. This effect can only be triggered once every 15.0s.",
       "restrictions": null,
       "source": {
@@ -218426,6 +218601,7 @@
           "description": "When the wearer launches a battle skill, they have a 60.0% chance of gaining 75.0 extra Enlightenment for 10.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer launches a battle skill, they have a 35.0% chance of gaining 75.0 extra Enlightenment for 10.0s.",
       "restrictions": null,
       "source": {
@@ -218735,6 +218911,7 @@
           "description": "When the wearer launches a basic attack, has a 20.0% chance of gaining 50% extra Attack Speed for 10.0s. This effect can only be triggered once every 10.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer launches a basic attack, has a 20.0% chance of gaining 25% extra Attack Speed for 10.0s. This effect can only be triggered once every 10.0s.",
       "restrictions": null,
       "source": {
@@ -219044,6 +219221,7 @@
           "description": "Heals the wearer by [600% Attack] after killing an enemy."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Heals the wearer by [350% Attack] after killing an enemy.",
       "restrictions": null,
       "source": {
@@ -219353,6 +219531,7 @@
           "description": "The wearer gains 40% extra Attack for 10.0s when their HP is below 50%. This effect can only be triggered once every 20.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains 20% extra Attack for 10.0s when their HP is below 50%. This effect can only be triggered once every 20.0s.",
       "restrictions": null,
       "source": {
@@ -219662,6 +219841,7 @@
           "description": "The wearer gains 20% Damage Bonus when they have a shield."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer gains 10% Damage Bonus when they have a shield.",
       "restrictions": null,
       "source": {
@@ -219972,6 +220152,7 @@
           "description": "The wearer's ultimate skill gains 20% Damage Bonus."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's ultimate skill gains 10% Damage Bonus.",
       "restrictions": null,
       "source": {
@@ -220281,6 +220462,7 @@
           "description": "The wearer's passive skill gains 20% Damage Bonus."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's passive skill gains 10% Damage Bonus.",
       "restrictions": null,
       "source": {
@@ -220590,6 +220772,7 @@
           "description": "The wearer's battle skill gains 20% Damage Bonus."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's battle skill gains 10% Damage Bonus.",
       "restrictions": null,
       "source": {
@@ -220899,6 +221082,7 @@
           "description": "Increases the wearer's chance of granting or inflicting status with their skills by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting status with their skills by 10%.",
       "restrictions": null,
       "source": {
@@ -221208,6 +221392,7 @@
           "description": "Increases the wearer's chance of granting or inflicting status with their skills by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting status with their skills by 10%.",
       "restrictions": null,
       "source": {
@@ -221517,6 +221702,7 @@
           "description": "Increases the wearer's chance of granting or inflicting status with their skills by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting status with their skills by 10%.",
       "restrictions": null,
       "source": {
@@ -221826,6 +222012,7 @@
           "description": "Increases the wearer's chance of granting or inflicting status with their skills by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting status with their skills by 10%.",
       "restrictions": null,
       "source": {
@@ -222135,6 +222322,7 @@
           "description": "Increases the wearer's chance of granting or inflicting status with their skills by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting status with their skills by 10%.",
       "restrictions": null,
       "source": {
@@ -222444,6 +222632,7 @@
           "description": "Increases the wearer's chance of granting or inflicting status with their skills by 20%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting status with their skills by 10%.",
       "restrictions": null,
       "source": {
@@ -222753,6 +222942,7 @@
           "description": "Increases the wearer's chance of granting or inflicting effects with battle skill by 15%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's chance of granting or inflicting effects with battle skill by 7%.",
       "restrictions": null,
       "source": {
@@ -223062,6 +223252,7 @@
           "description": "When the wearer launches a basic attack, an extra 3% Attack Up is gained for 3.0s. The effect stacks up to 10 times."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer launches a basic attack, an extra 3% Attack Up is gained for 3.0s. The effect stacks up to 5 times.",
       "restrictions": null,
       "source": {
@@ -223371,6 +223562,7 @@
           "description": "Reduces the wearer's damage taken by 25% when under Control."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Reduces the wearer's damage taken by 15% when under Control.",
       "restrictions": null,
       "source": {
@@ -223680,6 +223872,7 @@
           "description": "The wearer obtains 25% extra Defense when any ally is nearby."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer obtains 15% extra Defense when any ally is nearby.",
       "restrictions": null,
       "source": {
@@ -223987,6 +224180,62 @@
           "id": 7000185,
           "name": "Flesh and Blood",
           "description": "The wearer obtains 20% extra HP."
+        }
+      ],
+      "staticEffectLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "hp_pct": 0.1
+          },
+          "rawText": "The wearer obtains 10% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "hp_pct": 0.12
+          },
+          "rawText": "The wearer obtains 12% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "hp_pct": 0.14
+          },
+          "rawText": "The wearer obtains 14% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "hp_pct": 0.16
+          },
+          "rawText": "The wearer obtains 16% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "hp_pct": 0.18
+          },
+          "rawText": "The wearer obtains 18% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "hp_pct": 0.2
+          },
+          "rawText": "The wearer obtains 20% extra HP.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
         }
       ],
       "effectSummary": "The wearer obtains 10% extra HP.",
@@ -224298,6 +224547,7 @@
           "description": "Increases the wearer's success rate of inflicting buffs or debuffs using ultimate skill by 15%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Increases the wearer's success rate of inflicting buffs or debuffs using ultimate skill by 7%.",
       "restrictions": null,
       "source": {
@@ -224608,6 +224858,7 @@
           "description": "The wearer's ultimate skill gains 15% Damage Bonus."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "The wearer's ultimate skill gains 10% Damage Bonus.",
       "restrictions": null,
       "source": {
@@ -224915,6 +225166,62 @@
           "id": 7000155,
           "name": "Whirling",
           "description": "The wearer obtains 25% extra Attack Speed."
+        }
+      ],
+      "staticEffectLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "attack_speed_pct": 0.15
+          },
+          "rawText": "The wearer obtains 15% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "attack_speed_pct": 0.17
+          },
+          "rawText": "The wearer obtains 17% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "attack_speed_pct": 0.19
+          },
+          "rawText": "The wearer obtains 19% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "attack_speed_pct": 0.21
+          },
+          "rawText": "The wearer obtains 21% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "attack_speed_pct": 0.23
+          },
+          "rawText": "The wearer obtains 23% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "attack_speed_pct": 0.25
+          },
+          "rawText": "The wearer obtains 25% extra Attack Speed.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
         }
       ],
       "effectSummary": "The wearer obtains 15% extra Attack Speed.",
@@ -225226,6 +225533,7 @@
           "description": "Healing from the wearer increases by 15%."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "Healing from the wearer increases by 10%.",
       "restrictions": null,
       "source": {
@@ -225535,6 +225843,7 @@
           "description": "At the start of the battle, it grants the wearer a [15% Max HP] shield that lasts for 15.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "At the start of the battle, it grants the wearer a [10% Max HP] shield that lasts for 15.0s.",
       "restrictions": null,
       "source": {
@@ -225843,6 +226152,62 @@
           "id": 7000125,
           "name": "Focus",
           "description": "The wearer obtains 35.0 extra Enlightenment."
+        }
+      ],
+      "staticEffectLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "enlightenment": 20
+          },
+          "rawText": "The wearer obtains 20.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "enlightenment": 23
+          },
+          "rawText": "The wearer obtains 23.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "enlightenment": 26
+          },
+          "rawText": "The wearer obtains 26.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "enlightenment": 29
+          },
+          "rawText": "The wearer obtains 29.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "enlightenment": 32
+          },
+          "rawText": "The wearer obtains 32.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "enlightenment": 35
+          },
+          "rawText": "The wearer obtains 35.0 extra Enlightenment.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
         }
       ],
       "effectSummary": "The wearer obtains 20.0 extra Enlightenment.",
@@ -226154,6 +226519,7 @@
           "description": "When the wearer launches a basic attack, gains a 30% chance of dealing Derivative [+250%Attack]Lightning Damage equal to 250% Attack. This effect can only be triggered once every 6.0s."
         }
       ],
+      "staticEffectLevels": [],
       "effectSummary": "When the wearer launches a basic attack, gains a 30% chance of dealing Derivative [+150%Attack]Lightning Damage equal to 150% Attack. This effect can only be triggered once every 6.0s.",
       "restrictions": null,
       "source": {
@@ -226462,6 +226828,62 @@
           "id": 7000105,
           "name": "Primordial",
           "description": "The wearer obtains 25% extra Crit Damage."
+        }
+      ],
+      "staticEffectLevels": [
+        {
+          "refinement": 0,
+          "values": {
+            "crit_damage": 0.15
+          },
+          "rawText": "The wearer obtains 15% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 1,
+          "values": {
+            "crit_damage": 0.17
+          },
+          "rawText": "The wearer obtains 17% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 2,
+          "values": {
+            "crit_damage": 0.19
+          },
+          "rawText": "The wearer obtains 19% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 3,
+          "values": {
+            "crit_damage": 0.21
+          },
+          "rawText": "The wearer obtains 21% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 4,
+          "values": {
+            "crit_damage": 0.23
+          },
+          "rawText": "The wearer obtains 23% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
+        },
+        {
+          "refinement": 5,
+          "values": {
+            "crit_damage": 0.25
+          },
+          "rawText": "The wearer obtains 25% extra Crit Damage.",
+          "parserVersion": "artifact-static-effect-0.1.0",
+          "evidenceLevel": "public_unconditional_static_effect_text_parsed_not_client_validated"
         }
       ],
       "effectSummary": "The wearer obtains 15% extra Crit Damage.",

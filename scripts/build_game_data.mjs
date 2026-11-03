@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseStaticSetBonus } from "./lib/parse-set-bonus.mjs";
 import { analyzeHeroDataQuality } from "./lib/hero-data-quality.mjs";
+import { compileArtifactStaticEffectLevels } from "./lib/parse-artifact-static-effect.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const seed = JSON.parse(await readFile(path.join(ROOT, "data", "game-data.seed.json"), "utf8"));
@@ -51,6 +52,7 @@ const artifacts = publicCatalog.artifacts.map((artifact) => {
     primaryStats: artifact.primaryStats,
     levelCurve: artifact.refinementCurve,
     effectLevels: artifact.effectLevels,
+    staticEffectLevels: compileArtifactStaticEffectLevels(artifact.effectLevels),
     effectSummary: artifact.effectLevels[0]?.description || override?.effectSummary || "",
     restrictions: override?.restrictions || null,
     source: {
